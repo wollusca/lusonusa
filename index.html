@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUSONUSA — Portugal ↔ Indonesia Bilateral Bridge & Consultancy</title>
+  <meta name="description" content="LUSONUSA is a bilateral advisory and cross-border consulting bridge connecting Portugal and Indonesia. Expert assistance in business setup, legal compliance, immigration, and sworn translation." />
+  <meta name="keywords" content="Portugal Indonesia consultancy, PT PMA setup, AIMA assistance, sworn translator Portugal, bilateral advisory, NIF NISS, cross-border business" />
+  <meta property="og:title" content="LUSONUSA — The Portugal ↔ Indonesia Bilateral Bridge" />
+  <meta property="og:description" content="Expert bilateral advisory connecting Portuguese ambition to the Indonesian market, and Indonesian communities to seamless life in Portugal." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0B0D12" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Safari bfcache fix: force reload when restored from back-forward cache -->
+  <script>window.addEventListener('pageshow',function(e){if(e.persisted)window.location.reload()});</script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FIXED NAVIGATION (hidden initially, revealed on scroll)
+       ═══════════════════════════════════════════════════════════════ -->
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    <div class="nav-pill">
+      <a href="#resolver" data-i18n="nav.services">Services</a>
+      <span class="nav-pill-dot" aria-hidden="true">·</span>
+      <a href="#workflow" data-i18n="nav.process">Process</a>
+      <span class="nav-pill-dot" aria-hidden="true">·</span>
+      <a href="#team" data-i18n="nav.team">Team</a>
+      <!-- Insights temporarily hidden for launch (uncomment when articles are ready) -->
+      <!-- <span class="nav-pill-dot" aria-hidden="true">·</span>
+      <a href="#insights" data-i18n="nav.insights">Insights</a> -->
+      <span class="nav-pill-dot" aria-hidden="true">·</span>
+      <a href="#footer" data-i18n="nav.contact">Contact</a>
+      <div class="nav-lang" role="group" aria-label="Language selector">
+        <button class="nav-lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="nav-lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+        <button class="nav-lang-btn" data-lang="id" aria-pressed="false">ID</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FIXED: Top gradient veil — dark fade + blur behind scrolling content
+       Keeps focus on LUSONUSA logo and menu pill
+       ═══════════════════════════════════════════════════════════════ -->
+  <div class="nav-gradient-veil" aria-hidden="true"></div>
+
+  <!-- Center Opener Logo (fixed, always on top of everything) -->
+  <div class="hero-logo-overlay" id="hero-logo" aria-hidden="true">
+    <h1 class="hero-logo-text">LUSONUSA</h1>
+    <p class="hero-logo-sub">The Portugal ↔ Indonesia Bilateral Bridge</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SECTION 1: SPLIT-HERO (Cinematic Opener → Scroll Reveal)
+       ═══════════════════════════════════════════════════════════════ -->
+  <header id="hero" class="hero-pinned-track">
+    <div class="hero-sticky-wrapper">
+
+      <!-- Mouse Follower CTA Badge -->
+      <div class="hero-cursor-badge" id="hero-cursor-badge" aria-hidden="true">
+        <span class="hero-cursor-text" id="hero-cursor-text"></span>
+      </div>
+
+      <div class="split-hero-container">
+        <!-- LEFT PANEL — LUSO (Portugal → Indonesia) -->
+        <div class="hero-panel luso" id="panel-luso" role="button" tabindex="0" aria-label="Explore services for Portuguese entities entering Indonesia">
+          <!-- Video Background (hidden, activate by adding source) -->
+          <video class="hero-panel-video" muted loop playsinline preload="none" aria-hidden="true">
+            <!-- <source src="videos/portugal-bg.mp4" type="video/mp4"> -->
+          </video>
+          <div class="hero-panel-content" id="hero-content-luso">
+            <span class="hero-panel-tag">PT → ID</span>
+            <h2 class="hero-panel-headline">LUSO</h2>
+            <p class="hero-panel-sub" data-i18n="hero.luso.sub">Connecting Portuguese business to the Indonesian market.</p>
+            <div class="hero-pills">
+              <span class="hero-pill"><i data-lucide="shield-check"></i> <span data-i18n="hero.luso.pill1">Company Verification</span></span>
+              <span class="hero-pill"><i data-lucide="building-2"></i> <span data-i18n="hero.luso.pill2">PT PMA Setup</span></span>
+              <span class="hero-pill"><i data-lucide="ship"></i> <span data-i18n="hero.luso.pill3">Export-Import Advisory</span></span>
+              <span class="hero-pill"><i data-lucide="passport"></i> <span data-i18n="hero.luso.pill4">Indonesia Visa & KITAS</span></span>
+              <span class="hero-pill"><i data-lucide="boxes"></i> <span data-i18n="hero.luso.pill5">Product Sourcing</span></span>
+            </div>
+          </div>
+          <div class="hero-panel-gradient"></div>
+        </div>
+
+        <!-- RIGHT PANEL — NUSA (Indonesia → Portugal) -->
+        <div class="hero-panel nusa" id="panel-nusa" role="button" tabindex="0" aria-label="Explore services for Indonesians in or moving to Portugal">
+          <!-- Video Background (hidden, activate by adding source) -->
+          <video class="hero-panel-video" muted loop playsinline preload="none" aria-hidden="true">
+            <!-- <source src="videos/indonesia-bg.mp4" type="video/mp4"> -->
+          </video>
+          <div class="hero-panel-content" id="hero-content-nusa">
+            <span class="hero-panel-tag">ID → PT</span>
+            <h2 class="hero-panel-headline">NUSA</h2>
+            <p class="hero-panel-sub" data-i18n="hero.nusa.sub">Trusted solutions for Indonesians in Portugal.</p>
+            <div class="hero-pills">
+              <span class="hero-pill"><i data-lucide="file-text"></i> <span data-i18n="hero.nusa.pill1">AIMA Guidance</span></span>
+              <span class="hero-pill"><i data-lucide="id-card"></i> <span data-i18n="hero.nusa.pill2">NIF & NISS</span></span>
+              <span class="hero-pill"><i data-lucide="wallet"></i> <span data-i18n="hero.nusa.pill3">Bank Account</span></span>
+              <span class="hero-pill"><i data-lucide="file-text"></i> <span data-i18n="hero.nusa.pill4">Business & Legal Docs</span></span>
+              <span class="hero-pill"><i data-lucide="languages"></i> <span data-i18n="hero.nusa.pill5">Notarized Translation</span></span>
+              <span class="hero-pill"><i data-lucide="compass"></i> <span data-i18n="hero.nusa.pill6">Local Guide & Travel</span></span>
+            </div>
+          </div>
+          <div class="hero-panel-gradient"></div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" id="scroll-indicator" aria-hidden="true">
+        <div class="scroll-indicator-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 2: INTERACTIVE PROBLEM RESOLVER (WhatsApp Lead Engine)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="resolver" class="section-resolver" aria-labelledby="resolver-heading">
+      <div class="section-container">
+        <span class="section-eyebrow" data-i18n="resolver.eyebrow">How Can We Help?</span>
+        <h2 id="resolver-heading" class="section-title" data-i18n="resolver.title">What's Your Immediate Challenge?</h2>
+        <p class="section-subtitle" data-i18n="resolver.subtitle">Select your situation below and get an instant resolution roadmap with a direct line to our team.</p>
+
+        <!-- Audience Tabs -->
+        <div class="resolver-tabs" role="tablist" aria-label="Select your audience">
+          <button class="resolver-tab active" role="tab" id="tab-nusa" aria-selected="true" aria-controls="panel-resolver-nusa" data-audience="nusa">
+            <i data-lucide="plane-landing"></i>
+            <span data-i18n="resolver.tab.nusa">For Indonesians in/to Portugal</span>
+            <small>NUSA</small>
+          </button>
+          <button class="resolver-tab" role="tab" id="tab-luso" aria-selected="false" aria-controls="panel-resolver-luso" data-audience="luso">
+            <i data-lucide="briefcase"></i>
+            <span data-i18n="resolver.tab.luso">For Portuguese Businesses & Citizens</span>
+            <small>LUSO</small>
+          </button>
+        </div>
+
+        <!-- Problem Matrix -->
+        <div class="resolver-body">
+          <div class="resolver-pills" id="resolver-pills" role="listbox" aria-label="Select your scenario">
+          </div>
+
+          <div class="resolver-solution" id="resolver-solution">
+            <div class="resolver-solution-empty">
+              <i data-lucide="mouse-pointer-click"></i>
+              <p data-i18n="resolver.empty">Select a scenario above to see your resolution roadmap.</p>
+            </div>
+            <div class="resolver-solution-content" id="resolver-solution-content" style="display: none;">
+              <div class="resolver-solution-header">
+                <i data-lucide="check-circle-2"></i>
+                <h3 id="resolver-solution-title">Resolution Roadmap</h3>
+              </div>
+              <ul class="resolver-solution-bullets" id="resolver-solution-bullets">
+              </ul>
+              <a class="resolver-wa-btn" id="resolver-wa-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Start WhatsApp consultation">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                <span data-i18n="resolver.wa.btn">Start WhatsApp Consultation</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 3: HOW WE WORK & ASSIST YOU (4-Step Journey & Pathways)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="workflow" class="section-workflow" aria-labelledby="workflow-heading">
+      <div class="section-container">
+        <span class="section-eyebrow" data-i18n="workflow.eyebrow">Our Guarantee & Promise</span>
+        <h2 id="workflow-heading" class="section-title" data-i18n="workflow.title">How We Support & Guide You</h2>
+        <p class="section-subtitle" data-i18n="workflow.subtitle">A friendly, step-by-step approach designed to give you clarity, peace of mind, and real solutions.</p>
+
+        <div class="workflow-grid workflow-grid-4">
+          <!-- Step 1 -->
+          <article class="workflow-card" id="workflow-step-1">
+            <div class="workflow-card-header">
+              <span class="workflow-card-number">01</span>
+              <span class="workflow-step-badge free-badge" data-i18n="workflow.s1.badge">100% Free & Casual</span>
+            </div>
+            <div class="workflow-card-icon"><i data-lucide="message-square-text"></i></div>
+            <h3 class="workflow-card-title" data-i18n="workflow.s1.title">Tell Us What's On Your Mind</h3>
+            <p class="workflow-card-desc" data-i18n="workflow.s1.desc">Send us a quick message via WhatsApp detailing your challenge. No fees, no obligations—just a friendly listening ear ready to help.</p>
+          </article>
+
+          <div class="workflow-connector" aria-hidden="true"><i data-lucide="chevron-right"></i></div>
+
+          <!-- Step 2 -->
+          <article class="workflow-card" id="workflow-step-2">
+            <div class="workflow-card-header">
+              <span class="workflow-card-number">02</span>
+              <span class="workflow-step-badge prep-badge" data-i18n="workflow.s2.badge">1–2 Days Research</span>
+            </div>
+            <div class="workflow-card-icon"><i data-lucide="search-check"></i></div>
+            <h3 class="workflow-card-title" data-i18n="workflow.s2.title">We Prepare Before We Talk</h3>
+            <p class="workflow-card-desc" data-i18n="workflow.s2.desc">Before our call, our team takes 1–2 business days to review your case, research legal rules, and prepare actionable steps so our talk is genuinely useful.</p>
+          </article>
+
+          <div class="workflow-connector" aria-hidden="true"><i data-lucide="chevron-right"></i></div>
+
+          <!-- Step 3 -->
+          <article class="workflow-card" id="workflow-step-3">
+            <div class="workflow-card-header">
+              <span class="workflow-card-number">03</span>
+              <span class="workflow-step-badge free-badge" data-i18n="workflow.s3.badge">Friendly & Free</span>
+            </div>
+            <div class="workflow-card-icon"><i data-lucide="phone-call"></i></div>
+            <h3 class="workflow-card-title" data-i18n="workflow.s3.title">Warm Initial Consultation</h3>
+            <p class="workflow-card-desc" data-i18n="workflow.s3.desc">A relaxed 1-on-1 discussion to explore your options. If your problem is simple, we will give you the exact step-by-step roadmap to solve it yourself—completely free.</p>
+          </article>
+
+          <div class="workflow-connector" aria-hidden="true"><i data-lucide="chevron-right"></i></div>
+
+          <!-- Step 4 -->
+          <article class="workflow-card" id="workflow-step-4">
+            <div class="workflow-card-header">
+              <span class="workflow-card-number">04</span>
+              <span class="workflow-step-badge action-badge" data-i18n="workflow.s4.badge">Transparent & Fair</span>
+            </div>
+            <div class="workflow-card-icon"><i data-lucide="compass"></i></div>
+            <h3 class="workflow-card-title" data-i18n="workflow.s4.title">Tailored Support, Your Way</h3>
+            <p class="workflow-card-desc" data-i18n="workflow.s4.desc">If you'd like us by your side, we offer flexible assistance—from self-guided roadmaps to document notarization and ground escort—at clear, honest rates.</p>
+          </article>
+        </div>
+
+        <!-- Flexible Resolution Pathways Panel -->
+        <div class="workflow-pathways-panel">
+          <div class="pathways-header">
+            <span class="pathways-eyebrow" data-i18n="pathways.eyebrow">Resolution Pathways & Pricing Philosophy</span>
+            <h3 class="pathways-title" data-i18n="pathways.title">Transparent Options Built Around Your Needs</h3>
+          </div>
+          <div class="pathways-grid">
+            <div class="pathway-card">
+              <div class="pathway-icon free-path"><i data-lucide="heart-handshake"></i></div>
+              <h4 class="pathway-name" data-i18n="pathway.p1.name">1. Free Community Advice</h4>
+              <p class="pathway-desc" data-i18n="pathway.p1.desc">Basic questions & general guidance answered during the free call. Perfect if you can handle filings yourself.</p>
+              <div class="pathway-price" data-i18n="pathway.p1.price">€0 • Pro-Bono</div>
+            </div>
+
+            <div class="pathway-card">
+              <div class="pathway-icon doc-path"><i data-lucide="file-check-2"></i></div>
+              <h4 class="pathway-name" data-i18n="pathway.p2.name">2. Document & Report Prep</h4>
+              <p class="pathway-desc" data-i18n="pathway.p2.desc">Legalized translations (Notary), NIF/NISS setups, business roadmaps, and custom compliance reports.</p>
+              <div class="pathway-price" data-i18n="pathway.p2.price">Fixed Transparent Fee</div>
+            </div>
+
+            <div class="pathway-card">
+              <div class="pathway-icon escort-path"><i data-lucide="user-check"></i></div>
+              <h4 class="pathway-name" data-i18n="pathway.p3.name">3. Ground Escort & Guide</h4>
+              <p class="pathway-desc" data-i18n="pathway.p3.desc">In-person attendance for AIMA appointments, Bank visits, PT PMA corporate setups, or bilingual local guide escort.</p>
+              <div class="pathway-price" data-i18n="pathway.p3.price">Fixed Package or Hourly</div>
+            </div>
+          </div>
+          <p class="pathways-equity-note" data-i18n="pathways.note">
+            <i data-lucide="shield-check"></i> <span><strong>Purchasing Power Equity:</strong> We tailor our fees fairly—offering accessible rates for individual community members while providing enterprise-grade consulting for businesses.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 4: TEAM SHOWCASE (3D Flip Cards)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="team" class="section-team" aria-labelledby="team-heading">
+      <div class="section-container">
+        <span class="section-eyebrow" data-i18n="team.eyebrow">Our Team</span>
+        <h2 id="team-heading" class="section-title" data-i18n="team.title">The Collaborators Behind the Bilateral Bridge</h2>
+        <p class="section-subtitle" data-i18n="team.subtitle">A multidisciplinary team of bilingual professionals embedded in both nations.</p>
+
+        <!-- Floating Mouse Follower Badge for Team Cards (Desktop) -->
+        <div class="team-cursor-badge" id="team-cursor-badge" aria-hidden="true">
+          <div class="team-cursor-badge-content">
+            <i data-lucide="rotate-cw"></i>
+            <span data-i18n="team.flip.badge">Click to flip</span>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <!-- Card 1: Aditya Putra -->
+          <article class="team-flip-card" id="team-card-1" tabindex="0" role="button" aria-expanded="false" aria-label="View biography for Aditya Putra">
+            <div class="team-flip-card-inner">
+              <!-- Front Face (Left half of asset) -->
+              <div class="team-card-face team-card-front" style="background-image: url('assets/aditya.jpg');">
+                <div class="team-card-front-overlay">
+                  <span class="team-card-role" data-i18n="team.c1.role">FOUNDER</span>
+                  <h3 class="team-card-name">Aditya Putra</h3>
+                  <p class="team-card-title" data-i18n="team.c1.title">Business & Bilateral Relations Lead</p>
+                </div>
+                <div class="team-touch-badge">
+                  <i data-lucide="chevrons-right"></i>
+                  <span data-i18n="team.touch.cue">Swipe to flip</span>
+                </div>
+              </div>
+
+              <!-- Back Face (Right half of asset) -->
+              <div class="team-card-face team-card-back" style="background-image: url('assets/aditya.jpg');">
+                <div class="team-card-back-overlay">
+                  <div class="team-card-back-header">
+                    <span class="team-card-role" data-i18n="team.c1.role">FOUNDER</span>
+                    <h3 class="team-card-name">Aditya Putra</h3>
+                    <p class="team-card-title" data-i18n="team.c1.title">Business & Bilateral Relations Lead</p>
+                  </div>
+                  <p class="team-card-bio" data-i18n="team.c1.bio">9+ years residing in Portugal with 5 years of service in the Economic Section of the Embassy of the Republic of Indonesia in Lisbon. Specialist in diplomatic protocol, cross-border business setup, and administrative navigation.</p>
+                  <div class="team-card-back-footer">
+                    <div class="team-card-lang"><i data-lucide="languages"></i><span data-i18n="team.c1.lang">English & Indonesian</span></div>
+                    <div class="team-card-flip-hint"><i data-lucide="rotate-ccw"></i><span data-i18n="team.flip.back">Click to flip back</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Mia Gomes -->
+          <article class="team-flip-card" id="team-card-2" tabindex="0" role="button" aria-expanded="false" aria-label="View biography for Mia Gomes">
+            <div class="team-flip-card-inner">
+              <!-- Front Face (Left half of asset) -->
+              <div class="team-card-face team-card-front" style="background-image: url('assets/mia.jpg');">
+                <div class="team-card-front-overlay">
+                  <span class="team-card-role" data-i18n="team.c4.role">TRANSLATION SPECIALIST</span>
+                  <h3 class="team-card-name">Mia Gomes</h3>
+                  <p class="team-card-title" data-i18n="team.c4.title">Legal & Notarized Translation Lead</p>
+                </div>
+                <div class="team-touch-badge">
+                  <i data-lucide="chevrons-right"></i>
+                  <span data-i18n="team.touch.cue">Swipe to flip</span>
+                </div>
+              </div>
+
+              <!-- Back Face (Right half of asset) -->
+              <div class="team-card-face team-card-back" style="background-image: url('assets/mia.jpg');">
+                <div class="team-card-back-overlay">
+                  <div class="team-card-back-header">
+                    <span class="team-card-role" data-i18n="team.c4.role">TRANSLATION SPECIALIST</span>
+                    <h3 class="team-card-name">Mia Gomes</h3>
+                    <p class="team-card-title" data-i18n="team.c4.title">Legal & Notarized Translation Lead</p>
+                  </div>
+                  <p class="team-card-bio" data-i18n="team.c4.bio">Native bilingual specialist (Portuguese-Portugal / Indonesian) recognized by the Embassy of Indonesia in Lisbon. Executes official legal, civil, and corporate translations, officially legalized through certified Portuguese Notaries (Notários). Jobs scheduled after pre-intake feasibility appraisal.</p>
+                  <div class="team-card-back-footer">
+                    <div class="team-card-lang"><i data-lucide="languages"></i><span data-i18n="team.c4.lang">Português & Indonesian</span></div>
+                    <div class="team-card-flip-hint"><i data-lucide="rotate-ccw"></i><span data-i18n="team.flip.back">Click to flip back</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Joko Supriyanto -->
+          <article class="team-flip-card" id="team-card-3" tabindex="0" role="button" aria-expanded="false" aria-label="View biography for Joko Supriyanto">
+            <div class="team-flip-card-inner">
+              <!-- Front Face (Left half of asset) -->
+              <div class="team-card-face team-card-front" style="background-image: url('assets/joko.jpg');">
+                <div class="team-card-front-overlay">
+                  <span class="team-card-role" data-i18n="team.c2.role">Banking & Financial Compliance Lead</span>
+                  <h3 class="team-card-name">Joko Supriyanto</h3>
+                  <p class="team-card-title" data-i18n="team.c2.title">Banking & Financial Advisory Specialist</p>
+                </div>
+                <div class="team-touch-badge">
+                  <i data-lucide="chevrons-right"></i>
+                  <span data-i18n="team.touch.cue">Swipe to flip</span>
+                </div>
+              </div>
+
+              <!-- Back Face (Right half of asset) -->
+              <div class="team-card-face team-card-back" style="background-image: url('assets/joko.jpg');">
+                <div class="team-card-back-overlay">
+                  <div class="team-card-back-header">
+                    <span class="team-card-role" data-i18n="team.c2.role">Banking & Financial Compliance Lead</span>
+                    <h3 class="team-card-name">Joko Supriyanto</h3>
+                    <p class="team-card-title" data-i18n="team.c2.title">Banking & Financial Advisory Specialist</p>
+                  </div>
+                  <p class="team-card-bio" data-i18n="team.c2.bio">7+ years residing in Portugal with a Master of Science in Economics from ISEG Lisbon. Currently active in the European banking sector, bringing domain expertise in capital movements, cross-border financial flows, and compliance.</p>
+                  <div class="team-card-back-footer">
+                    <div class="team-card-lang"><i data-lucide="languages"></i><span data-i18n="team.c2.lang">English & Indonesian</span></div>
+                    <div class="team-card-flip-hint"><i data-lucide="rotate-ccw"></i><span data-i18n="team.flip.back">Click to flip back</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Nabela Huwaida -->
+          <article class="team-flip-card" id="team-card-4" tabindex="0" role="button" aria-expanded="false" aria-label="View biography for Nabela Huwaida">
+            <div class="team-flip-card-inner">
+              <!-- Front Face (Left half of asset) -->
+              <div class="team-card-face team-card-front" style="background-image: url('assets/nabela.jpg');">
+                <div class="team-card-front-overlay">
+                  <span class="team-card-role" data-i18n="team.c3.role">Technology & AI Strategy Lead</span>
+                  <h3 class="team-card-name">Nabela Huwaida</h3>
+                  <p class="team-card-title" data-i18n="team.c3.title">Digital Transformation & Innovation Specialist</p>
+                </div>
+                <div class="team-touch-badge">
+                  <i data-lucide="chevrons-right"></i>
+                  <span data-i18n="team.touch.cue">Swipe to flip</span>
+                </div>
+              </div>
+
+              <!-- Back Face (Right half of asset) -->
+              <div class="team-card-face team-card-back" style="background-image: url('assets/nabela.jpg');">
+                <div class="team-card-back-overlay">
+                  <div class="team-card-back-header">
+                    <span class="team-card-role" data-i18n="team.c3.role">Technology & AI Strategy Lead</span>
+                    <h3 class="team-card-name">Nabela Huwaida</h3>
+                    <p class="team-card-title" data-i18n="team.c3.title">Digital Transformation & Innovation Specialist</p>
+                  </div>
+                  <p class="team-card-bio" data-i18n="team.c3.bio">M.Sc. in Strategic Marketing currently leading enterprise tech initiatives. Specializes in digital workflow adaptation, modern market expansion, and business AI adoption across cross-border operations.</p>
+                  <div class="team-card-back-footer">
+                    <div class="team-card-lang"><i data-lucide="languages"></i><span data-i18n="team.c3.lang">English & Indonesian</span></div>
+                    <div class="team-card-flip-hint"><i data-lucide="rotate-ccw"></i><span data-i18n="team.flip.back">Click to flip back</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 5: BILATERAL INSIGHTS & GUIDES (SEO Static Hub)
+         ═══════════════════════════════════════════════════════════════ -->
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 5: BILATERAL INSIGHTS & GUIDES (Compact Resource Hub)
+         ═══════════════════════════════════════════════════════════════ -->
+    <!-- Insights Section (Temporarily hidden for launch; preserved for future articles) -->
+    <section id="insights" class="insights-section compact" aria-labelledby="insights-title" style="display: none;">
+      <div class="section-container">
+        <div class="insights-header-compact">
+          <div>
+            <span class="section-eyebrow" data-i18n="insights.eyebrow">Knowledge Resource</span>
+            <h2 class="insights-title-compact" id="insights-title" data-i18n="insights.title">Guides & Bilateral Insights</h2>
+          </div>
+          <div class="insights-tabs-compact">
+            <button class="insight-tab-btn active" id="btn-pinned-articles" onclick="switchInsightTab('pinned')"><i data-lucide="pin"></i> Pinned Guides (4)</button>
+            <button class="insight-tab-btn" id="btn-latest-articles" onclick="switchInsightTab('latest')"><i data-lucide="clock"></i> Latest Articles (4)</button>
+            <a href="articles/index.html" class="insight-tab-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i data-lucide="compass"></i> Explore All Articles <span style="color: var(--accent-luso); font-weight: 700;">↗</span></a>
+          </div>
+        </div>
+
+        <!-- Pinned Articles Container (4 Cards) -->
+        <div class="insights-compact-list active" id="insights-pinned-list">
+
+          <!-- 1. Featured Active Article (EN + PT) -->
+          <article class="insight-compact-row featured">
+            <div class="insight-row-left">
+              <span class="insight-tag-mini"><i data-lucide="passport"></i> Indonesia Visas <span style="margin-left: 6px; padding: 1px 6px; background: rgba(59, 130, 246, 0.2); border-radius: 8px; font-weight: 700; color: #60a5fa; font-size: 0.7rem;">EN • PT</span></span>
+              <h3 class="insight-row-title">
+                <a href="/articles/indonesia-visa-guide-2026.html">Navigating Indonesian Visas: B211A, Investor KITAS & PT PMA Guide (2026)</a>
+              </h3>
+              <p class="insight-row-desc">Practical legal & administrative roadmap for Portuguese entrepreneurs, investors, and company directors.</p>
+            </div>
+            <div class="insight-row-right">
+              <span class="insight-row-meta">Aug 6, 2026 • 6 min read</span>
+              <a href="/articles/indonesia-visa-guide-2026.html" class="insight-row-btn">Read <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- 2. PT PMA Legal Setup (EN + PT) -->
+          <article class="insight-compact-row">
+            <div class="insight-row-left">
+              <span class="insight-tag-mini"><i data-lucide="building-2"></i> PT PMA Setup <span style="margin-left: 6px; padding: 1px 6px; background: rgba(59, 130, 246, 0.2); border-radius: 8px; font-weight: 700; color: #60a5fa; font-size: 0.7rem;">EN • PT</span></span>
+              <h3 class="insight-row-title">
+                <a href="/articles/pt-pma-indonesia-setup.html">Setting Up a PT PMA in Indonesia: Foreign Direct Investment & Legal Setup</a>
+              </h3>
+              <p class="insight-row-desc">Step-by-step foreign direct investment advisory, minimum capital rules, BKPM compliance, and corporate legal structuring for European companies.</p>
+            </div>
+            <div class="insight-row-right">
+              <span class="insight-row-meta">Pinned • 8 min read</span>
+              <a href="/articles/pt-pma-indonesia-setup.html" class="insight-row-btn">Read <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- 3. NIF, NISS & AIMA Portugal (EN + ID) -->
+          <article class="insight-compact-row">
+            <div class="insight-row-left">
+              <span class="insight-tag-mini"><i data-lucide="file-text"></i> Portugal Bureaucracy <span style="margin-left: 6px; padding: 1px 6px; background: rgba(245, 158, 11, 0.2); border-radius: 8px; font-weight: 700; color: #f59e0b; font-size: 0.7rem;">EN • ID</span></span>
+              <h3 class="insight-row-title">
+                <a href="/articles/nif-niss-aima-portugal-guide.html">NIF, NISS & AIMA Residence Registration in Portugal: Guide for Indonesians</a>
+              </h3>
+              <p class="insight-row-desc">Step-by-step breakdown of obtaining fiscal representation, social security, and residence scheduling for Indonesian expats in Portugal.</p>
+            </div>
+            <div class="insight-row-right">
+              <span class="insight-row-meta">Pinned • 5 min read</span>
+              <a href="/articles/nif-niss-aima-portugal-guide.html" class="insight-row-btn">Read <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- 4. Sworn Translation & Notary (EN + ID) -->
+          <article class="insight-compact-row">
+            <div class="insight-row-left">
+              <span class="insight-tag-mini"><i data-lucide="languages"></i> Notary & Translation <span style="margin-left: 6px; padding: 1px 6px; background: rgba(245, 158, 11, 0.2); border-radius: 8px; font-weight: 700; color: #f59e0b; font-size: 0.7rem;">EN • ID</span></span>
+              <h3 class="insight-row-title">
+                <a href="/articles/sworn-translation-notary-guide.html">Certified Sworn Translation & Notary Legalization (ID ↔ PT Document Roadmap)</a>
+              </h3>
+              <p class="insight-row-desc">Embassy-recognized translation procedures, Cartório notarization, civil document legalization, and Apostille guidance for Indonesian nationals.</p>
+            </div>
+            <div class="insight-row-right">
+              <span class="insight-row-meta">Pinned • 4 min read</span>
+              <a href="/articles/sworn-translation-notary-guide.html" class="insight-row-btn">Read <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Latest Articles Container (4 Cards, hidden by default) -->
+        <div class="insights-compact-list" id="insights-latest-list" style="display: none;">
+
+          <!-- 5. Product Sourcing -->
+          <article class="insight-compact-row">
+            <div class="insight-row-left">
+              <span class="insight-tag-mini"><i data-lucide="boxes"></i> Product Sourcing</span>
+              <h3 class="insight-row-title">Product Sourcing in Indonesia: How Portuguese Buyers Find Vetted Manufacturers</h3>
+              <p class="insight-row-desc">Vetting Indonesian furniture, handicrafts, textiles, and agricultural exporters safely.</p>
+            </div>
+            <div class="insight-row-right">
+              <span class="insight-row-meta">Jul 28, 2026 • 5 min read</span>
+              <span class="insight-row-btn disabled">Read Article</span>
+            </div>
+          </article>
+
+          <!-- 6. Banking Portugal -->
+          <article class="insight-compact-row">
+            <div class="insight-row-left">
+              <span class="insight-tag-mini"><i data-lucide="wallet"></i> Banking Portugal</span>
+              <h3 class="insight-row-title">Opening a Bank Account in Portugal: Requirements & Non-Resident Verification</h3>
+              <p class="insight-row-desc">Compliance documentation, proof of income, and smooth bank onboarding for foreign nationals.</p>
+            </div>
+            <div class="insight-row-right">
+              <span class="insight-row-meta">Jul 20, 2026 • 4 min read</span>
+              <span class="insight-row-btn disabled">Read Article</span>
+            </div>
+          </article>
+
+          <!-- 7. Export-Import Customs -->
+          <article class="insight-compact-row">
+            <div class="insight-row-left">
+              <span class="insight-tag-mini"><i data-lucide="ship"></i> Export-Import</span>
+              <h3 class="insight-row-title">Exporting Goods to Indonesia: Customs Regulations, Tariffs, & SNI Certification</h3>
+              <p class="insight-row-desc">Essential trade compliance rules for Portuguese exporters entering the Southeast Asian consumer market.</p>
+            </div>
+            <div class="insight-row-right">
+              <span class="insight-row-meta">Jul 12, 2026 • 7 min read</span>
+              <span class="insight-row-btn disabled">Read Article</span>
+            </div>
+          </article>
+
+          <!-- 8. Student & Housing Orientation -->
+          <article class="insight-compact-row">
+            <div class="insight-row-left">
+              <span class="insight-tag-mini"><i data-lucide="home"></i> Housing & Relocation</span>
+              <h3 class="insight-row-title">Student & Family Housing Orientation in Lisbon, Porto, & Coimbra</h3>
+              <p class="insight-row-desc">Avoiding rental scams, understanding lease contracts (*Contrato de Arrendamento*), and deposit protection.</p>
+            </div>
+            <div class="insight-row-right">
+              <span class="insight-row-meta">Jul 02, 2026 • 5 min read</span>
+              <span class="insight-row-btn disabled">Read Article</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SECTION 5: MINIMALIST BUSINESS FOOTER
+       ═══════════════════════════════════════════════════════════════ -->
+  <footer id="footer" class="site-footer" aria-label="Site footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2 class="footer-logo">LUSONUSA</h2>
+        <p class="footer-tagline" data-i18n="footer.tagline">Bilateral Advisory & Cross-Border Consulting</p>
+        <p class="footer-locations">Portugal • Indonesia</p>
+        <p class="footer-entity" data-i18n="footer.entity">Operating as PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah)</p>
+      </div>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <div class="footer-contact">
+        <h3 class="footer-contact-title" data-i18n="footer.contact.title">Get in Touch</h3>
+        <p class="footer-contact-sub" data-i18n="footer.contact.sub">Direct Assistance & Consultations</p>
+
+        <a class="footer-wa-btn" id="footer-wa-btn" href="https://wa.me/351930534440?text=Hello%20LUSONUSA%2C%20I%20would%20like%20to%20schedule%20a%20consultation." target="_blank" rel="noopener noreferrer" aria-label="Start a WhatsApp consultation">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span data-i18n="footer.wa.btn">Direct WhatsApp Consultation</span>
+        </a>
+
+        <p class="footer-email">Email: <a href="mailto:contact@lusonusa.agency">contact@lusonusa.agency</a></p>
+      </div>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <div class="footer-meta">
+        <p data-i18n="footer.hours">Service Hours: Mon – Fri | 10:00 – 16:00 WET (Portugal) / 16:00 – 22:00 WIB (Indonesia)</p>
+        <p data-i18n="footer.consult">Consultations conducted in English & Indonesian.</p>
+        <p data-i18n="footer.legal">Legal & sworn administrative services executed via certified native Portuguese specialists.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LUSONUSA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="articles/articles-data.js"></script>
+  <script src="articles/articles-renderer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setting Up a PT PMA in Indonesia: Foreign Direct Investment & Legal Setup | LUSONUSA</title>
+  <meta name="description" content="Step-by-step foreign direct investment advisory, minimum capital rules, BKPM compliance, and corporate legal structuring for European companies in Indonesia.">
+  <meta name="keywords" content="PT PMA setup Indonesia, Foreign Direct Investment Indonesia, BKPM OSS RBA, European company registration Indonesia, LUSONUSA corporate advisory">
+  <link rel="canonical" href="http://localhost:3001/articles/pt-pma-indonesia-setup.html">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:3001/articles/pt-pma-indonesia-setup.html">
+  <meta property="og:title" content="Setting Up a PT PMA in Indonesia: Foreign Direct Investment & Legal Setup">
+  <meta property="og:description" content="Step-by-step foreign direct investment advisory, minimum capital rules, BKPM compliance, and corporate legal structuring for European companies.">
+  <meta property="og:image" content="http://localhost:3001/assets/indonesia_visa_guide_banner.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Setting Up a PT PMA in Indonesia: Foreign Direct Investment & Legal Setup">
+  <meta name="twitter:description" content="Foreign direct investment advisory, minimum capital rules, BKPM compliance, and corporate legal structuring for European companies.">
+  <meta name="twitter:image" content="http://localhost:3001/assets/indonesia_visa_guide_banner.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Theme Stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Article-Specific Lightweight Styles -->
+  <style>
+    /* Article Reading Progress Bar */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-luso), var(--accent-nusa));
+      z-index: 1000;
+      width: 0%;
+      transition: width 0.1s linear;
+    }
+
+    /* Top Veil on Article Page (Compact Top Shadow) */
+    .nav-gradient-veil {
+      height: 90px !important;
+      mask-image: linear-gradient(to bottom, black 0%, transparent 100%) !important;
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%) !important;
+    }
+
+    /* Article Hero & Layout */
+    .article-section {
+      padding: var(--space-xl) 0 var(--space-4xl);
+      background: var(--bg-dark);
+    }
+
+    /* Soft Ambient Radial Glow behind Article Title Page */
+    .article-header-ambient {
+      position: relative;
+      padding-top: 80px;
+      padding-bottom: 20px;
+      background: radial-gradient(ellipse 70% 45% at 50% 15%, rgba(59, 130, 246, 0.1), transparent);
+    }
+
+    .article-header {
+      max-width: 840px;
+      margin: 0 auto var(--space-xl);
+      text-align: left;
+    }
+
+    .article-category {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-luso);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-md);
+    }
+
+    .article-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.25;
+      margin-bottom: var(--space-md);
+      letter-spacing: 0.01em;
+    }
+
+    .article-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: var(--space-lg);
+    }
+
+    /* Author & Meta Row */
+    .article-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      padding: var(--space-md) 0;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .article-author {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .article-author-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent-luso);
+    }
+
+    .article-author-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .article-author-role {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .article-details {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    /* Two-Column Grid for Reading + Sticky TOC */
+    .article-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 48px;
+      align-items: start;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg);
+    }
+
+    @media (max-width: 900px) {
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Sticky Sidebar Table of Contents */
+    .article-toc {
+      position: sticky;
+      top: 100px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+    }
+
+    .toc-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-main);
+      margin-bottom: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .toc-list a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.2s ease, padding-left 0.2s ease;
+      display: block;
+      line-height: 1.4;
+    }
+
+    .toc-list a:hover, .toc-list a.active {
+      color: var(--accent-luso);
+      font-weight: 600;
+      padding-left: 4px;
+    }
+
+    /* Article Reading Body Typography */
+    .article-body {
+      color: #d1d5db;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 800px;
+    }
+
+    .article-body h2 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: #fff;
+      margin-top: var(--space-2xl);
+      margin-bottom: var(--space-md);
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-subtle);
+      scroll-margin-top: 120px;
+    }
+
+    .article-body h3 {
+      font-size: 1.25rem;
+      color: var(--text-main);
+      margin-top: var(--space-xl);
+      margin-bottom: var(--space-sm);
+    }
+
+    .article-body p {
+      margin-bottom: var(--space-lg);
+    }
+
+    .article-body ul, .article-body ol {
+      margin-bottom: var(--space-lg);
+      padding-left: var(--space-xl);
+    }
+
+    .article-body li {
+      margin-bottom: var(--space-sm);
+    }
+
+    /* Highlights Callout Boxes */
+    .callout-box {
+      background: rgba(59, 130, 246, 0.08);
+      border-left: 4px solid var(--accent-luso);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: var(--space-lg);
+      margin: var(--space-xl) 0;
+      font-size: 0.98rem;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Embedded Call to Action Box */
+    .article-cta-box {
+      margin-top: var(--space-3xl);
+      padding: var(--space-2xl);
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(15, 23, 42, 0.8));
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: var(--radius-xl);
+      text-align: center;
+    }
+
+    .article-cta-title {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: var(--space-sm);
+    }
+
+    .article-cta-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: var(--space-lg);
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Safari bfcache fix: force reload when restored from back-forward cache -->
+  <script>window.addEventListener('pageshow',function(e){if(e.persisted)window.location.reload()});</script>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress-bar" id="progressBar"></div>
+
+  <!-- Ambient Top Gradient Veil -->
+  <div class="nav-gradient-veil active"></div>
+
+  <!-- Navigation Glass Pill -->
+  <nav class="site-nav visible" aria-label="Article navigation" style="opacity: 1; pointer-events: auto; top: 24px;">
+    <div class="nav-pill">
+      <a href="/index.html#insights" style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #fff; text-decoration: none; font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.08em;">
+        <i data-lucide="arrow-left" style="width: 16px; height: 16px; color: var(--accent-luso);"></i>
+        <span>LUSONUSA</span>
+      </a>
+
+      <a href="/articles/index.html" class="nav-link" data-i18n="nav.all_articles">All Articles</a>
+
+      <a href="https://wa.me/351000000000?text=Hello%20LUSONUSA!%20I%20read%20your%20PT%20PMA%20Guide%20and%20need%20assistance." target="_blank" class="nav-link" style="display: flex; align-items: center; gap: 6px; color: #4ade80; font-weight: 600;">
+        <i data-lucide="message-square" style="width: 14px; height: 14px; color: #4ade80;"></i>
+        <span data-i18n="nav.whatsapp_contact">Contact</span>
+      </a>
+
+      <!-- Language Toggle (EN | PT | ID) -->
+      <div style="display: flex; align-items: center; gap: 4px; border-left: 1px solid var(--border-subtle); padding-left: 10px; margin-left: 4px;">
+        <button class="nav-lang-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="nav-lang-btn" data-lang="pt" aria-label="Português">PT</button>
+        <button class="nav-lang-btn" data-lang="id" aria-label="Bahasa Indonesia">ID</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Hero Ambient Header -->
+  <header class="article-header-ambient">
+    <div class="article-header">
+      <div class="article-category">
+        <i data-lucide="building-2" style="width: 14px; height: 14px;"></i> Business & PT PMA Setup
+      </div>
+
+      <!-- English Title -->
+      <div data-lang-content="en">
+        <h1 class="article-title">Setting Up a PT PMA in Indonesia: Foreign Direct Investment & Legal Setup</h1>
+        <p class="article-subtitle">Step-by-step foreign direct investment advisory, minimum capital rules, BKPM compliance, and corporate legal structuring for European companies.</p>
+      </div>
+
+      <!-- Portuguese Title -->
+      <div data-lang-content="pt" style="display: none;">
+        <h1 class="article-title">Criar uma Empresa PT PMA na Indonésia: Investimento Estrangeiro e Estrutura Legal</h1>
+        <p class="article-subtitle">Passo a passo sobre investimento direto estrangeiro, capital mínimo, licenciamento BKPM e estruturação jurídica empresarial para empresas europeias.</p>
+      </div>
+
+      <!-- Author & Article Meta -->
+      <div class="article-meta-row">
+        <div class="article-author">
+          <img src="../assets/nabela.jpg" alt="Nabela Rahma" class="article-author-img">
+          <div>
+            <div class="article-author-name">Nabela Rahma</div>
+            <div class="article-author-role">Legal & Corporate Governance Lead</div>
+          </div>
+        </div>
+        <div class="article-details">
+          <span><i data-lucide="calendar" style="width: 14px; height: 14px; display: inline;"></i> Aug 4, 2026</span>
+          <span><i data-lucide="clock" style="width: 14px; height: 14px; display: inline;"></i> 8 min read</span>
+          <span><i data-lucide="globe" style="width: 14px; height: 14px; display: inline;"></i> EN • PT</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Article Content Section -->
+  <main class="article-section">
+    <div class="article-grid">
+
+      <!-- Sticky Table of Contents Sidebar -->
+      <aside class="article-toc">
+        <div class="toc-title">
+          <i data-lucide="list" style="width: 16px; height: 16px; color: var(--accent-luso);"></i>
+          <span data-i18n="toc.title">Table of Contents</span>
+        </div>
+        <ul class="toc-list">
+          <li><a href="#overview" class="active">1. What is a PT PMA?</a></li>
+          <li><a href="#capital">2. Capital & Investment Requirements</a></li>
+          <li><a href="#structure">3. Corporate Shareholding Structure</a></li>
+          <li><a href="#oss">4. BKPM & OSS RBA Licensing</a></li>
+          <li><a href="#process">5. Step-by-Step Incorporation</a></li>
+          <li><a href="#compliance">6. Ongoing Tax & Compliance</a></li>
+        </ul>
+      </aside>
+
+      <!-- Reading Body Container -->
+      <div class="article-body">
+        
+        <!-- ENGLISH CONTENT -->
+        <article data-lang-content="en">
+          <section id="overview">
+            <h2>1. What is a PT PMA?</h2>
+            <p>A <strong>PT PMA (Perseroan Terbatas Penanaman Modal Asing)</strong> is a foreign-owned limited liability company registered under the laws of the Republic of Indonesia. It is the legal entity required for foreign individuals or European corporate entities seeking to operate a business, hire employees, issue work visas (KITAS), generate local revenue, and acquire commercial property in Indonesia.</p>
+
+            <div class="callout-box">
+              <div class="callout-title"><i data-lucide="check-circle-2" style="color: var(--accent-luso);"></i> 100% Foreign Ownership Eligibility</div>
+              Under Indonesia's Positive Investment List (<em>Daftar Positif Investasi</em>), most business sectors—including technology, management consulting, hospitality, and import-export—allow 100% foreign ownership for European investors.
+            </div>
+          </section>
+
+          <section id="capital">
+            <h2>2. Capital & Investment Requirements</h2>
+            <p>To ensure genuine commercial investment, the Indonesian Ministry of Investment / BKPM establishes clear financial parameters for PT PMA setup:</p>
+            <ul>
+              <li><strong>Authorized & Paid-up Capital:</strong> Minimum <strong>IDR 10,000,000,000 (approx. €600,000)</strong> per business sector (KBLI classification).</li>
+              <li><strong>Initial Capital Injection:</strong> Shares must be formally deposited into a designated local corporate bank account following Deed notarization.</li>
+              <li><strong>Investment Realization Report (LKPM):</strong> Mandatory quarterly reporting submitted online via the BKPM OSS system to maintain active status.</li>
+            </ul>
+          </section>
+
+          <section id="structure">
+            <h2>3. Corporate Shareholding Structure</h2>
+            <p>Every PT PMA requires a transparent corporate governance framework:</p>
+            <ol>
+              <li><strong>Minimum 2 Shareholders:</strong> Can be European corporate entities, individual founders, or a combination.</li>
+              <li><strong>At least 1 Director (Direktur):</strong> Responsible for operational leadership. Foreign directors qualify for an Executive Investor KITAS.</li>
+              <li><strong>At least 1 Commissioner (Komisaris):</strong> Oversees the Director and governance compliance on behalf of shareholders.</li>
+            </ol>
+          </section>
+
+          <section id="oss">
+            <h2>4. BKPM & OSS RBA Licensing System</h2>
+            <p>Indonesia utilizes an <strong>Online Single Submission Risk-Based Approach (OSS RBA)</strong>. Business activities are categorized into Low, Medium-Low, Medium-High, or High Risk based on KBLI codes:</p>
+            <ul>
+              <li><strong>NIB (Business Identification Number):</strong> Serves as the company's permanent registration, import identifier, and tax ID link.</li>
+              <li><strong>Standard Certificates & Permits:</strong> Automated for low-risk sectors; subject to physical office verification for high-risk operations.</li>
+            </ul>
+          </section>
+
+          <section id="process">
+            <h2>5. Step-by-Step Incorporation Roadmap</h2>
+            <ol>
+              <li><strong>Name Reservation & KBLI Selection (Day 1–2):</strong> Verify company name availability with the Ministry of Law and Human Rights (Kemenkumham).</li>
+              <li><strong>Notarial Deed of Establishment (Day 3–5):</strong> Draft and sign the official <em>Akta Pendirian</em> before a certified Indonesian Notary.</li>
+              <li><strong>Ministry Approval (Day 6–7):</strong> Receive formal SK Kemenkumham legal confirmation.</li>
+              <li><strong>NIB & Tax ID Issuance (Day 8–10):</strong> Generate corporate Tax ID (NPWP) and NIB via OSS portal.</li>
+              <li><strong>Corporate Bank Account Opening:</strong> Open foreign currency (EUR/USD) and local currency (IDR) corporate accounts.</li>
+            </ol>
+          </section>
+
+          <section id="compliance">
+            <h2>6. Ongoing Tax & Corporate Compliance</h2>
+            <p>PT PMAs are subject to standard Indonesian corporate tax compliance, including corporate income tax (CIT) at 22%, monthly VAT (PPN) filings at 11%, and quarterly LKPM investment reports.</p>
+            <p>At <strong>LUSONUSA</strong>, our legal and accounting specialists manage your incorporation from initial BKPM filing to full tax compliance, ensuring your entry into the Indonesian market is smooth and secure.</p>
+          </section>
+
+          <!-- Article CTA Box -->
+          <div class="article-cta-box">
+            <h3 class="article-cta-title">Establishing a Company in Indonesia?</h3>
+            <p class="article-cta-desc">Consult with our corporate legal team. We assist with KBLI selection, minimum capital compliance, and BKPM licensing.</p>
+            <a href="https://wa.me/351000000000?text=Hello%20LUSONUSA!%20I%20would%20like%20a%20consultation%20on%20setting%20up%20a%20PT%20PMA%20in%20Indonesia." target="_blank" class="resolver-wa-btn" style="max-width: 300px; margin: 0 auto; padding: 10px 20px; font-size: 0.85rem;">
+              <i data-lucide="message-square"></i> Consult via WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <!-- PORTUGUESE CONTENT -->
+        <article data-lang-content="pt" style="display: none;">
+          <section id="overview">
+            <h2>1. O que é uma Empresa PT PMA?</h2>
+            <p>Uma <strong>PT PMA (Perseroan Terbatas Penanaman Modal Asing)</strong> é uma empresa de responsabilidade limitada com capital estrangeiro constituída ao abrigo da legislação indonésia. É a estrutura jurídica necessária para investidores e empresas portuguesas que pretendam operar no mercado indonésio.</p>
+          </section>
+
+          <section id="capital">
+            <h2>2. Requisitos de Capital e Investimento</h2>
+            <p>O Ministério do Investimento da Indonésia (BKPM) estabelece parâmetros financeiros específicos:</p>
+            <ul>
+              <li><strong>Capital Social Mínimo:</strong> <strong>10.000.000.000 IDR (aprox. 600.000 €)</strong> por setor de atividade (código KBLI).</li>
+              <li><strong>Relatório LKPM:</strong> Submissão trimestral obrigatória de investimento através do portal BKPM OSS.</li>
+            </ul>
+          </section>
+
+          <section id="process">
+            <h2>3. Passo a Passo para a Incorporação</h2>
+            <ol>
+              <li>Aprovação da denominação social junto do Ministério da Justiça.</li>
+              <li>Outorga da Escritura Notarial de Constituição (<em>Akta Pendirian</em>).</li>
+              <li>Obtenção do NIF da empresa (NPWP) e Número de Identificação de Empresa (NIB).</li>
+            </ol>
+          </section>
+
+          <!-- Article CTA Box (PT) -->
+          <div class="article-cta-box">
+            <h3 class="article-cta-title">Planeia Expandir a sua Empresa para a Indonésia?</h3>
+            <p class="article-cta-desc">Fale diretamente com a nossa equipa jurídica e de consultoria bilateral na LUSONUSA.</p>
+            <a href="https://wa.me/351000000000?text=Olá%20LUSONUSA!%20Gostaria%20de%20informações%20sobre%20a%20criação%20de%20uma%20empresa%20PT%20PMA." target="_blank" class="resolver-wa-btn" style="max-width: 300px; margin: 0 auto; padding: 10px 20px; font-size: 0.85rem;">
+              <i data-lucide="message-square"></i> Contactar via WhatsApp
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Article Page Compact Footer -->
+  <footer class="article-footer-compact">
+    <div class="article-footer-container">
+      <div class="article-footer-brand">
+        <span class="article-footer-logo">LUSONUSA</span>
+        <span class="article-footer-tag">Bilateral Advisory • Portugal & Indonesia</span>
+      </div>
+      <div class="article-footer-info">
+        <p>Mon–Fri 10:00–16:00 WET (Portugal) / 16:00–22:00 WIB (Indonesia) • <a href="mailto:contact@lusonusa.agency">contact@lusonusa.agency</a> • Operating as PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah)</p>
+        <p>Consultations in English & Indonesian • Legal notarization via certified Portuguese Notários</p>
+        <p class="article-footer-copy">&copy; 2026 LUSONUSA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    lucide.createIcons();
+
+    // Reading Progress Bar Script
+    window.onscroll = function() {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
+
+      // Active TOC link highlighting
+      const sections = document.querySelectorAll("article section");
+      const navLinks = document.querySelectorAll(".toc-list a");
+      
+      let currentSection = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (pageYOffset >= sectionTop) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + currentSection) {
+          link.classList.add("active");
+        }
+      });
+    };
+  </script>
+  <script src="article-i18n.js"></script>
+</body>
+</html>
