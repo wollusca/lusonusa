@@ -47,7 +47,45 @@
         <button class="nav-lang-btn" data-lang="id" aria-pressed="false">ID</button>
       </div>
     </div>
+
+    <!-- Mobile Navigation Trigger Button (Visible <= 768px) -->
+    <button class="mobile-nav-trigger" id="mobile-nav-trigger" aria-label="Open main menu" aria-expanded="false">
+      <span class="mobile-nav-trigger-label">MENU</span>
+      <span class="hamburger-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
   </nav>
+
+  <!-- Mobile Menu Glass Overlay (Fullscreen / Glass Panel) -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true">
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-header">
+        <a href="#" class="mobile-menu-brand">LUSONUSA</a>
+        <div class="nav-lang mobile-lang" role="group" aria-label="Language selector">
+          <button class="nav-lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button class="nav-lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+          <button class="nav-lang-btn" data-lang="id" aria-pressed="false">ID</button>
+        </div>
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-links">
+        <a href="#resolver" class="mobile-menu-link" data-i18n="nav.services">Services</a>
+        <a href="#workflow" class="mobile-menu-link" data-i18n="nav.process">Process</a>
+        <a href="#team" class="mobile-menu-link" data-i18n="nav.team">Team</a>
+        <a href="#footer" class="mobile-menu-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <p class="mobile-menu-tagline">LUSONUSA Bilateral Advisory</p>
+        <p class="mobile-menu-subtag">Portugal • Indonesia</p>
+      </div>
+    </div>
+  </div>
 
 
   <!-- ═══════════════════════════════════════════════════════════════

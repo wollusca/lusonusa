@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguageSystem();
   initScrollReveal();
   initVideoSupport();
+  initMobileMenu();
 });
 
 
@@ -1205,4 +1206,53 @@ function switchInsightTab(tab) {
     btnPinned.classList.remove('active');
     btnLatest.classList.add('active');
   }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   9. MOBILE NAVIGATION MENU
+   ═══════════════════════════════════════════════════════════════ */
+function initMobileMenu() {
+  const trigger = document.getElementById('mobile-nav-trigger');
+  const overlay = document.getElementById('mobile-menu-overlay');
+  const backdrop = document.getElementById('mobile-menu-backdrop');
+  const closeBtn = document.getElementById('mobile-menu-close');
+  const links = document.querySelectorAll('.mobile-menu-link');
+
+  if (!trigger || !overlay) return;
+
+  function openMenu() {
+    overlay.classList.add('is-active');
+    overlay.setAttribute('aria-hidden', 'false');
+    trigger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    overlay.classList.remove('is-active');
+    overlay.setAttribute('aria-hidden', 'true');
+    trigger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  trigger.addEventListener('click', () => {
+    const isActive = overlay.classList.contains('is-active');
+    if (isActive) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (backdrop) backdrop.addEventListener('click', closeMenu);
+
+  links.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('is-active')) {
+      closeMenu();
+    }
+  });
 }
