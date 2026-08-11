@@ -113,11 +113,10 @@ function initHeroScrollTransition() {
       content.style.transform = `translateY(${(1 - contentEased) * 20}px)`;
     });
 
-    // ── Panels: brighten from 30% dimmed state ──
+    // ── Panels: gentle opacity adjustments on overlay during scroll without setting filter on panel container ──
     const brightnessProgress = easeOutCubic(progress);
-    const panelBrightness = 0.7 + brightnessProgress * 0.3; // 0.7 → 1.0
-    panels.forEach(panel => {
-      panel.style.filter = `brightness(${panelBrightness})`;
+    document.querySelectorAll('.hero-panel-gradient').forEach(overlay => {
+      overlay.style.opacity = Math.max(0.6, 1 - brightnessProgress * 0.3);
     });
 
     // ── Hover box expansion: unlocks ONLY after menu is fully revealed ──
@@ -1271,19 +1270,25 @@ function initVideoSupport() {
 
 /* ── YouTube Background Video Initializer (With Dual Desktop/Mobile Shorts Support) ── */
 function initYouTubeBackgrounds() {
+  const isMobileScreen = window.innerWidth <= 768;
   const wrappers = document.querySelectorAll('.hero-panel-yt-wrapper, .workflow-bg-video-wrapper');
   
   wrappers.forEach(wrapper => {
-    const isMobile = window.innerWidth <= 768;
+    const isHeroPanel = wrapper.classList.contains('hero-panel-yt-wrapper');
+
+    // Skip hero panel videos entirely on mobile (≤768px) — saves bandwidth
+    if (isHeroPanel && isMobileScreen) return;
+
     const desktopId = wrapper.getAttribute('data-yt-desktop') || wrapper.getAttribute('data-yt-id');
     const mobileId = wrapper.getAttribute('data-yt-mobile') || desktopId;
-    const activeId = (isMobile && mobileId) ? mobileId : desktopId;
+    const activeId = (isMobileScreen && mobileId) ? mobileId : desktopId;
 
     if (activeId && activeId.trim().length > 3) {
       const cleanId = activeId.trim();
+      const startTime = wrapper.getAttribute('data-yt-start') || '0';
       const iframe = document.createElement('iframe');
       iframe.className = wrapper.classList.contains('workflow-bg-video-wrapper') ? 'workflow-yt-iframe' : 'hero-panel-yt-iframe';
-      iframe.src = `https://www.youtube.com/embed/${cleanId}?autoplay=1&mute=1&loop=1&playlist=${cleanId}&controls=0&showinfo=0&autohide=1&modestbranding=1&enablejsapi=1&rel=0`;
+      iframe.src = `https://www.youtube.com/embed/${cleanId}?autoplay=1&mute=1&loop=1&playlist=${cleanId}&controls=0&showinfo=0&autohide=1&modestbranding=1&enablejsapi=1&rel=0&start=${startTime}&cc_load_policy=0&cc_lang_pref=off&hl=en&iv_load_policy=3&disablekb=1&fs=0&playsinline=1`;
       iframe.title = 'Background Video';
       iframe.allow = 'autoplay; encrypted-media';
       
@@ -1291,7 +1296,11 @@ function initYouTubeBackgrounds() {
       if (oldIframe) oldIframe.remove();
 
       wrapper.insertBefore(iframe, wrapper.firstChild);
-      wrapper.classList.add('active');
+      
+      // Delay active state slightly so YouTube initial boot/play button stays hidden
+      setTimeout(() => {
+        wrapper.classList.add('active');
+      }, 500);
     }
   });
 
@@ -1310,6 +1319,37 @@ function initYouTubeBackgrounds() {
     }, { threshold: 0.05 });
     observer.observe(workflowSection);
   }
+
+  // Initialize tablet scroll crossfade (after video iframes are created)
+  initTabletVideoCrossfade();
+}
+
+/* ── Tablet: Scroll-triggered Image-to-Video Crossfade ── */
+function initTabletVideoCrossfade() {
+  // Only run on touch devices with screens wider than 768px (tablets/iPads)
+  const isTablet = !matchMedia('(hover: hover) and (pointer: fine)').matches
+                   && window.innerWidth > 768;
+  if (!isTablet) return;
+
+  const heroContainer = document.querySelector('.split-hero-container');
+  const videoWrappers = document.querySelectorAll('.hero-panel-yt-wrapper.active');
+
+  if (!heroContainer || videoWrappers.length === 0) return;
+
+  // When hero has scrolled past ~15% → crossfade static image to video
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      videoWrappers.forEach(wrapper => {
+        if (entry.intersectionRatio < 0.85) {
+          wrapper.classList.add('video-revealed');
+        } else {
+          wrapper.classList.remove('video-revealed');
+        }
+      });
+    });
+  }, { threshold: [0.5, 0.85, 1.0] });
+
+  observer.observe(heroContainer);
 }
 
 /* ═══════════════════════════════════════════════════════════════
