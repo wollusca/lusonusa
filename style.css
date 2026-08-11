@@ -1824,7 +1824,17 @@ ul, ol {
 /* Mobile */
 @media (max-width: 768px) {
 
-  /* Nav pill: compact */
+  /* Fixed top navigation container position on mobile — top-right corner, clear of logo & content */
+  .site-nav {
+    top: 18px !important;
+    right: 18px !important;
+    left: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  /* Nav pill: hidden on mobile, replaced by top-right glass MENU button */
   .nav-pill {
     display: none !important;
   }
