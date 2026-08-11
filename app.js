@@ -246,24 +246,122 @@ function initTeamCards() {
   }
 
   cards.forEach(card => {
-    // ── Click / Toggle Flip ─────────────────────────────
-    card.addEventListener('click', () => {
-      const isFlipped = card.classList.toggle('is-flipped');
+    const cardInner = card.querySelector('.team-flip-card-inner');
+    if (!cardInner) return;
+
+    let currentAngle = 0; // Cumulative Y rotation angle in degrees
+    let startX = 0;
+    let startY = 0;
+    let initialAngle = 0;
+    let isDragging = false;
+    let isHorizontalGesture = false;
+
+    function setCardRotation(angle, animated = true, duration = 0.7) {
+      currentAngle = angle;
+      if (animated) {
+        cardInner.style.transition = `transform ${duration}s cubic-bezier(0.33, 1, 0.68, 1), -webkit-transform ${duration}s cubic-bezier(0.33, 1, 0.68, 1)`;
+      } else {
+        cardInner.style.transition = 'none';
+      }
+
+      cardInner.style.transform = `rotateY(${angle}deg)`;
+      cardInner.style.webkitTransform = `rotateY(${angle}deg)`;
+
+      // Card face is flipped if angle normalized modulo 360 is around 180deg
+      const norm = Math.abs(angle % 360);
+      const isFlipped = norm > 45 && norm < 315;
+      card.classList.toggle('is-flipped', isFlipped);
       card.setAttribute('aria-expanded', isFlipped ? 'true' : 'false');
+    }
+
+    // Touch Event Listeners for Touchscreens & Tablets
+    card.addEventListener('touchstart', (e) => {
+      if (e.touches.length !== 1) return;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      initialAngle = currentAngle;
+      isDragging = true;
+      isHorizontalGesture = false;
+      hideBadge();
+    }, { passive: true });
+
+    card.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const touchX = e.touches[0].clientX;
+      const touchY = e.touches[0].clientY;
+      const deltaX = touchX - startX;
+      const deltaY = touchY - startY;
+
+      // Lock direction after 10px movement
+      if (!isHorizontalGesture) {
+        if (Math.abs(deltaX) > 10 && Math.abs(deltaX) > Math.abs(deltaY)) {
+          isHorizontalGesture = true;
+        } else if (Math.abs(deltaY) > 10) {
+          isDragging = false;
+          return;
+        }
+      }
+
+      if (isHorizontalGesture) {
+        if (e.cancelable) e.preventDefault();
+        const cardWidth = card.offsetWidth || 300;
+        // Dragging full card width rotates 180 degrees
+        const angleChange = (deltaX / cardWidth) * 180;
+        setCardRotation(initialAngle + angleChange, false);
+      }
+    }, { passive: false });
+
+    function handleTouchEnd(e) {
+      if (!isDragging) return;
+      isDragging = false;
+
+      const touch = (e.changedTouches && e.changedTouches.length) ? e.changedTouches[0] : null;
+      const deltaX = touch ? (touch.clientX - startX) : 0;
+
+      if (isHorizontalGesture && Math.abs(deltaX) > 30) {
+        // Complete the flip in the direction of finger drag
+        if (deltaX > 0) {
+          // Swiped Right -> increase rotation to next +180 step
+          const target = Math.ceil(initialAngle / 180) * 180;
+          const finalAngle = (target > initialAngle) ? target : (initialAngle + 180);
+          setCardRotation(finalAngle, true, 0.7);
+        } else {
+          // Swiped Left -> decrease rotation to next -180 step
+          const target = Math.floor(initialAngle / 180) * 180;
+          const finalAngle = (target < initialAngle) ? target : (initialAngle - 180);
+          setCardRotation(finalAngle, true, 0.7);
+        }
+      } else if (isHorizontalGesture) {
+        // Dragged less than 30px -> snap back smoothly to nearest 180 step
+        const snapAngle = Math.round(initialAngle / 180) * 180;
+        setCardRotation(snapAngle, true, 0.4);
+      }
+
+      isHorizontalGesture = false;
+    }
+
+    card.addEventListener('touchend', handleTouchEnd, { passive: true });
+    card.addEventListener('touchcancel', handleTouchEnd, { passive: true });
+
+    // Click / Tap Fallback (for mouse clicks or simple touch taps)
+    card.addEventListener('click', (e) => {
+      if (isHorizontalGesture) return; // Ignore if user was swiping
+      const nextAngle = (currentAngle % 180 === 0) ? (currentAngle + 180) : Math.round(currentAngle / 180) * 180;
+      setCardRotation(nextAngle, true, 0.75);
       hideBadge();
     });
 
     card.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        card.click();
+        const nextAngle = (currentAngle % 180 === 0) ? (currentAngle + 180) : Math.round(currentAngle / 180) * 180;
+        setCardRotation(nextAngle, true, 0.75);
       }
     });
 
-    // ── Mouse Follower Badge (Desktop) ──────────────────
+    // Mouse Follower Badge (Desktop)
     if (badge) {
       card.addEventListener('mousemove', (e) => {
-        // Only show if card is UNFLIPPED
         if (!card.classList.contains('is-flipped')) {
           badge.style.left = `${e.clientX}px`;
           badge.style.top = `${e.clientY}px`;
@@ -272,41 +370,10 @@ function initTeamCards() {
           hideBadge();
         }
       });
-
       card.addEventListener('mouseleave', () => {
         hideBadge();
       });
     }
-
-    // ── Touch & Swipe Gesture Handler (Tablet / Mobile) ──
-    let touchStartX = 0;
-    let touchStartY = 0;
-
-    card.addEventListener('touchstart', (e) => {
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
-    }, { passive: true });
-
-    card.addEventListener('touchend', (e) => {
-      const touchEndX = e.changedTouches[0].clientX;
-      const touchEndY = e.changedTouches[0].clientY;
-      const deltaX = touchEndX - touchStartX;
-      const deltaY = touchEndY - touchStartY;
-
-      // Horizontal swipe detection (>35px gesture)
-      if (Math.abs(deltaX) > 35 && Math.abs(deltaX) > Math.abs(deltaY)) {
-        if (deltaX < 0) {
-          // Swipe Left -> Flip right-to-left
-          card.classList.add('is-flipped');
-          card.setAttribute('aria-expanded', 'true');
-        } else {
-          // Swipe Right -> Flip back
-          card.classList.remove('is-flipped');
-          card.setAttribute('aria-expanded', 'false');
-        }
-        hideBadge();
-      }
-    }, { passive: true });
   });
 }
 
