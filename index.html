@@ -114,10 +114,13 @@
       <div class="split-hero-container">
         <!-- LEFT PANEL — LUSO (Portugal → Indonesia) -->
         <div class="hero-panel luso" id="panel-luso" role="button" tabindex="0" aria-label="Explore services for Portuguese entities entering Indonesia">
-          <!-- Video Background (hidden, activate by adding source) -->
+          <!-- Video Background (Local MP4 option) -->
           <video class="hero-panel-video" muted loop playsinline preload="none" aria-hidden="true">
             <!-- <source src="videos/portugal-bg.mp4" type="video/mp4"> -->
           </video>
+          <!-- YouTube Video Background Container (Fill data-yt-id with any YouTube Video ID) -->
+          <div class="hero-panel-yt-wrapper" id="yt-luso-wrapper" data-yt-id="" aria-hidden="true"></div>
+
           <div class="hero-panel-content" id="hero-content-luso">
             <span class="hero-panel-tag">PT → ID</span>
             <h2 class="hero-panel-headline">LUSO</h2>
@@ -126,7 +129,7 @@
               <span class="hero-pill"><i data-lucide="shield-check"></i> <span data-i18n="hero.luso.pill1">Company Verification</span></span>
               <span class="hero-pill"><i data-lucide="building-2"></i> <span data-i18n="hero.luso.pill2">PT PMA Setup</span></span>
               <span class="hero-pill"><i data-lucide="ship"></i> <span data-i18n="hero.luso.pill3">Export-Import Advisory</span></span>
-              <span class="hero-pill"><i data-lucide="passport"></i> <span data-i18n="hero.luso.pill4">Indonesia Visa & KITAS</span></span>
+              <span class="hero-pill"><i data-lucide="file-badge"></i> <span data-i18n="hero.luso.pill4">Indonesia Visa & KITAS</span></span>
               <span class="hero-pill"><i data-lucide="boxes"></i> <span data-i18n="hero.luso.pill5">Product Sourcing</span></span>
             </div>
           </div>
@@ -135,10 +138,13 @@
 
         <!-- RIGHT PANEL — NUSA (Indonesia → Portugal) -->
         <div class="hero-panel nusa" id="panel-nusa" role="button" tabindex="0" aria-label="Explore services for Indonesians in or moving to Portugal">
-          <!-- Video Background (hidden, activate by adding source) -->
+          <!-- Video Background (Local MP4 option) -->
           <video class="hero-panel-video" muted loop playsinline preload="none" aria-hidden="true">
             <!-- <source src="videos/indonesia-bg.mp4" type="video/mp4"> -->
           </video>
+          <!-- YouTube Video Background Container (Fill data-yt-id with any YouTube Video ID) -->
+          <div class="hero-panel-yt-wrapper" id="yt-nusa-wrapper" data-yt-id="" aria-hidden="true"></div>
+
           <div class="hero-panel-content" id="hero-content-nusa">
             <span class="hero-panel-tag">ID → PT</span>
             <h2 class="hero-panel-headline">NUSA</h2>
@@ -220,60 +226,73 @@
          SECTION 3: HOW WE WORK & ASSIST YOU (4-Step Journey & Pathways)
          ═══════════════════════════════════════════════════════════════ -->
     <section id="workflow" class="section-workflow" aria-labelledby="workflow-heading">
+      <!-- Fixed Background YouTube Video Container (XtQb3t_2SPA) -->
+      <div class="workflow-bg-video-wrapper" id="workflow-bg-video" data-yt-id="XtQb3t_2SPA" aria-hidden="true">
+        <div class="workflow-bg-video-overlay"></div>
+      </div>
+
       <div class="section-container">
         <span class="section-eyebrow" data-i18n="workflow.eyebrow">Our Guarantee & Promise</span>
         <h2 id="workflow-heading" class="section-title" data-i18n="workflow.title">How We Support & Guide You</h2>
         <p class="section-subtitle" data-i18n="workflow.subtitle">A friendly, step-by-step approach designed to give you clarity, peace of mind, and real solutions.</p>
 
-        <div class="workflow-grid workflow-grid-4">
+        <div class="workflow-grid">
           <!-- Step 1 -->
           <article class="workflow-card" id="workflow-step-1">
-            <div class="workflow-card-header">
-              <span class="workflow-card-number">01</span>
-              <span class="workflow-step-badge free-badge" data-i18n="workflow.s1.badge">100% Free & Casual</span>
+            <div class="workflow-card-body">
+              <div class="workflow-card-header">
+                <span class="workflow-card-number">01</span>
+                <span class="workflow-step-badge free-badge" data-i18n="workflow.s1.badge">100% Free & Open</span>
+              </div>
+              <h3 class="workflow-card-title" data-i18n="workflow.s1.title">Tell Us Your Challenge</h3>
+              <p class="workflow-card-desc" data-i18n="workflow.s1.desc">Send a quick WhatsApp message detailing your goals. No fees, no obligations—just a friendly team ready to listen.</p>
             </div>
-            <div class="workflow-card-icon"><i data-lucide="message-square-text"></i></div>
-            <h3 class="workflow-card-title" data-i18n="workflow.s1.title">Tell Us What's On Your Mind</h3>
-            <p class="workflow-card-desc" data-i18n="workflow.s1.desc">Send us a quick message via WhatsApp detailing your challenge. No fees, no obligations—just a friendly listening ear ready to help.</p>
+            <a href="https://wa.me/351930534440?text=Hello%20LUSONUSA!%20I%20would%20like%20to%20consult%20with%20your%20team." target="_blank" rel="noopener noreferrer" class="workflow-wa-btn">
+              <i data-lucide="message-square"></i>
+              <span data-i18n="workflow.s1.btn">Chat on WhatsApp</span>
+            </a>
           </article>
 
           <div class="workflow-connector" aria-hidden="true"><i data-lucide="chevron-right"></i></div>
 
           <!-- Step 2 -->
           <article class="workflow-card" id="workflow-step-2">
-            <div class="workflow-card-header">
-              <span class="workflow-card-number">02</span>
-              <span class="workflow-step-badge prep-badge" data-i18n="workflow.s2.badge">1–2 Days Research</span>
+            <div class="workflow-card-body">
+              <div class="workflow-card-header">
+                <span class="workflow-card-number">02</span>
+                <span class="workflow-step-badge prep-badge" data-i18n="workflow.s2.badge">1–2 Days Research</span>
+              </div>
+              <h3 class="workflow-card-title" data-i18n="workflow.s2.title">We Prepare Your Options</h3>
+              <p class="workflow-card-desc" data-i18n="workflow.s2.desc">Before we talk, our team takes 1–2 days to analyze legal rules and prepare concrete, actionable steps for your case.</p>
             </div>
-            <div class="workflow-card-icon"><i data-lucide="search-check"></i></div>
-            <h3 class="workflow-card-title" data-i18n="workflow.s2.title">We Prepare Before We Talk</h3>
-            <p class="workflow-card-desc" data-i18n="workflow.s2.desc">Before our call, our team takes 1–2 business days to review your case, research legal rules, and prepare actionable steps so our talk is genuinely useful.</p>
           </article>
 
           <div class="workflow-connector" aria-hidden="true"><i data-lucide="chevron-right"></i></div>
 
           <!-- Step 3 -->
           <article class="workflow-card" id="workflow-step-3">
-            <div class="workflow-card-header">
-              <span class="workflow-card-number">03</span>
-              <span class="workflow-step-badge free-badge" data-i18n="workflow.s3.badge">Friendly & Free</span>
+            <div class="workflow-card-body">
+              <div class="workflow-card-header">
+                <span class="workflow-card-number">03</span>
+                <span class="workflow-step-badge free-badge" data-i18n="workflow.s3.badge">Complimentary 1-on-1</span>
+              </div>
+              <h3 class="workflow-card-title" data-i18n="workflow.s3.title">Initial Strategic Call</h3>
+              <p class="workflow-card-desc" data-i18n="workflow.s3.desc">A focused 1-on-1 consultation to explore your roadmap. Simple cases receive step-by-step guidance completely free.</p>
             </div>
-            <div class="workflow-card-icon"><i data-lucide="phone-call"></i></div>
-            <h3 class="workflow-card-title" data-i18n="workflow.s3.title">Warm Initial Consultation</h3>
-            <p class="workflow-card-desc" data-i18n="workflow.s3.desc">A relaxed 1-on-1 discussion to explore your options. If your problem is simple, we will give you the exact step-by-step roadmap to solve it yourself—completely free.</p>
           </article>
 
           <div class="workflow-connector" aria-hidden="true"><i data-lucide="chevron-right"></i></div>
 
           <!-- Step 4 -->
           <article class="workflow-card" id="workflow-step-4">
-            <div class="workflow-card-header">
-              <span class="workflow-card-number">04</span>
-              <span class="workflow-step-badge action-badge" data-i18n="workflow.s4.badge">Transparent & Fair</span>
+            <div class="workflow-card-body">
+              <div class="workflow-card-header">
+                <span class="workflow-card-number">04</span>
+                <span class="workflow-step-badge action-badge" data-i18n="workflow.s4.badge">Clear Upfront Pricing</span>
+              </div>
+              <h3 class="workflow-card-title" data-i18n="workflow.s4.title">Tailored Representation</h3>
+              <p class="workflow-card-desc" data-i18n="workflow.s4.desc">Need hands-on help? We offer flexible assistance—from document notarization to on-the-ground support—with all fees agreed upfront.</p>
             </div>
-            <div class="workflow-card-icon"><i data-lucide="compass"></i></div>
-            <h3 class="workflow-card-title" data-i18n="workflow.s4.title">Tailored Support, Your Way</h3>
-            <p class="workflow-card-desc" data-i18n="workflow.s4.desc">If you'd like us by your side, we offer flexible assistance—from self-guided roadmaps to document notarization and ground escort—at clear, honest rates.</p>
           </article>
         </div>
 
@@ -288,7 +307,7 @@
               <div class="pathway-icon free-path"><i data-lucide="heart-handshake"></i></div>
               <h4 class="pathway-name" data-i18n="pathway.p1.name">1. Free Community Advice</h4>
               <p class="pathway-desc" data-i18n="pathway.p1.desc">Basic questions & general guidance answered during the free call. Perfect if you can handle filings yourself.</p>
-              <div class="pathway-price" data-i18n="pathway.p1.price">€0 • Pro-Bono</div>
+              <div class="pathway-price" data-i18n="pathway.p1.price">€0 • Free Consultation</div>
             </div>
 
             <div class="pathway-card">
@@ -299,10 +318,10 @@
             </div>
 
             <div class="pathway-card">
-              <div class="pathway-icon escort-path"><i data-lucide="user-check"></i></div>
-              <h4 class="pathway-name" data-i18n="pathway.p3.name">3. Ground Escort & Guide</h4>
-              <p class="pathway-desc" data-i18n="pathway.p3.desc">In-person attendance for AIMA appointments, Bank visits, PT PMA corporate setups, or bilingual local guide escort.</p>
-              <div class="pathway-price" data-i18n="pathway.p3.price">Fixed Package or Hourly</div>
+              <div class="pathway-icon ground-path"><i data-lucide="user-check"></i></div>
+              <h4 class="pathway-name" data-i18n="pathway.p3.name">3. In-Person Ground Accompaniment</h4>
+              <p class="pathway-desc" data-i18n="pathway.p3.desc">In-person attendance for AIMA appointments, Bank visits, PT PMA corporate setups, or bilingual local field accompaniment.</p>
+              <div class="pathway-price" data-i18n="pathway.p3.price">€15 – €30 / hour or Fixed Package</div>
             </div>
           </div>
           <p class="pathways-equity-note" data-i18n="pathways.note">
@@ -496,7 +515,7 @@
           <!-- 1. Featured Active Article (EN + PT) -->
           <article class="insight-compact-row featured">
             <div class="insight-row-left">
-              <span class="insight-tag-mini"><i data-lucide="passport"></i> Indonesia Visas <span style="margin-left: 6px; padding: 1px 6px; background: rgba(59, 130, 246, 0.2); border-radius: 8px; font-weight: 700; color: #60a5fa; font-size: 0.7rem;">EN • PT</span></span>
+              <span class="insight-tag-mini"><i data-lucide="file-badge"></i> Indonesia Visas <span style="margin-left: 6px; padding: 1px 6px; background: rgba(59, 130, 246, 0.2); border-radius: 8px; font-weight: 700; color: #60a5fa; font-size: 0.7rem;">EN • PT</span></span>
               <h3 class="insight-row-title">
                 <a href="/articles/indonesia-visa-guide-2026.html">Navigating Indonesian Visas: B211A, Investor KITAS & PT PMA Guide (2026)</a>
               </h3>

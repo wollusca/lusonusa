@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguageSystem();
   initScrollReveal();
   initVideoSupport();
+  initYouTubeBackgrounds();
   initMobileMenu();
 });
 
@@ -245,6 +246,16 @@ function initTeamCards() {
     if (badge) badge.classList.remove('active');
   }
 
+  function selectTeamCard(targetCard) {
+    cards.forEach(c => {
+      if (c === targetCard) {
+        c.classList.add('is-selected');
+      } else {
+        c.classList.remove('is-selected');
+      }
+    });
+  }
+
   cards.forEach(card => {
     const cardInner = card.querySelector('.team-flip-card-inner');
     if (!cardInner) return;
@@ -277,6 +288,7 @@ function initTeamCards() {
     // Touch Event Listeners for Touchscreens & Tablets
     card.addEventListener('touchstart', (e) => {
       if (e.touches.length !== 1) return;
+      selectTeamCard(card);
       startX = e.touches[0].clientX;
       startY = e.touches[0].clientY;
       initialAngle = currentAngle;
@@ -287,6 +299,7 @@ function initTeamCards() {
 
     card.addEventListener('touchmove', (e) => {
       if (!isDragging) return;
+      selectTeamCard(card);
       const touchX = e.touches[0].clientX;
       const touchY = e.touches[0].clientY;
       const deltaX = touchX - startX;
@@ -313,6 +326,7 @@ function initTeamCards() {
 
     function handleTouchEnd(e) {
       if (!isDragging) return;
+      selectTeamCard(card);
       isDragging = false;
 
       const touch = (e.changedTouches && e.changedTouches.length) ? e.changedTouches[0] : null;
@@ -345,6 +359,7 @@ function initTeamCards() {
 
     // Click / Tap Fallback (for mouse clicks or simple touch taps)
     card.addEventListener('click', (e) => {
+      selectTeamCard(card);
       if (isHorizontalGesture) return; // Ignore if user was swiping
       const nextAngle = (currentAngle % 180 === 0) ? (currentAngle + 180) : Math.round(currentAngle / 180) * 180;
       setCardRotation(nextAngle, true, 0.75);
@@ -489,7 +504,7 @@ const problemMatrix = {
       },
       bullets: {
         en: [
-          'Private bilingual local guide & orientation escort for business or leisure trips.',
+          'Private bilingual local guide & orientation accompaniment for business or leisure trips.',
           'Customized itinerary planning & local travel recommendations across Portugal.',
           'Cultural orientation & local insider safety, dining, and transit tips.'
         ],
@@ -544,34 +559,34 @@ const problemMatrix = {
   ],
   luso: [
     {
-      id: 'partner-scam-check',
-      icon: 'shield-check',
+      id: 'indonesia-product-sourcing',
+      icon: 'boxes',
       label: {
-        en: 'Company Verification & Fraud Prevention',
-        pt: 'Verificação de Empresa & Prevenção de Burlas',
-        id: 'Verifikasi Perusahaan & Pencegahan Penipuan'
+        en: 'Product Sourcing from Indonesia',
+        pt: 'Procura de Produtos e Fornecedores na Indonésia',
+        id: 'Pencarian Produk & Supplier di Indonesia'
       },
       bullets: {
         en: [
-          'Validation of company and business partner legitimacy in Indonesia.',
-          'Facilitation of online meetings with identity and credential verification.',
-          'Minimization of operational risks in international transactions.'
+          'Identification and vetting of reliable Indonesian manufacturers and suppliers.',
+          'Sample inspection, quality control advisory, and direct factory communication.',
+          'Connection with verified exporters across furniture, handicrafts, textiles, and commodities.'
         ],
         pt: [
-          'Validação de legitimidade de empresas e parceiros comerciais na Indonésia.',
-          'Facilitação de reuniões online com verificação de identidade e credenciais.',
-          'Minimização de riscos operacionais em transações internacionais.'
+          'Identificação e verificação de fabricantes e fornecedores de confiança na Indonésia.',
+          'Inspeção de amostras, controlo de qualidade e comunicação direta com fábricas.',
+          'Conexão com exportadores verificados de mobiliário, artesanato, têxteis e mercadorias.'
         ],
         id: [
-          'Validasi legitimasi perusahaan dan mitra bisnis di Indonesia.',
-          'Fasilitasi pertemuan online dengan verifikasi identitas dan kredensial.',
-          'Minimalisasi risiko operasional dalam transaksi internasional.'
+          'Identifikasi & verifikasi produsen/supplier terpercaya di Indonesia.',
+          'Inspeksi sampel, penasihat kontrol kualitas, & komunikasi pabrik langsung.',
+          'Koneksi dengan eksportir terverifikasi sektor mebel, kerajinan, tekstil, & komoditas.'
         ]
       },
       waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I\'d like to request Company Verification in Indonesia. Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Gostaria de agendar Verificação de Empresa na Indonésia. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya ingin konsultasi Verifikasi Perusahaan di Indonesia. Detail: [jelaskan detail di sini]'
+        en: 'Hello LUSONUSA! My name is [Name]. I am looking for Product Sourcing & Supplier Matchmaking in Indonesia. Details: [explain details here]',
+        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Procuro serviços de Procura de Produtos e Fornecedores na Indonésia. Detalhes: [explique detalhes aqui]',
+        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya mencari layanan Pencarian Produk & Supplier di Indonesia. Detail: [jelaskan detail di sini]'
       }
     },
     {
@@ -603,6 +618,37 @@ const problemMatrix = {
         en: 'Hello LUSONUSA! My name is [Name]. I need advisory for Company Setup in Indonesia (PT PMA). Details: [explain details here]',
         pt: 'Olá LUSONUSA! O meu nome é [Nome]. Preciso de consultoria para Abertura de Empresa na Indonésia (PT PMA). Detalhes: [explique detalhes aqui]',
         id: 'Halo LUSONUSA! Nama saya [Nama]. Saya butuh konsultasi Pendirian PT PMA di Indonesia. Detail: [jelaskan detail di sini]'
+      }
+    },
+    {
+      id: 'partner-scam-check',
+      icon: 'shield-check',
+      label: {
+        en: 'Company Verification & Fraud Prevention',
+        pt: 'Verificação de Empresa & Prevenção de Burlas',
+        id: 'Verifikasi Perusahaan & Pencegahan Penipuan'
+      },
+      bullets: {
+        en: [
+          'Validation of company and business partner legitimacy in Indonesia.',
+          'Facilitation of online meetings with identity and credential verification.',
+          'Minimization of operational risks in international transactions.'
+        ],
+        pt: [
+          'Validação de legitimidade de empresas e parceiros comerciais na Indonésia.',
+          'Facilitação de reuniões online com verificação de identidade e credenciais.',
+          'Minimização de riscos operacionais em transações internacionais.'
+        ],
+        id: [
+          'Validasi legitimasi perusahaan dan mitra bisnis di Indonesia.',
+          'Fasilitasi pertemuan online dengan verifikasi identitas dan kredensial.',
+          'Minimalisasi risiko operasional dalam transaksi internasional.'
+        ]
+      },
+      waText: {
+        en: 'Hello LUSONUSA! My name is [Name]. I\'d like to request Company Verification in Indonesia. Details: [explain details here]',
+        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Gostaria de agendar Verificação de Empresa na Indonésia. Detalhes: [explique detalhes aqui]',
+        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya ingin konsultasi Verifikasi Perusahaan di Indonesia. Detail: [jelaskan detail di sini]'
       }
     },
     {
@@ -665,37 +711,6 @@ const problemMatrix = {
         en: 'Hello LUSONUSA! My name is [Name]. I need consultation regarding Indonesia Visa & KITAS (Business / Residence). Details: [explain details here]',
         pt: 'Olá LUSONUSA! O meu nome é [Nome]. Preciso de consultoria sobre Vistos e KITAS para a Indonésia. Detalhes: [explique detalhes aqui]',
         id: 'Halo LUSONUSA! Nama saya [Nama]. Saya membutuhkan konsultasi Visa & KITAS Indonesia. Detail: [jelaskan detail di sini]'
-      }
-    },
-    {
-      id: 'indonesia-product-sourcing',
-      icon: 'boxes',
-      label: {
-        en: 'Product Sourcing from Indonesia',
-        pt: 'Procura de Produtos e Fornecedores na Indonésia',
-        id: 'Pencarian Produk & Supplier di Indonesia'
-      },
-      bullets: {
-        en: [
-          'Identification and vetting of reliable Indonesian manufacturers and suppliers.',
-          'Sample inspection, quality control advisory, and direct factory communication.',
-          'Connection with verified exporters across furniture, handicrafts, textiles, and commodities.'
-        ],
-        pt: [
-          'Identificação e verificação de fabricantes e fornecedores de confiança na Indonésia.',
-          'Inspeção de amostras, controlo de qualidade e comunicação direta com fábricas.',
-          'Conexão com exportadores verificados de mobiliário, artesanato, têxteis e mercadorias.'
-        ],
-        id: [
-          'Identifikasi & verifikasi produsen/supplier terpercaya di Indonesia.',
-          'Inspeksi sampel, penasihat kontrol kualitas, & komunikasi pabrik langsung.',
-          'Koneksi dengan eksportir terverifikasi sektor mebel, kerajinan, tekstil, & komoditas.'
-        ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I am looking for Product Sourcing & Supplier Matchmaking in Indonesia. Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Procuro serviços de Procura de Produtos e Fornecedores na Indonésia. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya mencari layanan Pencarian Produk & Supplier di Indonesia. Detail: [jelaskan detail di sini]'
       }
     }
   ]
@@ -872,31 +887,32 @@ const translations = {
     'workflow.eyebrow': 'Our Guarantee & Promise',
     'workflow.title': 'How We Support & Guide You',
     'workflow.subtitle': 'A friendly, step-by-step approach designed to give you clarity, peace of mind, and real solutions.',
-    'workflow.s1.badge': '100% Free & Casual',
-    'workflow.s1.title': "Tell Us What's On Your Mind",
-    'workflow.s1.desc': 'Send us a quick message via WhatsApp detailing your challenge. No fees, no obligations—just a friendly listening ear ready to help.',
+    'workflow.s1.badge': '100% Free & Open',
+    'workflow.s1.title': 'Tell Us Your Challenge',
+    'workflow.s1.desc': 'Send a quick WhatsApp message detailing your goals. No fees, no obligations—just a friendly team ready to listen.',
+    'workflow.s1.btn': 'Chat on WhatsApp',
     'workflow.s2.badge': '1–2 Days Research',
-    'workflow.s2.title': 'We Prepare Before We Talk',
-    'workflow.s2.desc': 'Before our call, our team takes 1–2 business days to review your case, research legal rules, and prepare actionable steps so our talk is genuinely useful.',
-    'workflow.s3.badge': 'Friendly & Free',
-    'workflow.s3.title': 'Warm Initial Consultation',
-    'workflow.s3.desc': 'A relaxed 1-on-1 discussion to explore your options. If your problem is simple, we will give you the exact step-by-step roadmap to solve it yourself—completely free.',
-    'workflow.s4.badge': 'Transparent & Fair',
-    'workflow.s4.title': 'Tailored Support, Your Way',
-    'workflow.s4.desc': "If you'd like us by your side, we offer flexible assistance—from self-guided roadmaps to document notarization and ground escort—at clear, honest rates.",
+    'workflow.s2.title': 'We Prepare Your Options',
+    'workflow.s2.desc': 'Before we talk, our team takes 1–2 days to analyze legal rules and prepare concrete, actionable steps for your case.',
+    'workflow.s3.badge': 'Complimentary 1-on-1',
+    'workflow.s3.title': 'Initial Strategic Call',
+    'workflow.s3.desc': 'A focused 1-on-1 consultation to explore your roadmap. Simple cases receive step-by-step guidance completely free.',
+    'workflow.s4.badge': 'Clear Upfront Pricing',
+    'workflow.s4.title': 'Tailored Representation',
+    'workflow.s4.desc': 'Need hands-on help? We offer flexible assistance—from document notarization to on-the-ground support—with all fees agreed upfront.',
 
     // Pathways
     'pathways.eyebrow': 'Resolution Pathways & Pricing Philosophy',
     'pathways.title': 'Transparent Options Built Around Your Needs',
     'pathway.p1.name': '1. Free Community Advice',
     'pathway.p1.desc': 'Basic questions & general guidance answered during the free call. Perfect if you can handle filings yourself.',
-    'pathway.p1.price': '€0 • Pro-Bono',
+    'pathway.p1.price': '€0 • Free Consultation',
     'pathway.p2.name': '2. Document & Report Prep',
     'pathway.p2.desc': 'Legalized translations (Notary), NIF/NISS setups, business roadmaps, and custom compliance reports.',
     'pathway.p2.price': 'Fixed Transparent Fee',
-    'pathway.p3.name': '3. Ground Escort & Guide',
-    'pathway.p3.desc': 'In-person attendance for AIMA appointments, Bank visits, PT PMA corporate setups, or bilingual local guide escort.',
-    'pathway.p3.price': 'Fixed Package or Hourly',
+    'pathway.p3.name': '3. In-Person Ground Accompaniment',
+    'pathway.p3.desc': 'In-person attendance for AIMA appointments, Bank visits, PT PMA corporate setups, or bilingual local field accompaniment.',
+    'pathway.p3.price': '€15 – €30 / hour or Fixed Package',
     'pathways.note': 'Purchasing Power Equity: We tailor our fees fairly—offering accessible rates for individual community members while providing enterprise-grade consulting for businesses.',
 
     // Insights
@@ -972,30 +988,31 @@ const translations = {
     'workflow.eyebrow': 'Nossa Garantia e Promessa',
     'workflow.title': 'Como Acompanhamos e Guiamos a Sua Jornada',
     'workflow.subtitle': 'Uma abordagem humana e acolhedora—concebida para lhe dar clareza, tranquilidade e soluções reais.',
-    'workflow.s1.badge': '100% Grátis & Sem Custos',
-    'workflow.s1.title': 'Partilhe a Sua Situação',
-    'workflow.s1.desc': 'Envie-nos uma breve mensagem pelo WhatsApp. Sem custos, sem compromisso—estamos aqui para ouvir e encontrar a melhor solução.',
-    'workflow.s2.badge': '1–2 Dias de Pesquisa',
-    'workflow.s2.title': 'Preparamos Tudo Antes de Falar',
-    'workflow.s2.desc': 'Antes da nossa conversa, a nossa equipa analisa o seu caso durante 1–2 dias para pesquisar requisitos legais e garantir soluções concretas.',
-    'workflow.s3.badge': 'Consulta Gratuita',
-    'workflow.s3.title': 'Consulta Inicial Amigável',
-    'workflow.s3.desc': 'Uma conversa tranquila de 1 para 1. Se a sua questão for simples, dar-lhe-emos o passo a passo exato para resolver sozinho sem qualquer custo.',
-    'workflow.s4.badge': 'Transparente e Justo',
-    'workflow.s4.title': 'Apoio À Sua Medida',
-    'workflow.s4.desc': 'Se desejar acompanhamento presencial ou técnico, oferecemos assistência flexível—desde traduções notariadas até apoio presencial—com preços claros e honestos.',
+    'workflow.s1.badge': '100% Grátis & Aberto',
+    'workflow.s1.title': 'Partilhe o Seu Desafio',
+    'workflow.s1.desc': 'Envie uma mensagem rápida pelo WhatsApp. Sem custos ou compromisso—apenas uma equipa pronta para escutar.',
+    'workflow.s1.btn': 'Conversar no WhatsApp',
+    'workflow.s2.badge': '1–2 Dias de Análise',
+    'workflow.s2.title': 'Preparamos o Seu Caso',
+    'workflow.s2.desc': 'Antes da conversa, analisamos o seu caso durante 1–2 dias para pesquisar requisitos legais e soluções concretas.',
+    'workflow.s3.badge': 'Sessão 1-on-1 Gratuita',
+    'workflow.s3.title': 'Discussão Estratégica',
+    'workflow.s3.desc': 'Uma consulta focada para explorar o seu plano. Casos simples recebem um guia passo a passo sem qualquer custo.',
+    'workflow.s4.badge': 'Preços Transparentes',
+    'workflow.s4.title': 'Acompanhamento Técnico',
+    'workflow.s4.desc': 'Precisa de apoio presencial? Oferecemos apoio flexível—desde traduções notariadas até apoio presencial—com taxas claras.',
 
     'pathways.eyebrow': 'Caminhos de Resolução e Filosofia de Preços',
     'pathways.title': 'Opções Transparentes Criadas para as Suas Necessidades',
     'pathway.p1.name': '1. Aconselhamento Comunitário Grátis',
     'pathway.p1.desc': 'Dúvidas básicas e orientação geral explicadas na consulta grátis. Ideal se puder tratar dos processos autonomamente.',
-    'pathway.p1.price': '€0 • Pro-Bono',
+    'pathway.p1.price': '€0 • Consulta Gratuita',
     'pathway.p2.name': '2. Preparação de Documentos e Relatórios',
     'pathway.p2.desc': 'Traduções legalizadas no Cartório, NIF/NISS, planos de negócios e relatórios de conformidade.',
     'pathway.p2.price': 'Taxa Fixa Transparente',
-    'pathway.p3.name': '3. Acompanhamento Presencial & Guia',
-    'pathway.p3.desc': 'Presença física na AIMA, visitas a Bancos, abertura de empresas PT PMA ou guia local bilingue.',
-    'pathway.p3.price': 'Pacote Fixo ou Hora',
+    'pathway.p3.name': '3. Acompanhamento Presencial',
+    'pathway.p3.desc': 'Presença física na AIMA, visitas a Bancos, abertura de empresas PT PMA ou acompanhamento bilingue no terreno.',
+    'pathway.p3.price': '€15 – €30 / hora ou Pacote Fixo',
     'pathways.note': 'Equidade de Poder de Compra: Adaptamos os nossos preços com justiça—oferecendo tarifas acessíveis a membros da comunidade e consultoria empresarial a negócios.',
 
     'team.eyebrow': 'Nossa Equipa',
@@ -1064,30 +1081,31 @@ const translations = {
     'workflow.eyebrow': 'Jaminan & Komitmen Kami',
     'workflow.title': 'Bagaimana Kami Mendampingi & Membantu Anda',
     'workflow.subtitle': 'Pendekatan 4 langkah yang ramah dan solutif—dirancang untuk memberikan kejelasan, ketenangan, dan solusi nyata.',
-    'workflow.s1.badge': '100% Gratis & Santai',
-    'workflow.s1.title': 'Ceritakan Kendala Anda',
-    'workflow.s1.desc': 'Kirimkan pesan singkat melalui WhatsApp mengenai masalah Anda. Tanpa biaya, tanpa komitmen—kami siap mendengarkan dan membantu.',
-    'workflow.s2.badge': '1–2 Hari Riset',
-    'workflow.s2.title': 'Kami Bersiap Sebelum Berdiskusi',
-    'workflow.s2.desc': 'Sebelum jadwal telepon, tim kami meluangkan 1–2 hari kerja untuk mempelajari masalah Anda dan menyiapkan solusi yang paling tepat.',
-    'workflow.s3.badge': 'Ramah & Gratis',
-    'workflow.s3.title': 'Konsultasi Awal yang Ramah',
-    'workflow.s3.desc': 'Diskusi santai 1-on-1 untuk membahas masalah Anda. Jika solusinya sederhana, kami berikan panduan lengkapnya agar bisa Anda urus sendiri secara gratis.',
-    'workflow.s4.badge': 'Transparan & Adil',
-    'workflow.s4.title': 'Dukungan Sesuai Kebutuhan',
-    'workflow.s4.desc': 'Jika Anda membutuhkan pendampingan langsung, kami siap membantu—dari panduan mandiri, penerjemah notaris, hingga pengawalan lokasi—dengan biaya yang jujur dan adil.',
+    'workflow.s1.badge': '100% Gratis & Terbuka',
+    'workflow.s1.title': 'Ceritakan Tantangan Anda',
+    'workflow.s1.desc': 'Kirim pesan singkat via WhatsApp mengenai kebutuhan Anda. Tanpa biaya atau komitmen—kami siap mendengarkan.',
+    'workflow.s1.btn': 'Chat via WhatsApp',
+    'workflow.s2.badge': '1–2 Hari Riset Legal',
+    'workflow.s2.title': 'Kami Siapkan Solusinya',
+    'workflow.s2.desc': 'Sebelum berdiskusi, tim kami meluangkan 1–2 hari untuk mempelajari aturan hukum dan menyiapkan langkah konkret.',
+    'workflow.s3.badge': 'Sesi 1-on-1 Bebas Biaya',
+    'workflow.s3.title': 'Diskusi Strategis Awal',
+    'workflow.s3.desc': 'Konsultasi terfokus 1-on-1 untuk memilih jalur terbaik. Masalah sederhana kami berikan panduan mandiri gratis.',
+    'workflow.s4.badge': 'Biaya Jelas di Awal',
+    'workflow.s4.title': 'Pendampingan Terukur',
+    'workflow.s4.desc': 'Butuh bantuan langsung? Kami hadirkan layanan fleksibel—dari penerjemahan notaris hingga pengawalan lapangan.',
 
     'pathways.eyebrow': 'Jalur Solusi & Filosofi Biaya',
     'pathways.title': 'Pilihan Transparan yang Disesuaikan dengan Kebutuhan Anda',
     'pathway.p1.name': '1. Bimbingan Komunitas Gratis',
     'pathway.p1.desc': 'Pertanyaan dasar & panduan umum dijawab saat konsultasi gratis. Cocok jika Anda ingin mengurus dokumen sendiri.',
-    'pathway.p1.price': '€0 • Pro-Bono',
+    'pathway.p1.price': '€0 • Konsultasi Gratis',
     'pathway.p2.name': '2. Legalisasi Dokumen & Laporan',
     'pathway.p2.desc': 'Penerjemahan terlegalisasi Notaris, pembuatan NIF/NISS, peta bisnis, dan laporan kepatuhan.',
     'pathway.p2.price': 'Biaya Paket Transparan',
-    'pathway.p3.name': '3. Pendampingan Lapangan & Tour',
-    'pathway.p3.desc': 'Pendampingan fisik di kantor AIMA, Bank, pendirian PT PMA, atau panduan lokal bilingual.',
-    'pathway.p3.price': 'Paket Fixo / Per Jam',
+    'pathway.p3.name': '3. Pendampingan Lapangan',
+    'pathway.p3.desc': 'Pendampingan fisik di kantor AIMA, Bank, pendirian PT PMA, atau pendamping lapangan bilingual.',
+    'pathway.p3.price': '€15 – €30 / jam atau Paket Fiks',
     'pathways.note': 'Keadilan Daya Beli: Kami menyesuaikan biaya secara adil—memberikan tarif yang terjangkau bagi perorangan dan layanan profesional bagi bisnis.',
 
     'team.eyebrow': 'Tim Kami',
@@ -1249,6 +1267,49 @@ function initVideoSupport() {
       observer.observe(video);
     }
   });
+}
+
+/* ── YouTube Background Video Initializer (With Dual Desktop/Mobile Shorts Support) ── */
+function initYouTubeBackgrounds() {
+  const wrappers = document.querySelectorAll('.hero-panel-yt-wrapper, .workflow-bg-video-wrapper');
+  
+  wrappers.forEach(wrapper => {
+    const isMobile = window.innerWidth <= 768;
+    const desktopId = wrapper.getAttribute('data-yt-desktop') || wrapper.getAttribute('data-yt-id');
+    const mobileId = wrapper.getAttribute('data-yt-mobile') || desktopId;
+    const activeId = (isMobile && mobileId) ? mobileId : desktopId;
+
+    if (activeId && activeId.trim().length > 3) {
+      const cleanId = activeId.trim();
+      const iframe = document.createElement('iframe');
+      iframe.className = wrapper.classList.contains('workflow-bg-video-wrapper') ? 'workflow-yt-iframe' : 'hero-panel-yt-iframe';
+      iframe.src = `https://www.youtube.com/embed/${cleanId}?autoplay=1&mute=1&loop=1&playlist=${cleanId}&controls=0&showinfo=0&autohide=1&modestbranding=1&enablejsapi=1&rel=0`;
+      iframe.title = 'Background Video';
+      iframe.allow = 'autoplay; encrypted-media';
+      
+      const oldIframe = wrapper.querySelector('iframe');
+      if (oldIframe) oldIframe.remove();
+
+      wrapper.insertBefore(iframe, wrapper.firstChild);
+      wrapper.classList.add('active');
+    }
+  });
+
+  // Observer to toggle fixed screen-pegged visibility when #workflow is in viewport
+  const workflowSection = document.getElementById('workflow');
+  const workflowBg = document.getElementById('workflow-bg-video');
+  if (workflowSection && workflowBg) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          workflowBg.classList.add('is-in-view');
+        } else {
+          workflowBg.classList.remove('is-in-view');
+        }
+      });
+    }, { threshold: 0.05 });
+    observer.observe(workflowSection);
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════
