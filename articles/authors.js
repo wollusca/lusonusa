@@ -37,10 +37,11 @@ window.LUSONUSA_AUTHORS = {
   'mia-gomes': {
     name: 'Mia Gomes',
     role: 'Translation Specialist',
-    title: 'Legal & Notarized Translation Lead',
+    title: 'Portuguese–Indonesian Translator & Interpreter',
     avatar: '/assets/articles/avatar-mia-96.jpg',
     image: '/assets/mia.jpg',
-    bio: 'Native bilingual (European Portuguese / Indonesian) translation specialist. Coordinates civil and corporate translations certified before Portuguese notaries.',
+    // Neutral title/bio pending confirmation of further credentials by Mia Gomes. Never "sworn".
+    bio: 'Portuguese–Indonesian translator and interpreter. Translations for use in Portugal are certified before a Portuguese notary.',
     sameAs: []
   },
   'joko-supriyanto': {

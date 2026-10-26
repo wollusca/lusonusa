@@ -50,7 +50,7 @@ Also update the "Last reviewed" line in the *Sources & review* box, and `article
   "lastReviewed": "2027-03-01",
   "reviewedBy": { "@id": "https://www.lusonusa.agency/#aditya-putra" } },
 { "@type": "Person", "@id": "https://www.lusonusa.agency/#mia-gomes",
-  "name": "Mia Gomes", "jobTitle": "Translation Specialist, Legal & Notarized Translation Lead",
+  "name": "Mia Gomes", "jobTitle": "Translation Specialist, Portuguese–Indonesian Translator & Interpreter",
   "image": "https://www.lusonusa.agency/assets/mia.jpg", "url": "https://www.lusonusa.agency/#team",
   "worksFor": { "@id": "https://www.lusonusa.agency/#organization" } }
 ```
@@ -65,6 +65,7 @@ Also update the "Last reviewed" line in the *Sources & review* box, and `article
 - **Travel:** recommendations and booking assistance only.
 - **Footer** (all pages; translated via `footer.disclaimer` in `article-i18n.js`): "LUSONUSA is a network of independent bilingual professionals in Portugal and Indonesia. Services are contracted directly with the professional who delivers them. Information and guidance, not legal advice." Add links to `/privacy.html` and `/terms.html`.
 - Every regulatory article needs a "Last reviewed" date and links to official sources. Review it at least every 6 months.
+- **Publication gate:** articles carry `<!-- DO NOT PUBLISH … -->` at the top until the owner has opened every primary source listed in `docs/research/article-claims-source-map.md`. Every regulatory claim cites instrument + article with a source link. Say *tradução certificada*, never *juramentada*, for services.
 - Unconfirmed facts get `<span class="verify-flag">…</span>` plus an `<!-- OWNER REVIEW: … -->` comment until confirmed.
 - WhatsApp links: `https://wa.me/351930534440?text=…(Ref: <article-id>)`.
 - Service hours: Mon–Fri, 10:00–16:00 Lisbon time.
