@@ -107,43 +107,43 @@ const problemMatrix = {
       },
       bullets: {
         en: [
-          'Assisted NIF & NISS acquisition without local bureaucracy hurdles.',
+          'Step-by-step accompaniment through the NIF & NISS applications, based on the official requirements.',
           'Bank account opening support & SIM card registration in Portugal.',
           'Document preparation guidance & in-person orientation for AIMA scheduling.'
         ],
         pt: [
-          'Assistência na obtenção de NIF e NISS sem obstáculos burocráticos.',
+          'Acompanhamento passo a passo nos pedidos de NIF e NISS, com base nos requisitos oficiais.',
           'Apoio na abertura de conta bancária e registo de cartão SIM em Portugal.',
           'Orientação na preparação documental e acompanhamento presencial para agendamento AIMA.'
         ],
         id: [
-          'Pendampingan perolehan NIF & NISS tanpa kendala birokrasi lokal.',
+          'Pendampingan langkah demi langkah pengurusan NIF & NISS, berdasarkan persyaratan resmi.',
           'Asistensi pembukaan rekening bank Portugal & registrasi SIM Card.',
           'Panduan persiapan dokumen & orientasi tatap muka untuk jadwal AIMA.'
         ]
       }
     },
     {
-      id: 'business-legal-docs',
+      id: 'business-docs',
       icon: 'file-check-2',
       label: {
-        en: 'Business & Legal Documents',
-        pt: 'Documentos Empresariais & Legais',
-        id: 'Dokumen Bisnis & Legalitas'
+        en: 'Business & Official Documents',
+        pt: 'Documentos Empresariais & Oficiais',
+        id: 'Dokumen Bisnis & Resmi'
       },
       bullets: {
         en: [
-          'Documentation guidance for business setup and contracts in Portugal.',
+          'Practical guidance on the documents usually needed to set up a business in Portugal, with referral to a licensed lawyer for contracts.',
           'Coordination of translations certified before a Portuguese notary (Indonesian ↔ European Portuguese).',
           'Document legalisation & Apostille assistance at the relevant institutions and the Embassy.'
         ],
         pt: [
-          'Orientação documental para constituição de empresas e contratos em Portugal.',
+          'Orientação prática sobre os documentos habitualmente necessários para criar uma empresa em Portugal, com encaminhamento para advogado habilitado no caso de contratos.',
           'Coordenação de traduções certificadas perante notário português (Indonésio ↔ Português Europeu).',
           'Assistência na legalização de documentos e Apostila em instituições relevantes e na Embaixada.'
         ],
         id: [
-          'Panduan dokumen untuk pendirian usaha dan kontrak bisnis di Portugal.',
+          'Panduan praktis tentang dokumen yang biasanya diperlukan untuk mendirikan usaha di Portugal, dengan rujukan ke pengacara berlisensi untuk urusan kontrak.',
           'Koordinasi terjemahan yang disertifikasi notaris Portugal (Bahasa Indonesia ↔ Portugis Portugal).',
           'Asistensi legalisasi dokumen & Apostille di instansi terkait dan Kedutaan.'
         ]
@@ -240,17 +240,17 @@ const problemMatrix = {
       bullets: {
         en: [
           'Identification and vetting of reliable Indonesian manufacturers and suppliers.',
-          'Sample inspection, quality control advisory, and direct factory communication.',
+          'Sample inspection, quality-control checks, and direct factory communication.',
           'Connection with verified exporters across furniture, handicrafts, textiles, and commodities.'
         ],
         pt: [
           'Identificação e verificação de fabricantes e fornecedores de confiança na Indonésia.',
-          'Inspeção de amostras, controlo de qualidade e comunicação direta com fábricas.',
+          'Inspeção de amostras, verificações de controlo de qualidade e comunicação direta com fábricas.',
           'Conexão com exportadores verificados de mobiliário, artesanato, têxteis e mercadorias.'
         ],
         id: [
           'Identifikasi & verifikasi produsen/supplier terpercaya di Indonesia.',
-          'Inspeksi sampel, penasihat kontrol kualitas, & komunikasi pabrik langsung.',
+          'Inspeksi sampel, pengecekan kontrol kualitas, & komunikasi pabrik langsung.',
           'Koneksi dengan eksportir terverifikasi sektor mebel, kerajinan, tekstil, & komoditas.'
         ]
       }
@@ -259,24 +259,24 @@ const problemMatrix = {
       id: 'pt-pma-setup',
       icon: 'building-2',
       label: {
-        en: 'Company Setup in Indonesia (PT PMA) & Taxes',
-        pt: 'Abertura de Empresa na Indonésia (PT PMA) & Impostos',
-        id: 'Pendirian PT PMA di Indonesia & Pajak'
+        en: 'Company Setup in Indonesia (PT PMA)',
+        pt: 'Abertura de Empresa na Indonésia (PT PMA)',
+        id: 'Pendirian PT PMA di Indonesia'
       },
       bullets: {
         en: [
-          'Guidance on the PT PMA structure for foreign investment.',
-          'Market entry strategy and tax framework advisory.',
+          'Information on how the PT PMA structure for foreign investment works, based on official sources.',
+          'Business guidance on market entry, with referral to licensed tax advisers in Indonesia.',
           'Direct connection with the Indonesia-Portugal Chamber of Commerce.'
         ],
         pt: [
-          'Orientação sobre a estrutura PT PMA para investimento estrangeiro.',
-          'Aconselhamento sobre estratégia de entrada no mercado e enquadramento fiscal.',
+          'Informação sobre o funcionamento da estrutura PT PMA para investimento estrangeiro, com base em fontes oficiais.',
+          'Orientação empresarial para a entrada no mercado, com encaminhamento para consultores fiscais habilitados na Indonésia.',
           'Conexão direta com a Câmara de Comércio e Indústria Indonésia-Portugal.'
         ],
         id: [
-          'Panduan struktur PT PMA untuk investasi asing.',
-          'Penasihat strategi masuk pasar dan kerangka pajak.',
+          'Informasi cara kerja struktur PT PMA untuk investasi asing, berdasarkan sumber resmi.',
+          'Panduan bisnis untuk masuk pasar, dengan rujukan ke konsultan pajak berlisensi di Indonesia.',
           'Koneksi langsung dengan Kamar Dagang Indonesia-Portugal.'
         ]
       }
@@ -285,25 +285,25 @@ const problemMatrix = {
       id: 'partner-scam-check',
       icon: 'shield-check',
       label: {
-        en: 'Company Verification & Fraud Prevention',
-        pt: 'Verificação de Empresa & Prevenção de Burlas',
-        id: 'Verifikasi Perusahaan & Pencegahan Penipuan'
+        en: 'Company & Partner Background Checks',
+        pt: 'Verificação de Empresas & Parceiros',
+        id: 'Pengecekan Latar Belakang Perusahaan & Mitra'
       },
       bullets: {
         en: [
-          'Validation of company and business partner legitimacy in Indonesia.',
+          'Checks of a company or partner’s public registration details in Indonesia.',
           'Facilitation of online meetings with identity and credential verification.',
-          'Minimization of operational risks in international transactions.'
+          'Practical pointers to help you spot common risks in international transactions.'
         ],
         pt: [
-          'Validação de legitimidade de empresas e parceiros comerciais na Indonésia.',
+          'Verificação dos dados de registo públicos de empresas ou parceiros na Indonésia.',
           'Facilitação de reuniões online com verificação de identidade e credenciais.',
-          'Minimização de riscos operacionais em transações internacionais.'
+          'Indicações práticas para ajudar a identificar riscos comuns em transações internacionais.'
         ],
         id: [
-          'Validasi legitimasi perusahaan dan mitra bisnis di Indonesia.',
+          'Pengecekan data registrasi publik perusahaan atau mitra di Indonesia.',
           'Fasilitasi pertemuan online dengan verifikasi identitas dan kredensial.',
-          'Minimalisasi risiko operasional dalam transaksi internasional.'
+          'Petunjuk praktis untuk membantu mengenali risiko umum dalam transaksi internasional.'
         ]
       }
     },
@@ -311,24 +311,24 @@ const problemMatrix = {
       id: 'export-import-trade',
       icon: 'ship',
       label: {
-        en: 'Export-Import & Trade Compliance',
-        pt: 'Exportação-Importação & Conformidade Comercial',
-        id: 'Ekspor-Impor & Kepatuhan Perdagangan'
+        en: 'Export-Import Guidance',
+        pt: 'Orientação para Exportação e Importação',
+        id: 'Panduan Ekspor-Impor'
       },
       bullets: {
         en: [
-          'Guidance on customs regulations, import duties, and trade permits (PT ↔ ID).',
-          'Advisory on cross-border shipping logistics, freight compliance, and contracts.',
+          'Information on customs rules, import duties, and trade permits (PT ↔ ID), based on official sources.',
+          'Practical guidance on cross-border shipping logistics, with referral to licensed customs brokers.',
           'Administrative support for bilateral commercial trade operations.'
         ],
         pt: [
-          'Orientação sobre regulamentos alfandegários, direitos de importação e licenças comerciais.',
-          'Aconselhamento sobre logística de envio transfronteiriço e contratos comerciais.',
+          'Informação sobre regras alfandegárias, direitos de importação e licenças comerciais (PT ↔ ID), com base em fontes oficiais.',
+          'Orientação prática sobre logística de envio transfronteiriço, com encaminhamento para despachantes aduaneiros habilitados.',
           'Apoio administrativo para operações de comércio bilateral.'
         ],
         id: [
-          'Panduan regulasi beacukai, bea impor, & izin perdagangan (PT ↔ ID).',
-          'Konsultasi logistik pengiriman lintas batas & kontrak perdagangan.',
+          'Informasi aturan bea cukai, bea impor, & izin perdagangan (PT ↔ ID) berdasarkan sumber resmi.',
+          'Panduan praktis logistik pengiriman lintas batas, dengan rujukan ke PPJK (customs broker) berlisensi.',
           'Dukungan administratif untuk operasi perdagangan komersial bilateral.'
         ]
       }
@@ -337,24 +337,24 @@ const problemMatrix = {
       id: 'indonesia-visa-advisory',
       icon: 'file-badge',
       label: {
-        en: 'Indonesia Visa & KITAS Advisory',
-        pt: 'Consultoria de Vistos e KITAS para a Indonésia',
-        id: 'Konsultasi Visa & KITAS Indonesia'
+        en: 'Indonesia Visa & KITAS Guidance',
+        pt: 'Orientação sobre Vistos e KITAS para a Indonésia',
+        id: 'Panduan Visa & KITAS Indonesia'
       },
       bullets: {
         en: [
-          'Consultation on business visit visas, work visas, and Investor KITAS.',
-          'Family stay permits (ITAS/ITAP) and residence compliance for expats in Indonesia.',
+          'Information on business visit visas, work visas, and Investor KITAS.',
+          'Family stay permits (ITAS/ITAP) and residence obligations for expats in Indonesia.',
           'Step-by-step guidance on official immigration sponsorship and extensions.'
         ],
         pt: [
-          'Consultoria sobre vistos de visita de negócios, vistos de trabalho e KITAS de Investidor.',
-          'Permissões de residência familiar (ITAS/ITAP) e conformidade para residentes na Indonésia.',
+          'Informação sobre vistos de visita de negócios, vistos de trabalho e KITAS de Investidor.',
+          'Autorizações de residência familiar (ITAS/ITAP) e obrigações de residência na Indonésia.',
           'Orientação passo a passo sobre patrocínio de imigração e prorrogações oficiais.'
         ],
         id: [
-          'Konsultasi visa kunjungan bisnis, visa kerja, & KITAS Investor.',
-          'Izin tinggal keluarga (ITAS/ITAP) & kepatuhan imigrasi expat di Indonesia.',
+          'Informasi visa kunjungan bisnis, visa kerja, & KITAS Investor.',
+          'Izin tinggal keluarga (ITAS/ITAP) & kewajiban izin tinggal expat di Indonesia.',
           'Panduan penjaminan (sponsor) imigrasi resmi & prosedur perpanjangan.'
         ]
       }
@@ -502,6 +502,8 @@ function renderSolution() {
   }
 
   if (titleEl) titleEl.textContent = scenarioLabel(currentScenario);
+  const disclaimer = document.getElementById('resolver-disclaimer');
+  if (disclaimer) disclaimer.textContent = t(`resolver.note.${currentAudience}`);
   if (bulletsEl) {
     bulletsEl.innerHTML = '';
     (currentScenario.bullets[currentLang] || currentScenario.bullets.en).forEach(text => {
@@ -562,7 +564,7 @@ function updateGenericWhatsAppLinks() {
 const translations = {
   en: {
     'meta.title': 'LUSONUSA | Portugal ↔ Indonesia business setup, visas & relocation support',
-    'meta.description': 'LUSONUSA helps Portuguese businesses enter Indonesia and Indonesians settle in Portugal: PT PMA company setup, visas and KITAS, NIF/NISS/AIMA paperwork and notary-certified translations.',
+    'meta.description': 'LUSONUSA gives practical guidance and in-person accompaniment to Portuguese businesses entering Indonesia and Indonesians settling in Portugal: PT PMA setup, visas and KITAS, NIF/NISS/AIMA paperwork and notary-certified translations.',
     'skip': 'Skip to content',
     'aria.nav': 'Main navigation',
     'aria.footer': 'Footer',
@@ -579,7 +581,7 @@ const translations = {
 
     // Hero
     'hero.title': 'Your trusted bridge between Portugal and Indonesia',
-    'hero.lede': 'Company setup, visas, residency paperwork and certified translations, handled by a bilingual team based in Portugal and Indonesia.',
+    'hero.lede': 'Practical guidance and in-person accompaniment for company setup, visas, residency paperwork and certified translations, from a bilingual team based in Portugal and Indonesia.',
     'hero.trust': 'Founded by a former member of the Economic Section of the Embassy of Indonesia in Lisbon (5 years)',
     'hero.video.credit': 'Video',
     'hero.luso.audience': 'For Portuguese businesses entering Indonesia',
@@ -587,16 +589,16 @@ const translations = {
     'hero.luso.cta': 'Explore business services',
     'hero.luso.pill1': 'Company Verification',
     'hero.luso.pill2': 'PT PMA Setup',
-    'hero.luso.pill3': 'Export-Import Advisory',
+    'hero.luso.pill3': 'Export-Import Guidance',
     'hero.luso.pill4': 'Indonesia Visa & KITAS',
     'hero.luso.pill5': 'Product Sourcing',
     'hero.nusa.audience': 'For Indonesians moving to or living in Portugal',
-    'hero.nusa.sub': 'Trusted solutions for Indonesians in Portugal.',
+    'hero.nusa.sub': 'Trusted guidance for Indonesians in Portugal.',
     'hero.nusa.cta': 'See services for Indonesians',
     'hero.nusa.pill1': 'AIMA Assistance',
     'hero.nusa.pill2': 'NIF & NISS',
     'hero.nusa.pill3': 'Bank Account Opening',
-    'hero.nusa.pill4': 'Business & Legal Docs',
+    'hero.nusa.pill4': 'Business & Official Docs',
     'hero.nusa.pill5': 'Notarized Translation',
     'hero.nusa.pill6': 'Local Guide & Travel',
 
@@ -624,6 +626,8 @@ const translations = {
     'resolver.email.btn': 'Prefer email? Send the same details',
     'resolver.preview': 'Your message will read:',
     'resolver.status': 'Showing help for: {s}',
+    'resolver.note.nusa': 'Information and practical guidance based on official public sources, plus in-person accompaniment. Not legal advice; we refer you to licensed professionals when needed.',
+    'resolver.note.luso': 'Business guidance only, not legal, tax, financial or customs-brokerage advice. We refer you to licensed professionals when needed.',
 
     // Prefilled messages
     'msg.generic': 'Hello LUSONUSA! I would like to book a free consultation.',
@@ -639,9 +643,9 @@ const translations = {
     'msg.subject': 'Enquiry: {s}',
 
     // Workflow
-    'workflow.eyebrow': 'Our Guarantee & Promise',
+    'workflow.eyebrow': 'How We Work',
     'workflow.title': 'How We Support & Guide You',
-    'workflow.subtitle': 'A friendly, step-by-step approach designed to give you clarity, peace of mind, and real solutions.',
+    'workflow.subtitle': 'A friendly, step-by-step approach designed to give you clarity and peace of mind.',
     'workflow.s1.badge': '100% Free & Open',
     'workflow.s1.title': 'Tell Us Your Challenge',
     'workflow.s1.desc': 'Send a quick WhatsApp message detailing your goals. No fees, no obligations—just a friendly team ready to listen.',
@@ -653,13 +657,13 @@ const translations = {
     'workflow.s3.title': 'Initial Strategic Call',
     'workflow.s3.desc': 'A focused 1-on-1 consultation to explore your roadmap. Simple cases receive step-by-step guidance completely free.',
     'workflow.s4.badge': 'Clear Upfront Pricing',
-    'workflow.s4.title': 'Tailored Representation',
-    'workflow.s4.desc': 'Need hands-on help? We offer flexible assistance—from notary-certified translations to on-the-ground support—with all fees agreed upfront.',
+    'workflow.s4.title': 'Hands-On Accompaniment',
+    'workflow.s4.desc': 'Need hands-on help? We offer flexible assistance—from coordinating notary-certified translations to in-person accompaniment (AIMA, Finanças, banks)—with all fees agreed upfront.',
 
     // Pathways
-    'pathways.eyebrow': 'Resolution Pathways & Pricing Philosophy',
+    'pathways.eyebrow': 'Service Options & Pricing Philosophy',
     'pathways.title': 'Transparent Options Built Around Your Needs',
-    'pathway.p1.name': '1. Free Community Advice',
+    'pathway.p1.name': '1. Free Community Guidance',
     'pathway.p1.desc': 'Basic questions & general guidance answered during the free call. Perfect if you can handle filings yourself.',
     'pathway.p1.price': '€0 • Free Consultation',
     'pathway.p2.name': '2. Document & Report Prep',
@@ -669,7 +673,7 @@ const translations = {
     'pathway.p3.desc': 'In-person attendance for AIMA appointments, Bank visits, PT PMA corporate setups, or bilingual local field accompaniment.',
     'pathway.p3.price': '€15 – €30 / hour or Fixed Package',
     'pathways.note.label': 'Purchasing Power Equity:',
-    'pathways.note': 'We tailor our fees fairly—offering accessible rates for individual community members while providing enterprise-grade consulting for businesses.',
+    'pathways.note': 'We tailor our fees fairly—offering accessible rates for individual community members while providing dedicated business guidance for companies.',
 
     // Team
     'team.eyebrow': 'Our Team',
@@ -697,7 +701,7 @@ const translations = {
     'team.c4.title': 'Legal & Notarized Translation Lead',
     'team.c4.cred1': 'Native PT-PT & Indonesian',
     'team.c4.cred2': 'Notary-certified translations',
-    'team.c4.bio': 'Native bilingual specialist (European Portuguese / Indonesian) recognized by the Embassy of Indonesia in Lisbon. Prepares translations of civil, corporate and legal documents, certified before a Portuguese notary. Work is scheduled after a short feasibility review of your documents.',
+    'team.c4.bio': 'Native bilingual specialist (European Portuguese / Indonesian) recognized by the Embassy of Indonesia in Lisbon. Prepares translations of civil, corporate and legal documents, certified before a Portuguese notary. Work is scheduled after a short feasibility check.',
     'team.c4.lang': 'Portuguese & Indonesian',
 
     // Insights
@@ -719,14 +723,14 @@ const translations = {
     'insights.a4.desc': 'How translations are certified before a Portuguese notary, plus legalisation and apostille basics.',
 
     // Footer
-    'footer.tagline': 'Bilateral Advisory & Cross-Border Consulting',
+    'footer.tagline': 'Bilateral Information, Guidance & Accompaniment',
     'footer.contact.title': 'Get in Touch',
     'footer.contact.sub': 'Direct Assistance & Consultations',
     'footer.wa.btn': 'Direct WhatsApp Consultation',
     'footer.email': 'Email:',
     'footer.hours': 'Service hours: Mon–Fri, 10:00–16:00 Lisbon time (16:00–22:00 WIB in summer, 17:00–23:00 WIB in winter)',
     'footer.consult': 'Consultations conducted in English & Indonesian.',
-    'footer.legal': 'We provide administrative support, guidance and document coordination, not legal advice. Where a notary or lawyer is required, we coordinate with licensed professionals.',
+    'footer.legal': 'LUSONUSA is an information and guidance service, not a law firm, and does not give legal advice; we refer you to licensed professionals when needed.',
     'footer.entity': 'Operating as PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia)',
     'footer.privacy': 'Privacy & cookies',
     'footer.terms': 'Terms & disclaimer',
@@ -738,7 +742,7 @@ const translations = {
 
   pt: {
     'meta.title': 'LUSONUSA | Portugal ↔ Indonésia: criação de empresas, vistos e apoio à mudança',
-    'meta.description': 'A LUSONUSA ajuda empresas portuguesas a entrar na Indonésia e indonésios a instalar-se em Portugal: criação de PT PMA, vistos e KITAS, NIF/NISS/AIMA e traduções certificadas por notário.',
+    'meta.description': 'A LUSONUSA dá orientação prática e acompanhamento presencial a empresas portuguesas que entram na Indonésia e a indonésios que se instalam em Portugal: PT PMA, vistos e KITAS, NIF/NISS/AIMA e traduções certificadas por notário.',
     'skip': 'Saltar para o conteúdo',
     'aria.nav': 'Navegação principal',
     'aria.footer': 'Rodapé',
@@ -753,7 +757,7 @@ const translations = {
     'header.cta': 'Consulta gratuita',
 
     'hero.title': 'A sua ponte de confiança entre Portugal e a Indonésia',
-    'hero.lede': 'Criação de empresas, vistos, documentação de residência e traduções certificadas, tratados por uma equipa bilingue em Portugal e na Indonésia.',
+    'hero.lede': 'Orientação prática e acompanhamento presencial em criação de empresas, vistos, documentação de residência e traduções certificadas, por uma equipa bilingue em Portugal e na Indonésia.',
     'hero.trust': 'Fundada por um ex-membro da Secção Económica da Embaixada da Indonésia em Lisboa (5 anos)',
     'hero.video.credit': 'Vídeo',
     'hero.luso.audience': 'Para empresas portuguesas que entram na Indonésia',
@@ -765,12 +769,12 @@ const translations = {
     'hero.luso.pill4': 'Vistos & KITAS Indonésia',
     'hero.luso.pill5': 'Procura de Produtos',
     'hero.nusa.audience': 'Para indonésios que se mudam ou vivem em Portugal',
-    'hero.nusa.sub': 'Soluções de confiança para indonésios em Portugal.',
+    'hero.nusa.sub': 'Orientação de confiança para indonésios em Portugal.',
     'hero.nusa.cta': 'Ver serviços para indonésios',
     'hero.nusa.pill1': 'Apoio AIMA',
     'hero.nusa.pill2': 'NIF & NISS',
     'hero.nusa.pill3': 'Conta Bancária',
-    'hero.nusa.pill4': 'Documentos Empresariais & Legais',
+    'hero.nusa.pill4': 'Documentos Empresariais & Oficiais',
     'hero.nusa.pill5': 'Tradução Notariada',
     'hero.nusa.pill6': 'Guia Local & Viagem',
 
@@ -797,6 +801,8 @@ const translations = {
     'resolver.email.btn': 'Prefere email? Envie os mesmos dados',
     'resolver.preview': 'A sua mensagem:',
     'resolver.status': 'A mostrar ajuda para: {s}',
+    'resolver.note.nusa': 'Informação e orientação prática com base em fontes oficiais públicas, além de acompanhamento presencial. Não é aconselhamento jurídico; quando necessário, encaminhamos para profissionais habilitados.',
+    'resolver.note.luso': 'Apenas orientação empresarial, não aconselhamento jurídico, fiscal, financeiro ou de despacho aduaneiro. Quando necessário, encaminhamos para profissionais habilitados.',
 
     'msg.generic': 'Olá LUSONUSA! Gostaria de marcar uma consulta gratuita.',
     'msg.greeting': 'Olá LUSONUSA!',
@@ -810,9 +816,9 @@ const translations = {
     'msg.close': 'Podem indicar-me os próximos passos?',
     'msg.subject': 'Pedido de informação: {s}',
 
-    'workflow.eyebrow': 'Nossa Garantia e Promessa',
+    'workflow.eyebrow': 'Como Trabalhamos',
     'workflow.title': 'Como Acompanhamos e Guiamos a Sua Jornada',
-    'workflow.subtitle': 'Uma abordagem humana e acolhedora—concebida para lhe dar clareza, tranquilidade e soluções reais.',
+    'workflow.subtitle': 'Uma abordagem humana e acolhedora, passo a passo, para lhe dar clareza e tranquilidade.',
     'workflow.s1.badge': '100% Grátis & Aberto',
     'workflow.s1.title': 'Partilhe o Seu Desafio',
     'workflow.s1.desc': 'Envie uma mensagem rápida pelo WhatsApp. Sem custos ou compromisso—apenas uma equipa pronta para escutar.',
@@ -824,12 +830,12 @@ const translations = {
     'workflow.s3.title': 'Discussão Estratégica',
     'workflow.s3.desc': 'Uma consulta focada para explorar o seu plano. Casos simples recebem um guia passo a passo sem qualquer custo.',
     'workflow.s4.badge': 'Preços Transparentes',
-    'workflow.s4.title': 'Acompanhamento Técnico',
-    'workflow.s4.desc': 'Precisa de apoio presencial? Oferecemos apoio flexível—desde traduções certificadas por notário até apoio no terreno—com taxas acordadas antecipadamente.',
+    'workflow.s4.title': 'Acompanhamento Presencial',
+    'workflow.s4.desc': 'Precisa de apoio presencial? Oferecemos apoio flexível—desde a coordenação de traduções certificadas por notário até ao acompanhamento presencial (AIMA, Finanças, bancos)—com taxas acordadas antecipadamente.',
 
-    'pathways.eyebrow': 'Caminhos de Resolução e Filosofia de Preços',
+    'pathways.eyebrow': 'Opções de Serviço e Filosofia de Preços',
     'pathways.title': 'Opções Transparentes Criadas para as Suas Necessidades',
-    'pathway.p1.name': '1. Aconselhamento Comunitário Grátis',
+    'pathway.p1.name': '1. Orientação Comunitária Grátis',
     'pathway.p1.desc': 'Dúvidas básicas e orientação geral explicadas na consulta grátis. Ideal se puder tratar dos processos autonomamente.',
     'pathway.p1.price': '€0 • Consulta Gratuita',
     'pathway.p2.name': '2. Preparação de Documentos e Relatórios',
@@ -839,7 +845,7 @@ const translations = {
     'pathway.p3.desc': 'Presença física na AIMA, visitas a Bancos, abertura de empresas PT PMA ou acompanhamento bilingue no terreno.',
     'pathway.p3.price': '€15 – €30 / hora ou Pacote Fixo',
     'pathways.note.label': 'Equidade de Poder de Compra:',
-    'pathways.note': 'Adaptamos os nossos preços com justiça—oferecendo tarifas acessíveis a membros da comunidade e consultoria empresarial a negócios.',
+    'pathways.note': 'Adaptamos os nossos preços com justiça—oferecendo tarifas acessíveis a membros da comunidade e orientação empresarial dedicada a empresas.',
 
     'team.eyebrow': 'Nossa Equipa',
     'team.title': 'Os Colaboradores por trás da Ponte Bilateral',
@@ -866,7 +872,7 @@ const translations = {
     'team.c4.title': 'Líder de Tradução Legal e Notariada',
     'team.c4.cred1': 'Língua nativa: PT-PT & indonésio',
     'team.c4.cred2': 'Traduções certificadas por notário',
-    'team.c4.bio': 'Português europeu e indonésio como línguas nativas, com reconhecimento da Embaixada da Indonésia em Lisboa. Prepara traduções de documentos civis, empresariais e jurídicos, certificadas perante notário português. Os trabalhos são agendados após uma breve análise de viabilidade dos seus documentos.',
+    'team.c4.bio': 'Português europeu e indonésio como línguas nativas, com reconhecimento da Embaixada da Indonésia em Lisboa. Prepara traduções de documentos civis, empresariais e jurídicos, certificadas perante notário português. Os trabalhos são agendados após uma breve análise de viabilidade.',
     'team.c4.lang': 'Português & Indonésio',
 
     'insights.eyebrow': 'Recursos',
@@ -886,14 +892,14 @@ const translations = {
     'insights.a4.title': 'Tradução certificada e legalização notarial de documentos indonésios e portugueses',
     'insights.a4.desc': 'Como as traduções são certificadas perante notário português, com noções de legalização e apostila.',
 
-    'footer.tagline': 'Consultoria Bilateral e Transfronteiriça',
+    'footer.tagline': 'Informação, Orientação e Acompanhamento Bilateral',
     'footer.contact.title': 'Entre em Contacto',
     'footer.contact.sub': 'Assistência Direta & Consultas',
     'footer.wa.btn': 'Consulta Direta via WhatsApp',
     'footer.email': 'Email:',
     'footer.hours': 'Horário: seg.–sex., 10:00–16:00 hora de Lisboa (16:00–22:00 WIB no verão, 17:00–23:00 WIB no inverno)',
     'footer.consult': 'Consultas realizadas em Inglês e Indonésio.',
-    'footer.legal': 'Prestamos apoio administrativo, orientação e coordenação de documentos, não aconselhamento jurídico. Quando é necessário um notário ou advogado, coordenamos com profissionais habilitados.',
+    'footer.legal': 'A LUSONUSA é um serviço de informação e orientação, não um escritório de advogados, e não presta aconselhamento jurídico; quando necessário, encaminhamos para profissionais habilitados.',
     'footer.entity': 'Operado por PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonésia)',
     'footer.privacy': 'Privacidade e cookies',
     'footer.terms': 'Termos e aviso legal',
@@ -905,7 +911,7 @@ const translations = {
 
   id: {
     'meta.title': 'LUSONUSA | Portugal ↔ Indonesia: pendirian usaha, visa & pendampingan pindah',
-    'meta.description': 'LUSONUSA membantu bisnis Portugal masuk ke Indonesia dan WNI menetap di Portugal: pendirian PT PMA, visa & KITAS, pengurusan NIF/NISS/AIMA, dan terjemahan bersertifikat notaris.',
+    'meta.description': 'LUSONUSA memberikan panduan praktis dan pendampingan langsung bagi bisnis Portugal yang masuk ke Indonesia dan WNI yang menetap di Portugal: PT PMA, visa & KITAS, NIF/NISS/AIMA, dan terjemahan bersertifikat notaris.',
     'skip': 'Langsung ke konten',
     'aria.nav': 'Navigasi utama',
     'aria.footer': 'Footer',
@@ -920,7 +926,7 @@ const translations = {
     'header.cta': 'Konsultasi gratis',
 
     'hero.title': 'Jembatan terpercaya Anda antara Portugal dan Indonesia',
-    'hero.lede': 'Pendirian usaha, visa, dokumen izin tinggal, dan terjemahan bersertifikat, ditangani tim bilingual yang berbasis di Portugal dan Indonesia.',
+    'hero.lede': 'Panduan praktis dan pendampingan langsung untuk pendirian usaha, visa, dokumen izin tinggal, dan terjemahan bersertifikat, dari tim bilingual di Portugal dan Indonesia.',
     'hero.trust': 'Didirikan oleh mantan staf Seksi Ekonomi Kedutaan Besar RI di Lisbon (5 tahun)',
     'hero.video.credit': 'Video',
     'hero.luso.audience': 'Untuk bisnis Portugal yang masuk ke Indonesia',
@@ -928,16 +934,16 @@ const translations = {
     'hero.luso.cta': 'Lihat layanan bisnis',
     'hero.luso.pill1': 'Verifikasi Bisnis',
     'hero.luso.pill2': 'Pendirian PT PMA',
-    'hero.luso.pill3': 'Konsultasi Ekspor-Impor',
+    'hero.luso.pill3': 'Panduan Ekspor-Impor',
     'hero.luso.pill4': 'Visa & KITAS Indonesia',
     'hero.luso.pill5': 'Pencarian Produk',
     'hero.nusa.audience': 'Untuk WNI yang pindah ke atau tinggal di Portugal',
-    'hero.nusa.sub': 'Solusi terpercaya untuk WNI di Portugal.',
+    'hero.nusa.sub': 'Pendampingan terpercaya untuk WNI di Portugal.',
     'hero.nusa.cta': 'Lihat layanan untuk WNI',
     'hero.nusa.pill1': 'Pendampingan AIMA',
     'hero.nusa.pill2': 'NIF & NISS',
     'hero.nusa.pill3': 'Buka Rekening',
-    'hero.nusa.pill4': 'Dokumen Bisnis & Legalitas',
+    'hero.nusa.pill4': 'Dokumen Bisnis & Resmi',
     'hero.nusa.pill5': 'Penerjemahan Notaris',
     'hero.nusa.pill6': 'Panduan Lokal & Travel',
 
@@ -964,6 +970,8 @@ const translations = {
     'resolver.email.btn': 'Lebih suka email? Kirim detail yang sama',
     'resolver.preview': 'Pesan Anda:',
     'resolver.status': 'Menampilkan bantuan untuk: {s}',
+    'resolver.note.nusa': 'Informasi dan panduan praktis berdasarkan sumber resmi yang terbuka untuk umum, serta pendampingan langsung. Bukan nasihat hukum; bila diperlukan, kami merujuk Anda ke profesional berlisensi.',
+    'resolver.note.luso': 'Hanya panduan bisnis, bukan nasihat hukum, pajak, keuangan, atau jasa kepabeanan. Bila diperlukan, kami merujuk Anda ke profesional berlisensi.',
 
     'msg.generic': 'Halo LUSONUSA! Saya ingin menjadwalkan konsultasi gratis.',
     'msg.greeting': 'Halo LUSONUSA!',
@@ -977,24 +985,24 @@ const translations = {
     'msg.close': 'Boleh saya tahu langkah selanjutnya?',
     'msg.subject': 'Pertanyaan: {s}',
 
-    'workflow.eyebrow': 'Jaminan & Komitmen Kami',
+    'workflow.eyebrow': 'Cara Kami Bekerja',
     'workflow.title': 'Bagaimana Kami Mendampingi & Membantu Anda',
-    'workflow.subtitle': 'Pendekatan 4 langkah yang ramah dan solutif—dirancang untuk memberikan kejelasan, ketenangan, dan solusi nyata.',
+    'workflow.subtitle': 'Pendekatan 4 langkah yang ramah, dirancang untuk memberi Anda kejelasan dan ketenangan.',
     'workflow.s1.badge': '100% Gratis & Terbuka',
     'workflow.s1.title': 'Ceritakan Tantangan Anda',
     'workflow.s1.desc': 'Kirim pesan singkat via WhatsApp mengenai kebutuhan Anda. Tanpa biaya atau komitmen—kami siap mendengarkan.',
     'workflow.s1.btn': 'Chat via WhatsApp',
     'workflow.s2.badge': '1–2 Hari Riset',
-    'workflow.s2.title': 'Kami Siapkan Solusinya',
+    'workflow.s2.title': 'Kami Siapkan Pilihan Anda',
     'workflow.s2.desc': 'Sebelum berdiskusi, tim kami meluangkan 1–2 hari untuk mempelajari persyaratan resmi dan menyiapkan langkah konkret.',
     'workflow.s3.badge': 'Sesi 1-on-1 Bebas Biaya',
     'workflow.s3.title': 'Diskusi Strategis Awal',
     'workflow.s3.desc': 'Konsultasi terfokus 1-on-1 untuk memilih jalur terbaik. Masalah sederhana kami berikan panduan mandiri gratis.',
     'workflow.s4.badge': 'Biaya Jelas di Awal',
     'workflow.s4.title': 'Pendampingan Terukur',
-    'workflow.s4.desc': 'Butuh bantuan langsung? Kami hadirkan layanan fleksibel—dari terjemahan bersertifikat notaris hingga pendampingan lapangan—dengan biaya yang disepakati di awal.',
+    'workflow.s4.desc': 'Butuh bantuan langsung? Kami hadirkan layanan fleksibel—dari koordinasi terjemahan bersertifikat notaris hingga pendampingan langsung (AIMA, Finanças, bank)—dengan biaya yang disepakati di awal.',
 
-    'pathways.eyebrow': 'Jalur Solusi & Filosofi Biaya',
+    'pathways.eyebrow': 'Pilihan Layanan & Filosofi Biaya',
     'pathways.title': 'Pilihan Transparan yang Disesuaikan dengan Kebutuhan Anda',
     'pathway.p1.name': '1. Bimbingan Komunitas Gratis',
     'pathway.p1.desc': 'Pertanyaan dasar & panduan umum dijawab saat konsultasi gratis. Cocok jika Anda ingin mengurus dokumen sendiri.',
@@ -1033,7 +1041,7 @@ const translations = {
     'team.c4.title': 'Kepala Penerjemahan Dokumen Legal & Notaris',
     'team.c4.cred1': 'Native PT-PT & Indonesia',
     'team.c4.cred2': 'Terjemahan bersertifikat notaris',
-    'team.c4.bio': 'Spesialis bilingual native (Portugis-Portugal / Indonesia) yang diakui oleh KBRI Lisbon. Menyiapkan terjemahan dokumen sipil, korporat, dan legal yang disertifikasi di hadapan notaris Portugal. Pekerjaan dijadwalkan setelah peninjauan kelayakan singkat atas dokumen Anda.',
+    'team.c4.bio': 'Spesialis bilingual native (Portugis-Portugal / Indonesia) yang diakui oleh KBRI Lisbon. Menyiapkan terjemahan dokumen sipil, korporat, dan legal yang disertifikasi di hadapan notaris Portugal. Pekerjaan dijadwalkan setelah pengecekan kelayakan singkat.',
     'team.c4.lang': 'Portugis & Indonesia',
 
     'insights.eyebrow': 'Sumber Pengetahuan',
@@ -1053,14 +1061,14 @@ const translations = {
     'insights.a4.title': 'Terjemahan bersertifikat dan legalisasi notaris untuk dokumen Indonesia dan Portugal',
     'insights.a4.desc': 'Cara terjemahan disertifikasi di hadapan notaris Portugal, serta dasar legalisasi dan apostille.',
 
-    'footer.tagline': 'Konsultasi Bilateral & Lintas Batas',
+    'footer.tagline': 'Informasi, Panduan & Pendampingan Bilateral',
     'footer.contact.title': 'Hubungi Kami',
     'footer.contact.sub': 'Bantuan Langsung & Konsultasi',
     'footer.wa.btn': 'Konsultasi Langsung via WhatsApp',
     'footer.email': 'Email:',
     'footer.hours': 'Jam layanan: Senin–Jumat, 10.00–16.00 waktu Lisbon (16.00–22.00 WIB saat musim panas Eropa, 17.00–23.00 WIB saat musim dingin)',
     'footer.consult': 'Konsultasi dilakukan dalam Bahasa Inggris & Indonesia.',
-    'footer.legal': 'Kami memberikan dukungan administratif, panduan, dan koordinasi dokumen, bukan nasihat hukum. Jika diperlukan notaris atau pengacara, kami berkoordinasi dengan profesional berlisensi.',
+    'footer.legal': 'LUSONUSA adalah layanan informasi dan panduan, bukan kantor hukum, dan tidak memberikan nasihat hukum; bila diperlukan, kami merujuk Anda ke profesional berlisensi.',
     'footer.entity': 'Dioperasikan oleh PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia)',
     'footer.privacy': 'Privasi & cookie',
     'footer.terms': 'Ketentuan & penafian',

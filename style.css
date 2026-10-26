@@ -1935,6 +1935,19 @@ footer[id] {
   text-decoration: underline;
 }
 
+.resolver-disclaimer {
+  margin: calc(-1 * var(--space-sm)) 0 var(--space-lg);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+
+.footer-disclaimer a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .resolver-questions {
   padding-top: var(--space-md);
   border-top: 1px solid var(--border-subtle);
