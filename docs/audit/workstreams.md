@@ -30,7 +30,9 @@ The site is three shared files (`index.html`, `app.js`, `style.css`), an `articl
 
 **Email:** `contact@lusonusa.agency`
 
-**Operating entity:** PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia).
+**Who runs LUSONUSA (owner decision, 26 Oct 2026):** LUSONUSA is a collaborative network of independent professionals, not a company with employees. Each service is contracted and invoiced directly by the professional who delivers it (Portugal-side as self-employed, *recibos verdes*). The website operator and data controller for enquiries is **Aditya Putra (founder), Portugal**, contact@lusonusa.agency, WhatsApp +351 930 534 440. PT Wollusca Sukses Bersama (the founder's own Indonesian company) is **not** mentioned on the site. Travel services are "recommendations and booking assistance" only: no selling of packages and no taking payment for bookings.
+
+**Positioning:** an information, guidance and accompaniment service based on public official information. It does not replace a lawyer and refers clients to licensed professionals when needed. It does not ask clients to send identity or immigration documents digitally.
 
 **Team (the single source of truth; the homepage is correct, the articles are wrong):**
 
