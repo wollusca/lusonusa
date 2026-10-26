@@ -737,6 +737,8 @@ const translations = {
     'footer.legal': 'LUSONUSA is an information and guidance service, not a law firm, and does not give legal advice. When your situation needs a lawyer or another licensed professional, we\'ll tell you clearly.',
     'footer.entity': 'LUSONUSA is a network of independent bilingual professionals in Portugal and Indonesia. Services are contracted directly with the professional who delivers them.',
     'footer.privacy': 'Privacy & cookies',
+    'link.terms': '/terms.html',
+    'link.privacy': '/privacy.html',
     'footer.terms': 'Terms & disclaimer',
     'footer.copy': '© 2026 LUSONUSA. All rights reserved.',
 
@@ -906,6 +908,8 @@ const translations = {
     'footer.legal': 'A LUSONUSA é um serviço de informação e orientação, não um escritório de advogados, e não presta aconselhamento jurídico. Quando a sua situação exigir um advogado ou outro profissional habilitado, dizemos-lhe claramente.',
     'footer.entity': 'A LUSONUSA é uma rede de profissionais bilingues independentes em Portugal e na Indonésia. Os serviços são contratados diretamente com o profissional que os presta.',
     'footer.privacy': 'Privacidade e cookies',
+    'link.terms': '/termos.html',
+    'link.privacy': '/privacidade.html',
     'footer.terms': 'Termos e aviso legal',
     'footer.copy': '© 2026 LUSONUSA. Todos os direitos reservados.',
 
@@ -1075,6 +1079,8 @@ const translations = {
     'footer.legal': 'LUSONUSA adalah layanan informasi dan panduan, bukan kantor hukum, dan tidak memberikan nasihat hukum. Jika situasi Anda memerlukan pengacara atau profesional berlisensi lainnya, kami akan menyampaikannya dengan jelas.',
     'footer.entity': 'LUSONUSA adalah jaringan profesional bilingual independen di Portugal dan Indonesia. Layanan dikontrak langsung dengan profesional yang memberikannya.',
     'footer.privacy': 'Privasi & cookie',
+    'link.terms': '/terms.html',
+    'link.privacy': '/privacy.html',
     'footer.terms': 'Ketentuan & penafian',
     'footer.copy': '© 2026 LUSONUSA. Hak cipta dilindungi.',
 
@@ -1106,6 +1112,12 @@ function setLanguage(lang, persist) {
   document.querySelectorAll('[data-i18n-aria]').forEach(el => {
     const value = dict[el.getAttribute('data-i18n-aria')];
     if (value !== undefined) el.setAttribute('aria-label', value);
+  });
+
+  // Legal pages exist per language (PT has /termos.html and /privacidade.html)
+  document.querySelectorAll('[data-i18n-href]').forEach(el => {
+    const value = dict[el.getAttribute('data-i18n-href')];
+    if (value !== undefined) el.setAttribute('href', value);
   });
 
   document.documentElement.lang = lang;
