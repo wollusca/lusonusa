@@ -8,6 +8,41 @@
 
 **No recruitment:** LUSONUSA does not recruit, place or supply workers (that requires a licence in Portugal). Employers may only *refer their already-hired staff* to us for administrative guidance.
 
+**Network model (owner clarification):** LUSONUSA is a **collaborative network of independent professionals** (the founder and trusted friends), not a company with employees. Each service is **quoted and invoiced by the professional who delivers it**: Portugal-side work by the self-employed professional via *recibos verdes*, and some Indonesia-side consulting possibly via the founder's company, PT Wollusca Sukses Bersama *[owner to confirm per service]*. See §0.
+
+---
+
+## 0. How the network quotes, invoices and shares work
+
+### 0.1 Quotes and invoices
+
+- Every quote names **the delivering professional** (name, role, NIF or tax ID, invoicing route) and the LUSONUSA package it corresponds to. Template header: "Quote {LN-Q-yyyy-nnn} · Service: {package} · Delivered and invoiced by: {professional} ({recibos verdes, NIF …} / {PT Wollusca Sukses Bersama, NPWP …})".
+- If a package involves more than one professional (e.g. Arrival Starter + Certified Translation), the client gets **one quote per professional**, or one summary sheet listing each professional's line and invoice. **No one invoices for another person's work.**
+- Pass-through costs (notary, government, partner lawyer) are paid by the client directly to that provider wherever possible, or shown as separate, receipted lines.
+- Licensed partners (lawyers, notaries, accountants, customs brokers) are **outside** the network and quote and invoice independently. The network discloses any referral fee to the client (§0.3).
+- Client-facing copy uses "the LUSONUSA network" / "a rede LUSONUSA" / "jaringan LUSONUSA" and "the professional handling your case". Never "our company" or "our employees".
+- *[verify with a contabilista certificado]* the VAT/IRS position of each professional (e.g. VAT exemption threshold, cross-border services to Indonesian or business clients), and whether the shared brand needs any formal agreement (e.g. a simple network charter).
+
+### 0.2 Lead routing (proposal, **owner decision**)
+
+| Step | Rule |
+|---|---|
+| 1. Intake | All leads arrive at the shared WhatsApp/email/form and are logged in the shared CRM with their ref tag (§5) |
+| 2. Triage | The founder (or a rotating "triage owner" each week) runs the free 15-min triage |
+| 3. Assignment | The lead goes to the professional whose **service lead** role matches (service files list the lead). If there are several, the client's preferred language decides first, then availability, then round-robin |
+| 4. Hand-over | The assigned professional sends their own quote within 2 business days. The CRM records `delivering_professional` |
+| 5. Out of scope | Refer to a licensed partner, or decline politely |
+
+### 0.3 Sharing the cost of the brand (three options, **owner to choose**)
+
+| Model | How it works | Pros | Cons |
+|---|---|---|---|
+| **A. Network fee (recommended to start)** | Each professional pays a fixed monthly contribution, or **[PRICE: owner to set]% of invoiced fees** from network leads, into a shared pot for website, tools, ads and GBP | Simple. Fair to those who get more leads | Needs light bookkeeping, and someone must hold the pot *[verify the tax treatment]* |
+| **B. Referral fee per lead** | The professional who receives a won lead pays the triage owner/founder a flat or % referral fee | Rewards whoever brings and qualifies leads | Can feel transactional, and must be disclosed to clients |
+| **C. No fee, cost split** | Shared costs split equally each quarter, no lead-based payments | Easiest | Unfair if lead volume is uneven |
+
+Whatever the model: disclose referral arrangements to clients (one line in the quote: "LUSONUSA network professionals may share a referral contribution; this does not change your price"). Review the model after 6 months using CRM data (leads and won value per professional).
+
 ---
 
 ## 1. Entry offers (both audiences)
@@ -46,7 +81,7 @@ This replaces "1–2 days of free research". The research is now paid, and the p
 | **AIMA Ready** · *Paket Siap AIMA* · *Pacote AIMA* | Document checklist for the client's permit type, in-person check of every document (no digital copies sent to us), appointment booking support, mock Q&A in Bahasa, in-person accompaniment (Lisbon area; other cities + travel cost) | AIMA fees; legal representation, appeals and complaints (partner *advogado*); translations (see below) | Prep 1–2 weeks. Appointment date set by AIMA | Fixed: from €`[PRICE: owner to set]` + travel outside Lisbon | AIMA residence support |
 | **Certified Translation** · *Terjemahan Tersertifikasi* · *Tradução Certificada* | Translation ID ↔ pt-PT by Mia Gomes, certified before a Portuguese notary. Coordination of the apostille checklist | Notary fee (at cost). Apostille fees in Indonesia/Portugal. Indonesian *penerjemah tersumpah* where an Indonesian authority requires one (partner) | 3–7 working days *[owner to confirm capacity]* | Per page: from €`[PRICE: owner to set]`/page + notary fee. Express +`[PRICE: owner to set]`% | Certified translation & legalisation |
 | **Student Landing** · *Paket Mahasiswa* · *Pacote Estudante* | Pre-arrival call, housing shortlist + landlord/contract verification (up to 3 listings), airport pickup, NIF + NISS + bank (Arrival Starter scope), city orientation | Rent, deposits, tuition, insurance | Starts 6–8 weeks before arrival | Fixed: from €`[PRICE: owner to set]`. University partnership price `[PRICE: owner to set]` | Students, housing & concierge |
-| **Arrival & Concierge add-on** · *Add-on Penjemputan & Concierge* · *Extra Chegada & Concierge* | Airport pickup, temporary accommodation suggestions, rental-car booking help, bilingual local guide (half/full day), transport card setup | Hotel, car and transport costs (paid directly by the client to providers). LUSONUSA does not sell travel packages *[verify RNAVT/travel-agency rules before offering bookings]* | On request | Hourly or half-day: `[PRICE: owner to set]` | Students, housing & concierge (add-on section) |
+| **Arrival & Concierge add-on** · *Add-on Penjemputan & Concierge* · *Extra Chegada & Concierge* | Airport pickup, temporary accommodation recommendations, help booking a rental car directly with the provider, bilingual local guide (half/full day), transport card setup | Hotel, car and transport costs, booked and paid **directly by the client** with the provider. Recommendations and booking assistance only: no packages sold, no resale and no payment collected for travel services *[verify RNAVT/travel-agency rules with a lawyer]* | On request | Hourly or half-day: `[PRICE: owner to set]` | Students, housing & concierge (add-on section) |
 | **Employer referral** (NUSA side) · *Encaminhamento por empregador* · *Rujukan dari pemberi kerja* | Administrative guidance for staff **already hired** by a Portuguese employer and referred by them: group briefing in Bahasa (NIF/NISS/AIMA checklists), then individual Arrival Starter / AIMA Ready as needed. **No recruitment, selection, placement or supply of workers** | As above. Employment contracts and employer obligations (the employer's lawyer/accountant) | Per group | Per person, group rate: `[PRICE: owner to set]` | AIMA / NIF & NISS |
 
 ### 2.2 LUSO: Portuguese businesses → Indonesia
@@ -152,14 +187,14 @@ Tool: HubSpot free, Pipedrive, or a shared Notion/Google Sheet (**owner decision
 | 0 | **New lead** | Any message/form with or without ref tag | Reply within 1 business day (within service hours). Log `ref`, language, service | `1-New` |
 | 1 | **Triage booked** | 15-min call scheduled | Send intake form if not done | `2-Triage` |
 | 2 | **Qualified** | Need fits a package; budget/timeline plausible | Send package + price, or offer Case Check / MEA | `3-Qualified` |
-| 3 | **Proposal sent** | Written quote (package, inclusions, pass-through estimate) | Follow up at +2 and +7 days | `4-Proposal` |
+| 3 | **Proposal sent** | Written quote from the **delivering professional** (package, inclusions, pass-through estimate, invoicing route) | Follow up at +2 and +7 days | `4-Proposal` |
 | 4 | **Won** | Payment or signed engagement letter | Create case file. Agree document-handling consent | `5-Won` |
 | 5 | **In delivery** | Work started | Weekly status to client | `6-Active` |
 | 6 | **Delivered** | Outcome reached or package scope completed | Send summary + invoice for pass-throughs | `7-Done` |
 | 7 | **Review requested** | 2–5 days after Delivered | Send review script (`off-page-playbook.md` §2). Ask for a referral | `8-Review` |
 | X | **Lost / not a fit** | Reason recorded: price · timing · out of scope · no response · referred to partner | Optional newsletter opt-in | `X-Lost` |
 
-**Fields to record per lead:** date, name, audience (LUSO/NUSA), language, service code, ref tag (full), utm_source/medium/campaign (if form), stage, value (quoted, won), lost reason, review left (y/n), referral source.
+**Fields to record per lead:** date, `delivering_professional`, `invoicing_entity` (recibos verdes name or PT Wollusca), name, audience (LUSO/NUSA), language, service code, ref tag (full), utm_source/medium/campaign (if form), stage, value (quoted, won), lost reason, review left (y/n), referral source.
 
 **Monthly KPIs** (report alongside audit §4.4/§5.4): leads by `SERVICE`×`PLACEMENT`; triage→qualified %; qualified→won %; average won value by audience; time to first reply; reviews requested vs received; share of leads with a ref tag (target ≥ 80%).
 

@@ -51,6 +51,7 @@ Result: **10 service pages × 3 languages = 30 URLs**, plus one add-on section (
 | 4 | Services index | `/services/` | `/pt/servicos/` | `/id/layanan/` |
 | 5 | Pricing & packages | `/pricing/` | `/pt/precos/` | `/id/harga/` |
 | 6 | About & team | `/about/` | `/pt/sobre-nos/` | `/id/tentang-kami/` |
+| 6b | How our network works | `/about/how-our-network-works/` | `/pt/sobre-nos/como-funciona-a-rede/` | `/id/tentang-kami/cara-kerja-jaringan/` |
 | 7 | Team member (×4) | `/about/aditya-putra/` … | `/pt/sobre-nos/aditya-putra/` … | `/id/tentang-kami/aditya-putra/` … |
 | 8 | Contact & booking | `/contact/` | `/pt/contacto/` | `/id/kontak/` |
 | 9 | Guides index | `/guides/` | `/pt/guias/` | `/id/panduan/` |
@@ -59,6 +60,8 @@ Result: **10 service pages × 3 languages = 30 URLs**, plus one add-on section (
 | 12 | Privacy | `/privacy/` | `/pt/privacidade/` | `/id/privasi/` |
 | 13 | Terms & disclaimer | `/terms/` | `/pt/termos/` | `/id/ketentuan/` |
 | 14 | 404 | `/404.html` (single, trilingual) | — | — |
+
+Page **6b "How our network works"** explains that LUSONUSA is a collaborative network of independent professionals, not a company with employees. Sections: who we are (founder + independent professionals) · how a case is assigned · **each service is quoted and invoiced by the professional who delivers it** (recibos verdes in Portugal, or PT Wollusca Sukses Bersama for some Indonesia-side consulting *[owner to confirm]*) · licensed partners we refer to (lawyers, notaries, accountants, customs brokers), who are independent · what we don't do (no legal/tax/investment/customs-brokerage advice, no recruitment, no travel packages sold) · how we handle documents (link to #10). Link it from every quote, the footer, the pricing page and each service page's price block. Schema: `AboutPage`.
 
 Team-member pages (#7) exist to give every guide author a real `Person` entity with `sameAs` LinkedIn (audit E1/E4). Slugs use the person's name unchanged in all languages: `aditya-putra`, `mia-gomes`, `joko-supriyanto`, `nabela-huwaida`.
 
@@ -208,10 +211,10 @@ Rules:
 | Service | Breadcrumb · H1 + value prop + primary CTA · Who it's for · What's included · What we don't do / when you need a lawyer · Process & timeline · Price "from" + package link · Proof (testimonial/case) · FAQs (accordion, 5+) · Related guides · Final CTA (WhatsApp prefilled with source tag + booking + email) · Disclaimer | `Service` (provider → `ProfessionalService` @id), `FAQPage`, `BreadcrumbList` |
 | Hub | H1 · audience promise · 5 service cards · process · pricing teaser · proof · team · guides · FAQ · CTA | `CollectionPage`, `BreadcrumbList`, `FAQPage` |
 | Guide | Breadcrumb · H1 · author + "Last reviewed <date> by <name>" · TL;DR box · TOC · body · "Official sources" list · inline CTA after 1st section · end CTA · related | `Article` (author → `Person` @id), `BreadcrumbList`; `FAQPage` only if real Q&A block |
-| Team member | Photo · name · role · bio · credentials · languages · LinkedIn · guides authored | `Person` (`worksFor`, `knowsLanguage`, `sameAs`) |
+| Team member | Photo · name · role · bio · credentials · languages · LinkedIn · guides authored | `Person` (`memberOf` → #org, `knowsLanguage`, `sameAs`) |
 | Home | per audit §4.2 | `ProfessionalService` + `Organization`, `WebSite` |
 
-Global entity (`@id: https://www.lusonusa.agency/#org`): name LUSONUSA, legalName PT Wollusca Sukses Bersama, url, logo, email, `contactPoint` (WhatsApp +351930534440, `availableLanguage: [en, pt, id]`), `areaServed: [PT, ID]`, `knowsLanguage: [en, pt-PT, id]`, `sameAs` (LinkedIn, Instagram, GBP URL — **owner to supply**). Address: only publish an address that is real and staffable (see `off-page-playbook.md`).
+Global entity (`@id: https://www.lusonusa.agency/#org`): name LUSONUSA, described as a network (`Organization`, not an employer; use `member` → each `Person`, and each `Person` has `memberOf` → #org rather than `worksFor`). Whether `legalName` = PT Wollusca Sukses Bersama is right for the brand is an **owner decision**, since Portugal-side professionals invoice independently. Service schema `provider` = the delivering `Person`. Other fields: url, logo, email, `contactPoint` (WhatsApp +351930534440, `availableLanguage: [en, pt, id]`), `areaServed: [PT, ID]`, `knowsLanguage: [en, pt-PT, id]`, `sameAs` (LinkedIn, Instagram, GBP URL — **owner to supply**). Address: only publish an address that is real and staffable (see `off-page-playbook.md`).
 
 ---
 

@@ -3,7 +3,7 @@
 **Goal (audit §5.3–5.4, §6.4):** within 6 months, 25+ Google reviews at ≥ 4.8, 15+ relevant referring domains, and consistent entity data (same name, people, contact details everywhere) so Google and AI assistants recognise LUSONUSA as *the* Portugal ↔ Indonesia specialist.
 
 **Entity data to use everywhere (copy exactly):**
-- Name: **LUSONUSA** (all caps, one word). Legal entity: **PT Wollusca Sukses Bersama** (Purwokerto, Jawa Tengah, Indonesia)
+- Name: **LUSONUSA** (all caps, one word): a **collaborative network of independent professionals**. Each professional quotes and invoices their own services. The founder's company is **PT Wollusca Sukses Bersama** (Purwokerto, Jawa Tengah, Indonesia). *Owner decision: how to present the PT (operator of the website/brand vs. invoicing entity for Indonesia-side consulting only).*
 - Website: `https://www.lusonusa.agency/` · Email: `contact@lusonusa.agency` · WhatsApp: `+351 930 534 440`
 - Hours: 10:00–16:00 Lisbon time (Mon–Fri) · 16:00–22:00 WIB (summer) / 17:00–23:00 WIB (winter)
 - Short description (EN): "Portugal ↔ Indonesia bilateral guidance: practical, official-source information and in-person accompaniment for company setup, visas, residence paperwork and certified translations. Not a law firm. We refer you to licensed professionals when needed." Never use "legal services", "lawyer" or "sworn translator", and never offer recruitment or job placement.
@@ -190,7 +190,7 @@ Google requires a **real location where you serve customers in person, or a real
 
 - **Company page "LUSONUSA"**: tagline (EN) "Portugal ↔ Indonesia bilateral advisory for business and people". About in EN + PT. Website with `utm_source=linkedin&utm_medium=social`. Industry: Business Consulting and Services. Locations: Lisbon (if GBP option A/C) and Purwokerto. Add **PT and ID page translations** (LinkedIn supports multi-language page info).
 - **Founder profile (Aditya Putra)**: headline e.g. "Founder, LUSONUSA · Portugal ↔ Indonesia business & bilateral relations · 5 yrs Economic Section, Embassy of Indonesia in Lisbon" *[owner to confirm wording of the embassy credential]*. Featured: top 3 guides + booking link. Experience entries match the website bio exactly.
-- **Team profiles** (Mia, Joko, Nabela): list LUSONUSA as a position (with their consent) so `Person` `sameAs` works. Joko and Nabela have other employers, so they must **check their employers' outside-activity policies** *[owner/team to confirm]*.
+- **Network members' profiles** (Mia, Joko, Nabela): list LUSONUSA as a role, e.g. "Independent professional, LUSONUSA network" (with their consent, and not presented as employment) so `Person` `sameAs` works. Joko and Nabela have other employers, so they must **check their employers' outside-activity policies** *[owner/team to confirm]*.
 
 ### 4.2 Content rhythm
 
