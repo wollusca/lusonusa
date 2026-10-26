@@ -69,6 +69,7 @@ Indonesia makes excellent furniture, handicrafts, textiles, coffee, spices and o
 ### Price
 **Sourcing project from €[PRICE: owner to set]**; **Sourcing Retainer from €[PRICE: owner to set]/month** — see `/pricing/`. Supplier verification is priced per company (**Supplier Verification** package). Start with a **free 15-minute triage call**; a paid case assessment is credited if you proceed.
 Samples, courier costs, inspections, lab tests, travel, freight and duties are separate and paid by the client.
+Your quote names the professional who will deliver the service and who invoices you directly.
 
 ### FAQs
 **How do I find a reliable supplier in Indonesia?**
@@ -102,7 +103,7 @@ Business documents — product specifications, drawings, price lists, supplier o
 - **Next steps:** Already have a supplier? [Verify the company](/services/indonesian-company-verification/). Planning the shipment? See [export-import guidance](/services/export-import-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides sourcing support, guidance and document coordination. We are not a law firm, inspection body or customs broker. We do not guarantee product quality, supplier performance or delivery dates, and we do not provide legal, tax or customs advice. Contracts, certified inspections and lab tests are carried out by the client's advisers or licensed partners. Third-party costs are separate.
+LUSONUSA is a collaborative network of independent professionals; each service is quoted and invoiced by the professional who delivers it, who is named in your quote. We provide sourcing support, guidance and document coordination. We are not a law firm, inspection body or customs broker. We do not guarantee product quality, supplier performance or delivery dates, and we do not provide legal, tax or customs advice. Contracts, certified inspections and lab tests are carried out by the client's advisers or licensed partners. Third-party costs are separate.
 
 ---
 
@@ -154,6 +155,7 @@ A Indonésia produz mobiliário, artesanato, têxteis, café, especiarias e muit
 ### Preço
 **Projeto de procura desde €[PRICE: owner to set]**; **Sourcing Retainer desde €[PRICE: owner to set]/mês** — consulte `/pt/precos/`. A verificação de fornecedores é cobrada por empresa (pacote **Supplier Verification**). Comece por uma **chamada de triagem gratuita de 15 minutos**; a análise de caso paga é descontada se avançar.
 Amostras, envios, inspeções, ensaios, deslocações, frete e direitos são pagos à parte pelo cliente.
+O seu orçamento identifica o profissional que presta o serviço e que lhe fatura diretamente.
 
 ### Perguntas frequentes
 **Como encontro um fornecedor fiável na Indonésia?**
@@ -187,7 +189,7 @@ Documentos comerciais — especificações, desenhos técnicos, tabelas de preç
 - **Próximos passos:** Já tem fornecedor? [Verifique a empresa](/pt/servicos/verificar-empresa-indonesia/). A preparar o envio? Veja [exportar para a Indonésia e importar](/pt/servicos/exportar-para-indonesia/).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio na procura de fornecedores, orientação e coordenação documental. Não somos sociedade de advogados, entidade de inspeção nem despachante. Não garantimos a qualidade dos produtos, o desempenho dos fornecedores nem os prazos de entrega, e não prestamos consultoria jurídica, fiscal nem aduaneira. Contratos, inspeções certificadas e ensaios são realizados pelos consultores do cliente ou por parceiros licenciados. Os custos de terceiros são pagos à parte.
+A LUSONUSA é uma rede colaborativa de profissionais independentes; cada serviço é orçamentado e faturado pelo profissional que o presta, identificado no seu orçamento. Prestamos apoio na procura de fornecedores, orientação e coordenação documental. Não somos sociedade de advogados, entidade de inspeção nem despachante. Não garantimos a qualidade dos produtos, o desempenho dos fornecedores nem os prazos de entrega, e não prestamos consultoria jurídica, fiscal nem aduaneira. Contratos, inspeções certificadas e ensaios são realizados pelos consultores do cliente ou por parceiros licenciados. Os custos de terceiros são pagos à parte.
 
 ---
 
@@ -238,6 +240,7 @@ Pembeli dari Portugal mencari produsen Indonesia yang bisa diandalkan: mebel, ke
 ### Harga
 **Proyek sourcing mulai €[PRICE: owner to set]**; **Sourcing Retainer mulai €[PRICE: owner to set]/bulan** — lihat `/id/harga/`. Verifikasi supplier dihitung per perusahaan (paket **Supplier Verification**). Mulai dengan **konsultasi gratis 15 menit**; biaya analisis kasus berbayar diperhitungkan jika Anda melanjutkan.
 Sampel, kurir, inspeksi, uji lab, perjalanan, ongkos kirim, dan bea dibayar terpisah oleh klien.
+Penawaran harga Anda mencantumkan nama profesional yang akan menangani layanan ini dan yang langsung menagih Anda.
 
 ### Tanya jawab
 **Apa yang dicari pembeli Portugal dari supplier Indonesia?**
@@ -268,7 +271,7 @@ Dokumen bisnis — katalog, spesifikasi produk, daftar harga, dokumen legalitas 
 - **Langkah berikutnya:** Sudah punya calon supplier? [Verifikasi perusahaannya](/id/layanan/verifikasi-perusahaan-indonesia/). Siap mengirim? Lihat [ekspor-impor Portugal–Indonesia](/id/layanan/ekspor-impor-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan sourcing, panduan, dan koordinasi dokumen. Kami bukan kantor hukum, lembaga inspeksi, atau PPJK. Kami tidak menjamin kualitas produk, kinerja supplier, atau tanggal pengiriman, dan tidak memberikan jasa hukum, konsultasi pajak, atau jasa kepabeanan. Kontrak, inspeksi bersertifikat, dan uji lab dilakukan oleh penasihat klien atau mitra berizin. Biaya pihak ketiga terpisah.
+LUSONUSA adalah jaringan kolaboratif profesional independen; setiap layanan ditawarkan dan ditagihkan oleh profesional yang menanganinya, yang namanya tercantum dalam penawaran harga Anda. Kami memberikan pendampingan sourcing, panduan, dan koordinasi dokumen. Kami bukan kantor hukum, lembaga inspeksi, atau PPJK. Kami tidak menjamin kualitas produk, kinerja supplier, atau tanggal pengiriman, dan tidak memberikan jasa hukum, konsultasi pajak, atau jasa kepabeanan. Kontrak, inspeksi bersertifikat, dan uji lab dilakukan oleh penasihat klien atau mitra berizin. Biaya pihak ketiga terpisah.
 
 ---
 
@@ -281,7 +284,12 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan sourcing, panduan,
   "@id": "https://www.lusonusa.agency/services/product-sourcing-indonesia/#service",
   "name": "Product sourcing and supplier management in Indonesia",
   "serviceType": "Product sourcing and supplier management",
-  "provider": { "@id": "https://www.lusonusa.agency/#org" },
+  "provider": {
+    "@type": "Person",
+    "name": "Aditya Putra",
+    "url": "https://www.lusonusa.agency/about/aditya-putra/",
+    "memberOf": { "@id": "https://www.lusonusa.agency/#org" }
+  },
   "areaServed": [{ "@type": "Country", "name": "Indonesia" }, { "@type": "Country", "name": "Portugal" }],
   "availableLanguage": ["en", "pt-PT", "id"],
   "offers": [
@@ -294,6 +302,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan sourcing, panduan,
 - Localise per language; omit `price` until set.
 - `FAQPage` per language (the ID FAQ set is supplier-oriented, which is intentional).
 - `BreadcrumbList`: Home › Business in Indonesia › Product sourcing.
+- `provider` is the service lead as a `Person` with `memberOf` → the LUSONUSA Organization (`https://www.lusonusa.agency/#org`); LUSONUSA is a collaborative network of independent professionals and does not employ the provider. Do not set the Organization itself as `provider`.
 
 ## Official sources to cite on the page
 - EU Access2Markets (rules for importing into the EU): https://trade.ec.europa.eu/access-to-markets
@@ -306,6 +315,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan sourcing, panduan,
 ## Owner to confirm
 - **Commercial model** [verify commercial model]: client-paid fee only, or any supplier commission/margin? This affects the "Do you charge suppliers a commission?" FAQ and the ID page positioning — must be disclosed honestly.
 - [PARTNER: owner to name] inspection / lab-testing partner.
+- Who invoices this service: the named professional (Portugal side: self-employed via recibos verdes) or PT Wollusca Sukses Bersama for Indonesia-side consulting [owner to confirm]
 - `[PRICE: owner to set]` for sourcing project and monthly retainer (and what hours/suppliers the retainer covers). `[BOOKING_URL: owner to set]`.
 - Sectors to feature (current app.js: furniture, handicrafts, textiles, commodities) — add proof/case studies if available.
 - [verify] EUDR application date and scope; trade-fair names/dates (Trade Expo Indonesia, IFEX).

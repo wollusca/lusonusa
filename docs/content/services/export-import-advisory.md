@@ -68,6 +68,7 @@ Indonesia is a market of 280 million people [verify] and the EU–Indonesia trad
 ### Price
 **From €[PRICE: owner to set]** — via the **Market Entry Assessment** package on `/pricing/`; follow-on support quoted per project. Start with a **free 15-minute triage call**; a paid case assessment is credited if you proceed.
 Registration fees (BPOM, halal), testing, brokerage, freight, duties and taxes are separate and paid by the client or their importer.
+Your quote names the professional who will deliver the service and who invoices you directly.
 
 ### FAQs
 **Can I export to Indonesia without a local company?**
@@ -104,7 +105,7 @@ Business documents — product sheets, invoices, packing lists, certificates of 
 - **Next steps:** Buying from Indonesia? See [product sourcing](/services/product-sourcing-indonesia/). Want to import directly? See [PT PMA company setup](/services/pt-pma-company-setup-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance and document coordination for trade operations. We are not a customs broker, freight forwarder, bank or law firm, and we do not file customs declarations, provide legal, tax, investment or financial advice, or sell financial products. Customs and registration decisions rest with the competent authorities. Trade rules, including IEU-CEPA timing, may change; information last reviewed October 2026.
+LUSONUSA is a collaborative network of independent professionals; each service is quoted and invoiced by the professional who delivers it, who is named in your quote. We provide administrative support, guidance and document coordination for trade operations. We are not a customs broker, freight forwarder, bank or law firm, and we do not file customs declarations, provide legal, tax, investment or financial advice, or sell financial products. Customs and registration decisions rest with the competent authorities. Trade rules, including IEU-CEPA timing, may change; information last reviewed October 2026.
 
 ---
 
@@ -155,6 +156,7 @@ A Indonésia é um mercado de cerca de 280 milhões de pessoas [verify] e o acor
 ### Preço
 **Desde €[PRICE: owner to set]** — através do pacote **Market Entry Assessment** em `/pt/precos/`; o acompanhamento posterior é orçamentado por projeto. Comece por uma **chamada de triagem gratuita de 15 minutos**; a análise de caso paga é descontada se avançar.
 Taxas de registo (BPOM, halal), ensaios, despacho, frete, direitos e impostos são pagos à parte pelo cliente ou pelo seu importador.
+O seu orçamento identifica o profissional que presta o serviço e que lhe fatura diretamente.
 
 ### Perguntas frequentes
 **Posso exportar para a Indonésia sem empresa local?**
@@ -191,7 +193,7 @@ Documentos comerciais — fichas de produto, faturas, listas de embalagem, certi
 - **Próximos passos:** Vai comprar à Indonésia? Veja [fornecedores na Indonésia](/pt/servicos/fornecedores-indonesia/). Quer importar diretamente? Veja [abrir empresa na Indonésia (PT PMA)](/pt/servicos/abrir-empresa-indonesia-pt-pma/).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientação e coordenação documental em operações de comércio internacional. Não somos despachante, transitário, banco nem sociedade de advogados; não apresentamos declarações aduaneiras, não prestamos consultoria jurídica, fiscal, de investimento ou financeira, nem vendemos produtos financeiros. As decisões aduaneiras e de registo cabem às autoridades competentes. As regras comerciais, incluindo o calendário do IEU-CEPA, podem mudar; informação revista em outubro de 2026.
+A LUSONUSA é uma rede colaborativa de profissionais independentes; cada serviço é orçamentado e faturado pelo profissional que o presta, identificado no seu orçamento. Prestamos apoio administrativo, orientação e coordenação documental em operações de comércio internacional. Não somos despachante, transitário, banco nem sociedade de advogados; não apresentamos declarações aduaneiras, não prestamos consultoria jurídica, fiscal, de investimento ou financeira, nem vendemos produtos financeiros. As decisões aduaneiras e de registo cabem às autoridades competentes. As regras comerciais, incluindo o calendário do IEU-CEPA, podem mudar; informação revista em outubro de 2026.
 
 ---
 
@@ -242,6 +244,7 @@ Perjanjian dagang Indonesia–Uni Eropa (IEU-CEPA) membuka peluang baru bagi eks
 ### Harga
 **Mulai €[PRICE: owner to set]** — melalui paket **Market Entry Assessment** di `/id/harga/`; pendampingan lanjutan dihitung per proyek. Mulai dengan **konsultasi gratis 15 menit**; biaya analisis kasus berbayar diperhitungkan jika Anda melanjutkan.
 Biaya registrasi (BPOM, halal), uji lab, PPJK, ongkos kirim, bea, dan pajak dibayar terpisah oleh klien atau importir.
+Penawaran harga Anda mencantumkan nama profesional yang akan menangani layanan ini dan yang langsung menagih Anda.
 
 ### Tanya jawab
 **Apa itu IEU-CEPA dan kapan berlaku?**
@@ -272,7 +275,7 @@ Dokumen bisnis — spesifikasi produk, invoice, packing list, SKA — boleh, lew
 - **Langkah berikutnya:** Mencari supplier atau pembeli? Lihat [pencarian supplier Indonesia](/id/layanan/pencarian-supplier-indonesia/). Mitra Portugal ingin impor langsung? Lihat [pendirian PT PMA](/id/layanan/pendirian-pt-pma/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan, dan koordinasi dokumen untuk kegiatan perdagangan. Kami bukan PPJK, forwarder, bank, atau kantor hukum; kami tidak mengajukan dokumen kepabeanan, tidak memberikan jasa hukum, konsultasi pajak, nasihat investasi, atau nasihat keuangan, serta tidak menjual produk keuangan. Keputusan kepabeanan dan registrasi ada di instansi berwenang. Aturan perdagangan, termasuk jadwal IEU-CEPA, dapat berubah; informasi terakhir ditinjau Oktober 2026.
+LUSONUSA adalah jaringan kolaboratif profesional independen; setiap layanan ditawarkan dan ditagihkan oleh profesional yang menanganinya, yang namanya tercantum dalam penawaran harga Anda. Kami memberikan pendampingan administratif, panduan, dan koordinasi dokumen untuk kegiatan perdagangan. Kami bukan PPJK, forwarder, bank, atau kantor hukum; kami tidak mengajukan dokumen kepabeanan, tidak memberikan jasa hukum, konsultasi pajak, nasihat investasi, atau nasihat keuangan, serta tidak menjual produk keuangan. Keputusan kepabeanan dan registrasi ada di instansi berwenang. Aturan perdagangan, termasuk jadwal IEU-CEPA, dapat berubah; informasi terakhir ditinjau Oktober 2026.
 
 ---
 
@@ -285,7 +288,12 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
   "@id": "https://www.lusonusa.agency/services/export-import-portugal-indonesia/#service",
   "name": "Export-import guidance Portugal–Indonesia",
   "serviceType": "Trade compliance guidance and document coordination",
-  "provider": { "@id": "https://www.lusonusa.agency/#org" },
+  "provider": {
+    "@type": "Person",
+    "name": "Aditya Putra",
+    "url": "https://www.lusonusa.agency/about/aditya-putra/",
+    "memberOf": { "@id": "https://www.lusonusa.agency/#org" }
+  },
   "areaServed": [{ "@type": "Country", "name": "Indonesia" }, { "@type": "Country", "name": "Portugal" }, { "@type": "Place", "name": "European Union" }],
   "availableLanguage": ["en", "pt-PT", "id"],
   "offers": {
@@ -300,7 +308,8 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 - Localise per language; omit `price` until set.
 - `FAQPage` per language. IEU-CEPA and EUDR answers are time-sensitive: show "Last reviewed" and refresh when the agreement is signed.
 - `BreadcrumbList`: Home › Business in Indonesia › Export-import guidance.
-- Optional `contributor` → Joko Supriyanto `Person` @id for the payment-terms block.
+- `provider` is the service lead as a `Person` with `memberOf` → the LUSONUSA Organization (`https://www.lusonusa.agency/#org`); LUSONUSA is a collaborative network of independent professionals and does not employ the provider. Do not set the Organization itself as `provider`.
+- Optional `contributor` → Joko Supriyanto `Person` @id for the payment-terms block, also with `memberOf` → `https://www.lusonusa.agency/#org`.
 
 ## Official sources to cite on the page
 - European Commission — EU–Indonesia: https://policy.trade.ec.europa.eu (EU trade relations with Indonesia) [verify deep URL]
@@ -315,6 +324,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 
 ## Owner to confirm
 - [PARTNER: owner to name] customs broker / freight forwarder (PT and ID side) and, if needed, a registration agent for BPOM/halal.
+- Who invoices this service: the named professional (Portugal side: self-employed via recibos verdes) or PT Wollusca Sukses Bersama for Indonesia-side consulting [owner to confirm]
 - `[PRICE: owner to set]` for Market Entry Assessment and follow-on project pricing. `[BOOKING_URL: owner to set]`.
 - [verify] Indonesia population figure (~280 m); NIB as API; BPOM registrant rules for imports; halal phase deadlines for imported goods; alcohol import regime; IEU-CEPA signature/entry-into-force dates and ~98% tariff-line figure; EU GSP end for Indonesia; EUDR application date; INSW and TARIC URLs.
 - Joko Supriyanto's role: general explanation of payment instruments only — confirm he is comfortable being named and that wording never implies endorsement by his employer bank.

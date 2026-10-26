@@ -73,6 +73,7 @@ Typical total for a low-risk activity: 4–8 weeks [verify]. Timelines depend on
 ### Price
 **From €[PRICE: owner to set]** — see the **PT PMA Setup** package on `/pricing/`. Not sure yet? Start with the **Market Entry Assessment** or a **free 15-minute triage call**; a paid case assessment is credited if you proceed.
 Our fee covers coordination, guidance and document management. Government fees, notary fees, licensed partner fees (law firm, tax consultant), translations and the capital deposit itself are separate and paid by the client.
+Your quote names the professional who will deliver the service and who invoices you directly.
 
 ### FAQs
 **What is the minimum capital for a PT PMA in 2026?**
@@ -109,7 +110,7 @@ No — for your security we don't receive passports or other ID documents of sha
 - **Next steps:** Moving there yourself? See [Indonesia visa & KITAS](/services/indonesia-visa-kitas/). Selling or buying goods? See [export-import guidance](/services/export-import-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, practical guidance based on public official information and document coordination. We are not a law firm and do not provide legal, tax or investment advice. Notarial deeds, legal opinions and tax representation are carried out by licensed partners. Approvals depend on the competent authorities and are not guaranteed. Government and partner fees are separate. Regulatory information was last reviewed in October 2026 and may change.
+LUSONUSA is a collaborative network of independent professionals; each service is quoted and invoiced by the professional who delivers it, who is named in your quote. We provide administrative support, practical guidance based on public official information and document coordination. We are not a law firm and do not provide legal, tax or investment advice. Notarial deeds, legal opinions and tax representation are carried out by licensed partners. Approvals depend on the competent authorities and are not guaranteed. Government and partner fees are separate. Regulatory information was last reviewed in October 2026 and may change.
 
 ---
 
@@ -165,6 +166,7 @@ Para uma atividade de baixo risco, o prazo total habitual ronda 4 a 8 semanas [v
 ### Preço
 **Desde €[PRICE: owner to set]** — consulte o pacote **PT PMA Setup** em `/pt/precos/`. Ainda a avaliar? Comece pelo **Market Entry Assessment** ou por uma **chamada de triagem gratuita de 15 minutos**; a análise de caso paga é descontada se avançar.
 Os nossos honorários cobrem coordenação, orientação e gestão documental. Taxas oficiais, emolumentos notariais, honorários de parceiros licenciados (advogados, consultor fiscal), traduções e o próprio depósito de capital são pagos à parte pelo cliente.
+O seu orçamento identifica o profissional que presta o serviço e que lhe fatura diretamente.
 
 ### Perguntas frequentes
 **Qual é o capital mínimo de uma PT PMA em 2026?**
@@ -201,7 +203,7 @@ Não — por segurança, não recebemos por via digital passaportes nem outros d
 - **Próximos passos:** Vai mudar-se para a Indonésia? Veja [vistos e KITAS para a Indonésia](/pt/servicos/visto-indonesia-kitas/). Vai comprar ou vender mercadorias? Veja [apoio à exportação para a Indonésia](/pt/servicos/exportar-para-indonesia/).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientação prática com base em informação oficial pública e coordenação documental. Não somos uma sociedade de advogados e não prestamos consultoria jurídica, fiscal nem de investimento. Escrituras, pareceres jurídicos e representação fiscal são assegurados por parceiros licenciados. As aprovações dependem das autoridades competentes e não são garantidas. Taxas oficiais e honorários de parceiros são pagos à parte. Informação regulamentar revista em outubro de 2026, sujeita a alterações.
+A LUSONUSA é uma rede colaborativa de profissionais independentes; cada serviço é orçamentado e faturado pelo profissional que o presta, identificado no seu orçamento. Prestamos apoio administrativo, orientação prática com base em informação oficial pública e coordenação documental. Não somos uma sociedade de advogados e não prestamos consultoria jurídica, fiscal nem de investimento. Escrituras, pareceres jurídicos e representação fiscal são assegurados por parceiros licenciados. As aprovações dependem das autoridades competentes e não são garantidas. Taxas oficiais e honorários de parceiros são pagos à parte. Informação regulamentar revista em outubro de 2026, sujeita a alterações.
 
 ---
 
@@ -209,7 +211,7 @@ A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientaçã
 
 ### SEO
 - **Judul (53):** Pendirian PT PMA di Indonesia untuk Investor Portugal
-- **Meta description (142):** Pendampingan pendirian PT PMA untuk investor Portugal: cek KBLI, modal sesuai aturan 2025, OSS/NIB, notaris, dan rekening bank. Tim bilingual.
+- **Meta description (150):** Pendampingan pendirian PT PMA untuk investor Portugal: cek KBLI, modal sesuai aturan 2025, OSS/NIB, notaris, dan rekening bank. Profesional bilingual.
 
 ### H1
 Pendirian PT PMA di Indonesia untuk perusahaan dan investor Portugal
@@ -257,6 +259,7 @@ Untuk usaha berisiko rendah, total waktu biasanya 4–8 minggu [verify]. Waktu b
 ### Harga
 **Mulai €[PRICE: owner to set]** — lihat paket **PT PMA Setup** di `/id/harga/`. Masih menimbang? Mulai dengan **Market Entry Assessment** atau **konsultasi gratis 15 menit**; biaya analisis kasus berbayar diperhitungkan jika Anda melanjutkan.
 Biaya kami mencakup koordinasi, panduan, dan pengelolaan dokumen. Biaya pemerintah, notaris, mitra berizin (kantor hukum, konsultan pajak), terjemahan, serta setoran modal dibayar terpisah oleh klien.
+Penawaran harga Anda mencantumkan nama profesional yang akan menangani layanan ini dan yang langsung menagih Anda.
 
 ### Tanya jawab
 **Berapa modal minimum PT PMA di 2026?**
@@ -290,7 +293,7 @@ Tidak — demi keamanan Anda, kami tidak menerima paspor atau dokumen identitas 
 - **Langkah berikutnya:** Direktur akan tinggal di Indonesia? Lihat [visa & KITAS Indonesia untuk WNA](/id/layanan/visa-kitas-indonesia-wna/). Akan ekspor-impor barang? Lihat [ekspor-impor Portugal–Indonesia](/id/layanan/ekspor-impor-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan praktis berdasarkan informasi resmi publik, dan koordinasi dokumen. Kami bukan kantor hukum dan tidak memberikan jasa hukum, konsultasi pajak, atau nasihat investasi. Akta notaris, pendapat hukum, dan kuasa pajak dikerjakan oleh mitra berizin. Persetujuan bergantung pada instansi berwenang dan tidak dijamin. Biaya pemerintah dan mitra terpisah. Informasi regulasi terakhir ditinjau Oktober 2026 dan dapat berubah.
+LUSONUSA adalah jaringan kolaboratif profesional independen; setiap layanan ditawarkan dan ditagihkan oleh profesional yang menanganinya, yang namanya tercantum dalam penawaran harga Anda. Kami memberikan pendampingan administratif, panduan praktis berdasarkan informasi resmi publik, dan koordinasi dokumen. Kami bukan kantor hukum dan tidak memberikan jasa hukum, konsultasi pajak, atau nasihat investasi. Akta notaris, pendapat hukum, dan kuasa pajak dikerjakan oleh mitra berizin. Persetujuan bergantung pada instansi berwenang dan tidak dijamin. Biaya pemerintah dan mitra terpisah. Informasi regulasi terakhir ditinjau Oktober 2026 dan dapat berubah.
 
 ---
 
@@ -303,7 +306,12 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
   "@id": "https://www.lusonusa.agency/services/pt-pma-company-setup-indonesia/#service",
   "name": "PT PMA company setup in Indonesia",
   "serviceType": "Foreign company (PT PMA) setup support — administrative support and document coordination",
-  "provider": { "@id": "https://www.lusonusa.agency/#org" },
+  "provider": {
+    "@type": "Person",
+    "name": "Aditya Putra",
+    "url": "https://www.lusonusa.agency/about/aditya-putra/",
+    "memberOf": { "@id": "https://www.lusonusa.agency/#org" }
+  },
   "areaServed": [{ "@type": "Country", "name": "Indonesia" }, { "@type": "Country", "name": "Portugal" }],
   "availableLanguage": ["en", "pt-PT", "id"],
   "audience": { "@type": "BusinessAudience", "audienceType": "Portuguese companies and investors entering Indonesia" },
@@ -320,6 +328,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 - `FAQPage` from the FAQ block of each language (same questions, localised).
 - `BreadcrumbList`: Home › Business in Indonesia › PT PMA company setup (PT: Início › Negócios na Indonésia › Abrir empresa na Indonésia (PT PMA); ID: Beranda › Bisnis ke Indonesia › Pendirian PT PMA).
 - Do not use `LegalService` type.
+- `provider` is the service lead as a `Person` with `memberOf` → the LUSONUSA Organization (`https://www.lusonusa.agency/#org`); LUSONUSA is a collaborative network of independent professionals and does not employ the provider. Do not set the Organization itself as `provider`.
 
 ## Official sources to cite on the page
 - OSS-RBA: https://oss.go.id
@@ -332,6 +341,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 
 ## Owner to confirm
 - [PARTNER: owner to name] Indonesian notary, law firm and licensed tax consultant.
+- Who invoices this service: the named professional (Portugal side: self-employed via recibos verdes) or PT Wollusca Sukses Bersama for Indonesia-side consulting [owner to confirm]
 - `[PRICE: owner to set]` for PT PMA Setup and Market Entry Assessment; whether bookkeeping/LKPM filing is offered as a retainer.
 - `[BOOKING_URL: owner to set]`.
 - [verify] Reg 5/2025 detail: IDR 10 bn investment plan per KBLI per location, exclusion of land & buildings; 12-month capital withdrawal restriction.

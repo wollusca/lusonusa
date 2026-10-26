@@ -47,9 +47,9 @@ Indonesia's visa system changed: the old B211A is gone and the new index uses co
 - Coordination with the Indonesian sponsor (your PT PMA, partner company or licensed sponsor partner [PARTNER: owner to name])
 - Step-by-step guidance (in person or on a call) while you fill in the form and upload your documents yourself on the official e-Visa portal — we never receive copies of your passport or other ID
 - Reminders for extensions, reporting and expiry dates
-- Optional add-on: arrival and concierge support (airport pickup, SIM card, bilingual local guide for business visits) [verify that the add-on covers arrivals in Indonesia]
+- Optional add-on: arrival and concierge support (SIM card guidance, plus recommendations and booking assistance for an airport pickup or a bilingual local guide for business visits — we help you book directly with the provider and you pay the provider directly) [verify that the add-on covers arrivals in Indonesia]
 
-**Not included:** legal advice or representation before immigration authorities; submitting applications on your behalf; guaranteed approval; RPTKA/work permit filings that must be made by the employer or a licensed agent; finding, recruiting or placing staff; government visa fees; flights and accommodation (we are not a travel agency).
+**Not included:** legal advice or representation before immigration authorities; submitting applications on your behalf; guaranteed approval; RPTKA/work permit filings that must be made by the employer or a licensed agent; finding, recruiting or placing staff; government visa fees; flights, hotels, transport and local guides (we are not a travel agency: we can recommend options and help you book directly with the provider, but we don't sell travel packages, resell these services or collect payment for them).
 
 ### What we don't do / when you need a lawyer
 - We are not an immigration agent or sponsor and do not represent you before Indonesian Immigration.
@@ -70,6 +70,7 @@ Indonesia's visa system changed: the old B211A is gone and the new index uses co
 ### Price
 **From €[PRICE: owner to set]** per applicant — discussed after a **free 15-minute triage call**; a paid case assessment is credited if you proceed. For directors of a new company, visa support can be bundled with the **PT PMA Setup** package; business-trip planning fits the **Market Entry Assessment**.
 Government visa/KITAS fees, sponsor or agent fees, and any translations are separate and paid by the client.
+Your quote names the professional who will deliver the service and who invoices you directly.
 
 ### FAQs
 **Do Portuguese citizens need a visa for Indonesia?**
@@ -106,7 +107,7 @@ No — for your security we don't receive ID or immigration documents digitally.
 - **Next steps:** Need a company to sponsor your Investor KITAS? See [PT PMA company setup](/services/pt-pma-company-setup-indonesia/). Want help on the ground? See the [arrival & concierge add-on](/services/students-housing-arrival-portugal/#arrival-concierge).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance and document coordination for visa applications. We are not an immigration authority, immigration agent or law firm, and do not provide legal advice or legal representation. We do not receive identity documents digitally and do not recruit or place workers. Decisions rest solely with the Directorate General of Immigration of Indonesia and are not guaranteed. Government fees are separate. Visa rules change often; information last reviewed October 2026.
+LUSONUSA is a collaborative network of independent professionals; each service is quoted and invoiced by the professional who delivers it, who is named in your quote. We provide administrative support, guidance and document coordination for visa applications. We are not an immigration authority, immigration agent or law firm, and do not provide legal advice or legal representation. We do not receive identity documents digitally and do not recruit or place workers. Decisions rest solely with the Directorate General of Immigration of Indonesia and are not guaranteed. Government fees are separate. Any travel, transport or guide services are recommendations and booking assistance only; you book and pay the provider directly. Visa rules change often; information last reviewed October 2026.
 
 ---
 
@@ -136,9 +137,9 @@ O sistema de vistos indonésio mudou: o antigo B211A deixou de existir e a nova 
 - Articulação com o patrocinador indonésio (a sua PT PMA, a empresa parceira ou um patrocinador parceiro licenciado [PARTNER: owner to name])
 - Acompanhamento passo a passo (presencial ou por chamada) enquanto preenche o formulário e carrega os seus documentos no portal oficial de e-Visa — nunca recebemos cópias do seu passaporte ou de outros documentos de identificação
 - Lembretes de prorrogações, comunicações obrigatórias e datas de validade
-- Serviço opcional: apoio à chegada e concierge (recolha no aeroporto, cartão SIM, guia local bilingue para visitas de negócios) [verify that the add-on covers arrivals in Indonesia]
+- Serviço opcional: apoio à chegada e concierge (orientação para o cartão SIM e ainda recomendações e apoio à reserva de recolha no aeroporto ou de um guia local bilingue para visitas de negócios — ajudamos a reservar diretamente com o prestador e o pagamento é feito diretamente ao prestador) [verify that the add-on covers arrivals in Indonesia]
 
-**Não está incluído:** consultoria jurídica ou representação perante os serviços de imigração; submissão de pedidos em nome do cliente; garantia de aprovação; pedidos de RPTKA/autorização de trabalho que tenham de ser apresentados pelo empregador ou por agente licenciado; procura, seleção ou cedência de trabalhadores; taxas oficiais de visto; voos e alojamento (não somos agência de viagens).
+**Não está incluído:** consultoria jurídica ou representação perante os serviços de imigração; submissão de pedidos em nome do cliente; garantia de aprovação; pedidos de RPTKA/autorização de trabalho que tenham de ser apresentados pelo empregador ou por agente licenciado; procura, seleção ou cedência de trabalhadores; taxas oficiais de visto; voos, hotéis, transportes e guias locais (não somos agência de viagens: podemos recomendar opções e ajudar a reservar diretamente com o prestador, mas não vendemos pacotes de viagem, não revendemos estes serviços nem recebemos pagamentos por eles).
 
 ### O que não fazemos / quando precisa de um advogado
 - Não somos agente de imigração nem patrocinador e não o representamos perante a Imigração indonésia.
@@ -159,6 +160,7 @@ O sistema de vistos indonésio mudou: o antigo B211A deixou de existir e a nova 
 ### Preço
 **Desde €[PRICE: owner to set]** por requerente — definido após uma **chamada de triagem gratuita de 15 minutos**; a análise de caso paga é descontada se avançar. Para administradores de uma nova empresa, o apoio ao visto pode ser incluído no pacote **PT PMA Setup**; o planeamento de viagens de negócios enquadra-se no **Market Entry Assessment**.
 Taxas oficiais de visto/KITAS, honorários de patrocinadores ou agentes e eventuais traduções são pagos à parte pelo cliente.
+O seu orçamento identifica o profissional que presta o serviço e que lhe fatura diretamente.
 
 ### Perguntas frequentes
 **Os cidadãos portugueses precisam de visto para a Indonésia?**
@@ -195,7 +197,7 @@ Não — por segurança, não recebemos documentos de identificação nem de imi
 - **Próximos passos:** Precisa de uma empresa que patrocine o seu KITAS de investidor? Veja [abrir empresa na Indonésia (PT PMA)](/pt/servicos/abrir-empresa-indonesia-pt-pma/). Quer apoio no terreno? Veja o [serviço de chegada e concierge](/pt/servicos/estudantes-alojamento-chegada/#chegada-concierge).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientação e coordenação documental em pedidos de visto. Não somos autoridade de imigração, agente de imigração nem sociedade de advogados, e não prestamos consultoria jurídica nem representação legal. Não recebemos documentos de identificação por via digital nem selecionamos ou cedemos trabalhadores. A decisão cabe exclusivamente à Direção-Geral de Imigração da Indonésia e não é garantida. As taxas oficiais são pagas à parte. As regras de vistos mudam com frequência; informação revista em outubro de 2026.
+A LUSONUSA é uma rede colaborativa de profissionais independentes; cada serviço é orçamentado e faturado pelo profissional que o presta, identificado no seu orçamento. Prestamos apoio administrativo, orientação e coordenação documental em pedidos de visto. Não somos autoridade de imigração, agente de imigração nem sociedade de advogados, e não prestamos consultoria jurídica nem representação legal. Não recebemos documentos de identificação por via digital nem selecionamos ou cedemos trabalhadores. A decisão cabe exclusivamente à Direção-Geral de Imigração da Indonésia e não é garantida. As taxas oficiais são pagas à parte. Serviços de viagem, transporte ou guia limitam-se a recomendações e apoio à reserva; o cliente reserva e paga diretamente ao prestador. As regras de vistos mudam com frequência; informação revista em outubro de 2026.
 
 ---
 
@@ -225,9 +227,9 @@ Sistem visa Indonesia sudah berubah: B211A tidak dipakai lagi dan indeks baru me
 - Koordinasi dengan sponsor di Indonesia (PT PMA Anda, perusahaan mitra, atau sponsor mitra berizin [PARTNER: owner to name])
 - Panduan langkah demi langkah (tatap muka atau lewat panggilan) saat pemohon mengisi formulir dan mengunggah sendiri dokumennya di portal resmi e-Visa — kami tidak pernah menerima salinan paspor atau identitas lain
 - Pengingat perpanjangan, pelaporan, dan masa berlaku
-- Layanan tambahan opsional: penjemputan bandara, kartu SIM, dan pendamping lokal bilingual untuk kunjungan bisnis [verify that the add-on covers arrivals in Indonesia]
+- Layanan tambahan opsional: panduan kartu SIM, serta rekomendasi dan bantuan pemesanan penjemputan bandara atau pendamping lokal bilingual untuk kunjungan bisnis — kami bantu Anda memesan langsung ke penyedia jasa, dan pembayaran langsung ke penyedia tersebut [verify that the add-on covers arrivals in Indonesia]
 
-**Tidak termasuk:** jasa hukum atau kuasa hukum di hadapan imigrasi; mengajukan permohonan atas nama pemohon; jaminan visa disetujui; pengajuan RPTKA/izin kerja yang wajib dilakukan pemberi kerja atau agen berizin; mencarikan atau menyalurkan tenaga kerja; biaya visa resmi; tiket dan hotel (kami bukan biro perjalanan).
+**Tidak termasuk:** jasa hukum atau kuasa hukum di hadapan imigrasi; mengajukan permohonan atas nama pemohon; jaminan visa disetujui; pengajuan RPTKA/izin kerja yang wajib dilakukan pemberi kerja atau agen berizin; mencarikan atau menyalurkan tenaga kerja; biaya visa resmi; tiket, hotel, transportasi, dan pemandu lokal (kami bukan biro perjalanan: kami bisa memberi rekomendasi dan membantu Anda memesan langsung ke penyedia jasa, tetapi kami tidak menjual paket perjalanan, tidak menjual kembali layanan tersebut, dan tidak menerima pembayaran untuknya).
 
 ### Yang tidak kami lakukan / kapan Anda perlu pengacara
 - Kami bukan agen imigrasi atau sponsor dan tidak mewakili pemohon di hadapan Imigrasi.
@@ -248,6 +250,7 @@ Sistem visa Indonesia sudah berubah: B211A tidak dipakai lagi dan indeks baru me
 ### Harga
 **Mulai €[PRICE: owner to set]** per pemohon — ditentukan setelah **konsultasi gratis 15 menit**; biaya analisis kasus berbayar diperhitungkan jika Anda melanjutkan. Untuk direktur PT PMA baru, pendampingan visa bisa digabung dengan paket **PT PMA Setup**; perencanaan kunjungan bisnis masuk paket **Market Entry Assessment**.
 Biaya visa/KITAS resmi, biaya sponsor atau agen, dan terjemahan dibayar terpisah oleh klien.
+Penawaran harga Anda mencantumkan nama profesional yang akan menangani layanan ini dan yang langsung menagih Anda.
 
 ### Tanya jawab
 **Apakah WN Portugal perlu visa ke Indonesia?**
@@ -281,7 +284,7 @@ Tidak — demi keamanan Anda, kami tidak menerima dokumen identitas atau imigras
 - **Langkah berikutnya:** Perlu PT PMA sebagai sponsor KITAS investor? Lihat [pendirian PT PMA](/id/layanan/pendirian-pt-pma/). Butuh bantuan saat kedatangan? Lihat [layanan concierge kedatangan](/id/layanan/mahasiswa-akomodasi-kedatangan-portugal/#kedatangan-concierge).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan, dan koordinasi dokumen untuk pengajuan visa. Kami bukan instansi imigrasi, agen imigrasi, atau kantor hukum, dan tidak memberikan jasa hukum atau kuasa hukum. Kami tidak menerima dokumen identitas secara digital dan tidak menyalurkan tenaga kerja. Keputusan sepenuhnya ada di Direktorat Jenderal Imigrasi dan tidak dijamin. Biaya resmi terpisah. Aturan visa sering berubah; informasi terakhir ditinjau Oktober 2026.
+LUSONUSA adalah jaringan kolaboratif profesional independen; setiap layanan ditawarkan dan ditagihkan oleh profesional yang menanganinya, yang namanya tercantum dalam penawaran harga Anda. Kami memberikan pendampingan administratif, panduan, dan koordinasi dokumen untuk pengajuan visa. Kami bukan instansi imigrasi, agen imigrasi, atau kantor hukum, dan tidak memberikan jasa hukum atau kuasa hukum. Kami tidak menerima dokumen identitas secara digital dan tidak menyalurkan tenaga kerja. Keputusan sepenuhnya ada di Direktorat Jenderal Imigrasi dan tidak dijamin. Biaya resmi terpisah. Untuk perjalanan, transportasi, atau pemandu, kami hanya memberi rekomendasi dan bantuan pemesanan; Anda memesan dan membayar langsung ke penyedia jasa. Aturan visa sering berubah; informasi terakhir ditinjau Oktober 2026.
 
 ---
 
@@ -294,7 +297,12 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
   "@id": "https://www.lusonusa.agency/services/indonesia-visa-kitas/#service",
   "name": "Indonesia visa and KITAS support",
   "serviceType": "Visa and stay-permit application support — administrative support and document coordination",
-  "provider": { "@id": "https://www.lusonusa.agency/#org" },
+  "provider": {
+    "@type": "Person",
+    "name": "Aditya Putra",
+    "url": "https://www.lusonusa.agency/about/aditya-putra/",
+    "memberOf": { "@id": "https://www.lusonusa.agency/#org" }
+  },
   "areaServed": [{ "@type": "Country", "name": "Indonesia" }, { "@type": "Country", "name": "Portugal" }],
   "availableLanguage": ["en", "pt-PT", "id"],
   "offers": {
@@ -309,6 +317,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 - `FAQPage` per language. Visa FAQ answers change often — add a visible "Last reviewed" date and refresh quarterly.
 - `BreadcrumbList`: Home › Business in Indonesia › Indonesia visa & KITAS.
 - Do not use `GovernmentService` or `LegalService`.
+- `provider` is the service lead as a `Person` with `memberOf` → the LUSONUSA Organization (`https://www.lusonusa.agency/#org`); LUSONUSA is a collaborative network of independent professionals and does not employ the provider. Do not set the Organization itself as `provider`.
 - Do not describe the service as "visa application" or "submission on your behalf" in schema; the client submits on the official portal.
 
 ## Official sources to cite on the page
@@ -321,6 +330,8 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 
 ## Owner to confirm
 - [PARTNER: owner to name] licensed visa sponsor/agent for clients without their own PT PMA.
+- Who invoices this service: the named professional (Portugal side: self-employed via recibos verdes) or PT Wollusca Sukses Bersama for Indonesia-side consulting [owner to confirm]
+- Travel-related add-on items (airport pickup, local guide) are recommendations and booking assistance only — the client books and pays the provider directly; confirm no referral commissions are received [owner to confirm].
 - `[PRICE: owner to set]` per applicant; whether family-member applications are priced separately. `[BOOKING_URL: owner to set]`.
 - Whether the "Arrival & concierge" add-on is offered for arrivals in Indonesia (current spec places it on the Portugal students page); if not, change the second cross-sell to an Indonesia-side add-on or drop it. Confirm the anchor IDs `#arrival-concierge` / `#chegada-concierge` / `#kedatangan-concierge` with the students page file.
 - [verify] C2 duration/extension (60 days, up to 180); D2 validity; E28A capital threshold after Reg 5/2025; E33G income threshold (~USD 60k); work KITAS code (E23); VoA/e-VoA eligibility and duration for Portugal; typical e-Visa decision times; allindonesia arrival card URL.

@@ -78,6 +78,7 @@ Without a Portuguese bank account you can't easily receive a salary, pay rent or
 - **Not included:** bank fees and account maintenance charges, SIM/mobile plan costs, Junta de Freguesia fees for certificates [verify], travel outside the Lisbon area.
 - Bundled in the **Arrival Starter** package (NIF, NISS and bank account) → see Pricing.
 - **20% community/student discount** on NUSA personal services. Free 15-min triage; paid case assessment credited in full if you proceed.
+- Your quote names the professional who will deliver the service and who invoices you directly.
 
 ### FAQs
 **Can a foreigner open a bank account in Portugal?**
@@ -110,7 +111,7 @@ No — for your security we don't receive ID or immigration documents digitally.
 - **Hours line:** 10:00–16:00 Lisbon time (Mon–Fri) · 16:00–22:00 WIB (summer) / 17:00–23:00 WIB (winter).
 
 ### Disclaimer
-LUSONUSA provides administrative support, guidance and document coordination. We are not a bank, payment institution or credit intermediary, we do not sell or recommend financial products and we are not affiliated with any bank. Account opening is decided solely by each bank under its own rules. We do not provide legal, tax or investment advice. Bank and third-party fees are paid by the client. Operated by PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia).
+LUSONUSA is a collaborative network of independent professionals; each service is quoted and invoiced by the professional who delivers it, who is named in your quote. We provide administrative support, guidance and document coordination. We are not a bank, payment institution or credit intermediary, we do not sell or recommend financial products and we are not affiliated with any bank. Account opening is decided solely by each bank under its own rules. We do not provide legal, tax or investment advice. Bank and third-party fees are paid by the client.
 
 ---
 
@@ -162,6 +163,7 @@ Sem conta bancária portuguesa é difícil receber o salário, pagar a renda ou 
 - **Não inclui:** comissões bancárias e de manutenção, custos de tarifário móvel, emolumentos da Junta de Freguesia [verify], deslocações fora da Grande Lisboa.
 - Incluído no pacote **Arrival Starter** (NIF, NISS e conta bancária) → ver Preços.
 - **Desconto de 20%** para estudantes e comunidade. Triagem gratuita; avaliação de caso descontada se avançar.
+- O seu orçamento identifica o profissional que presta o serviço e que lhe fatura diretamente.
 
 ### Perguntas frequentes
 **Um estrangeiro pode abrir conta bancária em Portugal?**
@@ -179,7 +181,7 @@ Alguns bancos permitem abertura à distância para não residentes, com requisit
 **Que banco recomendam?**
 Nenhum em particular. Não promovemos bancos nem vendemos produtos financeiros; explicamos o que comparar (comissões, balcões, idioma da app, requisitos).
 
-**A nossa empresa contratou trabalhadores indonésios. Podem apoiá-los?**
+**Somos uma entidade empregadora e contratámos trabalhadores indonésios. Podem apoiá-los?**
 Sim, se a empresa nos encaminhar os colaboradores já contratados: organizamos sessões informativas e acompanhamentos presenciais para NIF, NISS e conta bancária. Condições de encaminhamento pelo empregador mediante pedido [owner to confirm]. A LUSONUSA não recruta, não seleciona nem coloca trabalhadores.
 
 **Posso enviar-vos os meus documentos por WhatsApp?**
@@ -194,7 +196,7 @@ Não — por razões de segurança, não recebemos documentos de identificação
 - **Horário:** 10:00–16:00, hora de Lisboa (segunda a sexta) · 16:00–22:00 WIB (verão) / 17:00–23:00 WIB (inverno).
 
 ### Aviso
-A LUSONUSA presta apoio administrativo, orientação e coordenação documental. Não é banco, instituição de pagamento nem intermediário de crédito, não comercializa nem recomenda produtos financeiros e não tem ligação a qualquer banco. A abertura de conta é decidida exclusivamente por cada banco. Não prestamos consultoria jurídica, fiscal ou de investimento. Comissões bancárias e custos de terceiros são suportados pelo cliente. Serviço prestado por PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonésia).
+A LUSONUSA é uma rede colaborativa de profissionais independentes; cada serviço é orçamentado e faturado pelo profissional que o presta, identificado no seu orçamento. A LUSONUSA presta apoio administrativo, orientação e coordenação documental. Não é banco, instituição de pagamento nem intermediário de crédito, não comercializa nem recomenda produtos financeiros e não tem ligação a qualquer banco. A abertura de conta é decidida exclusivamente por cada banco. Não prestamos consultoria jurídica, fiscal ou de investimento. Comissões bancárias e custos de terceiros são suportados pelo cliente.
 
 ---
 
@@ -246,6 +248,7 @@ Tanpa rekening bank Portugal, susah terima gaji, bayar sewa kamar, atau pakai MB
 - **Belum termasuk:** biaya administrasi bank, biaya paket HP, biaya surat di Junta de Freguesia [verify], transport ke luar area Lisbon.
 - Sudah masuk dalam paket **Arrival Starter** (NIF, NISS, dan rekening bank) → lihat halaman Harga.
 - **Diskon 20% untuk mahasiswa dan komunitas WNI.** Konsultasi awal gratis; biaya asesmen kasus dipotongkan penuh kalau Anda lanjut.
+- Penawaran harga Anda mencantumkan nama profesional yang akan menangani layanan ini dan yang langsung menagih Anda.
 
 ### Tanya jawab
 **Apakah WNI bisa buka rekening bank di Portugal?**
@@ -278,7 +281,7 @@ Tidak — demi keamanan Anda, kami tidak menerima dokumen identitas atau imigras
 - **Jam layanan:** 10:00–16:00 waktu Lisbon (Senin–Jumat) · 16:00–22:00 WIB (musim panas) / 17:00–23:00 WIB (musim dingin).
 
 ### Disclaimer
-LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen. Kami bukan bank, lembaga pembayaran, atau perantara kredit; kami tidak menjual atau merekomendasikan produk keuangan dan tidak berafiliasi dengan bank mana pun. Keputusan pembukaan rekening sepenuhnya ada di masing-masing bank. Kami tidak memberikan jasa hukum, konsultasi pajak, atau saran investasi. Biaya bank dan pihak ketiga ditanggung klien. Dioperasikan oleh PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia).
+LUSONUSA adalah jaringan kolaboratif profesional independen; setiap layanan ditawarkan dan ditagihkan oleh profesional yang menanganinya, yang namanya tercantum dalam penawaran harga Anda. Kami memberikan pendampingan administratif, panduan, dan koordinasi dokumen. Kami bukan bank, lembaga pembayaran, atau perantara kredit; kami tidak menjual atau merekomendasikan produk keuangan dan tidak berafiliasi dengan bank mana pun. Keputusan pembukaan rekening sepenuhnya ada di masing-masing bank. Kami tidak memberikan jasa hukum, konsultasi pajak, atau saran investasi. Biaya bank dan pihak ketiga ditanggung klien.
 
 ---
 
@@ -293,7 +296,12 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
       "@id": "https://www.lusonusa.agency/services/portugal-bank-account-arrival/#service",
       "name": "Bank account & arrival setup in Portugal",
       "serviceType": "Administrative support for opening a bank account and arrival set-up in Portugal",
-      "provider": { "@id": "https://www.lusonusa.agency/#org" },
+      "provider": {
+        "@type": "Person",
+        "name": "Joko Supriyanto",
+        "url": "https://www.lusonusa.agency/about/joko-supriyanto/",
+        "memberOf": { "@id": "https://www.lusonusa.agency/#org" }
+      },
       "areaServed": { "@type": "Country", "name": "Portugal" },
       "audience": { "@type": "Audience", "audienceType": "Indonesian citizens moving to Portugal" },
       "availableLanguage": ["en", "pt-PT", "id"],
@@ -311,7 +319,7 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 ```
 - Do **not** use `FinancialService` / `BankOrCreditUnion` types — LUSONUSA is not a financial institution.
 - All three FAQ blocks include the "documents on WhatsApp" FAQ; PT employer FAQ is framed as employer referral of already-hired staff (no recruitment/placement).
-- Optional: `employee`/`contributor` → Joko Supriyanto `Person` @id on the team page (lead).
+- `provider` is the service lead as a `Person` with `memberOf` → the LUSONUSA Organization (`https://www.lusonusa.agency/#org`); LUSONUSA is a collaborative network of independent professionals and does not employ the provider. Do not set the Organization itself as `provider`.
 - Breadcrumbs: EN Home › Moving to Portugal › Bank account & arrival · PT Início › Viver em Portugal › Conta bancária e chegada · ID Beranda › Pindah ke Portugal › Buka rekening bank.
 
 ## Official sources to cite on the page
@@ -324,6 +332,7 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 ## Owner to confirm
 - [PRICE: owner to set]; per person vs. per household; Arrival Starter composition and anchor
 - [BOOKING_URL: owner to set]
+- Who invoices this service: the named professional (Portugal side: self-employed via recibos verdes) or PT Wollusca Sukses Bersama for Indonesia-side consulting [owner to confirm]
 - Confirm LUSONUSA receives **no commissions / referral fees from banks or money-transfer providers** (stated on page) — if any exist, the page must disclose them and may raise regulatory questions (credit-intermediary / payment-services rules) [verify with partner]
 - Joko Supriyanto: confirm his employer permits him to be named as lead of this service and that no conflict of interest exists; confirm bio wording ("works in European banking")
 - Coverage for in-person bank accompaniment

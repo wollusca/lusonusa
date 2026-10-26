@@ -72,6 +72,7 @@ Before you sign a contract or send a deposit, make sure the Indonesian company i
 ### Price
 **From €[PRICE: owner to set]** per company for desk verification — see the **Supplier Verification** package on `/pricing/`. Site visits and travel are quoted separately. Start with a **free 15-minute triage call**; a paid case assessment is credited if you proceed.
 Any official registry fees (e.g. paid AHU extracts), travel costs and partner fees are separate and paid by the client.
+Your quote names the professional who will deliver the service and who invoices you directly.
 
 ### FAQs
 **How can I check if an Indonesian company is real?**
@@ -105,7 +106,7 @@ Business documents — the supplier's offer, invoices, company certificates or r
 - **Next steps:** Need a better supplier? See [product sourcing in Indonesia](/services/product-sourcing-indonesia/). Ready to ship? See [export-import guidance](/services/export-import-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, information gathering and document coordination. We are not a law firm. Our reports state findings from public registries, our own checks and contacts; they are not legal opinions, investment advice, credit ratings or audits, and do not guarantee a company's future conduct. Final business decisions remain the client's. Partner and registry fees are separate.
+LUSONUSA is a collaborative network of independent professionals; each service is quoted and invoiced by the professional who delivers it, who is named in your quote. We provide administrative support, information gathering and document coordination. We are not a law firm. Our reports state findings from public registries, our own checks and contacts; they are not legal opinions, investment advice, credit ratings or audits, and do not guarantee a company's future conduct. Final business decisions remain the client's. Partner and registry fees are separate.
 
 ---
 
@@ -160,6 +161,7 @@ Antes de assinar um contrato ou transferir um sinal, confirme que a empresa indo
 ### Preço
 **Desde €[PRICE: owner to set]** por empresa, na verificação documental — consulte o pacote **Supplier Verification** em `/pt/precos/`. Visitas e deslocações são orçamentadas à parte. Comece por uma **chamada de triagem gratuita de 15 minutos**; a análise de caso paga é descontada se avançar.
 Eventuais taxas de registos oficiais, despesas de deslocação e honorários de parceiros são pagos à parte pelo cliente.
+O seu orçamento identifica o profissional que presta o serviço e que lhe fatura diretamente.
 
 ### Perguntas frequentes
 **Como confirmo se uma empresa indonésia existe mesmo?**
@@ -193,7 +195,7 @@ Documentos comerciais — a proposta do fornecedor, faturas, certidões ou extra
 - **Próximos passos:** Precisa de um fornecedor alternativo? Veja [fornecedores na Indonésia](/pt/servicos/fornecedores-indonesia/). Pronto para enviar mercadoria? Veja [exportar para a Indonésia](/pt/servicos/exportar-para-indonesia/).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, recolha de informação e coordenação documental. Não somos uma sociedade de advogados. Os nossos relatórios apresentam dados de registos públicos, das nossas verificações e contactos; não constituem pareceres jurídicos, aconselhamento de investimento, notações de crédito nem auditorias, e não garantem o comportamento futuro de uma empresa. A decisão de negócio é sempre do cliente. Taxas de registos e honorários de parceiros são pagos à parte.
+A LUSONUSA é uma rede colaborativa de profissionais independentes; cada serviço é orçamentado e faturado pelo profissional que o presta, identificado no seu orçamento. Prestamos apoio administrativo, recolha de informação e coordenação documental. Não somos uma sociedade de advogados. Os nossos relatórios apresentam dados de registos públicos, das nossas verificações e contactos; não constituem pareceres jurídicos, aconselhamento de investimento, notações de crédito nem auditorias, e não garantem o comportamento futuro de uma empresa. A decisão de negócio é sempre do cliente. Taxas de registos e honorários de parceiros são pagos à parte.
 
 ---
 
@@ -248,6 +250,7 @@ Pembeli dan investor dari Portugal ingin yakin sebelum tanda tangan kontrak atau
 ### Harga
 **Mulai €[PRICE: owner to set]** per perusahaan untuk verifikasi dokumen — lihat paket **Supplier Verification** di `/id/harga/`. Kunjungan lokasi dan biaya perjalanan dihitung terpisah. Mulai dengan **konsultasi gratis 15 menit**; biaya analisis kasus berbayar diperhitungkan jika Anda melanjutkan.
 Biaya resmi registri, biaya perjalanan, dan biaya mitra dibayar terpisah oleh klien.
+Penawaran harga Anda mencantumkan nama profesional yang akan menangani layanan ini dan yang langsung menagih Anda.
 
 ### Tanya jawab
 **Bagaimana cara cek legalitas perusahaan di Indonesia?**
@@ -278,7 +281,7 @@ Dokumen bisnis — penawaran supplier, invoice, akta atau dokumen legalitas peru
 - **Langkah berikutnya:** Butuh supplier lain? Lihat [pencarian supplier Indonesia](/id/layanan/pencarian-supplier-indonesia/). Siap kirim barang? Lihat [ekspor-impor Portugal–Indonesia](/id/layanan/ekspor-impor-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pengumpulan informasi, dan koordinasi dokumen. Kami bukan kantor hukum. Laporan kami berisi temuan dari registri publik, pengecekan, dan kontak kami; bukan pendapat hukum, nasihat investasi, pemeringkatan kredit, atau audit, dan tidak menjamin perilaku perusahaan di masa depan. Keputusan bisnis tetap di tangan klien. Biaya registri dan mitra terpisah.
+LUSONUSA adalah jaringan kolaboratif profesional independen; setiap layanan ditawarkan dan ditagihkan oleh profesional yang menanganinya, yang namanya tercantum dalam penawaran harga Anda. Kami memberikan pendampingan administratif, pengumpulan informasi, dan koordinasi dokumen. Kami bukan kantor hukum. Laporan kami berisi temuan dari registri publik, pengecekan, dan kontak kami; bukan pendapat hukum, nasihat investasi, pemeringkatan kredit, atau audit, dan tidak menjamin perilaku perusahaan di masa depan. Keputusan bisnis tetap di tangan klien. Biaya registri dan mitra terpisah.
 
 ---
 
@@ -291,7 +294,12 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pen
   "@id": "https://www.lusonusa.agency/services/indonesian-company-verification/#service",
   "name": "Indonesian company verification and supplier due diligence",
   "serviceType": "Business verification and supplier due diligence (information gathering, not legal opinion)",
-  "provider": { "@id": "https://www.lusonusa.agency/#org" },
+  "provider": {
+    "@type": "Person",
+    "name": "Aditya Putra",
+    "url": "https://www.lusonusa.agency/about/aditya-putra/",
+    "memberOf": { "@id": "https://www.lusonusa.agency/#org" }
+  },
   "areaServed": [{ "@type": "Country", "name": "Indonesia" }, { "@type": "Country", "name": "Portugal" }],
   "availableLanguage": ["en", "pt-PT", "id"],
   "offers": {
@@ -305,7 +313,8 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pen
 ```
 - Localise per language; omit `price` until set.
 - `FAQPage` per language; `BreadcrumbList`: Home › Business in Indonesia › Company verification.
-- Optional: an `employee`/`contributor` link to the Nabela Huwaida `Person` @id for the digital-checks block.
+- `provider` is the service lead as a `Person` with `memberOf` → the LUSONUSA Organization (`https://www.lusonusa.agency/#org`); LUSONUSA is a collaborative network of independent professionals and does not employ the provider. Do not set the Organization itself as `provider`.
+- Optional: a `contributor` link to the Nabela Huwaida `Person` @id for the digital-checks block, also with `memberOf` → `https://www.lusonusa.agency/#org` (not `employee`).
 
 ## Official sources to cite on the page
 - AHU Online (Ministry of Law): https://ahu.go.id
@@ -318,6 +327,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pen
 
 ## Owner to confirm
 - [PARTNER: owner to name] licensed Indonesian law firm for litigation searches/legal opinions.
+- Who invoices this service: the named professional (Portugal side: self-employed via recibos verdes) or PT Wollusca Sukses Bersama for Indonesia-side consulting [owner to confirm]
 - `[PRICE: owner to set]` for desk verification; site-visit pricing model (fixed per island/region vs actual cost). `[BOOKING_URL: owner to set]`.
 - Which sanctions/adverse-media databases are actually used (free lists vs paid tool) — don't name a tool on the page until confirmed.
 - Whether AHU paid company profile extracts are purchased per case (fee passed on).

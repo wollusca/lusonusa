@@ -81,6 +81,7 @@ A Portuguese authority will usually only accept your Indonesian certificate if i
 - **Not included:** notary fees (if charged separately) [owner to confirm], apostille fees, courier outside Portugal, partner penerjemah tersumpah fees.
 - Packaged as **Certified Translation** → see Pricing. Multi-document files (e.g. AIMA family file) quoted as a bundle.
 - **20% community/student discount** on NUSA personal services. Free 15-min triage; paid case assessment credited if you proceed.
+- Your quote names the professional who will deliver the service and who invoices you directly.
 
 ### FAQs
 **Who can certify a translation in Portugal?**
@@ -111,7 +112,7 @@ No — for your security we don't receive ID or immigration documents digitally,
 - **Hours line:** 10:00–16:00 Lisbon time (Mon–Fri) · 16:00–22:00 WIB (summer) / 17:00–23:00 WIB (winter).
 
 ### Disclaimer
-LUSONUSA provides translation, administrative support, guidance and document coordination. Translations are certified before a Portuguese notary; they are not court-appointed translations. We do not provide legal advice. Acceptance of any document is decided by the receiving authority. Apostille, notary and partner fees are paid by the client. Operated by PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia).
+LUSONUSA is a collaborative network of independent professionals; each service is quoted and invoiced by the professional who delivers it, who is named in your quote. We provide translation, administrative support, guidance and document coordination. Translations are certified before a Portuguese notary; they are not court-appointed translations. We do not provide legal advice. Acceptance of any document is decided by the receiving authority. Apostille, notary and partner fees are paid by the client.
 
 ---
 
@@ -164,6 +165,7 @@ Para ser aceite em Portugal, um documento indonésio precisa, em regra, de apost
 - **Não inclui:** honorários notariais (se faturados à parte) [owner to confirm], emolumentos de apostila, envio para fora de Portugal, honorários do tradutor parceiro na Indonésia.
 - Pacote **Certified Translation** → ver Preços. Processos com vários documentos orçamentados em conjunto.
 - **Desconto de 20%** para estudantes e comunidade. Encaminhamento por universidades e empregadores (estudantes admitidos e colaboradores já contratados): condições mediante pedido [owner to confirm]. A LUSONUSA não recruta nem coloca trabalhadores.
+- O seu orçamento identifica o profissional que presta o serviço e que lhe fatura diretamente.
 
 ### Perguntas frequentes
 **Quem pode certificar uma tradução em Portugal?**
@@ -197,7 +199,7 @@ Não — por razões de segurança, não recebemos documentos de identificação
 - **Horário:** 10:00–16:00, hora de Lisboa (segunda a sexta) · 16:00–22:00 WIB (verão) / 17:00–23:00 WIB (inverno).
 
 ### Aviso
-A LUSONUSA presta serviços de tradução, apoio administrativo, orientação e coordenação documental. As traduções são certificadas perante notário português, nos termos em que a lei portuguesa o permite. Não prestamos consultoria jurídica. A aceitação de qualquer documento depende da entidade recetora. Emolumentos de apostila, notariais e de parceiros são suportados pelo cliente. Serviço prestado por PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonésia).
+A LUSONUSA é uma rede colaborativa de profissionais independentes; cada serviço é orçamentado e faturado pelo profissional que o presta, identificado no seu orçamento. A LUSONUSA presta serviços de tradução, apoio administrativo, orientação e coordenação documental. As traduções são certificadas perante notário português, nos termos em que a lei portuguesa o permite. Não prestamos consultoria jurídica. A aceitação de qualquer documento depende da entidade recetora. Emolumentos de apostila, notariais e de parceiros são suportados pelo cliente.
 
 ---
 
@@ -250,6 +252,7 @@ Supaya akta atau ijazah Anda diterima di Portugal, biasanya perlu dua hal: **apo
 - **Belum termasuk:** biaya notaris (bila ditagih terpisah) [owner to confirm], biaya apostille, kirim ke luar Portugal, honor mitra penerjemah tersumpah di Indonesia.
 - Paket **Certified Translation** → lihat halaman Harga. Berkas banyak dokumen (misalnya satu keluarga untuk AIMA) dihitung sebagai satu paket.
 - **Diskon 20% untuk mahasiswa dan komunitas WNI.** Konsultasi awal gratis 15 menit.
+- Penawaran harga Anda mencantumkan nama profesional yang akan menangani layanan ini dan yang langsung menagih Anda.
 
 ### Tanya jawab
 **Siapa yang boleh mensertifikasi terjemahan di Portugal?**
@@ -280,7 +283,7 @@ Selalu Portugis Portugal (pt-PT), sesuai standar AIMA, kantor catatan sipil (con
 - **Jam layanan:** 10:00–16:00 waktu Lisbon (Senin–Jumat) · 16:00–22:00 WIB (musim panas) / 17:00–23:00 WIB (musim dingin).
 
 ### Disclaimer
-LUSONUSA memberikan layanan terjemahan, pendampingan administratif, panduan, dan koordinasi dokumen. Terjemahan disertifikasi di hadapan notaris Portugal (bukan terjemahan yang ditunjuk pengadilan). Kami tidak memberikan jasa hukum. Diterima atau tidaknya dokumen ditentukan oleh instansi penerima. Biaya apostille, notaris, dan mitra ditanggung klien. Dioperasikan oleh PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia).
+LUSONUSA adalah jaringan kolaboratif profesional independen; setiap layanan ditawarkan dan ditagihkan oleh profesional yang menanganinya, yang namanya tercantum dalam penawaran harga Anda. Kami memberikan layanan terjemahan, pendampingan administratif, panduan, dan koordinasi dokumen. Terjemahan disertifikasi di hadapan notaris Portugal (bukan terjemahan yang ditunjuk pengadilan). Kami tidak memberikan jasa hukum. Diterima atau tidaknya dokumen ditentukan oleh instansi penerima. Biaya apostille, notaris, dan mitra ditanggung klien.
 
 ---
 
@@ -295,7 +298,12 @@ LUSONUSA memberikan layanan terjemahan, pendampingan administratif, panduan, dan
       "@id": "https://www.lusonusa.agency/services/certified-translation-indonesian-portuguese/#service",
       "name": "Certified translation Indonesian–Portuguese & apostille coordination",
       "serviceType": "Translation certified before a Portuguese notary; document legalisation coordination",
-      "provider": { "@id": "https://www.lusonusa.agency/#org" },
+      "provider": {
+        "@type": "Person",
+        "name": "Mia Gomes",
+        "url": "https://www.lusonusa.agency/about/mia-gomes/",
+        "memberOf": { "@id": "https://www.lusonusa.agency/#org" }
+      },
       "areaServed": [{ "@type": "Country", "name": "Portugal" }, { "@type": "Country", "name": "Indonesia" }],
       "availableLanguage": ["en", "pt-PT", "id"],
       "offers": {
@@ -311,7 +319,8 @@ LUSONUSA memberikan layanan terjemahan, pendampingan administratif, panduan, dan
 }
 ```
 - Never use "sworn" / "juramentada" / "tersumpah" in schema `name`, `serviceType` or `description`.
-- Lead: link `Person` @id for Mia Gomes (`/about/mia-gomes/#person`); her `jobTitle` stays "Translation Specialist · Legal & Notarized Translation Lead" (no "sworn").
+- `provider` is the service lead as a `Person` with `memberOf` → the LUSONUSA Organization (`https://www.lusonusa.agency/#org`); LUSONUSA is a collaborative network of independent professionals and does not employ the provider. Do not set the Organization itself as `provider`.
+- Lead: the `provider` `Person` is Mia Gomes (`/about/mia-gomes/#person`); her `jobTitle` stays "Translation Specialist · Legal & Notarized Translation Lead" (no "sworn").
 - Breadcrumbs: EN Home › Moving to Portugal › Certified translation · PT Início › Viver em Portugal › Tradução certificada · ID Beranda › Pindah ke Portugal › Terjemahan & legalisasi.
 - All three FAQ blocks include the "documents on WhatsApp" FAQ (replaces the former "scans vs. originals" FAQ).
 - Old URL `/articles/sworn-translation-notary-guide.html` redirects to the guide, not to this service page.
@@ -328,6 +337,7 @@ LUSONUSA memberikan layanan terjemahan, pendampingan administratif, panduan, dan
 ## Owner to confirm
 - [PRICE: owner to set] per document; whether notary fees are included or passed through; express surcharge; bundle rules
 - [BOOKING_URL: owner to set]
+- Who invoices this service: the named professional (Portugal side: self-employed via recibos verdes) or PT Wollusca Sukses Bersama for Indonesia-side consulting [owner to confirm]
 - [PARTNER: owner to confirm] — partner penerjemah tersumpah in Indonesia for PT→ID translations
 - Which notary(ies) are used and their typical turnaround
 - **Hand-over method:** page now says originals/copies are handed over and returned in person at an appointment — owner to confirm whether registered post (CTT) is acceptable for clients outside Lisbon

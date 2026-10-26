@@ -80,6 +80,7 @@ Your NIF (tax number) and NISS (social security number) unlock almost everything
 - Bundled in the **Arrival Starter** package (NIF, NISS and bank account) → see Pricing.
 - Students and community members: **20% community/student discount** on NUSA personal services.
 - Not sure? Start with the free 15-minute triage. A paid case assessment is credited in full if you proceed.
+- Your quote names the professional who will deliver the service and who invoices you directly.
 
 ### FAQs
 **Can I get a NIF before I arrive in Portugal?**
@@ -112,7 +113,7 @@ No — for your security we don't receive ID or immigration documents digitally.
 - **Hours line:** We reply 10:00–16:00 Lisbon time (Mon–Fri) · 16:00–22:00 WIB (summer) / 17:00–23:00 WIB (winter).
 
 ### Disclaimer
-LUSONUSA provides administrative support, guidance and document coordination. We do not provide legal or tax advice and we do not act as your tax representative. NIF and NISS are issued solely by the Portuguese Tax Authority (AT) and Social Security; timelines are typical and depend on those authorities. Government fees, if any, are paid by the client. Operated by PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia).
+LUSONUSA is a collaborative network of independent professionals; each service is quoted and invoiced by the professional who delivers it, who is named in your quote. We provide administrative support, guidance and document coordination. We do not provide legal or tax advice and we do not act as your tax representative. NIF and NISS are issued solely by the Portuguese Tax Authority (AT) and Social Security; timelines are typical and depend on those authorities. Government fees, if any, are paid by the client.
 
 ---
 
@@ -167,6 +168,7 @@ O NIF e o NISS são o ponto de partida para quase tudo em Portugal: contrato de 
 - **Desconto de 20%** para estudantes e comunidade em serviços pessoais NUSA.
 - Triagem gratuita de 15 minutos; a avaliação de caso paga é descontada na totalidade se avançar.
 - Encaminhamento pelo empregador: condições para colaboradores já contratados que a empresa nos encaminha para orientação administrativa [owner to confirm]. A LUSONUSA não recruta, não seleciona nem coloca trabalhadores.
+- O seu orçamento identifica o profissional que presta o serviço e que lhe fatura diretamente.
 
 ### Perguntas frequentes
 **É possível obter o NIF antes de chegar a Portugal?**
@@ -184,7 +186,7 @@ O NIF é gratuito quando pedido à AT. Quem cobra "um NIF" está a cobrar o serv
 **Que documentos são necessários?**
 Normalmente passaporte válido e, consoante o caso, visto ou título de residência e comprovativo de morada; se outra pessoa fizer o pedido, procuração. Os requisitos podem variar — enviamos a lista após a triagem.
 
-**Sou empregador. Podem tratar do NISS dos nossos novos colaboradores indonésios?**
+**Sou empregador. Podem apoiar os trabalhadores indonésios que contratámos a obter o NISS?**
 Se a empresa nos encaminhar colaboradores já contratados, explicamos-lhes o processo em indonésio, enviamos a lista de documentos e acompanhamo-los presencialmente; o pedido de NISS pela entidade empregadora é feito pela própria empresa na Segurança Social Direta. A LUSONUSA não recruta nem coloca trabalhadores.
 
 **Posso enviar-vos os meus documentos por WhatsApp?**
@@ -199,7 +201,7 @@ Não — por razões de segurança, não recebemos documentos de identificação
 - **Horário:** Respondemos das 10:00 às 16:00, hora de Lisboa (segunda a sexta) · 16:00–22:00 WIB (verão) / 17:00–23:00 WIB (inverno).
 
 ### Aviso
-A LUSONUSA presta apoio administrativo, orientação e coordenação documental. Não presta consultoria jurídica nem fiscal e não atua como representante fiscal. O NIF e o NISS são atribuídos exclusivamente pela Autoridade Tributária e Aduaneira e pela Segurança Social; os prazos indicados são habituais e dependem dessas entidades. Eventuais taxas públicas são suportadas pelo cliente. Serviço prestado por PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonésia).
+A LUSONUSA é uma rede colaborativa de profissionais independentes; cada serviço é orçamentado e faturado pelo profissional que o presta, identificado no seu orçamento. A LUSONUSA presta apoio administrativo, orientação e coordenação documental. Não presta consultoria jurídica nem fiscal e não atua como representante fiscal. O NIF e o NISS são atribuídos exclusivamente pela Autoridade Tributária e Aduaneira e pela Segurança Social; os prazos indicados são habituais e dependem dessas entidades. Eventuais taxas públicas são suportadas pelo cliente.
 
 ---
 
@@ -213,7 +215,7 @@ A LUSONUSA presta apoio administrativo, orientação e coordenação documental.
 Urus NIF & NISS di Portugal — didampingi dari awal sampai selesai
 
 ### Kenapa pakai LUSONUSA
-NIF (nomor pajak) dan NISS (nomor jaminan sosial) itu "kunci" hidup di Portugal: tanpa keduanya, susah tanda tangan kontrak kerja, buka rekening bank, sewa kamar, atau bahkan pasang paket HP. Kami bantu Anda tahu jalur yang paling pas, siapkan dokumennya bareng, lalu dampingi langsung ke Finanças atau Segurança Social — dalam Bahasa Indonesia. Tim kami sudah lebih dari 9 tahun tinggal di Portugal, jadi kami paham betul di mana biasanya WNI tersandung. Perlu Anda tahu: LUSONUSA bukan kantor hukum. Kami memberi panduan praktis berdasarkan informasi resmi yang terbuka untuk publik, mendampingi langsung, dan menghubungkan Anda dengan profesional berlisensi (misalnya representante fiscal atau contabilista certificado) kalau kasus Anda memerlukannya.
+NIF (nomor pajak) dan NISS (nomor jaminan sosial) itu "kunci" hidup di Portugal: tanpa keduanya, susah tanda tangan kontrak kerja, buka rekening bank, sewa kamar, atau bahkan pasang paket HP. Kami bantu Anda tahu jalur yang paling pas, siapkan dokumennya bareng, lalu dampingi langsung ke Finanças atau Segurança Social — dalam Bahasa Indonesia. Aditya Putra, yang memimpin layanan ini, sudah lebih dari 9 tahun tinggal di Portugal, jadi kami paham betul di mana biasanya WNI tersandung. Perlu Anda tahu: LUSONUSA bukan kantor hukum. Kami memberi panduan praktis berdasarkan informasi resmi yang terbuka untuk publik, mendampingi langsung, dan menghubungkan Anda dengan profesional berlisensi (misalnya representante fiscal atau contabilista certificado) kalau kasus Anda memerlukannya.
 
 ### Cocok untuk siapa
 - WNI yang baru tiba di Portugal untuk kerja, kuliah, atau ikut keluarga
@@ -253,6 +255,7 @@ NIF (nomor pajak) dan NISS (nomor jaminan sosial) itu "kunci" hidup di Portugal:
 - Sudah masuk dalam paket **Arrival Starter** (NIF, NISS, dan rekening bank) → lihat halaman Harga.
 - **Diskon 20% untuk mahasiswa dan komunitas WNI** untuk layanan pribadi NUSA.
 - Belum yakin? Mulai dari konsultasi gratis 15 menit. Biaya asesmen kasus (berbayar) akan dipotongkan penuh kalau Anda lanjut.
+- Penawaran harga Anda mencantumkan nama profesional yang akan menangani layanan ini dan yang langsung menagih Anda.
 
 ### Tanya jawab
 **Bisa bikin NIF sebelum berangkat ke Portugal?**
@@ -288,7 +291,7 @@ Tidak — demi keamanan Anda, kami tidak menerima dokumen identitas atau imigras
 - **Jam layanan:** Kami membalas pukul 10:00–16:00 waktu Lisbon (Senin–Jumat) · 16:00–22:00 WIB (musim panas) / 17:00–23:00 WIB (musim dingin).
 
 ### Disclaimer
-LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen. Kami tidak memberikan jasa hukum maupun konsultasi pajak, dan tidak bertindak sebagai representante fiscal Anda. NIF dan NISS hanya diterbitkan oleh otoritas pajak (AT) dan Segurança Social Portugal; perkiraan waktu bersifat umum dan tergantung instansi. Biaya resmi pemerintah (jika ada) ditanggung klien. Dioperasikan oleh PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia).
+LUSONUSA adalah jaringan kolaboratif profesional independen; setiap layanan ditawarkan dan ditagihkan oleh profesional yang menanganinya, yang namanya tercantum dalam penawaran harga Anda. Kami memberikan pendampingan administratif, panduan, dan koordinasi dokumen. Kami tidak memberikan jasa hukum maupun konsultasi pajak, dan tidak bertindak sebagai representante fiscal Anda. NIF dan NISS hanya diterbitkan oleh otoritas pajak (AT) dan Segurança Social Portugal; perkiraan waktu bersifat umum dan tergantung instansi. Biaya resmi pemerintah (jika ada) ditanggung klien.
 
 ---
 
@@ -303,7 +306,12 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
       "@id": "https://www.lusonusa.agency/services/nif-niss-portugal/#service",
       "name": "NIF & NISS support in Portugal",
       "serviceType": "Administrative support for Portuguese tax (NIF) and social security (NISS) numbers",
-      "provider": { "@id": "https://www.lusonusa.agency/#org" },
+      "provider": {
+        "@type": "Person",
+        "name": "Aditya Putra",
+        "url": "https://www.lusonusa.agency/about/aditya-putra/",
+        "memberOf": { "@id": "https://www.lusonusa.agency/#org" }
+      },
       "areaServed": [{ "@type": "Country", "name": "Portugal" }, { "@type": "Country", "name": "Indonesia" }],
       "audience": { "@type": "Audience", "audienceType": "Indonesian citizens moving to or living in Portugal" },
       "availableLanguage": ["en", "pt-PT", "id"],
@@ -323,6 +331,7 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 - One `Service` per language URL; localise `name`, `serviceType`, `url`; keep `@id` per URL.
 - Do not output `price` until the owner sets it (omit `offers.price` rather than publishing the placeholder).
 - FAQPage only with the FAQs visible on that language page (PT page includes the employer FAQ; ID page includes the KBRI FAQ; all three include the "documents on WhatsApp" FAQ).
+- `provider` is the service lead as a `Person` with `memberOf` → the LUSONUSA Organization (`https://www.lusonusa.agency/#org`); LUSONUSA is a collaborative network of independent professionals and does not employ the provider. Do not set the Organization itself as `provider`.
 - Do not describe the service as recruitment/placement; employer relationship = referral of already-hired staff only.
 - Breadcrumb names: EN Home › Moving to Portugal › NIF & NISS · PT Início › Viver em Portugal › NIF e NISS · ID Beranda › Pindah ke Portugal › NIF & NISS.
 
@@ -336,9 +345,10 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 ## Owner to confirm
 - [PRICE: owner to set] for NIF + NISS support; whether NIF-only / NISS-only prices exist; Arrival Starter contents (assumed NIF + NISS + bank account) and pricing anchor
 - [BOOKING_URL: owner to set]
+- Who invoices this service: the named professional (Portugal side: self-employed via recibos verdes) or PT Wollusca Sukses Bersama for Indonesia-side consulting [owner to confirm]
 - [PARTNER: owner to name] — licensed tax representative partner
 - Coverage for in-person accompaniment (Lisbon only? Porto, Coimbra, others?)
-- Whether LUSONUSA staff ever act as the *representative with power of attorney* for a NIF request (if yes, confirm this is permitted for the entity/person and wording) — currently written as "a representative you appoint"
+- Whether a LUSONUSA professional ever acts as the *representative with power of attorney* for a NIF request (if yes, confirm this is permitted for the entity/person and wording) — currently written as "a representative you appoint"
 - "Employer referral" terms (PT section) for already-hired staff referred by their employer — no recruitment/placement offer [owner to confirm]
 - In-person-only document check confirmed as policy; NISS form is submitted by the client on seg-social.pt (we guide, never receive files)
 - [PARTNER: owner to name] — advogado/solicitador and contabilista certificado for referrals (new "What we don't do" section)
@@ -346,4 +356,4 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 - [verify] typical e-Balcão turnaround for NIF via representative (1–3 weeks)
 - [verify] NISS online turnaround; reported 2026 change where AIMA issues NISS in real time during regularisation (not stated on page; add once confirmed)
 - [verify] Peduli WNI / lapor diri URL and current process (ID FAQ)
-- Claim "9+ years in Portugal" used in ID value prop refers to Aditya Putra — confirm OK to use on service pages
+- Claim "9+ years in Portugal" used in ID value prop now names Aditya Putra explicitly (was "Tim kami") — confirm OK to use on service pages
