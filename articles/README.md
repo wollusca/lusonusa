@@ -59,7 +59,11 @@ Also update the "Last reviewed" line in the *Sources & review* box, and `article
 
 ## Content rules
 
-- Administrative support and guidance, not legal advice. Never use "lawyer", "legal advice" or "sworn translator" as a LUSONUSA title.
+- **Who we are:** LUSONUSA is a collaborative network of independent bilingual professionals in Portugal and Indonesia, not a company. Each service is contracted and invoiced directly by the professional who delivers it. The site operator and contact is Aditya Putra (founder), Portugal: contact@lusonusa.agency, WhatsApp +351 930 534 440. Do not name any legal entity in copy, footers or JSON-LD. The JSON-LD Organization is the LUSONUSA brand only (name, url, logo).
+- **Positioning:** information and practical guidance based on public official sources. This does not replace a lawyer; refer readers to licensed professionals (advogado/solicitador, Indonesian lawyer or notary, tax adviser) when needed. Never use "lawyer", "legal advice" or "sworn translator" as a LUSONUSA title.
+- **Documents:** never invite readers to send identity or immigration documents (passport, residence permit, visa, etc.) by WhatsApp, email or upload. Ask them to describe what they have.
+- **Travel:** recommendations and booking assistance only.
+- **Footer** (all pages; translated via `footer.disclaimer` in `article-i18n.js`): "LUSONUSA is a network of independent bilingual professionals in Portugal and Indonesia. Services are contracted directly with the professional who delivers them. Information and guidance, not legal advice." Add links to `/privacy.html` and `/terms.html`.
 - Every regulatory article needs a "Last reviewed" date and links to official sources. Review it at least every 6 months.
 - Unconfirmed facts get `<span class="verify-flag">…</span>` plus an `<!-- OWNER REVIEW: … -->` comment until confirmed.
 - WhatsApp links: `https://wa.me/351930534440?text=…(Ref: <article-id>)`.

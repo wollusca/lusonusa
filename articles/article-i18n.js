@@ -31,7 +31,7 @@
       'footer.hours': 'Mon–Fri, 10:00–16:00 Lisbon time (16:00–22:00 WIB in summer, 17:00–23:00 WIB in winter)',
       'footer.privacy': 'Privacy & Cookies',
       'footer.terms': 'Terms & Disclaimer',
-      'footer.disclaimer': 'Administrative support, guidance and document coordination. Not legal advice.',
+      'footer.disclaimer': 'LUSONUSA is a network of independent bilingual professionals in Portugal and Indonesia. Services are contracted directly with the professional who delivers them. Information and guidance, not legal advice.',
       'dialog.title': 'Published in English',
       'dialog.body': 'This guide is currently available in English only.',
       'dialog.ok': 'OK, read in English'
@@ -55,7 +55,7 @@
       'footer.hours': 'Seg–Sex, 10:00–16:00 hora de Lisboa (16:00–22:00 WIB no verão, 17:00–23:00 WIB no inverno)',
       'footer.privacy': 'Privacidade e Cookies',
       'footer.terms': 'Termos e Aviso Legal',
-      'footer.disclaimer': 'Apoio administrativo, orientação e coordenação documental. Não constitui aconselhamento jurídico.',
+      'footer.disclaimer': 'A LUSONUSA é uma rede de profissionais bilingues independentes em Portugal e na Indonésia. Os serviços são contratados diretamente com o profissional que os presta. Informação e orientação, não aconselhamento jurídico.',
       'dialog.title': 'Publicado em Inglês',
       'dialog.body': 'Este guia está disponível apenas em inglês por agora. Estamos a preparar a versão em português.',
       'dialog.ok': 'Entendido, ler em inglês'
@@ -79,7 +79,7 @@
       'footer.hours': 'Senin–Jumat, 10:00–16:00 waktu Lisbon (16:00–22:00 WIB saat musim panas, 17:00–23:00 WIB saat musim dingin)',
       'footer.privacy': 'Privasi & Cookie',
       'footer.terms': 'Ketentuan & Penafian',
-      'footer.disclaimer': 'Dukungan administratif, panduan, dan koordinasi dokumen. Bukan nasihat hukum.',
+      'footer.disclaimer': 'LUSONUSA adalah jaringan profesional bilingual independen di Portugal dan Indonesia. Layanan dikontrak langsung dengan profesional yang memberikannya. Informasi dan panduan, bukan nasihat hukum.',
       'dialog.title': 'Diterbitkan dalam Bahasa Inggris',
       'dialog.body': 'Panduan ini saat ini hanya tersedia dalam bahasa Inggris. Versi Bahasa Indonesia sedang kami siapkan.',
       'dialog.ok': 'Mengerti, baca dalam bahasa Inggris'
