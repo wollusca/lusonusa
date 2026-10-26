@@ -3,535 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bilateral Insights, Guides & Articles | LUSONUSA Knowledge Hub</title>
-  <meta name="description" content="Explore expert legal, administrative, and strategic guides for Portugal ↔ Indonesia cross-border operations, visa compliance, PT PMA setup, and notary services.">
-  <meta name="keywords" content="LUSONUSA articles, Indonesia visa guide, PT PMA setup guide, Portugal NIF AIMA guide, sworn translation Portugal">
-  <link rel="canonical" href="http://localhost:3001/articles/index.html">
+  <title>Portugal ↔ Indonesia Guides: Visas, PT PMA, NIF & Translation | LUSONUSA</title>
+  <meta name="description" content="Practical, regularly reviewed guides for Portugal ↔ Indonesia: Indonesian business visas and KITAS, PT PMA company setup, NIF/NISS/AIMA in Portugal and certified translations.">
+  <link rel="canonical" href="https://www.lusonusa.agency/articles/">
 
-  <!-- Open Graph -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B0D12">
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:3001/articles/index.html">
-  <meta property="og:title" content="Bilateral Insights & Advisory Articles | LUSONUSA">
-  <meta property="og:description" content="Expert advisory articles connecting Portuguese ambition to Indonesia, and Indonesian communities to Portugal.">
+  <meta property="og:site_name" content="LUSONUSA">
+  <meta property="og:url" content="https://www.lusonusa.agency/articles/">
+  <meta property="og:title" content="Portugal ↔ Indonesia Guides & Articles | LUSONUSA">
+  <meta property="og:description" content="Practical guides on Indonesian visas, PT PMA setup, NIF/NISS/AIMA in Portugal and certified translations.">
+  <meta property="og:image" content="https://www.lusonusa.agency/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta property="og:locale:alternate" content="id_ID">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portugal ↔ Indonesia Guides & Articles | LUSONUSA">
+  <meta name="twitter:description" content="Practical guides on Indonesian visas, PT PMA setup, NIF/NISS/AIMA in Portugal and certified translations.">
+  <meta name="twitter:image" content="https://www.lusonusa.agency/og-image.jpg">
 
-  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Theme Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/articles/articles.css">
 
-  <style>
-    .hub-header {
-      position: relative;
-      padding: 120px 0 60px;
-      text-align: center;
-      background: radial-gradient(ellipse 70% 40% at 50% 10%, rgba(59, 130, 246, 0.12), transparent);
-    }
-
-    .hub-title {
-      font-family: var(--font-display);
-      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: var(--space-md);
-    }
-
-    .hub-subtitle {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      max-width: 620px;
-      margin: 0 auto var(--space-xl);
-      line-height: 1.6;
-    }
-
-    /* Category Filter Tabs */
-    .category-tabs {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: var(--space-2xl);
-    }
-
-    .category-btn {
-      padding: 8px 18px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-pill);
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: all var(--duration-fast) ease;
-    }
-
-    .category-btn:hover {
-      background: rgba(255, 255, 255, 0.08);
-      color: var(--text-main);
-    }
-
-    .category-btn.active {
-      background: rgba(59, 130, 246, 0.18);
-      border-color: rgba(59, 130, 246, 0.4);
-      color: var(--accent-luso);
-      font-weight: 600;
-    }
-
-    /* Featured Pinned Section */
-    .pinned-section {
-      margin-bottom: var(--space-3xl);
-    }
-
-    .pinned-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 12px;
-      background: rgba(245, 158, 11, 0.15);
-      border: 1px solid rgba(245, 158, 11, 0.3);
-      border-radius: var(--radius-pill);
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #f59e0b;
-      text-transform: uppercase;
-      margin-bottom: var(--space-md);
-    }
-
-    .pinned-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: var(--space-xl);
-    }
-
-    .article-card-featured {
-      background: linear-gradient(145deg, rgba(15, 18, 26, 0.95), rgba(8, 10, 16, 0.98));
-      border: 1px solid rgba(59, 130, 246, 0.2);
-      border-radius: var(--radius-xl);
-      padding: var(--space-xl);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform var(--duration-normal) ease, border-color var(--duration-normal) ease, box-shadow var(--duration-normal) ease;
-      text-decoration: none;
-    }
-
-    .article-card-featured:hover {
-      transform: translateY(-4px);
-      border-color: rgba(59, 130, 246, 0.45);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-    }
-
-    .card-meta {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.76rem;
-      color: var(--text-dim);
-      margin-bottom: var(--space-xs);
-    }
-
-    .card-tag {
-      padding: 3px 10px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: var(--radius-pill);
-      font-weight: 600;
-      color: var(--accent-luso);
-    }
-
-    .card-title {
-      font-family: var(--font-display);
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text-main);
-      line-height: 1.35;
-      margin-bottom: var(--space-xs);
-    }
-
-    .card-desc {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: var(--space-lg);
-    }
-
-    .card-cta-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--accent-luso);
-    }
-
-    /* All Articles Grid Section */
-    .articles-grid-section {
-      padding-bottom: var(--space-4xl);
-    }
-
-    .section-header-compact {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: var(--space-xl);
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: var(--space-md);
-    }
-
-    .section-title-sm {
-      font-family: var(--font-display);
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-
-    .articles-list-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: var(--space-lg);
-    }
-
-    .article-compact-card {
-      background: rgba(15, 18, 26, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: var(--radius-lg);
-      padding: var(--space-lg);
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all var(--duration-fast) ease;
-    }
-
-    .article-compact-card:hover {
-      background: rgba(20, 24, 35, 0.85);
-      border-color: rgba(255, 255, 255, 0.15);
-      transform: translateY(-2px);
-    }
-
-    @media (max-width: 900px) {
-      .pinned-grid {
-        grid-template-columns: 1fr;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.lusonusa.agency/articles/#page",
+        "url": "https://www.lusonusa.agency/articles/",
+        "name": "Portugal ↔ Indonesia Guides & Articles",
+        "inLanguage": "en",
+        "isPartOf": { "@type": "WebSite", "name": "LUSONUSA", "url": "https://www.lusonusa.agency/" },
+        "publisher": { "@id": "https://www.lusonusa.agency/#organization" },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "url": "https://www.lusonusa.agency/articles/indonesia-visa-guide-2026.html" },
+            { "@type": "ListItem", "position": 2, "url": "https://www.lusonusa.agency/articles/pt-pma-indonesia-setup.html" },
+            { "@type": "ListItem", "position": 3, "url": "https://www.lusonusa.agency/articles/nif-niss-aima-portugal-guide.html" },
+            { "@type": "ListItem", "position": 4, "url": "https://www.lusonusa.agency/articles/sworn-translation-notary-guide.html" }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.lusonusa.agency/#organization",
+        "name": "LUSONUSA",
+        "legalName": "PT Wollusca Sukses Bersama",
+        "url": "https://www.lusonusa.agency/",
+        "logo": "https://www.lusonusa.agency/icon-512.png",
+        "email": "contact@lusonusa.agency"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.lusonusa.agency/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.lusonusa.agency/articles/" }
+        ]
       }
-    }
-  </style>
+    ]
+  }
+  </script>
+
+  <script src="/articles/articles-data.js" defer></script>
+  <script src="/articles/articles-renderer.js" defer></script>
+  <script src="/articles/article-i18n.js" defer></script>
 </head>
-<body>
-  <!-- Safari bfcache fix: force reload when restored from back-forward cache -->
-  <script>window.addEventListener('pageshow',function(e){if(e.persisted)window.location.reload()});</script>
+<body class="is-hub">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+  <div class="article-veil" aria-hidden="true"></div>
 
-  <!-- Top Gradient Veil -->
-  <div class="nav-gradient-veil active" aria-hidden="true"></div>
-
-  <!-- Navigation Glass Pill (Unified layout for all article & hub pages) -->
-  <nav class="site-nav visible" aria-label="Main navigation" style="opacity: 1; pointer-events: auto; top: 24px;">
-    <div class="nav-pill">
-      <a href="/index.html#insights" style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #fff; text-decoration: none; font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.08em;">
-        <i data-lucide="arrow-left" style="width: 16px; height: 16px; color: var(--accent-luso);"></i>
+  <nav class="article-nav" aria-label="Site">
+    <div class="article-nav-pill">
+      <a href="/#insights" class="article-nav-home">
+        <svg class="icon" aria-hidden="true"><use href="/articles/icons.svg#arrow-left"></use></svg>
         <span>LUSONUSA</span>
       </a>
-      <span class="nav-pill-dot" aria-hidden="true">·</span>
-      <a href="/articles/index.html" class="active" style="color: var(--text-main);" data-i18n="nav.all_articles">All Articles</a>
-      <span class="nav-pill-dot" aria-hidden="true">·</span>
-      <a href="https://wa.me/351000000000?text=Hello%20LUSONUSA!%20I%20am%20browsing%20your%20articles%20and%20would%20like%20to%20consult%20with%20your%20team." target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 5px; color: #25d366; font-weight: 600;">
-        <i data-lucide="message-square" style="width: 14px; height: 14px; color: #25d366;"></i>
+      <a href="/articles/" aria-current="page" class="nav-label-long" data-i18n="nav.all_articles">All Articles</a>
+      <a href="https://wa.me/351930534440?text=Hello%20LUSONUSA!%20I%27m%20browsing%20your%20guides%20and%20would%20like%20to%20talk%20to%20your%20team.%20(Ref%3A%20articles-hub)" target="_blank" rel="noopener" class="article-nav-wa">
+        <svg class="icon" aria-hidden="true"><use href="/articles/icons.svg#message-square"></use></svg>
         <span data-i18n="nav.whatsapp_contact">Contact</span>
       </a>
-      <div class="nav-lang" role="group" aria-label="Language selector">
-        <button class="nav-lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-        <button class="nav-lang-btn" data-lang="pt" aria-pressed="false">PT</button>
-        <button class="nav-lang-btn" data-lang="id" aria-pressed="false">ID</button>
+      <div class="article-lang" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" aria-pressed="true" lang="en" title="English">EN</button>
+        <button type="button" data-lang-btn="pt" aria-pressed="false" lang="pt" title="Português">PT</button>
+        <button type="button" data-lang-btn="id" aria-pressed="false" lang="id" title="Bahasa Indonesia">ID</button>
       </div>
     </div>
   </nav>
 
-  <!-- Knowledge Hub Header -->
-  <header class="hub-header" style="padding-top: 140px; text-align: center;">
-    <div class="section-container">
-      <span class="section-eyebrow" data-i18n="hub.eyebrow">Bilateral Resource & Knowledge Hub</span>
-      <h1 class="hub-title" data-i18n="hub.title">Operational Guides & Articles</h1>
-      <p class="hub-subtitle" data-i18n="hub.subtitle">In-depth legal roadmaps, immigration guides, and bilateral trade compliance insights for Portugal and Indonesia.</p>
+  <header class="hub-header">
+    <div class="wrap">
+      <span class="hub-eyebrow" data-i18n="hub.eyebrow">Portugal ↔ Indonesia Knowledge Hub</span>
+      <h1 class="hub-title" data-i18n="hub.title">Practical Guides &amp; Articles</h1>
+      <p class="hub-subtitle" data-i18n="hub.subtitle">Step-by-step administrative guides on visas, company setup, Portuguese paperwork and certified translations for Portugal and Indonesia.</p>
 
-      <!-- Category Filter Tabs (Click to filter, click active tab to toggle off & reset) -->
-      <div class="category-tabs" id="categoryTabs">
-        <button class="category-btn active" data-category="all" data-i18n="hub.tab.all">All Topics (4)</button>
-        <button class="category-btn" data-category="visa" data-i18n="hub.tab.visa">🇮🇩 Visas & Residence</button>
-        <button class="category-btn" data-category="bureaucracy" data-i18n="hub.tab.bureaucracy">🇵🇹 Portugal Bureaucracy</button>
-        <button class="category-btn" data-category="trade" data-i18n="hub.tab.trade">🚢 Trade & PMA Setup</button>
-        <button class="category-btn" data-category="notary" data-i18n="hub.tab.notary">⚖️ Sworn Translation</button>
+      <div class="category-tabs" role="group" aria-label="Filter by topic">
+        <button type="button" class="category-btn" data-category="all" aria-pressed="true">All Topics (4)</button>
+        <button type="button" class="category-btn" data-category="visa" aria-pressed="false" data-i18n="hub.tab.visa">🇮🇩 Visas &amp; Residence</button>
+        <button type="button" class="category-btn" data-category="bureaucracy" aria-pressed="false" data-i18n="hub.tab.bureaucracy">🇵🇹 Portugal Paperwork</button>
+        <button type="button" class="category-btn" data-category="trade" aria-pressed="false" data-i18n="hub.tab.trade">🚢 Business &amp; PT PMA</button>
+        <button type="button" class="category-btn" data-category="notary" aria-pressed="false" data-i18n="hub.tab.notary">📄 Certified Translation</button>
       </div>
     </div>
   </header>
 
-  <main class="section-container">
-    <!-- Pinned / Featured Section -->
-    <section class="pinned-section">
-      <div class="pinned-badge"><i data-lucide="pin" style="width: 13px; height: 13px;"></i> <span data-i18n="hub.pinned">Pinned Guides</span></div>
-      <div class="pinned-grid" id="articlesPinnedGrid">
-
-        <!-- Card 1 (EN + PT) -->
-        <a href="/articles/indonesia-visa-guide-2026.html" class="article-card-featured" data-category="visa" data-langs="en pt">
+  <main id="main" class="wrap">
+    <section class="hub-section" aria-labelledby="pinnedTitle">
+      <h2 class="hub-section-title" id="pinnedTitle">
+        <svg class="icon" aria-hidden="true" style="color:#F59E0B"><use href="/articles/icons.svg#pin"></use></svg>
+        <span data-i18n="hub.pinned">Pinned Guides</span>
+      </h2>
+      <div class="article-card-grid" id="articlesPinnedGrid">
+        <article class="article-card" data-category="visa" data-langs="en pt">
           <div>
             <div class="card-meta">
-              <span class="card-tag">Indonesia Visa & Residence</span>
-              <span style="padding: 2px 8px; background: rgba(59, 130, 246, 0.15); border-radius: 10px; font-weight: 700; color: #60a5fa; font-size: 0.72rem;">EN • PT</span>
-              <span>• 6 min read</span>
+              <span class="card-tag">Indonesia Visas</span>
+              <span class="card-langs">EN • PT</span>
+              <span>8 min read</span>
             </div>
-            <h2 class="card-title">Navigating Indonesian Visas: B211A, Investor KITAS & PT PMA Guide (2026)</h2>
-            <p class="card-desc">Comprehensive legal roadmap for Portuguese entrepreneurs, investors, and business leaders establishing operations or extended residence in Indonesia.</p>
+            <h3 class="card-title"><a href="/articles/indonesia-visa-guide-2026.html">Indonesian Business Visas &amp; Investor KITAS (2026): C2, D2, E28A and E33G Explained</a></h3>
+            <p class="card-desc">Which Indonesian visa fits a Portuguese business visitor, investor or remote worker under the current visa index, and what to prepare before you apply.</p>
           </div>
-          <div class="card-cta-row">
-            <span>Read Full Guide</span>
-            <i data-lucide="arrow-right"></i>
+          <div class="card-footer">
+            <span>Aditya Putra</span>
+            <span class="card-cta" aria-hidden="true">Read guide <svg class="icon"><use href="/articles/icons.svg#arrow-right"></use></svg></span>
           </div>
-        </a>
-
-        <!-- Card 2 (EN + PT) -->
-        <a href="/articles/pt-pma-indonesia-setup.html" class="article-card-featured" data-category="trade" data-langs="en pt">
+        </article>
+        <article class="article-card" data-category="trade" data-langs="en pt">
           <div>
             <div class="card-meta">
-              <span class="card-tag">Business & PT PMA</span>
-              <span style="padding: 2px 8px; background: rgba(59, 130, 246, 0.15); border-radius: 10px; font-weight: 700; color: #60a5fa; font-size: 0.72rem;">EN • PT</span>
-              <span>• 8 min read</span>
+              <span class="card-tag">Business &amp; PT PMA</span>
+              <span class="card-langs">EN • PT</span>
+              <span>8 min read</span>
             </div>
-            <h2 class="card-title">Setting Up a PT PMA in Indonesia: Foreign Direct Investment & Legal Setup</h2>
-            <p class="card-desc">Step-by-step foreign direct investment advisory, minimum capital rules, BKPM compliance, and corporate legal structuring for European companies.</p>
+            <h3 class="card-title"><a href="/articles/pt-pma-indonesia-setup.html">Setting Up a PT PMA in Indonesia (2026): Capital Rules, OSS Licensing and Steps</a></h3>
+            <p class="card-desc">The 2025 capital rules (IDR 2.5 billion paid-up, IDR 10 billion investment plan), OSS risk-based licensing and the incorporation steps for European founders.</p>
           </div>
-          <div class="card-cta-row">
-            <span>Read Guide</span>
-            <i data-lucide="arrow-right"></i>
+          <div class="card-footer">
+            <span>Aditya Putra</span>
+            <span class="card-cta" aria-hidden="true">Read guide <svg class="icon"><use href="/articles/icons.svg#arrow-right"></use></svg></span>
           </div>
-        </a>
-
+        </article>
       </div>
     </section>
 
-    <!-- All Articles Grid Section -->
-    <section class="articles-grid-section">
-      <div class="section-header-compact">
-        <h2 class="section-title-sm" data-i18n="hub.all_pub">All Published Articles & Resources</h2>
-        <span style="font-size: 0.82rem; color: var(--text-dim);">Updated Weekly</span>
-      </div>
-
-      <div class="articles-list-grid" id="articlesGrid">
-
-        <!-- Card 3 (EN + ID) -->
-        <a href="/articles/nif-niss-aima-portugal-guide.html" class="article-compact-card" data-category="bureaucracy" data-langs="en id">
-          <div class="card-meta">
-            <span class="card-tag">Portugal Bureaucracy</span>
-            <span style="padding: 2px 8px; background: rgba(245, 158, 11, 0.15); border-radius: 10px; font-weight: 700; color: #f59e0b; font-size: 0.72rem;">EN • ID</span>
-            <span>Pinned • 5 min</span>
+    <section class="hub-section" aria-labelledby="allTitle">
+      <h2 class="hub-section-title" id="allTitle" data-i18n="hub.all_pub">All Published Guides</h2>
+      <div class="article-card-grid" id="articlesGrid">
+        <article class="article-card" data-category="bureaucracy" data-langs="en id">
+          <div>
+            <div class="card-meta">
+              <span class="card-tag">Portugal Paperwork</span>
+              <span class="card-langs nusa">EN • ID</span>
+              <span>6 min read</span>
+            </div>
+            <h3 class="card-title"><a href="/articles/nif-niss-aima-portugal-guide.html">NIF, NISS &amp; AIMA in Portugal: A Practical Guide for Indonesians</a></h3>
+            <p class="card-desc">How Indonesian citizens get a Portuguese tax number (NIF), social security number (NISS) and residence permit appointment with AIMA, step by step.</p>
           </div>
-          <h3 style="font-size: 1.05rem; font-weight: 600; color: #fff; margin-bottom: 8px;">NIF, NISS & AIMA Residence Registration in Portugal: Guide for Indonesians</h3>
-          <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 16px;">Step-by-step breakdown of obtaining fiscal representation, social security, and residence scheduling for Indonesian expats in Portugal.</p>
-          <div style="font-size: 0.8rem; color: var(--accent-luso); font-weight: 600; display: flex; align-items: center; justify-content: space-between;">
-            <span>Read Guide</span>
-            <i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i>
+          <div class="card-footer">
+            <span>Aditya Putra</span>
+            <span class="card-cta" aria-hidden="true">Read guide <svg class="icon"><use href="/articles/icons.svg#arrow-right"></use></svg></span>
           </div>
-        </a>
-
-        <!-- Card 4 (EN + ID) -->
-        <a href="/articles/sworn-translation-notary-guide.html" class="article-compact-card" data-category="notary" data-langs="en id">
-          <div class="card-meta">
-            <span class="card-tag">Sworn Translation</span>
-            <span style="padding: 2px 8px; background: rgba(245, 158, 11, 0.15); border-radius: 10px; font-weight: 700; color: #f59e0b; font-size: 0.72rem;">EN • ID</span>
-            <span>Pinned • 4 min</span>
+        </article>
+        <article class="article-card" data-category="notary" data-langs="en id">
+          <div>
+            <div class="card-meta">
+              <span class="card-tag">Certified Translation</span>
+              <span class="card-langs nusa">EN • ID</span>
+              <span>6 min read</span>
+            </div>
+            <h3 class="card-title"><a href="/articles/sworn-translation-notary-guide.html">Certified Translation &amp; Apostille: Using Indonesian Documents in Portugal</a></h3>
+            <p class="card-desc">How Indonesian civil, academic and company documents are apostilled, translated into European Portuguese and certified for use in Portugal.</p>
           </div>
-          <h3 style="font-size: 1.05rem; font-weight: 600; color: #fff; margin-bottom: 8px;">Certified Sworn Translation & Notary Legalization (ID ↔ PT Document Roadmap)</h3>
-          <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 16px;">Embassy-recognized translation procedures, Cartório notarization, civil document legalization, and Apostille guidance for Indonesian nationals.</p>
-          <div style="font-size: 0.8rem; color: var(--accent-luso); font-weight: 600; display: flex; align-items: center; justify-content: space-between;">
-            <span>Read Guide</span>
-            <i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i>
+          <div class="card-footer">
+            <span>Mia Gomes</span>
+            <span class="card-cta" aria-hidden="true">Read guide <svg class="icon"><use href="/articles/icons.svg#arrow-right"></use></svg></span>
           </div>
-        </a>
-
+        </article>
       </div>
     </section>
   </main>
 
-  <!-- Article Page Compact Footer (Unified with Article Page) -->
-  <footer class="article-footer-compact">
-    <div class="article-footer-container">
-      <div class="article-footer-brand">
-        <span class="article-footer-logo">LUSONUSA</span>
-        <span class="article-footer-tag">Bilateral Advisory • Portugal & Indonesia</span>
+  <footer class="article-site-footer">
+    <div class="wrap">
+      <div class="footer-brand">
+        <span class="footer-logo">LUSONUSA</span>
+        <span>Portugal ↔ Indonesia bilateral support</span>
       </div>
-      <div class="article-footer-info">
-        <p>Mon–Fri 10:00–16:00 WET (Portugal) / 16:00–22:00 WIB (Indonesia) • <a href="mailto:contact@lusonusa.agency">contact@lusonusa.agency</a> • Operating as PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah)</p>
-        <p>Consultations in English & Indonesian • Legal notarization via certified Portuguese Notários</p>
-        <p class="article-footer-copy">&copy; 2026 LUSONUSA. All rights reserved.</p>
+      <div class="footer-info">
+        <p><span data-i18n="footer.hours">Mon–Fri, 10:00–16:00 Lisbon time (16:00–22:00 WIB in summer, 17:00–23:00 WIB in winter)</span> • <a href="mailto:contact@lusonusa.agency">contact@lusonusa.agency</a></p>
+        <p>Operated by PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia). <span data-i18n="footer.disclaimer">Administrative support, guidance and document coordination. Not legal advice.</span></p>
+        <p class="footer-links"><a href="/privacy.html" data-i18n="footer.privacy">Privacy &amp; Cookies</a><a href="/terms.html" data-i18n="footer.terms">Terms &amp; Disclaimer</a></p>
+        <p class="footer-copy">© 2026 LUSONUSA · PT Wollusca Sukses Bersama</p>
       </div>
     </div>
   </footer>
-
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    lucide.createIcons();
-  </script>
-
-  <!-- Self-Contained Fail-safe Script & Language Filter -->
-  <script>
-    (function () {
-      // 1. Embedded Data Store (Zero HTTP requests, cannot 404)
-      window.LUSONUSA_ARTICLES = [
-        {
-          id: 'indonesia-visa-guide-2026',
-          file: 'indonesia-visa-guide-2026.html',
-          category: 'visa',
-          categoryName: 'Indonesia Visa & Residence',
-          langs: ['en', 'pt'],
-          readTime: '6 min read',
-          date: 'Aug 6, 2026',
-          title: {
-            en: 'Navigating Indonesian Visas: B211A, Investor KITAS & PT PMA Guide (2026)',
-            pt: 'Guia de Vistos para a Indonésia: B211A, KITAS de Investidor e PT PMA (2026)'
-          },
-          desc: {
-            en: 'Comprehensive legal roadmap for Portuguese entrepreneurs, investors, and business leaders establishing operations or extended residence in Indonesia.',
-            pt: 'Um roteiro prático e jurídico para empresários e investidores portugueses que estabelecem operações comerciais ou residência prolongada na Indonésia.'
-          },
-          badgeColor: '#60a5fa',
-          badgeBg: 'rgba(59, 130, 246, 0.15)'
-        },
-        {
-          id: 'pt-pma-indonesia-setup',
-          file: 'pt-pma-indonesia-setup.html',
-          category: 'trade',
-          categoryName: 'Business & PT PMA',
-          langs: ['en', 'pt'],
-          readTime: '8 min read',
-          date: 'Aug 4, 2026',
-          title: {
-            en: 'Setting Up a PT PMA in Indonesia: Foreign Direct Investment & Legal Setup',
-            pt: 'Criar uma Empresa PT PMA na Indonésia: Investimento Estrangeiro e Estrutura Legal'
-          },
-          desc: {
-            en: 'Step-by-step foreign direct investment advisory, minimum capital rules, BKPM compliance, and corporate legal structuring for European companies.',
-            pt: 'Passo a passo sobre investimento direto estrangeiro, capital mínimo, licenciamento BKPM e estruturação jurídica empresarial.'
-          },
-          badgeColor: '#60a5fa',
-          badgeBg: 'rgba(59, 130, 246, 0.15)'
-        },
-        {
-          id: 'nif-niss-aima-portugal-guide',
-          file: 'nif-niss-aima-portugal-guide.html',
-          category: 'bureaucracy',
-          categoryName: 'Portugal Bureaucracy',
-          langs: ['en', 'id'],
-          readTime: '5 min read',
-          date: 'Aug 2, 2026',
-          title: {
-            en: 'NIF, NISS & AIMA Residence Registration in Portugal: Guide for Indonesians',
-            id: 'Panduan Lengkap NIF, NISS & Pendaftaran Izin Tinggal AIMA di Portugal untuk WNI'
-          },
-          desc: {
-            en: 'Step-by-step breakdown of obtaining fiscal representation, social security, and residence scheduling for Indonesian expats in Portugal.',
-            id: 'Panduan langkah demi langkah mengurus nomor pajak NIF, jaminan sosial NISS, dan kartu izin tinggal AIMA untuk WNI di Portugal.'
-          },
-          badgeColor: '#f59e0b',
-          badgeBg: 'rgba(245, 158, 11, 0.15)'
-        },
-        {
-          id: 'sworn-translation-notary-guide',
-          file: 'sworn-translation-notary-guide.html',
-          category: 'notary',
-          categoryName: 'Sworn Translation',
-          langs: ['en', 'id'],
-          readTime: '4 min read',
-          date: 'Jul 30, 2026',
-          title: {
-            en: 'Certified Sworn Translation & Notary Legalization (ID ↔ PT Document Roadmap)',
-            id: 'Penerjemah Tersumpah & Legalisasi Notaris Dokumen Resmi (Indonesia ↔ Portugal)'
-          },
-          desc: {
-            en: 'Embassy-recognized translation procedures, Cartório notarization, civil document legalization, and Apostille guidance for Indonesian nationals.',
-            id: 'Panduan penerjemahan tersumpah akta lahir, ijazah, kontrak bisnis, legalisasi Notaris/Cartório, dan sertifikat Apostille.'
-          },
-          badgeColor: '#f59e0b',
-          badgeBg: 'rgba(245, 158, 11, 0.15)'
-        }
-      ];
-
-      let activeCategory = 'all';
-
-      function filterAndRender() {
-        const lang = localStorage.getItem('lusonusa_lang') || 'en';
-        document.documentElement.lang = lang;
-
-        // Update nav lang buttons active state
-        document.querySelectorAll('.nav-lang-btn').forEach(b => {
-          if (b.dataset.lang === lang) {
-            b.classList.add('active');
-            b.setAttribute('aria-pressed', 'true');
-          } else {
-            b.classList.remove('active');
-            b.setAttribute('aria-pressed', 'false');
-          }
-        });
-
-        // Filter cards in DOM by language & category
-        const cards = document.querySelectorAll('[data-category][data-langs]');
-        let visibleCount = 0;
-
-        cards.forEach(card => {
-          const cat = card.dataset.category;
-          const langs = card.dataset.langs ? card.dataset.langs.split(' ') : ['en'];
-
-          const matchesLang = (lang === 'en' || langs.includes(lang));
-          const matchesCat = (activeCategory === 'all' || cat === activeCategory);
-
-          if (matchesLang && matchesCat) {
-            card.style.display = 'flex';
-            card.style.opacity = '1';
-            visibleCount++;
-          } else {
-            card.style.display = 'none';
-          }
-        });
-
-        // Update count in All Topics tab
-        const allTab = document.querySelector('[data-category="all"]');
-        if (allTab) {
-          const counts = {
-            en: `All Topics (${visibleCount})`,
-            pt: `Todos os Tópicos (${visibleCount})`,
-            id: `Semua Topik (${visibleCount})`
-          };
-          allTab.textContent = counts[lang] || counts.en;
-        }
-      }
-
-      // Handle category tab clicks & toggles
-      document.addEventListener('click', e => {
-        const catBtn = e.target.closest('.category-btn');
-        if (catBtn && catBtn.dataset.category) {
-          const cat = catBtn.dataset.category;
-          if (catBtn.classList.contains('active') && cat !== 'all') {
-            activeCategory = 'all';
-          } else {
-            activeCategory = cat;
-          }
-
-          document.querySelectorAll('.category-btn').forEach(b => {
-            if (b.dataset.category === activeCategory) b.classList.add('active');
-            else b.classList.remove('active');
-          });
-
-          filterAndRender();
-        }
-
-        const langBtn = e.target.closest('.nav-lang-btn');
-        if (langBtn && langBtn.dataset.lang) {
-          localStorage.setItem('lusonusa_lang', langBtn.dataset.lang);
-          filterAndRender();
-        }
-      });
-
-      filterAndRender();
-    })();
-  </script>
 </body>
 </html>

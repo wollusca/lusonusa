@@ -1,114 +1,112 @@
 /* ═══════════════════════════════════════════════════════════════
-   LUSONUSA — Centralized Scalable Article Registry & Data Store
+   LUSONUSA — Article registry (single source for hub card text)
+   Authors follow the team table in docs/audit/workstreams.md.
    ═══════════════════════════════════════════════════════════════ */
+
+window.LUSONUSA_AUTHORS = {
+  aditya: {
+    name: 'Aditya Putra',
+    role: 'Founder · Business & Bilateral Relations Lead',
+    avatar: '/assets/articles/avatar-aditya-96.jpg'
+  },
+  mia: {
+    name: 'Mia Gomes',
+    role: 'Translation Specialist · Legal & Notarized Translation Lead',
+    avatar: '/assets/articles/avatar-mia-96.jpg'
+  }
+};
 
 window.LUSONUSA_ARTICLES = [
   {
     id: 'indonesia-visa-guide-2026',
     file: 'indonesia-visa-guide-2026.html',
     category: 'visa',
-    categoryName: 'Indonesia Visa & Residence',
+    categoryName: { en: 'Indonesia Visas', pt: 'Vistos Indonésia', id: 'Visa Indonesia' },
     langs: ['en', 'pt'],
-    readTime: '6 min read',
-    date: 'Aug 6, 2026',
-    author: {
-      name: 'Aditya Putra',
-      avatar: '../assets/aditya.jpg',
-      role: 'Founder & Bilateral Relations Lead'
-    },
+    readTime: { en: '8 min read', pt: '8 min de leitura', id: '8 menit baca' },
+    date: '2026-08-06',
+    reviewed: '2026-10-26',
+    author: 'aditya',
     title: {
-      en: 'Navigating Indonesian Visas: B211A, Investor KITAS & PT PMA Guide (2026)',
-      pt: 'Guia de Vistos para a Indonésia: B211A, KITAS de Investidor e PT PMA (2026)',
-      id: 'Navigating Indonesian Visas: B211A, Investor KITAS & PT PMA Guide (2026)'
+      en: 'Indonesian Business Visas & Investor KITAS (2026): C2, D2, E28A and E33G Explained',
+      pt: 'Vistos de Negócios e KITAS de Investidor na Indonésia (2026): C2, D2, E28A e E33G',
+      id: 'Indonesian Business Visas & Investor KITAS (2026): C2, D2, E28A and E33G Explained'
     },
     desc: {
-      en: 'Comprehensive legal roadmap for Portuguese entrepreneurs, investors, and business leaders establishing operations or extended residence in Indonesia.',
-      pt: 'Um roteiro prático e jurídico para empresários e investidores portugueses que estabelecem operações comerciais ou residência prolongada na Indonésia.',
-      id: 'Panduan hukum dan administratif praktis bagi pengusaha dan investor Portugal yang membuka usaha di Indonesia.'
+      en: 'Which Indonesian visa fits a Portuguese business visitor, investor or remote worker under the current visa index, and what to prepare before you apply.',
+      pt: 'Que visto indonésio se adequa a visitantes de negócios, investidores ou trabalhadores remotos portugueses, segundo o índice de vistos em vigor.',
+      id: 'Visa Indonesia yang sesuai untuk pebisnis, investor, atau pekerja jarak jauh dari Portugal menurut indeks visa terbaru.'
     },
     pinned: true,
-    badgeColor: '#60a5fa',
-    badgeBg: 'rgba(59, 130, 246, 0.15)'
+    tone: 'luso'
   },
   {
     id: 'pt-pma-indonesia-setup',
     file: 'pt-pma-indonesia-setup.html',
     category: 'trade',
-    categoryName: 'Business & PT PMA',
+    categoryName: { en: 'Business & PT PMA', pt: 'Negócios e PT PMA', id: 'Bisnis & PT PMA' },
     langs: ['en', 'pt'],
-    readTime: '8 min read',
-    date: 'Aug 4, 2026',
-    author: {
-      name: 'Nabela Rahma',
-      avatar: '../assets/nabela.jpg',
-      role: 'Legal & Corporate Governance Lead'
-    },
+    readTime: { en: '8 min read', pt: '8 min de leitura', id: '8 menit baca' },
+    date: '2026-08-04',
+    reviewed: '2026-10-26',
+    author: 'aditya',
     title: {
-      en: 'Setting Up a PT PMA in Indonesia: Foreign Direct Investment & Legal Setup',
-      pt: 'Criar uma Empresa PT PMA na Indonésia: Investimento Estrangeiro e Estrutura Legal',
-      id: 'Pendirian PT PMA di Indonesia: Penanaman Modal Asing & Kerangka Hukum'
+      en: 'Setting Up a PT PMA in Indonesia (2026): Capital Rules, OSS Licensing and Steps',
+      pt: 'Criar uma PT PMA na Indonésia (2026): Capital, Licenciamento OSS e Etapas',
+      id: 'Pendirian PT PMA di Indonesia (2026): Modal, Perizinan OSS, dan Tahapan'
     },
     desc: {
-      en: 'Step-by-step foreign direct investment advisory, minimum capital rules, BKPM compliance, and corporate legal structuring for European companies.',
-      pt: 'Passo a passo sobre investimento direto estrangeiro, capital mínimo, licenciamento BKPM e estruturação jurídica empresarial.',
-      id: 'Panduan lengkap penanaman modal asing, modal minimum IDR 10M, perizinan BKPM OSS RBA, dan legalitas akta pendirian.'
+      en: 'The 2025 capital rules (IDR 2.5 billion paid-up, IDR 10 billion investment plan), OSS risk-based licensing and the incorporation steps for European founders.',
+      pt: 'As regras de capital de 2025 (2,5 mil milhões IDR realizados, plano de 10 mil milhões IDR), licenciamento OSS e as etapas de constituição.',
+      id: 'Aturan modal 2025 (modal disetor IDR 2,5 miliar, rencana investasi IDR 10 miliar), perizinan OSS berbasis risiko, dan tahapan pendirian.'
     },
     pinned: true,
-    badgeColor: '#60a5fa',
-    badgeBg: 'rgba(59, 130, 246, 0.15)'
+    tone: 'luso'
   },
   {
     id: 'nif-niss-aima-portugal-guide',
     file: 'nif-niss-aima-portugal-guide.html',
     category: 'bureaucracy',
-    categoryName: 'Portugal Bureaucracy',
+    categoryName: { en: 'Portugal Paperwork', pt: 'Burocracia em Portugal', id: 'Birokrasi Portugal' },
     langs: ['en', 'id'],
-    readTime: '5 min read',
-    date: 'Aug 2, 2026',
-    author: {
-      name: 'Maria Santos',
-      avatar: '../assets/mia.jpg',
-      role: 'Lisbon Relocation Lead'
-    },
+    readTime: { en: '6 min read', pt: '6 min de leitura', id: '6 menit baca' },
+    date: '2026-08-02',
+    reviewed: '2026-10-26',
+    author: 'aditya',
     title: {
-      en: 'NIF, NISS & AIMA Residence Registration in Portugal: Guide for Indonesians',
-      pt: 'NIF, NISS e Agendamentos AIMA em Portugal para Expatriados',
-      id: 'Panduan Lengkap NIF, NISS & Pendaftaran Izin Tinggal AIMA di Portugal untuk WNI'
+      en: 'NIF, NISS & AIMA in Portugal: A Practical Guide for Indonesians',
+      pt: 'NIF, NISS e AIMA em Portugal: Guia Prático para Indonésios',
+      id: 'Panduan NIF, NISS & AIMA di Portugal untuk WNI'
     },
     desc: {
-      en: 'Step-by-step breakdown of obtaining fiscal representation, social security, and residence scheduling for Indonesian expats in Portugal.',
-      pt: 'Guia passo a passo para obtenção de número fiscal, segurança social e agendamentos de residência AIMA.',
-      id: 'Panduan langkah demi langkah mengurus nomor pajak NIF, jaminan sosial NISS, dan kartu izin tinggal AIMA untuk WNI di Portugal.'
+      en: 'How Indonesian citizens get a Portuguese tax number (NIF), social security number (NISS) and residence permit appointment with AIMA, step by step.',
+      pt: 'Como os cidadãos indonésios obtêm NIF, NISS e o agendamento da autorização de residência na AIMA, passo a passo.',
+      id: 'Langkah demi langkah mengurus NIF (nomor pajak), NISS (jaminan sosial), dan izin tinggal AIMA di Portugal untuk WNI.'
     },
-    pinned: true,
-    badgeColor: '#f59e0b',
-    badgeBg: 'rgba(245, 158, 11, 0.15)'
+    pinned: false,
+    tone: 'nusa'
   },
   {
     id: 'sworn-translation-notary-guide',
     file: 'sworn-translation-notary-guide.html',
     category: 'notary',
-    categoryName: 'Sworn Translation',
+    categoryName: { en: 'Certified Translation', pt: 'Tradução Certificada', id: 'Terjemahan Tersertifikasi' },
     langs: ['en', 'id'],
-    readTime: '4 min read',
-    date: 'Jul 30, 2026',
-    author: {
-      name: 'Joko Santoso',
-      avatar: '../assets/joko.jpg',
-      role: 'Sworn Translator & Notarial Liaison'
-    },
+    readTime: { en: '6 min read', pt: '6 min de leitura', id: '6 menit baca' },
+    date: '2026-07-30',
+    reviewed: '2026-10-26',
+    author: 'mia',
     title: {
-      en: 'Certified Sworn Translation & Notary Legalization (ID ↔ PT Document Roadmap)',
-      pt: 'Tradução Juramentada Certificada e Legalização Notarial (ID ↔ PT)',
-      id: 'Penerjemah Tersumpah & Legalisasi Notaris Dokumen Resmi (Indonesia ↔ Portugal)'
+      en: 'Certified Translation & Apostille: Using Indonesian Documents in Portugal',
+      pt: 'Tradução Certificada e Apostila: Usar Documentos Indonésios em Portugal',
+      id: 'Terjemahan Tersertifikasi & Apostille: Menggunakan Dokumen Indonesia di Portugal'
     },
     desc: {
-      en: 'Embassy-recognized translation procedures, Cartório notarization, civil document legalization, and Apostille guidance for Indonesian nationals.',
-      pt: 'Procedimentos de tradução reconhecidos por embaixadas, certidões notariais e legalização de documentos.',
-      id: 'Panduan penerjemahan tersumpah akta lahir, ijazah, kontrak bisnis, legalisasi Notaris/Cartório, dan sertifikat Apostille.'
+      en: 'How Indonesian civil, academic and company documents are apostilled, translated into European Portuguese and certified for use in Portugal.',
+      pt: 'Como apostilar, traduzir para português europeu e certificar documentos civis, académicos e empresariais indonésios para uso em Portugal.',
+      id: 'Cara dokumen sipil, akademik, dan perusahaan Indonesia diapostille, diterjemahkan ke bahasa Portugis Eropa, dan disertifikasi untuk dipakai di Portugal.'
     },
-    pinned: true,
-    badgeColor: '#f59e0b',
-    badgeBg: 'rgba(245, 158, 11, 0.15)'
+    pinned: false,
+    tone: 'nusa'
   }
 ];

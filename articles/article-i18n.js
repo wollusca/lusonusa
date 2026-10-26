@@ -1,270 +1,181 @@
 /* ═══════════════════════════════════════════════════════════════
-   LUSONUSA — Article & Knowledge Hub i18n Language Manager
+   LUSONUSA — Article & Knowledge Hub language manager
+   - Translates [data-i18n] UI strings.
+   - Shows the [data-lang-content] block for the active language (falls
+     back to English) and keeps exactly one <h1>: the visible title.
+   - Shows a short notice when an article has no version in the
+     selected language.
    ═══════════════════════════════════════════════════════════════ */
 
 (function () {
-  const articleTranslations = {
+  const STORAGE_KEY = 'lusonusa_lang';
+  const LANGS = ['en', 'pt', 'id'];
+
+  const strings = {
     en: {
       'nav.all_articles': 'All Articles',
       'nav.whatsapp_contact': 'Contact',
-      'nav.main_site': 'Main Site',
-      'hub.eyebrow': 'Bilateral Resource & Knowledge Hub',
-      'hub.title': 'Operational Guides & Articles',
-      'hub.subtitle': 'In-depth legal roadmaps, immigration guides, and bilateral trade compliance insights for Portugal and Indonesia.',
-      'hub.tab.all': 'All Topics (4)',
+      'nav.skip': 'Skip to content',
+      'hub.eyebrow': 'Portugal ↔ Indonesia Knowledge Hub',
+      'hub.title': 'Practical Guides & Articles',
+      'hub.subtitle': 'Step-by-step administrative guides on visas, company setup, Portuguese paperwork and certified translations for Portugal and Indonesia.',
       'hub.tab.visa': '🇮🇩 Visas & Residence',
-      'hub.tab.bureaucracy': '🇵🇹 Portugal Bureaucracy',
-      'hub.tab.trade': '🚢 Trade & PMA Setup',
-      'hub.tab.notary': '⚖️ Sworn Translation',
+      'hub.tab.bureaucracy': '🇵🇹 Portugal Paperwork',
+      'hub.tab.trade': '🚢 Business & PT PMA',
+      'hub.tab.notary': '📄 Certified Translation',
       'hub.pinned': 'Pinned Guides',
-      'hub.all_pub': 'All Published Articles & Resources',
-      'toc.title': 'Table of Contents',
-      'article.read_time': '6 min read',
-      'article.back': 'All Articles'
+      'hub.all_pub': 'All Published Guides',
+      'hub.empty': 'No guides in this topic for the selected language yet.',
+      'hub.read': 'Read guide',
+      'toc.title': 'Contents',
+      'footer.hours': 'Mon–Fri, 10:00–16:00 Lisbon time (16:00–22:00 WIB in summer, 17:00–23:00 WIB in winter)',
+      'footer.privacy': 'Privacy & Cookies',
+      'footer.terms': 'Terms & Disclaimer',
+      'footer.disclaimer': 'Administrative support, guidance and document coordination. Not legal advice.',
+      'dialog.title': 'Published in English',
+      'dialog.body': 'This guide is currently available in English only.',
+      'dialog.ok': 'OK, read in English'
     },
     pt: {
       'nav.all_articles': 'Todos os Artigos',
       'nav.whatsapp_contact': 'Contacto',
-      'nav.main_site': 'Página Principal',
-      'hub.eyebrow': 'Centro de Recursos e Conhecimento Bilateral',
-      'hub.title': 'Guias Operacionais e Artigos (Português)',
-      'hub.subtitle': 'Manuais jurídicos detalhados, guias de imigração para a Indonésia e soluções para empresas portuguesas.',
-      'hub.tab.all': 'Todos os Tópicos (2)',
+      'nav.skip': 'Saltar para o conteúdo',
+      'hub.eyebrow': 'Centro de Conhecimento Portugal ↔ Indonésia',
+      'hub.title': 'Guias Práticos e Artigos',
+      'hub.subtitle': 'Guias administrativos passo a passo sobre vistos, constituição de empresas, burocracia portuguesa e traduções certificadas.',
       'hub.tab.visa': '🇮🇩 Vistos e Residência',
       'hub.tab.bureaucracy': '🇵🇹 Burocracia em Portugal',
-      'hub.tab.trade': '🚢 Comércio e PT PMA',
-      'hub.tab.notary': '⚖️ Tradução Juramentada',
+      'hub.tab.trade': '🚢 Negócios e PT PMA',
+      'hub.tab.notary': '📄 Tradução Certificada',
       'hub.pinned': 'Guias em Destaque',
-      'hub.all_pub': 'Todos os Artigos Disponíveis em Português',
-      'toc.title': 'Índice de Conteúdos',
-      'article.read_time': 'Leitura de 6 min',
-      'article.back': 'Todos os Artigos'
+      'hub.all_pub': 'Todos os Guias Publicados',
+      'hub.empty': 'Ainda não há guias deste tema no idioma selecionado.',
+      'hub.read': 'Ler guia',
+      'toc.title': 'Índice',
+      'footer.hours': 'Seg–Sex, 10:00–16:00 hora de Lisboa (16:00–22:00 WIB no verão, 17:00–23:00 WIB no inverno)',
+      'footer.privacy': 'Privacidade e Cookies',
+      'footer.terms': 'Termos e Aviso Legal',
+      'footer.disclaimer': 'Apoio administrativo, orientação e coordenação documental. Não constitui aconselhamento jurídico.',
+      'dialog.title': 'Publicado em Inglês',
+      'dialog.body': 'Este guia está disponível apenas em inglês por agora. Estamos a preparar a versão em português.',
+      'dialog.ok': 'Entendido, ler em inglês'
     },
     id: {
       'nav.all_articles': 'Semua Artikel',
       'nav.whatsapp_contact': 'Kontak',
-      'nav.main_site': 'Situs Utama',
-      'hub.eyebrow': 'Pusat Pengetahuan & Sumber Daya Bilateral',
-      'hub.title': 'Panduan Operasional & Artikel (Bahasa Indonesia)',
-      'hub.subtitle': 'Panduan hukum mendalam, birokrasi Portugal, NIF/AIMA, dan penerjemah tersumpah untuk WNI.',
-      'hub.tab.all': 'Semua Topik (2)',
+      'nav.skip': 'Langsung ke konten',
+      'hub.eyebrow': 'Pusat Pengetahuan Portugal ↔ Indonesia',
+      'hub.title': 'Panduan Praktis & Artikel',
+      'hub.subtitle': 'Panduan administratif langkah demi langkah tentang visa, pendirian perusahaan, birokrasi Portugal, dan terjemahan tersertifikasi.',
       'hub.tab.visa': '🇮🇩 Visa & Izin Tinggal',
       'hub.tab.bureaucracy': '🇵🇹 Birokrasi Portugal',
-      'hub.tab.trade': '🚢 Perdagangan & PT PMA',
-      'hub.tab.notary': '⚖️ Penerjemah Tersumpah',
+      'hub.tab.trade': '🚢 Bisnis & PT PMA',
+      'hub.tab.notary': '📄 Terjemahan Tersertifikasi',
       'hub.pinned': 'Panduan Utama',
-      'hub.all_pub': 'Semua Artikel Tersedia dalam Bahasa Indonesia',
+      'hub.all_pub': 'Semua Panduan',
+      'hub.empty': 'Belum ada panduan untuk topik ini dalam bahasa yang dipilih.',
+      'hub.read': 'Baca panduan',
       'toc.title': 'Daftar Isi',
-      'article.read_time': 'Waktu baca 6 menit',
-      'article.back': 'Semua Artikel'
+      'footer.hours': 'Senin–Jumat, 10:00–16:00 waktu Lisbon (16:00–22:00 WIB saat musim panas, 17:00–23:00 WIB saat musim dingin)',
+      'footer.privacy': 'Privasi & Cookie',
+      'footer.terms': 'Ketentuan & Penafian',
+      'footer.disclaimer': 'Dukungan administratif, panduan, dan koordinasi dokumen. Bukan nasihat hukum.',
+      'dialog.title': 'Diterbitkan dalam Bahasa Inggris',
+      'dialog.body': 'Panduan ini saat ini hanya tersedia dalam bahasa Inggris. Versi Bahasa Indonesia sedang kami siapkan.',
+      'dialog.ok': 'Mengerti, baca dalam bahasa Inggris'
     }
   };
 
-  let currentLang = localStorage.getItem('lusonusa_lang') || 'en';
-
-  function applyLanguage(lang) {
-    currentLang = lang;
-    localStorage.setItem('lusonusa_lang', lang);
-    document.documentElement.lang = lang;
-
-    // Update Language Buttons Active State
-    const langBtns = document.querySelectorAll('.nav-lang-btn');
-    langBtns.forEach(btn => {
-      const bLang = btn.dataset.lang;
-      if (bLang === lang) {
-        btn.classList.add('active');
-        btn.setAttribute('aria-pressed', 'true');
-      } else {
-        btn.classList.remove('active');
-        btn.setAttribute('aria-pressed', 'false');
-      }
-    });
-
-    // Translate DOM elements with data-i18n attribute
-    const elements = document.querySelectorAll('[data-i18n]');
-    const dict = articleTranslations[lang] || articleTranslations.en;
-
-    elements.forEach(el => {
-      const key = el.dataset.i18n;
-      if (dict[key]) {
-        el.textContent = dict[key];
-      }
-    });
-
-    // 1. FILTER ARTICLES ON HUB PAGE BASED ON SELECTED LANGUAGE
-    const cards = document.querySelectorAll('[data-langs]');
-    if (cards.length > 0) {
-      let visibleCount = 0;
-      cards.forEach(card => {
-        const supportedLangs = card.dataset.langs ? card.dataset.langs.split(' ') : ['en'];
-        // Show card if 'en' is selected (shows all) or if card supports the selected language
-        if (lang === 'en' || supportedLangs.includes(lang)) {
-          card.style.display = 'flex';
-          card.style.opacity = '1';
-          visibleCount++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
-
-      // Update count badge in All Topics tab
-      const allTabBtn = document.querySelector('[data-category="all"]');
-      if (allTabBtn) {
-        const tabNames = {
-          en: `All Topics (${visibleCount})`,
-          pt: `Todos os Tópicos (${visibleCount})`,
-          id: `Semua Topik (${visibleCount})`
-        };
-        allTabBtn.textContent = tabNames[lang] || tabNames.en;
-      }
-    }
-
-    // 2. MULTI-LANGUAGE CONTENT TOGGLE ON INDIVIDUAL ARTICLE PAGE
-    const langContents = document.querySelectorAll('[data-lang-content]');
-    if (langContents.length > 0) {
-      let foundMatch = false;
-      langContents.forEach(el => {
-        if (el.dataset.langContent === lang) {
-          el.style.display = 'block';
-          foundMatch = true;
-        } else {
-          el.style.display = 'none';
-        }
-      });
-
-      if (!foundMatch && lang !== 'en') {
-        const enContent = document.querySelector('[data-lang-content="en"]');
-        if (enContent) enContent.style.display = 'block';
-        showLanguageModal(lang);
-      }
-    } else if (lang !== 'en' && document.querySelector('.article-layout') && !document.querySelector('[data-lang-content]')) {
-      // Pop-up modal notification if single-language article
-      showLanguageModal(lang);
+  function readStoredLang() {
+    try {
+      const v = localStorage.getItem(STORAGE_KEY);
+      return LANGS.includes(v) ? v : 'en';
+    } catch (e) {
+      return 'en';
     }
   }
 
-  function showLanguageModal(lang) {
-    let backdrop = document.getElementById('langModalBackdrop');
-    if (!backdrop) {
-      backdrop = document.createElement('div');
-      backdrop.id = 'langModalBackdrop';
-      backdrop.style.cssText = `
-        position: fixed;
-        inset: 0;
-        background: rgba(6, 8, 14, 0.78);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        z-index: 10000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 24px;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      `;
-      document.body.appendChild(backdrop);
-    }
+  function storeLang(lang) {
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* storage blocked */ }
+  }
 
-    const titles = {
-      pt: 'Publicação em Inglês',
-      id: 'Artikel dalam Bahasa Inggris'
-    };
+  // Swap an element to another tag, keeping attributes and children.
+  function retag(el, tag) {
+    if (el.tagName.toLowerCase() === tag) return el;
+    const next = document.createElement(tag);
+    for (const attr of el.attributes) next.setAttribute(attr.name, attr.value);
+    while (el.firstChild) next.appendChild(el.firstChild);
+    el.replaceWith(next);
+    return next;
+  }
 
-    const messages = {
-      pt: 'Este artigo encontra-se publicado em Inglês (língua oficial de consultoria bilateral). Estamos a preparar a tradução em Português.',
-      id: 'Artikel ini saat ini diterbitkan dalam Bahasa Inggris (bahasa resmi konsultasi bilateral). Tim kami sedang menyiapkan terjemahan Bahasa Indonesia.'
-    };
+  function showBlocks(lang) {
+    const blocks = document.querySelectorAll('[data-lang-content]');
+    if (!blocks.length) return true;
 
-    const btnTexts = {
-      pt: 'Entendido • Ler em Inglês',
-      id: 'Mengerti • Baca (English)'
-    };
+    const available = new Set([...blocks].map(b => b.dataset.langContent));
+    const target = available.has(lang) ? lang : 'en';
 
-    const title = titles[lang] || titles.pt;
-    const msg = messages[lang] || messages.pt;
-    const btnText = btnTexts[lang] || btnTexts.pt;
-
-    backdrop.innerHTML = `
-      <div id="langModalCard" style="
-        background: linear-gradient(145deg, rgba(20, 24, 35, 0.98), rgba(11, 13, 18, 0.99));
-        border: 1px solid rgba(59, 130, 246, 0.35);
-        border-radius: 20px;
-        padding: 32px 28px;
-        max-width: 440px;
-        width: 100%;
-        text-align: center;
-        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.85);
-        transform: scale(0.92);
-        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      ">
-        <div style="
-          width: 52px;
-          height: 52px;
-          border-radius: 50%;
-          background: rgba(59, 130, 246, 0.15);
-          border: 1px solid rgba(59, 130, 246, 0.3);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto 16px;
-          color: #3b82f6;
-        ">
-          <i data-lucide="globe" style="width: 26px; height: 26px;"></i>
-        </div>
-        <h3 style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 10px;">${title}</h3>
-        <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.55; margin-bottom: 24px;">${msg}</p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <button id="closeLangModal" style="
-            width: 100%;
-            padding: 12px 20px;
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            border: none;
-            border-radius: 12px;
-            color: #fff;
-            font-weight: 600;
-            font-size: 0.88rem;
-            cursor: pointer;
-            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
-            transition: all 0.2s ease;
-          ">${btnText}</button>
-        </div>
-      </div>
-    `;
-
-    if (typeof lucide !== 'undefined') lucide.createIcons();
-
-    requestAnimationFrame(() => {
-      backdrop.style.pointerEvents = 'auto';
-      backdrop.style.opacity = '1';
-      const card = document.getElementById('langModalCard');
-      if (card) card.style.transform = 'scale(1)';
+    blocks.forEach(block => {
+      const active = block.dataset.langContent === target;
+      block.hidden = !active;
+      block.querySelectorAll('.article-title').forEach(t => retag(t, active ? 'h1' : 'p'));
     });
 
-    function dismissModal() {
-      backdrop.style.opacity = '0';
-      backdrop.style.pointerEvents = 'none';
-      const card = document.getElementById('langModalCard');
-      if (card) card.style.transform = 'scale(0.92)';
+    return available.has(lang);
+  }
+
+  function showNotice(lang) {
+    const dict = strings[lang] || strings.en;
+    let dialog = document.getElementById('langDialog');
+    if (!dialog) {
+      dialog = document.createElement('dialog');
+      dialog.id = 'langDialog';
+      dialog.className = 'lang-dialog';
+      dialog.setAttribute('aria-labelledby', 'langDialogTitle');
+      dialog.innerHTML = '<h2 id="langDialogTitle"></h2><p></p><form method="dialog"><button type="submit" autofocus></button></form>';
+      dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+      document.body.appendChild(dialog);
+    }
+    dialog.setAttribute('lang', lang);
+    dialog.querySelector('h2').textContent = dict['dialog.title'];
+    dialog.querySelector('p').textContent = dict['dialog.body'];
+    dialog.querySelector('button').textContent = dict['dialog.ok'];
+    if (typeof dialog.showModal === 'function' && !dialog.open) dialog.showModal();
+  }
+
+  function applyLanguage(lang, fromUser) {
+    if (!LANGS.includes(lang)) lang = 'en';
+    storeLang(lang);
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-lang-btn]').forEach(btn => {
+      btn.setAttribute('aria-pressed', btn.dataset.langBtn === lang ? 'true' : 'false');
+    });
+
+    const dict = strings[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const value = dict[el.dataset.i18n];
+      if (value) el.textContent = value;
+    });
+
+    const hasVersion = showBlocks(lang);
+    if (fromUser && lang !== 'en' && !hasVersion && document.body.classList.contains('is-article')) {
+      showNotice(lang);
     }
 
-    const closeBtn = document.getElementById('closeLangModal');
-    if (closeBtn) closeBtn.onclick = dismissModal;
-    backdrop.onclick = (e) => {
-      if (e.target === backdrop) dismissModal();
-    };
+    document.dispatchEvent(new CustomEvent('lusonusa:lang', { detail: { lang } }));
   }
 
   function init() {
-    applyLanguage(currentLang);
-
+    applyLanguage(readStoredLang(), false);
     document.addEventListener('click', e => {
-      const btn = e.target.closest('.nav-lang-btn');
-      if (btn && btn.dataset.lang) {
-        applyLanguage(btn.dataset.lang);
-      }
+      const btn = e.target.closest('[data-lang-btn]');
+      if (btn) applyLanguage(btn.dataset.langBtn, true);
     });
   }
+
+  window.LUSONUSA_I18N = { strings, current: readStoredLang };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
