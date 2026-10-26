@@ -1,403 +1,100 @@
 /* ═══════════════════════════════════════════════════════════════
-   LUSONUSA — Application Logic
+   LUSONUSA — Application Logic (homepage)
+   Loaded with `defer`, so the DOM is already parsed when this runs.
    ═══════════════════════════════════════════════════════════════ */
+'use strict';
 
-/* ── Safari bfcache Fix ─────────────────────────────────────────
-   Safari aggressively caches pages in its back-forward cache.
-   When a page is restored from bfcache, DOMContentLoaded does NOT
-   re-fire, leaving scroll-dependent elements stuck at opacity: 0.
-   Forcing a reload on bfcache restore guarantees a clean state.
-   ─────────────────────────────────────────────────────────────── */
-window.addEventListener('pageshow', function (event) {
-  if (event.persisted) {
-    window.location.reload();
+/* ── Contact configuration (single source of truth) ─────────── */
+const WHATSAPP_NUMBER = '351930534440';
+const CONTACT_EMAIL = 'contact@lusonusa.agency';
+
+/* Shared with /articles/ so the language choice follows the visitor */
+const LANG_STORAGE_KEY = 'lusonusa_lang';
+const SUPPORTED_LANGS = ['en', 'pt', 'id'];
+
+const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+const finePointerQuery = window.matchMedia('(hover: hover) and (pointer: fine)');
+const mobileQuery = window.matchMedia('(max-width: 768px)');
+
+let currentLang = 'en';
+let currentAudience = 'nusa';
+let currentScenario = null;
+
+function prefersReducedMotion() {
+  return reducedMotionQuery.matches;
+}
+
+function saveDataEnabled() {
+  return !!(navigator.connection && navigator.connection.saveData);
+}
+
+function whatsappUrl(text) {
+  return `https://wa.me/${WHATSAPP_NUMBER}` + (text ? `?text=${encodeURIComponent(text)}` : '');
+}
+
+function t(key) {
+  const dict = translations[currentLang] || translations.en;
+  if (dict[key] !== undefined) return dict[key];
+  return translations.en[key] !== undefined ? translations.en[key] : '';
+}
+
+function readStoredLang() {
+  try {
+    return localStorage.getItem(LANG_STORAGE_KEY);
+  } catch (e) {
+    return null;
   }
-});
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof lucide !== 'undefined') {
-    lucide.createIcons();
+function storeLang(lang) {
+  try {
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
+  } catch (e) {
+    /* Storage blocked (private mode, disabled cookies): language just isn't remembered */
   }
-
-  initHeroScrollTransition();
-  initHeroPanels();
-  initTeamCards();
-  initProblemResolver();
-  initLanguageSystem();
-  initScrollReveal();
-  initVideoSupport();
-  initYouTubeBackgrounds();
-  initMobileMenu();
-});
+}
 
 
 /* ═══════════════════════════════════════════════════════════════
-   1. HERO SCROLL TRANSITION — Cinematic opener → Nav reveal
-   ═══════════════════════════════════════════════════════════════
-   Phase 1 (scroll 0): Logo centered & large, panels dim, no text
-   Phase 2 (scroll 0→300px): Logo fades out, nav fades in,
-           panel content fades in from blur, scroll indicator fades
+   1. COMPACT STICKY HEADER
    ═══════════════════════════════════════════════════════════════ */
-function initHeroScrollTransition() {
-  const heroLogo = document.getElementById('hero-logo');
-  const nav = document.getElementById('site-nav');
-  const hero = document.getElementById('hero');
-  const scrollIndicator = document.getElementById('scroll-indicator');
-  const panelContents = document.querySelectorAll('.hero-panel-content');
-  const panels = document.querySelectorAll('.hero-panel');
-  const gradientVeil = document.querySelector('.nav-gradient-veil');
+function initHeader() {
+  const header = document.getElementById('site-header');
+  if (!header) return;
 
-  if (!heroLogo || !nav || !hero) return;
-
-  const SCROLL_RANGE = 300; // px over which the transition completes
   let ticking = false;
+  function update() {
+    header.classList.toggle('is-scrolled', window.scrollY > 8);
+    ticking = false;
+  }
 
-  function onScroll() {
+  window.addEventListener('scroll', () => {
     if (!ticking) {
-      requestAnimationFrame(() => {
-        updateHeroState();
-        ticking = false;
-      });
+      requestAnimationFrame(update);
       ticking = true;
     }
-  }
+  }, { passive: true });
 
-  function updateHeroState() {
-    const heroRect = hero.getBoundingClientRect();
-    const totalScroll = Math.max(1, hero.offsetHeight - window.innerHeight);
-    const currentScroll = Math.max(0, -heroRect.top);
-    const progress = Math.min(Math.max(0, currentScroll / totalScroll), 1);
-    const eased = easeOutCubic(progress);
-    const viewportH = window.innerHeight;
-
-    // ── Logo Overlay: move from center to lowered top (48px) ──
-    const startTop = viewportH * 0.5;     // 50vh (centered)
-    const endTop = 48;                     // 48px from top (lowered resting position)
-    const currentTop = startTop + (endTop - startTop) * eased;
-    const logoScale = 1 - eased * 0.52;   // 1.0 → 0.48
-
-    heroLogo.style.top = `${currentTop}px`;
-    heroLogo.style.transform = `translate(-50%, -50%) scale(${logoScale})`;
-
-    // ── Subtitle: fades out slowly, fully gone BEFORE menu pill appears (40%) ──
-    const subEl = heroLogo.querySelector('.hero-logo-sub');
-    if (subEl) {
-      if (progress > 0.01) {
-        subEl.style.animation = 'none'; // Cancel CSS animation so JS opacity takes effect
-      }
-      const subOpacity = Math.max(0, 1 - progress * 2.8); // fades slowly, gone by ~36% scroll
-      subEl.style.opacity = subOpacity;
-    }
-
-    // ── Navigation Pill: STAYS HIDDEN until logo reaches top (40% scroll), then fades in ──
-    if (progress >= 0.40) {
-      const navProgress = Math.min(1, (progress - 0.40) / 0.35); // 40% → 75% scroll
-      const navOpacity = easeOutCubic(navProgress);
-      nav.style.opacity = navOpacity;
-      if (navOpacity > 0.05) {
-        nav.classList.add('visible');
-      } else {
-        nav.classList.remove('visible');
-      }
-    } else {
-      nav.style.opacity = 0;
-      nav.classList.remove('visible');
-    }
-
-    // ── Panel Content (Luso/Nusa text & pills): continuous, slow unblur over 70% scroll window ──
-    const contentProgress = Math.max(0, Math.min(1, (progress - 0.20) / 0.70)); // 20% → 90% scroll
-    const contentEased = easeOutCubic(contentProgress);
-    panelContents.forEach(content => {
-      content.style.opacity = contentEased;
-      content.style.filter = `blur(${(1 - contentEased) * 16}px)`;
-      content.style.transform = `translateY(${(1 - contentEased) * 20}px)`;
-    });
-
-    // ── Panels: gentle opacity adjustments on overlay during scroll without setting filter on panel container ──
-    const brightnessProgress = easeOutCubic(progress);
-    document.querySelectorAll('.hero-panel-gradient').forEach(overlay => {
-      overlay.style.opacity = Math.max(0.6, 1 - brightnessProgress * 0.3);
-    });
-
-    // ── Hover box expansion: unlocks ONLY after menu is fully revealed ──
-    if (progress >= 0.95) {
-      hero.classList.add('hero-scrolled');
-    } else {
-      hero.classList.remove('hero-scrolled');
-    }
-
-    // ── Scroll Indicator: fade out ──
-    if (scrollIndicator) {
-      if (progress > 0.15) {
-        scrollIndicator.classList.add('faded');
-      } else {
-        scrollIndicator.classList.remove('faded');
-      }
-    }
-
-    // ── Gradient Veil: activate once hero scrolls away to keep nav area focused ──
-    if (gradientVeil) {
-      if (progress >= 0.95) {
-        gradientVeil.classList.add('active');
-      } else {
-        gradientVeil.classList.remove('active');
-      }
-    }
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-
-  // Run once on load (in case page is already scrolled or has hash)
-  updateHeroState();
-
-  if (window.location.hash || window.scrollY > 100) {
-    nav.classList.add('visible');
-    nav.style.opacity = 1;
-    panelContents.forEach(content => {
-      content.style.opacity = 1;
-      content.style.filter = 'blur(0px)';
-      content.style.transform = 'translateY(0px)';
-    });
-  }
-}
-
-function easeOutCubic(t) {
-  return 1 - Math.pow(1 - t, 3);
+  update();
 }
 
 
 /* ═══════════════════════════════════════════════════════════════
-   2. HERO PANEL — Click-to-scroll to Resolver Section
+   2. HERO — the two door CTAs preselect the matching resolver tab
+   (the link itself scrolls to #resolver, so this also works without JS)
    ═══════════════════════════════════════════════════════════════ */
-function initHeroPanels() {
-  const panelLuso = document.getElementById('panel-luso');
-  const panelNusa = document.getElementById('panel-nusa');
-  const cursorBadge = document.getElementById('hero-cursor-badge');
-  const cursorText = document.getElementById('hero-cursor-text');
-  const hero = document.getElementById('hero');
-
-  if (!panelLuso || !panelNusa) return;
-
-  panelLuso.addEventListener('click', () => {
-    activateResolverTab('luso');
-    scrollToResolver();
-  });
-
-  panelNusa.addEventListener('click', () => {
-    activateResolverTab('nusa');
-    scrollToResolver();
-  });
-
-  [panelLuso, panelNusa].forEach(panel => {
-    panel.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        panel.click();
-      }
+function initHeroCtas() {
+  document.querySelectorAll('.hero-cta[data-audience]').forEach(cta => {
+    cta.addEventListener('click', () => {
+      activateResolverTab(cta.dataset.audience);
     });
-  });
-
-  // ── Mouse Follower CTA Badge (Option A) ─────────────
-  if (!cursorBadge || !cursorText) return;
-
-  function updateBadgeText(type) {
-    const key = type === 'luso' ? 'hero.luso.cta' : 'hero.nusa.cta';
-    const text = (translations[currentLang] && translations[currentLang][key]) || translations.en[key];
-    cursorText.textContent = text;
-  }
-
-  function handleMouseMove(e, type) {
-    // Only show mouse follower after scroll transition is active
-    if (hero && hero.classList.contains('hero-scrolled')) {
-      updateBadgeText(type);
-      cursorBadge.style.left = `${e.clientX}px`;
-      cursorBadge.style.top = `${e.clientY}px`;
-      cursorBadge.classList.add('active');
-    } else {
-      cursorBadge.classList.remove('active');
-    }
-  }
-
-  panelLuso.addEventListener('mousemove', (e) => handleMouseMove(e, 'luso'));
-  panelNusa.addEventListener('mousemove', (e) => handleMouseMove(e, 'nusa'));
-
-  panelLuso.addEventListener('mouseleave', () => cursorBadge.classList.remove('active'));
-  panelNusa.addEventListener('mouseleave', () => cursorBadge.classList.remove('active'));
-}
-
-function scrollToResolver() {
-  const resolver = document.getElementById('resolver');
-  if (resolver) {
-    resolver.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
-
-
-/* ═══════════════════════════════════════════════════════════════
-   3. INTERACTIVE 3D FLIP CARDS ("OUR TEAM")
-   ═══════════════════════════════════════════════════════════════ */
-function initTeamCards() {
-  const cards = document.querySelectorAll('.team-flip-card');
-  const badge = document.getElementById('team-cursor-badge');
-  if (!cards.length) return;
-
-  function hideBadge() {
-    if (badge) badge.classList.remove('active');
-  }
-
-  function selectTeamCard(targetCard) {
-    cards.forEach(c => {
-      if (c === targetCard) {
-        c.classList.add('is-selected');
-      } else {
-        c.classList.remove('is-selected');
-      }
-    });
-  }
-
-  cards.forEach(card => {
-    const cardInner = card.querySelector('.team-flip-card-inner');
-    if (!cardInner) return;
-
-    let currentAngle = 0; // Cumulative Y rotation angle in degrees
-    let startX = 0;
-    let startY = 0;
-    let initialAngle = 0;
-    let isDragging = false;
-    let isHorizontalGesture = false;
-
-    function setCardRotation(angle, animated = true, duration = 0.7) {
-      currentAngle = angle;
-      if (animated) {
-        cardInner.style.transition = `transform ${duration}s cubic-bezier(0.33, 1, 0.68, 1), -webkit-transform ${duration}s cubic-bezier(0.33, 1, 0.68, 1)`;
-      } else {
-        cardInner.style.transition = 'none';
-      }
-
-      cardInner.style.transform = `rotateY(${angle}deg)`;
-      cardInner.style.webkitTransform = `rotateY(${angle}deg)`;
-
-      // Card face is flipped if angle normalized modulo 360 is around 180deg
-      const norm = Math.abs(angle % 360);
-      const isFlipped = norm > 45 && norm < 315;
-      card.classList.toggle('is-flipped', isFlipped);
-      card.setAttribute('aria-expanded', isFlipped ? 'true' : 'false');
-    }
-
-    // Touch Event Listeners for Touchscreens & Tablets
-    card.addEventListener('touchstart', (e) => {
-      if (e.touches.length !== 1) return;
-      selectTeamCard(card);
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-      initialAngle = currentAngle;
-      isDragging = true;
-      isHorizontalGesture = false;
-      hideBadge();
-    }, { passive: true });
-
-    card.addEventListener('touchmove', (e) => {
-      if (!isDragging) return;
-      selectTeamCard(card);
-      const touchX = e.touches[0].clientX;
-      const touchY = e.touches[0].clientY;
-      const deltaX = touchX - startX;
-      const deltaY = touchY - startY;
-
-      // Lock direction after 10px movement
-      if (!isHorizontalGesture) {
-        if (Math.abs(deltaX) > 10 && Math.abs(deltaX) > Math.abs(deltaY)) {
-          isHorizontalGesture = true;
-        } else if (Math.abs(deltaY) > 10) {
-          isDragging = false;
-          return;
-        }
-      }
-
-      if (isHorizontalGesture) {
-        if (e.cancelable) e.preventDefault();
-        const cardWidth = card.offsetWidth || 300;
-        // Dragging full card width rotates 180 degrees
-        const angleChange = (deltaX / cardWidth) * 180;
-        setCardRotation(initialAngle + angleChange, false);
-      }
-    }, { passive: false });
-
-    function handleTouchEnd(e) {
-      if (!isDragging) return;
-      selectTeamCard(card);
-      isDragging = false;
-
-      const touch = (e.changedTouches && e.changedTouches.length) ? e.changedTouches[0] : null;
-      const deltaX = touch ? (touch.clientX - startX) : 0;
-
-      if (isHorizontalGesture && Math.abs(deltaX) > 30) {
-        // Complete the flip in the direction of finger drag
-        if (deltaX > 0) {
-          // Swiped Right -> increase rotation to next +180 step
-          const target = Math.ceil(initialAngle / 180) * 180;
-          const finalAngle = (target > initialAngle) ? target : (initialAngle + 180);
-          setCardRotation(finalAngle, true, 0.7);
-        } else {
-          // Swiped Left -> decrease rotation to next -180 step
-          const target = Math.floor(initialAngle / 180) * 180;
-          const finalAngle = (target < initialAngle) ? target : (initialAngle - 180);
-          setCardRotation(finalAngle, true, 0.7);
-        }
-      } else if (isHorizontalGesture) {
-        // Dragged less than 30px -> snap back smoothly to nearest 180 step
-        const snapAngle = Math.round(initialAngle / 180) * 180;
-        setCardRotation(snapAngle, true, 0.4);
-      }
-
-      isHorizontalGesture = false;
-    }
-
-    card.addEventListener('touchend', handleTouchEnd, { passive: true });
-    card.addEventListener('touchcancel', handleTouchEnd, { passive: true });
-
-    // Click / Tap Fallback (for mouse clicks or simple touch taps)
-    card.addEventListener('click', (e) => {
-      selectTeamCard(card);
-      if (isHorizontalGesture) return; // Ignore if user was swiping
-      const nextAngle = (currentAngle % 180 === 0) ? (currentAngle + 180) : Math.round(currentAngle / 180) * 180;
-      setCardRotation(nextAngle, true, 0.75);
-      hideBadge();
-    });
-
-    card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        const nextAngle = (currentAngle % 180 === 0) ? (currentAngle + 180) : Math.round(currentAngle / 180) * 180;
-        setCardRotation(nextAngle, true, 0.75);
-      }
-    });
-
-    // Mouse Follower Badge (Desktop)
-    if (badge) {
-      card.addEventListener('mousemove', (e) => {
-        if (!card.classList.contains('is-flipped')) {
-          badge.style.left = `${e.clientX}px`;
-          badge.style.top = `${e.clientY}px`;
-          badge.classList.add('active');
-        } else {
-          hideBadge();
-        }
-      });
-      card.addEventListener('mouseleave', () => {
-        hideBadge();
-      });
-    }
   });
 }
 
 
 /* ═══════════════════════════════════════════════════════════════
-   4. INTERACTIVE PROBLEM RESOLVER — WhatsApp Lead Engine
+   3. PROBLEM RESOLVER — scenario → 2 questions → prefilled message
    ═══════════════════════════════════════════════════════════════ */
-
-const WHATSAPP_NUMBER = '351930534440'; // Replace with actual number
-
 const problemMatrix = {
   nusa: [
     {
@@ -424,16 +121,11 @@ const problemMatrix = {
           'Asistensi pembukaan rekening bank Portugal & registrasi SIM Card.',
           'Panduan persiapan dokumen & orientasi tatap muka untuk jadwal AIMA.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I need help regarding Bureaucracy (NIF, NISS, Bank & AIMA Guidance). Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Preciso de ajuda com Burocracia (NIF, NISS, Banco & Orientação AIMA). Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya butuh bantuan terkait pengurusan Birokrasi (NIF, NISS, Bank, & Pendampingan AIMA). Detail: [jelaskan detail di sini]'
       }
     },
     {
-      id: 'marriage-legal',
-      icon: 'file-text',
+      id: 'business-legal-docs',
+      icon: 'file-check-2',
       label: {
         en: 'Business & Legal Documents',
         pt: 'Documentos Empresariais & Legais',
@@ -441,30 +133,25 @@ const problemMatrix = {
       },
       bullets: {
         en: [
-          'Legal compliance & documentation guidance for business setup & contracts in Portugal.',
-          'Coordination of sworn & notarized translations (Indonesian ↔ European Portuguese).',
-          'Document legalization & Apostille assistance at relevant institutions and the Embassy.'
+          'Documentation guidance for business setup and contracts in Portugal.',
+          'Coordination of translations certified before a Portuguese notary (Indonesian ↔ European Portuguese).',
+          'Document legalisation & Apostille assistance at the relevant institutions and the Embassy.'
         ],
         pt: [
-          'Orientação sobre requisitos legais e documentais para constituição de empresas e contratos em Portugal.',
-          'Coordenação de traduções notariadas (Indonésio ↔ Português Europeu).',
+          'Orientação documental para constituição de empresas e contratos em Portugal.',
+          'Coordenação de traduções certificadas perante notário português (Indonésio ↔ Português Europeu).',
           'Assistência na legalização de documentos e Apostila em instituições relevantes e na Embaixada.'
         ],
         id: [
-          'Panduan syarat hukum & dokumen pendirian usaha serta kontrak bisnis di Portugal.',
-          'Koordinasi penerjemahan tersumpah & notaris resmi (Bahasa Indonesia ↔ Portugis Portugal).',
+          'Panduan dokumen untuk pendirian usaha dan kontrak bisnis di Portugal.',
+          'Koordinasi terjemahan yang disertifikasi notaris Portugal (Bahasa Indonesia ↔ Portugis Portugal).',
           'Asistensi legalisasi dokumen & Apostille di instansi terkait dan Kedutaan.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I need information and help with Business & Legal Documents & Notarized Translation. Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Preciso de informação e ajuda com Documentos Empresariais & Tradução Notariada. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya butuh informasi dan bantuan terkait Dokumen Bisnis & Penerjemahan Notaris. Detail: [jelaskan detail di sini]'
       }
     },
     {
       id: 'student-housing',
-      icon: 'home',
+      icon: 'house',
       label: {
         en: 'Students & Accommodation Search',
         pt: 'Estudantes & Procura de Alojamento',
@@ -486,11 +173,6 @@ const problemMatrix = {
           'Pendampingan orientasi kedatangan (set-up kehidupan pertama di Portugal).',
           'Konsultasi penyesuaian budaya & birokrasi kampus.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I\'m a student/future resident who needs help with Accommodation Search & Orientation. Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Sou estudante/futuro residente e preciso de ajuda com Alojamento & Orientação. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya mahasiswa/calon menetap yang membutuhkan bantuan Pencarian Akomodasi & Orientasi. Detail: [jelaskan detail di sini]'
       }
     },
     {
@@ -517,11 +199,6 @@ const problemMatrix = {
           'Perencanaan itinerari khusus & rekomendasi tempat wisata di Portugal.',
           'Orientasi budaya lokal & tips kuliner, transportasi, serta keamanan.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I need assistance regarding Bilingual Local Guide & Travel Suggestions in Portugal. Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Preciso de assistência com Guia Local e Sugestões de Viagem em Portugal. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya membutuhkan bantuan Panduan Tour Lokal & Rekomendasi Wisata di Portugal. Detail: [jelaskan detail di sini]'
       }
     },
     {
@@ -548,11 +225,6 @@ const problemMatrix = {
           'Rekomendasi pemesanan hotel, penginapan, & akomodasi.',
           'Koordinasi penjemputan bandara & dukungan logistik transportasi darat.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I need assistance regarding Rental Cars, Hotel Booking & Transport Logistics in Portugal. Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Preciso de assistência com Carro de Aluguer, Reserva de Hotéis e Logística de Transporte em Portugal. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya membutuhkan bantuan Sewa Mobil, Pemesanan Hotel & Logistik Transportasi di Portugal. Detail: [jelaskan detail di sini]'
       }
     }
   ],
@@ -581,11 +253,6 @@ const problemMatrix = {
           'Inspeksi sampel, penasihat kontrol kualitas, & komunikasi pabrik langsung.',
           'Koneksi dengan eksportir terverifikasi sektor mebel, kerajinan, tekstil, & komoditas.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I am looking for Product Sourcing & Supplier Matchmaking in Indonesia. Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Procuro serviços de Procura de Produtos e Fornecedores na Indonésia. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya mencari layanan Pencarian Produk & Supplier di Indonesia. Detail: [jelaskan detail di sini]'
       }
     },
     {
@@ -598,25 +265,20 @@ const problemMatrix = {
       },
       bullets: {
         en: [
-          'Consulting on legal structure for foreign investment (PT PMA).',
+          'Guidance on the PT PMA structure for foreign investment.',
           'Market entry strategy and tax framework advisory.',
           'Direct connection with the Indonesia-Portugal Chamber of Commerce.'
         ],
         pt: [
-          'Consultoria sobre estrutura legal para investimento estrangeiro (PT PMA).',
+          'Orientação sobre a estrutura PT PMA para investimento estrangeiro.',
           'Aconselhamento sobre estratégia de entrada no mercado e enquadramento fiscal.',
           'Conexão direta com a Câmara de Comércio e Indústria Indonésia-Portugal.'
         ],
         id: [
-          'Konsultasi struktur hukum untuk investasi asing (PT PMA).',
+          'Panduan struktur PT PMA untuk investasi asing.',
           'Penasihat strategi masuk pasar dan kerangka pajak.',
           'Koneksi langsung dengan Kamar Dagang Indonesia-Portugal.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I need advisory for Company Setup in Indonesia (PT PMA). Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Preciso de consultoria para Abertura de Empresa na Indonésia (PT PMA). Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya butuh konsultasi Pendirian PT PMA di Indonesia. Detail: [jelaskan detail di sini]'
       }
     },
     {
@@ -643,11 +305,6 @@ const problemMatrix = {
           'Fasilitasi pertemuan online dengan verifikasi identitas dan kredensial.',
           'Minimalisasi risiko operasional dalam transaksi internasional.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I\'d like to request Company Verification in Indonesia. Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Gostaria de agendar Verificação de Empresa na Indonésia. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya ingin konsultasi Verifikasi Perusahaan di Indonesia. Detail: [jelaskan detail di sini]'
       }
     },
     {
@@ -674,11 +331,6 @@ const problemMatrix = {
           'Konsultasi logistik pengiriman lintas batas & kontrak perdagangan.',
           'Dukungan administratif untuk operasi perdagangan komersial bilateral.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I need advisory regarding Export-Import & Trade Compliance between Portugal and Indonesia. Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Preciso de consultoria sobre Exportação-Importação entre Portugal e Indonésia. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya butuh konsultasi Ekspor-Impor & Kepatuhan Perdagangan Portugal-Indonesia. Detail: [jelaskan detail di sini]'
       }
     },
     {
@@ -691,181 +343,256 @@ const problemMatrix = {
       },
       bullets: {
         en: [
-          'Consultation on Business Visas (B211A), Working Visas, and Investor KITAS.',
+          'Consultation on business visit visas, work visas, and Investor KITAS.',
           'Family stay permits (ITAS/ITAP) and residence compliance for expats in Indonesia.',
           'Step-by-step guidance on official immigration sponsorship and extensions.'
         ],
         pt: [
-          'Consultoria sobre Vistos de Negócios (B211A), Vistos de Trabalho e KITAS de Investidor.',
+          'Consultoria sobre vistos de visita de negócios, vistos de trabalho e KITAS de Investidor.',
           'Permissões de residência familiar (ITAS/ITAP) e conformidade para residentes na Indonésia.',
           'Orientação passo a passo sobre patrocínio de imigração e prorrogações oficiais.'
         ],
         id: [
-          'Konsultasi Visa Bisnis (B211A), Visa Kerja, & KITAS Investor.',
+          'Konsultasi visa kunjungan bisnis, visa kerja, & KITAS Investor.',
           'Izin tinggal keluarga (ITAS/ITAP) & kepatuhan imigrasi expat di Indonesia.',
           'Panduan penjaminan (sponsor) imigrasi resmi & prosedur perpanjangan.'
         ]
-      },
-      waText: {
-        en: 'Hello LUSONUSA! My name is [Name]. I need consultation regarding Indonesia Visa & KITAS (Business / Residence). Details: [explain details here]',
-        pt: 'Olá LUSONUSA! O meu nome é [Nome]. Preciso de consultoria sobre Vistos e KITAS para a Indonésia. Detalhes: [explique detalhes aqui]',
-        id: 'Halo LUSONUSA! Nama saya [Nama]. Saya membutuhkan konsultasi Visa & KITAS Indonesia. Detail: [jelaskan detail di sini]'
       }
     }
   ]
 };
 
-let currentAudience = 'nusa';
-let currentScenario = null;
-let currentLang = 'en';
-
 function initProblemResolver() {
-  const tabs = document.querySelectorAll('.resolver-tab');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const audience = tab.dataset.audience;
-      setActiveTab(audience);
-      renderPills(audience);
-      resetSolutionCard();
+  const tabs = Array.from(document.querySelectorAll('.resolver-tab'));
+  const questions = document.getElementById('resolver-questions');
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => activateResolverTab(tab.dataset.audience));
+
+    // WAI-ARIA tabs pattern: arrow keys move between tabs (automatic activation)
+    tab.addEventListener('keydown', (e) => {
+      let next = null;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = tabs[(index + 1) % tabs.length];
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = tabs[(index - 1 + tabs.length) % tabs.length];
+      else if (e.key === 'Home') next = tabs[0];
+      else if (e.key === 'End') next = tabs[tabs.length - 1];
+      if (!next) return;
+      e.preventDefault();
+      activateResolverTab(next.dataset.audience);
+      next.focus();
     });
   });
 
-  renderPills('nusa');
+  if (questions) {
+    questions.addEventListener('change', updateResolverMessage);
+    questions.addEventListener('submit', (e) => e.preventDefault());
+  }
+
+  renderPills(currentAudience);
 }
 
 function activateResolverTab(audience) {
-  setActiveTab(audience);
-  renderPills(audience);
-  resetSolutionCard();
-}
-
-function setActiveTab(audience) {
+  if (!problemMatrix[audience]) return;
+  const changed = audience !== currentAudience;
   currentAudience = audience;
-  currentScenario = null;
 
-  const tabs = document.querySelectorAll('.resolver-tab');
-  tabs.forEach(tab => {
+  const panel = document.getElementById('resolver-panel');
+  document.querySelectorAll('.resolver-tab').forEach(tab => {
     const isActive = tab.dataset.audience === audience;
     tab.classList.toggle('active', isActive);
     tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    tab.tabIndex = isActive ? 0 : -1;
+    if (isActive && panel) panel.setAttribute('aria-labelledby', tab.id);
   });
+
+  if (changed) {
+    currentScenario = null;
+    renderPills(audience);
+    renderSolution();
+  }
 }
 
 function renderPills(audience) {
   const container = document.getElementById('resolver-pills');
   if (!container) return;
 
-  const scenarios = problemMatrix[audience];
+  const animate = !prefersReducedMotion();
   container.innerHTML = '';
 
-  scenarios.forEach((scenario, index) => {
+  problemMatrix[audience].forEach((scenario, index) => {
     const pill = document.createElement('button');
-    pill.classList.add('resolver-pill');
-    pill.setAttribute('role', 'option');
-    pill.setAttribute('aria-selected', 'false');
-    pill.setAttribute('id', `pill-${scenario.id}`);
+    pill.type = 'button';
+    pill.className = 'resolver-pill' + (audience === 'nusa' ? ' is-nusa' : '');
+    pill.id = `pill-${scenario.id}`;
+    const isActive = !!currentScenario && currentScenario.id === scenario.id;
+    pill.classList.toggle('active', isActive);
+    pill.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    pill.innerHTML = `<svg class="icon" aria-hidden="true"><use href="#i-${scenario.icon}"/></svg><span></span>`;
+    pill.querySelector('span').textContent = scenario.label[currentLang] || scenario.label.en;
 
-    const label = scenario.label[currentLang] || scenario.label.en;
-    pill.innerHTML = `
-      <i data-lucide="${scenario.icon}"></i>
-      <span>${label}</span>
-    `;
+    if (animate) {
+      pill.style.opacity = '0';
+      pill.style.translate = '0 10px';
+      pill.style.transition = `opacity 0.4s ease ${index * 0.06}s, translate 0.4s ease ${index * 0.06}s`;
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        pill.style.opacity = '1';
+        pill.style.translate = '0 0';
+      }));
+    }
 
-    pill.style.opacity = '0';
-    pill.style.translate = '0 10px';
-    pill.style.transition = `opacity 0.4s ease ${index * 0.08}s, translate 0.4s ease ${index * 0.08}s`;
-    requestAnimationFrame(() => {
-      pill.style.opacity = '1';
-      pill.style.translate = '0 0';
-    });
-
-    pill.addEventListener('click', () => {
-      selectScenario(audience, scenario, pill);
-    });
-
+    pill.addEventListener('click', () => selectScenario(scenario));
     container.appendChild(pill);
   });
-
-  if (typeof lucide !== 'undefined') {
-    lucide.createIcons();
-  }
 }
 
-function selectScenario(audience, scenario, activePill) {
+function selectScenario(scenario) {
   currentScenario = scenario;
 
-  const pills = document.querySelectorAll('.resolver-pill');
-  pills.forEach(p => {
-    p.classList.remove('active', 'nusa-active');
-    p.setAttribute('aria-selected', 'false');
-  });
-  activePill.classList.add('active');
-  if (audience === 'nusa') activePill.classList.add('nusa-active');
-  activePill.setAttribute('aria-selected', 'true');
-
-  const emptyState = document.querySelector('.resolver-solution-empty');
-  const contentState = document.getElementById('resolver-solution-content');
-  const titleEl = document.getElementById('resolver-solution-title');
-  const bulletsEl = document.getElementById('resolver-solution-bullets');
-  const waBtn = document.getElementById('resolver-wa-btn');
-
-  if (!contentState) return;
-
-  if (emptyState) emptyState.style.display = 'none';
-  contentState.style.display = 'block';
-
-  contentState.style.opacity = '0';
-  contentState.style.translate = '0 10px';
-  contentState.style.transition = 'opacity 0.4s ease, translate 0.4s ease';
-  requestAnimationFrame(() => {
-    contentState.style.opacity = '1';
-    contentState.style.translate = '0 0';
+  document.querySelectorAll('.resolver-pill').forEach(p => {
+    const isActive = p.id === `pill-${scenario.id}`;
+    p.classList.toggle('active', isActive);
+    p.setAttribute('aria-pressed', isActive ? 'true' : 'false');
   });
 
-  const label = scenario.label[currentLang] || scenario.label.en;
-  const bullets = scenario.bullets[currentLang] || scenario.bullets.en;
-  const waText = scenario.waText[currentLang] || scenario.waText.en;
+  renderSolution();
 
-  if (titleEl) titleEl.textContent = label;
-  if (bulletsEl) {
-    bulletsEl.innerHTML = bullets.map(b => `<li>${b}</li>`).join('');
-  }
-  if (waBtn) {
-    waBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}`;
+  const status = document.getElementById('resolver-status');
+  if (status) status.textContent = t('resolver.status').replace('{s}', scenarioLabel(scenario));
+
+  // On narrow screens the result sits below the list: bring it into view
+  if (mobileQuery.matches) {
+    const solution = document.getElementById('resolver-solution');
+    const title = document.getElementById('resolver-solution-title');
+    if (solution) {
+      solution.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'start' });
+    }
+    if (title) title.focus({ preventScroll: true });
   }
 }
 
-function resetSolutionCard() {
+function scenarioLabel(scenario) {
+  return scenario.label[currentLang] || scenario.label.en;
+}
+
+function renderSolution() {
   const emptyState = document.querySelector('.resolver-solution-empty');
-  const contentState = document.getElementById('resolver-solution-content');
-  if (emptyState) emptyState.style.display = 'flex';
-  if (contentState) contentState.style.display = 'none';
+  const content = document.getElementById('resolver-solution-content');
+  const titleEl = document.getElementById('resolver-solution-title');
+  const bulletsEl = document.getElementById('resolver-solution-bullets');
+  if (!content) return;
+
+  if (!currentScenario) {
+    content.hidden = true;
+    if (emptyState) emptyState.hidden = false;
+    return;
+  }
+
+  if (emptyState) emptyState.hidden = true;
+  const wasHidden = content.hidden;
+  content.hidden = false;
+
+  if (wasHidden && !prefersReducedMotion()) {
+    content.style.opacity = '0';
+    content.style.translate = '0 10px';
+    content.style.transition = 'opacity 0.4s ease, translate 0.4s ease';
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      content.style.opacity = '1';
+      content.style.translate = '0 0';
+    }));
+  }
+
+  if (titleEl) titleEl.textContent = scenarioLabel(currentScenario);
+  if (bulletsEl) {
+    bulletsEl.innerHTML = '';
+    (currentScenario.bullets[currentLang] || currentScenario.bullets.en).forEach(text => {
+      const li = document.createElement('li');
+      li.textContent = text;
+      bulletsEl.appendChild(li);
+    });
+  }
+
+  updateResolverMessage();
+}
+
+function composeResolverMessage() {
+  const form = document.getElementById('resolver-questions');
+  const where = form ? (form.querySelector('input[name="where"]:checked') || {}).value : null;
+  const when = form ? (form.querySelector('input[name="when"]:checked') || {}).value : null;
+
+  const lines = [
+    t('msg.greeting'),
+    t('msg.interest').replace('{s}', scenarioLabel(currentScenario))
+  ];
+  if (where) lines.push(t(`msg.where.${where}`));
+  if (when) lines.push(t(`msg.when.${when}`));
+  lines.push(t('msg.close'));
+  lines.push(`(Ref: web-${currentAudience}-${currentScenario.id})`);
+  return lines.join('\n');
+}
+
+function updateResolverMessage() {
+  if (!currentScenario) return;
+  const message = composeResolverMessage();
+  const subject = t('msg.subject').replace('{s}', scenarioLabel(currentScenario));
+
+  const waBtn = document.getElementById('resolver-wa-btn');
+  const emailBtn = document.getElementById('resolver-email-btn');
+  const preview = document.getElementById('resolver-preview');
+
+  if (waBtn) waBtn.href = whatsappUrl(message);
+  if (emailBtn) {
+    emailBtn.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  }
+  if (preview) preview.textContent = message;
+}
+
+/* Every generic WhatsApp link ([data-wa="generic"]) is built from the constant */
+function updateGenericWhatsAppLinks() {
+  const url = whatsappUrl(t('msg.generic'));
+  document.querySelectorAll('a[data-wa="generic"]').forEach(a => {
+    a.href = url;
+  });
 }
 
 
 /* ═══════════════════════════════════════════════════════════════
-   5. LANGUAGE SYSTEM (i18n)
+   4. LANGUAGE SYSTEM (i18n)
+   HTML defaults are the English strings; keep both in sync.
    ═══════════════════════════════════════════════════════════════ */
-/* Translation Dictionaries */
 const translations = {
   en: {
+    'meta.title': 'LUSONUSA | Portugal ↔ Indonesia business setup, visas & relocation support',
+    'meta.description': 'LUSONUSA helps Portuguese businesses enter Indonesia and Indonesians settle in Portugal: PT PMA company setup, visas and KITAS, NIF/NISS/AIMA paperwork and notary-certified translations.',
+    'skip': 'Skip to content',
+    'aria.nav': 'Main navigation',
+    'aria.footer': 'Footer',
+    'aria.menu.close': 'Close menu',
+
     // Nav
     'nav.services': 'Services',
     'nav.process': 'Process',
     'nav.team': 'Team',
-    'nav.insights': 'Insights',
+    'nav.insights': 'Guides',
     'nav.contact': 'Contact',
+    'nav.menu': 'Menu',
+    'header.cta': 'Free consultation',
 
     // Hero
+    'hero.title': 'Your trusted bridge between Portugal and Indonesia',
+    'hero.lede': 'Company setup, visas, residency paperwork and certified translations, handled by a bilingual team based in Portugal and Indonesia.',
+    'hero.trust': 'Founded by a former member of the Economic Section of the Embassy of Indonesia in Lisbon (5 years)',
+    'hero.video.credit': 'Video',
+    'hero.luso.audience': 'For Portuguese businesses entering Indonesia',
     'hero.luso.sub': 'Connecting Portuguese business to the Indonesian market.',
-    'hero.nusa.sub': 'Trusted solutions for Indonesians in Portugal.',
-    'hero.luso.cta': 'Click to Explore PT → ID Solutions ↗',
-    'hero.nusa.cta': 'Click to Explore ID → PT Solutions ↗',
+    'hero.luso.cta': 'Explore business services',
     'hero.luso.pill1': 'Company Verification',
     'hero.luso.pill2': 'PT PMA Setup',
     'hero.luso.pill3': 'Export-Import Advisory',
     'hero.luso.pill4': 'Indonesia Visa & KITAS',
     'hero.luso.pill5': 'Product Sourcing',
+    'hero.nusa.audience': 'For Indonesians moving to or living in Portugal',
+    'hero.nusa.sub': 'Trusted solutions for Indonesians in Portugal.',
+    'hero.nusa.cta': 'See services for Indonesians',
     'hero.nusa.pill1': 'AIMA Assistance',
     'hero.nusa.pill2': 'NIF & NISS',
     'hero.nusa.pill3': 'Bank Account Opening',
@@ -876,11 +603,40 @@ const translations = {
     // Resolver
     'resolver.eyebrow': 'How Can We Help?',
     'resolver.title': 'What Is Your Immediate Challenge?',
-    'resolver.subtitle': 'Select your situation to generate an instant resolution roadmap with a direct line to our team.',
+    'resolver.subtitle': 'Pick your situation, answer two quick questions and send a ready-made message to our team.',
+    'resolver.tabs.label': 'Select your audience',
     'resolver.tab.nusa': 'For Indonesians in/to Portugal',
     'resolver.tab.luso': 'For Portuguese Businesses & Citizens',
-    'resolver.empty': 'Select a scenario above to see your resolution roadmap.',
-    'resolver.wa.btn': 'Start WhatsApp Consultation',
+    'resolver.step1': '1. Choose your situation',
+    'resolver.empty': 'Select a scenario to see how we can help.',
+    'resolver.step2': '2. Two quick questions',
+    'resolver.optional': 'Optional, but it helps us reply faster.',
+    'resolver.q.where': 'Where are you now?',
+    'resolver.q.where.pt': 'In Portugal',
+    'resolver.q.where.id': 'In Indonesia',
+    'resolver.q.where.other': 'Elsewhere',
+    'resolver.q.when': 'When do you need this?',
+    'resolver.q.when.urgent': 'Within 2 weeks',
+    'resolver.q.when.soon': 'In 1–3 months',
+    'resolver.q.when.exploring': 'Just exploring',
+    'resolver.step3': '3. Send your message',
+    'resolver.wa.btn': 'Send on WhatsApp',
+    'resolver.email.btn': 'Prefer email? Send the same details',
+    'resolver.preview': 'Your message will read:',
+    'resolver.status': 'Showing help for: {s}',
+
+    // Prefilled messages
+    'msg.generic': 'Hello LUSONUSA! I would like to book a free consultation.',
+    'msg.greeting': 'Hello LUSONUSA!',
+    'msg.interest': 'I need help with: {s}.',
+    'msg.where.pt': 'I am currently in Portugal.',
+    'msg.where.id': 'I am currently in Indonesia.',
+    'msg.where.other': 'I am currently outside Portugal and Indonesia.',
+    'msg.when.urgent': 'I need this within 2 weeks.',
+    'msg.when.soon': 'I need this in the next 1–3 months.',
+    'msg.when.exploring': 'I am exploring options for now.',
+    'msg.close': 'Could you tell me the next steps?',
+    'msg.subject': 'Enquiry: {s}',
 
     // Workflow
     'workflow.eyebrow': 'Our Guarantee & Promise',
@@ -892,13 +648,13 @@ const translations = {
     'workflow.s1.btn': 'Chat on WhatsApp',
     'workflow.s2.badge': '1–2 Days Research',
     'workflow.s2.title': 'We Prepare Your Options',
-    'workflow.s2.desc': 'Before we talk, our team takes 1–2 days to analyze legal rules and prepare concrete, actionable steps for your case.',
+    'workflow.s2.desc': 'Before we talk, our team takes 1–2 days to review the official requirements and prepare concrete, actionable steps for your case.',
     'workflow.s3.badge': 'Complimentary 1-on-1',
     'workflow.s3.title': 'Initial Strategic Call',
     'workflow.s3.desc': 'A focused 1-on-1 consultation to explore your roadmap. Simple cases receive step-by-step guidance completely free.',
     'workflow.s4.badge': 'Clear Upfront Pricing',
     'workflow.s4.title': 'Tailored Representation',
-    'workflow.s4.desc': 'Need hands-on help? We offer flexible assistance—from document notarization to on-the-ground support—with all fees agreed upfront.',
+    'workflow.s4.desc': 'Need hands-on help? We offer flexible assistance—from notary-certified translations to on-the-ground support—with all fees agreed upfront.',
 
     // Pathways
     'pathways.eyebrow': 'Resolution Pathways & Pricing Philosophy',
@@ -907,68 +663,110 @@ const translations = {
     'pathway.p1.desc': 'Basic questions & general guidance answered during the free call. Perfect if you can handle filings yourself.',
     'pathway.p1.price': '€0 • Free Consultation',
     'pathway.p2.name': '2. Document & Report Prep',
-    'pathway.p2.desc': 'Legalized translations (Notary), NIF/NISS setups, business roadmaps, and custom compliance reports.',
+    'pathway.p2.desc': 'Notary-certified translations, NIF/NISS setups, business roadmaps, and custom documentation reports.',
     'pathway.p2.price': 'Fixed Transparent Fee',
     'pathway.p3.name': '3. In-Person Ground Accompaniment',
     'pathway.p3.desc': 'In-person attendance for AIMA appointments, Bank visits, PT PMA corporate setups, or bilingual local field accompaniment.',
     'pathway.p3.price': '€15 – €30 / hour or Fixed Package',
-    'pathways.note': 'Purchasing Power Equity: We tailor our fees fairly—offering accessible rates for individual community members while providing enterprise-grade consulting for businesses.',
-
-    // Insights
-    'insights.eyebrow': 'Bilateral Knowledge Hub',
-    'insights.title': 'Guides & Operational Insights',
-    'insights.subtitle': 'In-depth regulatory analyses, visa compliance guides, and market entry roadmaps for Portugal and Indonesia.',
+    'pathways.note.label': 'Purchasing Power Equity:',
+    'pathways.note': 'We tailor our fees fairly—offering accessible rates for individual community members while providing enterprise-grade consulting for businesses.',
 
     // Team
     'team.eyebrow': 'Our Team',
     'team.title': 'The Collaborators Behind the Bilateral Bridge',
     'team.subtitle': 'A multidisciplinary team of bilingual professionals embedded in both nations.',
-    'team.flip.badge': 'Click to flip',
-    'team.flip.back': 'Click to flip back',
-    'team.touch.cue': 'Swipe to flip',
-    'team.c1.role': 'FOUNDER',
+    'team.c1.role': 'Founder',
     'team.c1.title': 'Business & Bilateral Relations Lead',
+    'team.c1.cred1': 'Ex-Embassy of Indonesia, Lisbon (5 yrs)',
+    'team.c1.cred2': '9+ years in Portugal',
     'team.c1.bio': '9+ years residing in Portugal with 5 years of service in the Economic Section of the Embassy of the Republic of Indonesia in Lisbon. Specialist in diplomatic protocol, cross-border business setup, and administrative navigation.',
     'team.c1.lang': 'English & Indonesian',
-    'team.c2.role': 'Banking & Financial Compliance Lead',
+    'team.c2.role': 'Banking & Finance',
     'team.c2.title': 'Banking & Financial Advisory Specialist',
+    'team.c2.cred1': 'MSc Economics, ISEG Lisbon',
+    'team.c2.cred2': 'European banking sector',
     'team.c2.bio': '7+ years residing in Portugal with a Master of Science in Economics from ISEG Lisbon. Currently active in the European banking sector, bringing domain expertise in capital movements, cross-border financial flows, and compliance.',
     'team.c2.lang': 'English & Indonesian',
-    'team.c3.role': 'Technology & AI Strategy Lead',
+    'team.c3.role': 'Technology & AI',
     'team.c3.title': 'Digital Transformation & Innovation Specialist',
+    'team.c3.cred1': 'M.Sc. Strategic Marketing',
+    'team.c3.cred2': 'Enterprise tech & AI adoption',
     'team.c3.bio': 'M.Sc. in Strategic Marketing currently leading enterprise tech initiatives. Specializes in digital workflow adaptation, modern market expansion, and business AI adoption across cross-border operations.',
     'team.c3.lang': 'English & Indonesian',
-    'team.c4.role': 'TRANSLATION SPECIALIST',
+    'team.c4.role': 'Translation Specialist',
     'team.c4.title': 'Legal & Notarized Translation Lead',
-    'team.c4.bio': 'Native bilingual specialist (Portuguese-Portugal / Indonesian) recognized by the Embassy of Indonesia in Lisbon. Executes official legal, civil, and corporate translations, officially legalized through certified Portuguese Notaries (Notários). Jobs scheduled after pre-intake feasibility appraisal.',
-    'team.c4.lang': 'Português & Indonesian',
+    'team.c4.cred1': 'Native PT-PT & Indonesian',
+    'team.c4.cred2': 'Notary-certified translations',
+    'team.c4.bio': 'Native bilingual specialist (European Portuguese / Indonesian) recognized by the Embassy of Indonesia in Lisbon. Prepares translations of civil, corporate and legal documents, certified before a Portuguese notary. Work is scheduled after a short feasibility review of your documents.',
+    'team.c4.lang': 'Portuguese & Indonesian',
+
+    // Insights
+    'insights.eyebrow': 'Knowledge Resource',
+    'insights.title': 'Guides & Bilateral Insights',
+    'insights.subtitle': 'Practical guides on visas, company setup, residency paperwork and translations between Portugal and Indonesia.',
+    'insights.all': 'All guides',
+    'insights.a1.tag': 'Indonesia Visas',
+    'insights.a1.title': 'Indonesian visas and KITAS for Portuguese entrepreneurs and investors (2026)',
+    'insights.a1.desc': 'Business visits, investor stay permits and residence options for Portuguese company owners and directors.',
+    'insights.a2.tag': 'PT PMA Setup',
+    'insights.a2.title': 'Setting up a PT PMA in Indonesia: foreign direct investment step by step',
+    'insights.a2.desc': 'Company structure, capital requirements and OSS licensing for European companies entering Indonesia.',
+    'insights.a3.tag': 'Portugal Paperwork',
+    'insights.a3.title': 'NIF, NISS and AIMA residence registration in Portugal: a guide for Indonesians',
+    'insights.a3.desc': 'Tax number, social security and residence appointments for Indonesians moving to Portugal.',
+    'insights.a4.tag': 'Translation & Notary',
+    'insights.a4.title': 'Certified translation and notary legalisation of Indonesian and Portuguese documents',
+    'insights.a4.desc': 'How translations are certified before a Portuguese notary, plus legalisation and apostille basics.',
 
     // Footer
     'footer.tagline': 'Bilateral Advisory & Cross-Border Consulting',
     'footer.contact.title': 'Get in Touch',
     'footer.contact.sub': 'Direct Assistance & Consultations',
     'footer.wa.btn': 'Direct WhatsApp Consultation',
-    'footer.hours': 'Service Hours: Mon – Fri | 10:00 – 16:00 WET (Portugal) / 16:00 – 22:00 WIB (Indonesia)',
+    'footer.email': 'Email:',
+    'footer.hours': 'Service hours: Mon–Fri, 10:00–16:00 Lisbon time (16:00–22:00 WIB in summer, 17:00–23:00 WIB in winter)',
     'footer.consult': 'Consultations conducted in English & Indonesian.',
-    'footer.legal': 'Legal notarization & administrative support executed via native Portuguese specialists & certified Notaries.',
-    'footer.entity': 'Operating as PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah)'
+    'footer.legal': 'We provide administrative support, guidance and document coordination, not legal advice. Where a notary or lawyer is required, we coordinate with licensed professionals.',
+    'footer.entity': 'Operating as PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia)',
+    'footer.privacy': 'Privacy & cookies',
+    'footer.terms': 'Terms & disclaimer',
+    'footer.copy': '© 2026 LUSONUSA · PT Wollusca Sukses Bersama. All rights reserved.',
+
+    'sticky.wa': 'WhatsApp',
+    'sticky.wa.aria': 'Chat with us on WhatsApp'
   },
 
   pt: {
+    'meta.title': 'LUSONUSA | Portugal ↔ Indonésia: criação de empresas, vistos e apoio à mudança',
+    'meta.description': 'A LUSONUSA ajuda empresas portuguesas a entrar na Indonésia e indonésios a instalar-se em Portugal: criação de PT PMA, vistos e KITAS, NIF/NISS/AIMA e traduções certificadas por notário.',
+    'skip': 'Saltar para o conteúdo',
+    'aria.nav': 'Navegação principal',
+    'aria.footer': 'Rodapé',
+    'aria.menu.close': 'Fechar menu',
+
     'nav.services': 'Serviços',
     'nav.process': 'Processo',
     'nav.team': 'Equipa',
+    'nav.insights': 'Guias',
     'nav.contact': 'Contacto',
+    'nav.menu': 'Menu',
+    'header.cta': 'Consulta gratuita',
 
+    'hero.title': 'A sua ponte de confiança entre Portugal e a Indonésia',
+    'hero.lede': 'Criação de empresas, vistos, documentação de residência e traduções certificadas, tratados por uma equipa bilingue em Portugal e na Indonésia.',
+    'hero.trust': 'Fundada por um ex-membro da Secção Económica da Embaixada da Indonésia em Lisboa (5 anos)',
+    'hero.video.credit': 'Vídeo',
+    'hero.luso.audience': 'Para empresas portuguesas que entram na Indonésia',
     'hero.luso.sub': 'Conectando negócios portugueses ao mercado indonésio.',
-    'hero.nusa.sub': 'Soluções de confiança para indonésios em Portugal.',
-    'hero.luso.cta': 'Clique para Explorar Soluções PT → ID ↗',
-    'hero.nusa.cta': 'Clique para Explorar Soluções ID → PT ↗',
+    'hero.luso.cta': 'Ver serviços para empresas',
     'hero.luso.pill1': 'Verificação de Empresa',
     'hero.luso.pill2': 'Criação de PT PMA',
     'hero.luso.pill3': 'Exportação & Importação',
     'hero.luso.pill4': 'Vistos & KITAS Indonésia',
     'hero.luso.pill5': 'Procura de Produtos',
+    'hero.nusa.audience': 'Para indonésios que se mudam ou vivem em Portugal',
+    'hero.nusa.sub': 'Soluções de confiança para indonésios em Portugal.',
+    'hero.nusa.cta': 'Ver serviços para indonésios',
     'hero.nusa.pill1': 'Apoio AIMA',
     'hero.nusa.pill2': 'NIF & NISS',
     'hero.nusa.pill3': 'Conta Bancária',
@@ -978,11 +776,39 @@ const translations = {
 
     'resolver.eyebrow': 'Como Podemos Ajudar?',
     'resolver.title': 'Qual é o Seu Desafio Imediato?',
-    'resolver.subtitle': 'Selecione a sua situação e obtenha um plano de resolução instantâneo com linha direta à nossa equipa.',
+    'resolver.subtitle': 'Escolha a sua situação, responda a duas perguntas rápidas e envie uma mensagem pronta à nossa equipa.',
+    'resolver.tabs.label': 'Selecione o seu perfil',
     'resolver.tab.nusa': 'Para Indonésios em/para Portugal',
     'resolver.tab.luso': 'Para Empresas e Cidadãos Portugueses',
-    'resolver.empty': 'Selecione um cenário acima para ver o plano de resolução.',
-    'resolver.wa.btn': 'Iniciar Consulta via WhatsApp',
+    'resolver.step1': '1. Escolha a sua situação',
+    'resolver.empty': 'Selecione um cenário para ver como podemos ajudar.',
+    'resolver.step2': '2. Duas perguntas rápidas',
+    'resolver.optional': 'Opcional, mas ajuda-nos a responder mais depressa.',
+    'resolver.q.where': 'Onde está neste momento?',
+    'resolver.q.where.pt': 'Em Portugal',
+    'resolver.q.where.id': 'Na Indonésia',
+    'resolver.q.where.other': 'Noutro país',
+    'resolver.q.when': 'Para quando precisa?',
+    'resolver.q.when.urgent': 'Nas próximas 2 semanas',
+    'resolver.q.when.soon': 'Dentro de 1–3 meses',
+    'resolver.q.when.exploring': 'Estou só a explorar',
+    'resolver.step3': '3. Envie a sua mensagem',
+    'resolver.wa.btn': 'Enviar por WhatsApp',
+    'resolver.email.btn': 'Prefere email? Envie os mesmos dados',
+    'resolver.preview': 'A sua mensagem:',
+    'resolver.status': 'A mostrar ajuda para: {s}',
+
+    'msg.generic': 'Olá LUSONUSA! Gostaria de marcar uma consulta gratuita.',
+    'msg.greeting': 'Olá LUSONUSA!',
+    'msg.interest': 'Preciso de ajuda com: {s}.',
+    'msg.where.pt': 'Neste momento estou em Portugal.',
+    'msg.where.id': 'Neste momento estou na Indonésia.',
+    'msg.where.other': 'Neste momento estou fora de Portugal e da Indonésia.',
+    'msg.when.urgent': 'Preciso disto nas próximas 2 semanas.',
+    'msg.when.soon': 'Preciso disto dentro de 1–3 meses.',
+    'msg.when.exploring': 'Por agora estou só a explorar opções.',
+    'msg.close': 'Podem indicar-me os próximos passos?',
+    'msg.subject': 'Pedido de informação: {s}',
 
     'workflow.eyebrow': 'Nossa Garantia e Promessa',
     'workflow.title': 'Como Acompanhamos e Guiamos a Sua Jornada',
@@ -993,13 +819,13 @@ const translations = {
     'workflow.s1.btn': 'Conversar no WhatsApp',
     'workflow.s2.badge': '1–2 Dias de Análise',
     'workflow.s2.title': 'Preparamos o Seu Caso',
-    'workflow.s2.desc': 'Antes da conversa, analisamos o seu caso durante 1–2 dias para pesquisar requisitos legais e soluções concretas.',
+    'workflow.s2.desc': 'Antes da conversa, analisamos o seu caso durante 1–2 dias para rever os requisitos oficiais e preparar soluções concretas.',
     'workflow.s3.badge': 'Sessão 1-on-1 Gratuita',
     'workflow.s3.title': 'Discussão Estratégica',
     'workflow.s3.desc': 'Uma consulta focada para explorar o seu plano. Casos simples recebem um guia passo a passo sem qualquer custo.',
     'workflow.s4.badge': 'Preços Transparentes',
     'workflow.s4.title': 'Acompanhamento Técnico',
-    'workflow.s4.desc': 'Precisa de apoio presencial? Oferecemos apoio flexível—desde traduções notariadas até apoio presencial—com taxas claras.',
+    'workflow.s4.desc': 'Precisa de apoio presencial? Oferecemos apoio flexível—desde traduções certificadas por notário até apoio no terreno—com taxas acordadas antecipadamente.',
 
     'pathways.eyebrow': 'Caminhos de Resolução e Filosofia de Preços',
     'pathways.title': 'Opções Transparentes Criadas para as Suas Necessidades',
@@ -1007,61 +833,107 @@ const translations = {
     'pathway.p1.desc': 'Dúvidas básicas e orientação geral explicadas na consulta grátis. Ideal se puder tratar dos processos autonomamente.',
     'pathway.p1.price': '€0 • Consulta Gratuita',
     'pathway.p2.name': '2. Preparação de Documentos e Relatórios',
-    'pathway.p2.desc': 'Traduções legalizadas no Cartório, NIF/NISS, planos de negócios e relatórios de conformidade.',
+    'pathway.p2.desc': 'Traduções certificadas por notário, NIF/NISS, planos de negócio e relatórios de documentação.',
     'pathway.p2.price': 'Taxa Fixa Transparente',
     'pathway.p3.name': '3. Acompanhamento Presencial',
     'pathway.p3.desc': 'Presença física na AIMA, visitas a Bancos, abertura de empresas PT PMA ou acompanhamento bilingue no terreno.',
     'pathway.p3.price': '€15 – €30 / hora ou Pacote Fixo',
-    'pathways.note': 'Equidade de Poder de Compra: Adaptamos os nossos preços com justiça—oferecendo tarifas acessíveis a membros da comunidade e consultoria empresarial a negócios.',
+    'pathways.note.label': 'Equidade de Poder de Compra:',
+    'pathways.note': 'Adaptamos os nossos preços com justiça—oferecendo tarifas acessíveis a membros da comunidade e consultoria empresarial a negócios.',
 
     'team.eyebrow': 'Nossa Equipa',
     'team.title': 'Os Colaboradores por trás da Ponte Bilateral',
     'team.subtitle': 'Uma equipa multidisciplinar de profissionais bilingues integrados em ambas as nações.',
-    'team.flip.badge': 'Clique para virar',
-    'team.flip.back': 'Clique para voltar',
-    'team.touch.cue': 'Deslize para virar',
-    'team.c1.role': 'FUNDADOR',
+    'team.c1.role': 'Fundador',
     'team.c1.title': 'Líder de Negócios e Relações Bilaterais',
+    'team.c1.cred1': 'Ex-Embaixada da Indonésia, Lisboa (5 anos)',
+    'team.c1.cred2': '9+ anos em Portugal',
     'team.c1.bio': '9+ anos a residir em Portugal com 5 anos de serviço na Secção Económica da Embaixada da República da Indonésia em Lisboa. Especialista em protocolo diplomático, criação de empresas transfronteiriças e navegação administrativa.',
     'team.c1.lang': 'Inglês & Indonésio',
-    'team.c2.role': 'Líder de Conformidade Bancária e Financeira',
+    'team.c2.role': 'Banca & Finanças',
     'team.c2.title': 'Especialista em Consultoria Bancária e Financeira',
-    'team.c2.bio': '7+ anos a residir em Portugal com Mestrado em Economia pelo ISEG Lisboa. Atualmente ativo no setor bancário europeu, com experiência em movimentos de capital, fluxos financeiros transfronteiriços e conformidade.',
+    'team.c2.cred1': 'Mestrado em Economia, ISEG Lisboa',
+    'team.c2.cred2': 'Setor bancário europeu',
+    'team.c2.bio': '7+ anos a residir em Portugal, com Mestrado em Economia pelo ISEG Lisboa. Atualmente a trabalhar no setor bancário europeu, com experiência em movimentos de capital, fluxos financeiros transfronteiriços e conformidade.',
     'team.c2.lang': 'Inglês & Indonésio',
-    'team.c3.role': 'Líder de Estratégia Tecnológica e IA',
+    'team.c3.role': 'Tecnologia & IA',
     'team.c3.title': 'Especialista em Transformação Digital e Inovação',
-    'team.c3.bio': 'M.Sc. em Marketing Estratégico, atualmente a liderar iniciativas tecnológicas empresariais. Especializado em adaptação de fluxos digitais, expansão de mercado e adoção de IA em operações transfronteiriças.',
+    'team.c3.cred1': 'M.Sc. Marketing Estratégico',
+    'team.c3.cred2': 'Tecnologia empresarial & IA',
+    'team.c3.bio': 'Mestrado (M.Sc.) em Marketing Estratégico, atualmente a liderar iniciativas tecnológicas empresariais. Especialização em adaptação de fluxos de trabalho digitais, expansão de mercado e adoção de IA em operações transfronteiriças.',
     'team.c3.lang': 'Inglês & Indonésio',
-    'team.c4.role': 'ESPECIALISTA EM TRADUÇÃO',
+    'team.c4.role': 'Especialista em Tradução',
     'team.c4.title': 'Líder de Tradução Legal e Notariada',
-    'team.c4.bio': 'Especialista bilingue nativo (Português-Portugal / Indonésio) reconhecido pela Embaixada da Indonésia em Lisboa. Executa traduções oficiais legais e civis, devidamente legalizadas em Cartórios Notariais em Portugal. Trabalhos agendados após avaliação de viabilidade.',
+    'team.c4.cred1': 'Língua nativa: PT-PT & indonésio',
+    'team.c4.cred2': 'Traduções certificadas por notário',
+    'team.c4.bio': 'Português europeu e indonésio como línguas nativas, com reconhecimento da Embaixada da Indonésia em Lisboa. Prepara traduções de documentos civis, empresariais e jurídicos, certificadas perante notário português. Os trabalhos são agendados após uma breve análise de viabilidade dos seus documentos.',
     'team.c4.lang': 'Português & Indonésio',
+
+    'insights.eyebrow': 'Recursos',
+    'insights.title': 'Guias e Análises Bilaterais',
+    'insights.subtitle': 'Guias práticos sobre vistos, criação de empresas, documentação de residência e traduções entre Portugal e a Indonésia.',
+    'insights.all': 'Todos os guias',
+    'insights.a1.tag': 'Vistos Indonésia',
+    'insights.a1.title': 'Vistos e KITAS na Indonésia para empresários e investidores portugueses (2026)',
+    'insights.a1.desc': 'Viagens de negócios, autorizações de estadia para investidores e opções de residência para empresários e administradores portugueses.',
+    'insights.a2.tag': 'Criação de PT PMA',
+    'insights.a2.title': 'Criar uma PT PMA na Indonésia: investimento direto estrangeiro passo a passo',
+    'insights.a2.desc': 'Estrutura da empresa, requisitos de capital e licenciamento OSS para empresas europeias que entram na Indonésia.',
+    'insights.a3.tag': 'Burocracia em Portugal',
+    'insights.a3.title': 'NIF, NISS e registo de residência na AIMA: guia para indonésios',
+    'insights.a3.desc': 'Número fiscal, segurança social e agendamentos de residência para indonésios que se mudam para Portugal.',
+    'insights.a4.tag': 'Tradução & Notário',
+    'insights.a4.title': 'Tradução certificada e legalização notarial de documentos indonésios e portugueses',
+    'insights.a4.desc': 'Como as traduções são certificadas perante notário português, com noções de legalização e apostila.',
 
     'footer.tagline': 'Consultoria Bilateral e Transfronteiriça',
     'footer.contact.title': 'Entre em Contacto',
     'footer.contact.sub': 'Assistência Direta & Consultas',
     'footer.wa.btn': 'Consulta Direta via WhatsApp',
-    'footer.hours': 'Horário: Seg – Sex | 10:00 – 16:00 WET (Portugal) / 16:00 – 22:00 WIB (Indonésia)',
+    'footer.email': 'Email:',
+    'footer.hours': 'Horário: seg.–sex., 10:00–16:00 hora de Lisboa (16:00–22:00 WIB no verão, 17:00–23:00 WIB no inverno)',
     'footer.consult': 'Consultas realizadas em Inglês e Indonésio.',
-    'footer.legal': 'Legalização notarial e serviços administrativos executados com especialistas nativos e Notários certificados.',
-    'footer.entity': 'Operating as PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah)'
+    'footer.legal': 'Prestamos apoio administrativo, orientação e coordenação de documentos, não aconselhamento jurídico. Quando é necessário um notário ou advogado, coordenamos com profissionais habilitados.',
+    'footer.entity': 'Operado por PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonésia)',
+    'footer.privacy': 'Privacidade e cookies',
+    'footer.terms': 'Termos e aviso legal',
+    'footer.copy': '© 2026 LUSONUSA · PT Wollusca Sukses Bersama. Todos os direitos reservados.',
+
+    'sticky.wa': 'WhatsApp',
+    'sticky.wa.aria': 'Fale connosco pelo WhatsApp'
   },
 
   id: {
+    'meta.title': 'LUSONUSA | Portugal ↔ Indonesia: pendirian usaha, visa & pendampingan pindah',
+    'meta.description': 'LUSONUSA membantu bisnis Portugal masuk ke Indonesia dan WNI menetap di Portugal: pendirian PT PMA, visa & KITAS, pengurusan NIF/NISS/AIMA, dan terjemahan bersertifikat notaris.',
+    'skip': 'Langsung ke konten',
+    'aria.nav': 'Navigasi utama',
+    'aria.footer': 'Footer',
+    'aria.menu.close': 'Tutup menu',
+
     'nav.services': 'Layanan',
     'nav.process': 'Proses',
     'nav.team': 'Tim',
+    'nav.insights': 'Panduan',
     'nav.contact': 'Kontak',
+    'nav.menu': 'Menu',
+    'header.cta': 'Konsultasi gratis',
 
+    'hero.title': 'Jembatan terpercaya Anda antara Portugal dan Indonesia',
+    'hero.lede': 'Pendirian usaha, visa, dokumen izin tinggal, dan terjemahan bersertifikat, ditangani tim bilingual yang berbasis di Portugal dan Indonesia.',
+    'hero.trust': 'Didirikan oleh mantan staf Seksi Ekonomi Kedutaan Besar RI di Lisbon (5 tahun)',
+    'hero.video.credit': 'Video',
+    'hero.luso.audience': 'Untuk bisnis Portugal yang masuk ke Indonesia',
     'hero.luso.sub': 'Menghubungkan bisnis Portugis ke pasar Indonesia.',
-    'hero.nusa.sub': 'Solusi terpercaya untuk WNI di Portugal.',
-    'hero.luso.cta': 'Klik untuk Solusi PT → ID ↗',
-    'hero.nusa.cta': 'Klik untuk Solusi ID → PT ↗',
+    'hero.luso.cta': 'Lihat layanan bisnis',
     'hero.luso.pill1': 'Verifikasi Bisnis',
     'hero.luso.pill2': 'Pendirian PT PMA',
     'hero.luso.pill3': 'Konsultasi Ekspor-Impor',
     'hero.luso.pill4': 'Visa & KITAS Indonesia',
     'hero.luso.pill5': 'Pencarian Produk',
+    'hero.nusa.audience': 'Untuk WNI yang pindah ke atau tinggal di Portugal',
+    'hero.nusa.sub': 'Solusi terpercaya untuk WNI di Portugal.',
+    'hero.nusa.cta': 'Lihat layanan untuk WNI',
     'hero.nusa.pill1': 'Pendampingan AIMA',
     'hero.nusa.pill2': 'NIF & NISS',
     'hero.nusa.pill3': 'Buka Rekening',
@@ -1071,11 +943,39 @@ const translations = {
 
     'resolver.eyebrow': 'Bagaimana Kami Bisa Membantu?',
     'resolver.title': 'Apa Tantangan Anda Saat Ini?',
-    'resolver.subtitle': 'Pilih situasi Anda dan dapatkan peta solusi instan dengan jalur langsung ke tim kami.',
+    'resolver.subtitle': 'Pilih situasi Anda, jawab dua pertanyaan singkat, lalu kirim pesan siap pakai ke tim kami.',
+    'resolver.tabs.label': 'Pilih kategori Anda',
     'resolver.tab.nusa': 'Untuk WNI di/ke Portugal',
     'resolver.tab.luso': 'Untuk Bisnis & Warga Portugis',
-    'resolver.empty': 'Pilih skenario di atas untuk melihat peta solusi Anda.',
-    'resolver.wa.btn': 'Mulai Konsultasi WhatsApp',
+    'resolver.step1': '1. Pilih situasi Anda',
+    'resolver.empty': 'Pilih skenario untuk melihat bagaimana kami bisa membantu.',
+    'resolver.step2': '2. Dua pertanyaan singkat',
+    'resolver.optional': 'Opsional, tetapi membantu kami membalas lebih cepat.',
+    'resolver.q.where': 'Di mana Anda sekarang?',
+    'resolver.q.where.pt': 'Di Portugal',
+    'resolver.q.where.id': 'Di Indonesia',
+    'resolver.q.where.other': 'Di negara lain',
+    'resolver.q.when': 'Kapan Anda membutuhkannya?',
+    'resolver.q.when.urgent': 'Dalam 2 minggu',
+    'resolver.q.when.soon': 'Dalam 1–3 bulan',
+    'resolver.q.when.exploring': 'Baru mencari informasi',
+    'resolver.step3': '3. Kirim pesan Anda',
+    'resolver.wa.btn': 'Kirim via WhatsApp',
+    'resolver.email.btn': 'Lebih suka email? Kirim detail yang sama',
+    'resolver.preview': 'Pesan Anda:',
+    'resolver.status': 'Menampilkan bantuan untuk: {s}',
+
+    'msg.generic': 'Halo LUSONUSA! Saya ingin menjadwalkan konsultasi gratis.',
+    'msg.greeting': 'Halo LUSONUSA!',
+    'msg.interest': 'Saya butuh bantuan terkait: {s}.',
+    'msg.where.pt': 'Saat ini saya berada di Portugal.',
+    'msg.where.id': 'Saat ini saya berada di Indonesia.',
+    'msg.where.other': 'Saat ini saya berada di luar Portugal dan Indonesia.',
+    'msg.when.urgent': 'Saya membutuhkannya dalam 2 minggu.',
+    'msg.when.soon': 'Saya membutuhkannya dalam 1–3 bulan.',
+    'msg.when.exploring': 'Saat ini saya baru mencari informasi.',
+    'msg.close': 'Boleh saya tahu langkah selanjutnya?',
+    'msg.subject': 'Pertanyaan: {s}',
 
     'workflow.eyebrow': 'Jaminan & Komitmen Kami',
     'workflow.title': 'Bagaimana Kami Mendampingi & Membantu Anda',
@@ -1084,112 +984,145 @@ const translations = {
     'workflow.s1.title': 'Ceritakan Tantangan Anda',
     'workflow.s1.desc': 'Kirim pesan singkat via WhatsApp mengenai kebutuhan Anda. Tanpa biaya atau komitmen—kami siap mendengarkan.',
     'workflow.s1.btn': 'Chat via WhatsApp',
-    'workflow.s2.badge': '1–2 Hari Riset Legal',
+    'workflow.s2.badge': '1–2 Hari Riset',
     'workflow.s2.title': 'Kami Siapkan Solusinya',
-    'workflow.s2.desc': 'Sebelum berdiskusi, tim kami meluangkan 1–2 hari untuk mempelajari aturan hukum dan menyiapkan langkah konkret.',
+    'workflow.s2.desc': 'Sebelum berdiskusi, tim kami meluangkan 1–2 hari untuk mempelajari persyaratan resmi dan menyiapkan langkah konkret.',
     'workflow.s3.badge': 'Sesi 1-on-1 Bebas Biaya',
     'workflow.s3.title': 'Diskusi Strategis Awal',
     'workflow.s3.desc': 'Konsultasi terfokus 1-on-1 untuk memilih jalur terbaik. Masalah sederhana kami berikan panduan mandiri gratis.',
     'workflow.s4.badge': 'Biaya Jelas di Awal',
     'workflow.s4.title': 'Pendampingan Terukur',
-    'workflow.s4.desc': 'Butuh bantuan langsung? Kami hadirkan layanan fleksibel—dari penerjemahan notaris hingga pengawalan lapangan.',
+    'workflow.s4.desc': 'Butuh bantuan langsung? Kami hadirkan layanan fleksibel—dari terjemahan bersertifikat notaris hingga pendampingan lapangan—dengan biaya yang disepakati di awal.',
 
     'pathways.eyebrow': 'Jalur Solusi & Filosofi Biaya',
     'pathways.title': 'Pilihan Transparan yang Disesuaikan dengan Kebutuhan Anda',
     'pathway.p1.name': '1. Bimbingan Komunitas Gratis',
     'pathway.p1.desc': 'Pertanyaan dasar & panduan umum dijawab saat konsultasi gratis. Cocok jika Anda ingin mengurus dokumen sendiri.',
     'pathway.p1.price': '€0 • Konsultasi Gratis',
-    'pathway.p2.name': '2. Legalisasi Dokumen & Laporan',
-    'pathway.p2.desc': 'Penerjemahan terlegalisasi Notaris, pembuatan NIF/NISS, peta bisnis, dan laporan kepatuhan.',
+    'pathway.p2.name': '2. Persiapan Dokumen & Laporan',
+    'pathway.p2.desc': 'Terjemahan bersertifikat notaris, pembuatan NIF/NISS, peta bisnis, dan laporan dokumentasi.',
     'pathway.p2.price': 'Biaya Paket Transparan',
     'pathway.p3.name': '3. Pendampingan Lapangan',
     'pathway.p3.desc': 'Pendampingan fisik di kantor AIMA, Bank, pendirian PT PMA, atau pendamping lapangan bilingual.',
     'pathway.p3.price': '€15 – €30 / jam atau Paket Fiks',
-    'pathways.note': 'Keadilan Daya Beli: Kami menyesuaikan biaya secara adil—memberikan tarif yang terjangkau bagi perorangan dan layanan profesional bagi bisnis.',
+    'pathways.note.label': 'Keadilan Daya Beli:',
+    'pathways.note': 'Kami menyesuaikan biaya secara adil—memberikan tarif yang terjangkau bagi perorangan dan layanan profesional bagi bisnis.',
 
     'team.eyebrow': 'Tim Kami',
     'team.title': 'Para Kolaborator di Balik Jembatan Bilateral',
     'team.subtitle': 'Tim multidisiplin profesional bilingual yang berpengalaman di kedua negara.',
-    'team.flip.badge': 'Klik untuk membalik',
-    'team.flip.back': 'Klik untuk kembali',
-    'team.touch.cue': 'Usap untuk membalik',
-    'team.c1.title': 'Pendiri & Pemimpin Hubungan Bilateral',
+    'team.c1.role': 'Pendiri',
+    'team.c1.title': 'Pemimpin Bisnis & Hubungan Bilateral',
+    'team.c1.cred1': 'Eks-KBRI Lisbon (5 tahun)',
+    'team.c1.cred2': '9+ tahun di Portugal',
     'team.c1.bio': '9+ tahun tinggal di Portugal dengan 5 tahun bertugas di Seksi Ekonomi Kedutaan Besar Republik Indonesia di Lisbon. Spesialis dalam protokol diplomatik, pendirian bisnis lintas batas, dan navigasi administratif.',
     'team.c1.lang': 'Inggris & Indonesia',
-    'team.c2.role': 'Kepala Kepatuhan Perbankan & Keuangan',
+    'team.c2.role': 'Perbankan & Keuangan',
     'team.c2.title': 'Spesialis Konsultasi Perbankan & Keuangan',
+    'team.c2.cred1': 'MSc Ekonomi, ISEG Lisbon',
+    'team.c2.cred2': 'Sektor perbankan Eropa',
     'team.c2.bio': '7+ tahun tinggal di Portugal dengan gelar Master Ekonomi dari ISEG Lisbon. Saat ini aktif di sektor perbankan Eropa, membawa keahlian dalam pergerakan modal, arus keuangan lintas batas, dan kepatuhan.',
     'team.c2.lang': 'Inggris & Indonesia',
-    'team.c3.role': 'Kepala Strategi Teknologi & AI',
+    'team.c3.role': 'Teknologi & AI',
     'team.c3.title': 'Spesialis Transformasi Digital & Inovasi',
+    'team.c3.cred1': 'M.Sc. Pemasaran Strategis',
+    'team.c3.cred2': 'Teknologi korporat & adopsi AI',
     'team.c3.bio': 'M.Sc. Pemasaran Strategis, saat ini memimpin inisiatif teknologi perusahaan. Spesialisasi dalam adaptasi alur kerja digital, ekspansi pasar modern, dan adopsi AI bisnis lintas operasi.',
     'team.c3.lang': 'Inggris & Indonesia',
-    'team.c4.role': 'Spesialis Penerjemahan Tersumpah & Pengadilan',
-    'team.c4.title': 'Penerjemah Hukum & Tersumpah Pengadilan',
-    'team.c4.bio': 'Spesialis bilingual native (Portugis-Portugal / Indonesia) dengan pengalaman luas dalam penerjemahan pengadilan dan administratif. Dipercaya untuk penerjemahan tersumpah dokumen hukum, sipil, dan korporat di Portugal.',
+    'team.c4.role': 'Spesialis Penerjemahan',
+    'team.c4.title': 'Kepala Penerjemahan Dokumen Legal & Notaris',
+    'team.c4.cred1': 'Native PT-PT & Indonesia',
+    'team.c4.cred2': 'Terjemahan bersertifikat notaris',
+    'team.c4.bio': 'Spesialis bilingual native (Portugis-Portugal / Indonesia) yang diakui oleh KBRI Lisbon. Menyiapkan terjemahan dokumen sipil, korporat, dan legal yang disertifikasi di hadapan notaris Portugal. Pekerjaan dijadwalkan setelah peninjauan kelayakan singkat atas dokumen Anda.',
     'team.c4.lang': 'Portugis & Indonesia',
+
+    'insights.eyebrow': 'Sumber Pengetahuan',
+    'insights.title': 'Panduan & Wawasan Bilateral',
+    'insights.subtitle': 'Panduan praktis tentang visa, pendirian usaha, dokumen izin tinggal, dan terjemahan antara Portugal dan Indonesia.',
+    'insights.all': 'Semua panduan',
+    'insights.a1.tag': 'Visa Indonesia',
+    'insights.a1.title': 'Visa dan KITAS Indonesia untuk pengusaha dan investor Portugal (2026)',
+    'insights.a1.desc': 'Kunjungan bisnis, izin tinggal investor, dan opsi tinggal bagi pemilik dan direktur perusahaan Portugal.',
+    'insights.a2.tag': 'Pendirian PT PMA',
+    'insights.a2.title': 'Mendirikan PT PMA di Indonesia: penanaman modal asing langkah demi langkah',
+    'insights.a2.desc': 'Struktur perusahaan, ketentuan modal, dan perizinan OSS bagi perusahaan Eropa yang masuk ke Indonesia.',
+    'insights.a3.tag': 'Administrasi Portugal',
+    'insights.a3.title': 'NIF, NISS, dan pendaftaran izin tinggal AIMA di Portugal: panduan untuk WNI',
+    'insights.a3.desc': 'Nomor pajak, jaminan sosial, dan jadwal izin tinggal bagi WNI yang pindah ke Portugal.',
+    'insights.a4.tag': 'Terjemahan & Notaris',
+    'insights.a4.title': 'Terjemahan bersertifikat dan legalisasi notaris untuk dokumen Indonesia dan Portugal',
+    'insights.a4.desc': 'Cara terjemahan disertifikasi di hadapan notaris Portugal, serta dasar legalisasi dan apostille.',
 
     'footer.tagline': 'Konsultasi Bilateral & Lintas Batas',
     'footer.contact.title': 'Hubungi Kami',
     'footer.contact.sub': 'Bantuan Langsung & Konsultasi',
     'footer.wa.btn': 'Konsultasi Langsung via WhatsApp',
-    'footer.hours': 'Jam Layanan: Sen – Jum | 09:00 – 18:00 WET / WIB',
+    'footer.email': 'Email:',
+    'footer.hours': 'Jam layanan: Senin–Jumat, 10.00–16.00 waktu Lisbon (16.00–22.00 WIB saat musim panas Eropa, 17.00–23.00 WIB saat musim dingin)',
     'footer.consult': 'Konsultasi dilakukan dalam Bahasa Inggris & Indonesia.',
-    'footer.legal': 'Layanan hukum & administratif tersumpah dilaksanakan oleh spesialis native Portugis bersertifikat.'
+    'footer.legal': 'Kami memberikan dukungan administratif, panduan, dan koordinasi dokumen, bukan nasihat hukum. Jika diperlukan notaris atau pengacara, kami berkoordinasi dengan profesional berlisensi.',
+    'footer.entity': 'Dioperasikan oleh PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia)',
+    'footer.privacy': 'Privasi & cookie',
+    'footer.terms': 'Ketentuan & penafian',
+    'footer.copy': '© 2026 LUSONUSA · PT Wollusca Sukses Bersama. Hak cipta dilindungi.',
+
+    'sticky.wa': 'WhatsApp',
+    'sticky.wa.aria': 'Chat dengan kami via WhatsApp'
   }
 };
 
 function initLanguageSystem() {
-  const langBtns = document.querySelectorAll('.nav-lang-btn');
-
-  langBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-      setLanguage(lang);
-
-      // Update button states
-      langBtns.forEach(b => {
-        b.classList.toggle('active', b.dataset.lang === lang);
-        b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false');
-      });
-    });
+  document.querySelectorAll('.nav-lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => setLanguage(btn.dataset.lang, true));
   });
+
+  const stored = readStoredLang();
+  setLanguage(SUPPORTED_LANGS.includes(stored) ? stored : 'en', false);
 }
 
-function setLanguage(lang) {
-  currentLang = lang;
+function setLanguage(lang, persist) {
   const dict = translations[lang];
   if (!dict) return;
+  currentLang = lang;
+  if (persist) storeLang(lang);
 
-  // Update all [data-i18n] elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (dict[key] !== undefined) {
-      el.textContent = dict[key];
-    }
+    const value = dict[el.getAttribute('data-i18n')];
+    if (value !== undefined) el.textContent = value;
   });
 
-  // Update <html lang>
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const value = dict[el.getAttribute('data-i18n-aria')];
+    if (value !== undefined) el.setAttribute('aria-label', value);
+  });
+
   document.documentElement.lang = lang;
+  document.title = dict['meta.title'];
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) metaDescription.setAttribute('content', dict['meta.description']);
 
-  // Re-render problem resolver pills with new language
+  document.querySelectorAll('.nav-lang-btn').forEach(b => {
+    const isActive = b.dataset.lang === lang;
+    b.classList.toggle('active', isActive);
+    b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+  });
+
+  document.querySelectorAll('.hero-video-credit-label').forEach(el => {
+    el.textContent = dict['hero.video.credit'];
+  });
+
   renderPills(currentAudience);
-  resetSolutionCard();
-
-  // If a scenario was selected, re-select it
-  if (currentScenario) {
-    const activePill = document.getElementById(`pill-${currentScenario.id}`);
-    if (activePill) {
-      selectScenario(currentAudience, currentScenario, activePill);
-    }
-  }
+  renderSolution();
+  updateGenericWhatsAppLinks();
 }
 
 
 /* ═══════════════════════════════════════════════════════════════
-   6. SCROLL REVEAL — IntersectionObserver
+   5. SCROLL REVEAL — IntersectionObserver (skipped for reduced motion)
    ═══════════════════════════════════════════════════════════════ */
 function initScrollReveal() {
+  if (prefersReducedMotion() || !('IntersectionObserver' in window)) return;
+
   const revealSelectors = [
     '.section-resolver .section-eyebrow',
     '.section-resolver .section-title',
@@ -1200,227 +1133,232 @@ function initScrollReveal() {
     '.section-workflow .section-title',
     '.section-workflow .section-subtitle',
     '.workflow-card',
-    '.workflow-connector',
     '.section-team .section-eyebrow',
     '.section-team .section-title',
     '.section-team .section-subtitle',
-    '.tvos-card',
-    '.footer-brand',
-    '.footer-contact',
-    '.footer-meta'
+    '.team-card',
+    '.insight-compact-row'
   ];
 
   const elements = document.querySelectorAll(revealSelectors.join(','));
   elements.forEach((el, i) => {
     el.classList.add('reveal');
-    el.style.transitionDelay = `${(i % 4) * 0.1}s`;
+    el.style.transitionDelay = `${(i % 4) * 0.08}s`;
   });
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
-  );
-
-  elements.forEach(el => observer.observe(el));
-
-  // Safety fallback: ensure all elements are visible after 500ms
-  setTimeout(() => {
-    elements.forEach(el => el.classList.add('visible'));
-  }, 500);
-}
-
-
-/* ═══════════════════════════════════════════════════════════════
-   7. VIDEO SUPPORT — Activate hero videos when source is added
-   ═══════════════════════════════════════════════════════════════ */
-function initVideoSupport() {
-  const videos = document.querySelectorAll('.hero-panel-video');
-
-  videos.forEach(video => {
-    // Check if a <source> element with a valid src exists
-    const source = video.querySelector('source');
-    if (source && source.src && !source.src.includes('<!--')) {
-      video.classList.add('active');
-      video.load();
-
-      // Auto-play when visible
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              video.play().catch(() => {}); // Silently handle autoplay blocks
-            } else {
-              video.pause();
-            }
-          });
-        },
-        { threshold: 0.3 }
-      );
-      observer.observe(video);
-    }
-  });
-}
-
-/* ── YouTube Background Video Initializer (With Dual Desktop/Mobile Shorts Support) ── */
-function initYouTubeBackgrounds() {
-  const isMobileScreen = window.innerWidth <= 768;
-  const wrappers = document.querySelectorAll('.hero-panel-yt-wrapper, .workflow-bg-video-wrapper');
-  
-  wrappers.forEach(wrapper => {
-    const isHeroPanel = wrapper.classList.contains('hero-panel-yt-wrapper');
-
-    // Skip hero panel videos entirely on mobile (≤768px) — saves bandwidth
-    if (isHeroPanel && isMobileScreen) return;
-
-    const desktopId = wrapper.getAttribute('data-yt-desktop') || wrapper.getAttribute('data-yt-id');
-    const mobileId = wrapper.getAttribute('data-yt-mobile') || desktopId;
-    const activeId = (isMobileScreen && mobileId) ? mobileId : desktopId;
-
-    if (activeId && activeId.trim().length > 3) {
-      const cleanId = activeId.trim();
-      const startTime = wrapper.getAttribute('data-yt-start') || '0';
-      const iframe = document.createElement('iframe');
-      iframe.className = wrapper.classList.contains('workflow-bg-video-wrapper') ? 'workflow-yt-iframe' : 'hero-panel-yt-iframe';
-      iframe.src = `https://www.youtube.com/embed/${cleanId}?autoplay=1&mute=1&loop=1&playlist=${cleanId}&controls=0&showinfo=0&autohide=1&modestbranding=1&enablejsapi=1&rel=0&start=${startTime}&cc_load_policy=0&cc_lang_pref=off&hl=en&iv_load_policy=3&disablekb=1&fs=0&playsinline=1`;
-      iframe.title = 'Background Video';
-      iframe.allow = 'autoplay; encrypted-media';
-      
-      const oldIframe = wrapper.querySelector('iframe');
-      if (oldIframe) oldIframe.remove();
-
-      wrapper.insertBefore(iframe, wrapper.firstChild);
-      
-      // Delay active state slightly so YouTube initial boot/play button stays hidden
-      setTimeout(() => {
-        wrapper.classList.add('active');
-      }, 500);
-    }
-  });
-
-  // Observer to toggle fixed screen-pegged visibility when #workflow is in viewport
-  const workflowSection = document.getElementById('workflow');
-  const workflowBg = document.getElementById('workflow-bg-video');
-  if (workflowSection && workflowBg) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          workflowBg.classList.add('is-in-view');
-        } else {
-          workflowBg.classList.remove('is-in-view');
-        }
-      });
-    }, { threshold: 0.05 });
-    observer.observe(workflowSection);
-  }
-
-  // Initialize tablet scroll crossfade (after video iframes are created)
-  initTabletVideoCrossfade();
-}
-
-/* ── Tablet: Scroll-triggered Image-to-Video Crossfade ── */
-function initTabletVideoCrossfade() {
-  // Only run on touch devices with screens wider than 768px (tablets/iPads)
-  const isTablet = !matchMedia('(hover: hover) and (pointer: fine)').matches
-                   && window.innerWidth > 768;
-  if (!isTablet) return;
-
-  const heroContainer = document.querySelector('.split-hero-container');
-  const videoWrappers = document.querySelectorAll('.hero-panel-yt-wrapper.active');
-
-  if (!heroContainer || videoWrappers.length === 0) return;
-
-  // When hero has scrolled past ~15% → crossfade static image to video
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      videoWrappers.forEach(wrapper => {
-        if (entry.intersectionRatio < 0.85) {
-          wrapper.classList.add('video-revealed');
-        } else {
-          wrapper.classList.remove('video-revealed');
-        }
-      });
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
-  }, { threshold: [0.5, 0.85, 1.0] });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  observer.observe(heroContainer);
+  elements.forEach(el => observer.observe(el));
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   8. COMPACT INSIGHTS TAB SWITCHER
-   ═══════════════════════════════════════════════════════════════ */
-function switchInsightTab(tab) {
-  const pinnedList = document.getElementById('insights-pinned-list');
-  const latestList = document.getElementById('insights-latest-list');
-  const btnPinned = document.getElementById('btn-pinned-articles');
-  const btnLatest = document.getElementById('btn-latest-articles');
-
-  if (!pinnedList || !latestList || !btnPinned || !btnLatest) return;
-
-  if (tab === 'pinned') {
-    pinnedList.style.display = 'flex';
-    latestList.style.display = 'none';
-    btnPinned.classList.add('active');
-    btnLatest.classList.remove('active');
-  } else {
-    pinnedList.style.display = 'none';
-    latestList.style.display = 'flex';
-    btnPinned.classList.remove('active');
-    btnLatest.classList.add('active');
-  }
+function revealAll() {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
 }
 
+
 /* ═══════════════════════════════════════════════════════════════
-   9. MOBILE NAVIGATION MENU
+   6. DECORATIVE YOUTUBE BACKGROUNDS
+   youtube-nocookie only; desktop with a mouse; never under reduced
+   motion or Save-Data; created on demand rather than on page load.
    ═══════════════════════════════════════════════════════════════ */
+function videoBackgroundsAllowed() {
+  return !prefersReducedMotion() && !saveDataEnabled() && !mobileQuery.matches;
+}
+
+function createYouTubeIframe(id, start, className) {
+  const iframe = document.createElement('iframe');
+  iframe.className = className;
+  iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&controls=0&modestbranding=1&rel=0&start=${start || 0}&cc_load_policy=0&iv_load_policy=3&disablekb=1&fs=0&playsinline=1`;
+  iframe.title = 'Decorative background video';
+  iframe.allow = 'autoplay; encrypted-media';
+  iframe.setAttribute('tabindex', '-1');
+  iframe.setAttribute('aria-hidden', 'true');
+  return iframe;
+}
+
+function initYouTubeBackgrounds() {
+  // Hero panels: load the panel's video the first time a mouse hovers it
+  document.querySelectorAll('.hero-panel').forEach(panel => {
+    const wrapper = panel.querySelector('.hero-panel-yt-wrapper');
+    if (!wrapper) return;
+
+    panel.addEventListener('pointerenter', (e) => {
+      if (e.pointerType !== 'mouse' || !finePointerQuery.matches || !videoBackgroundsAllowed()) return;
+      if (wrapper.querySelector('iframe')) return;
+
+      const id = (wrapper.dataset.ytId || '').trim();
+      if (id.length < 4) return;
+      wrapper.appendChild(createYouTubeIframe(id, wrapper.dataset.ytStart, 'hero-panel-yt-iframe'));
+      // Short delay keeps YouTube's boot screen hidden
+      setTimeout(() => wrapper.classList.add('active'), 600);
+
+      if (wrapper.dataset.ytCredit && !panel.querySelector('.hero-video-credit')) {
+        const credit = document.createElement('a');
+        credit.className = 'hero-video-credit';
+        credit.href = wrapper.dataset.ytCreditUrl;
+        credit.target = '_blank';
+        credit.rel = 'noopener noreferrer';
+        const label = document.createElement('span');
+        label.className = 'hero-video-credit-label';
+        label.textContent = t('hero.video.credit');
+        credit.append(label, document.createTextNode(`: ${wrapper.dataset.ytCredit}`));
+        panel.appendChild(credit);
+      }
+    });
+  });
+
+  // Workflow section: load once the section approaches the viewport
+  const workflowSection = document.getElementById('workflow');
+  const workflowBg = document.getElementById('workflow-bg-video');
+  if (!workflowSection || !workflowBg || !('IntersectionObserver' in window)) return;
+
+  const loader = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting || !videoBackgroundsAllowed()) return;
+      if (!workflowBg.querySelector('iframe')) {
+        workflowBg.insertBefore(createYouTubeIframe(workflowBg.dataset.ytId, 0, 'workflow-yt-iframe'), workflowBg.firstChild);
+      }
+      loader.disconnect();
+    });
+  }, { rootMargin: '300px 0px' });
+  loader.observe(workflowSection);
+
+  // Keep the screen-pegged video visible only while the section is on screen
+  const visibility = new IntersectionObserver((entries) => {
+    entries.forEach(entry => workflowBg.classList.toggle('is-in-view', entry.isIntersecting));
+  }, { threshold: 0.05 });
+  visibility.observe(workflowSection);
+}
+
+function removeVideoBackgrounds() {
+  document.querySelectorAll('.hero-panel-yt-iframe, .workflow-yt-iframe').forEach(iframe => iframe.remove());
+  document.querySelectorAll('.hero-panel-yt-wrapper').forEach(w => w.classList.remove('active'));
+  document.querySelectorAll('.hero-video-credit').forEach(c => c.remove());
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   7. MOBILE NAVIGATION MENU (focus is kept inside while open)
+   ═══════════════════════════════════════════════════════════════ */
+let closeMobileMenu = () => {};
+
 function initMobileMenu() {
   const trigger = document.getElementById('mobile-nav-trigger');
   const overlay = document.getElementById('mobile-menu-overlay');
   const backdrop = document.getElementById('mobile-menu-backdrop');
   const closeBtn = document.getElementById('mobile-menu-close');
-  const links = document.querySelectorAll('.mobile-menu-link');
-
   if (!trigger || !overlay) return;
+
+  const focusables = () => Array.from(overlay.querySelectorAll('a[href], button:not([disabled])'));
 
   function openMenu() {
     overlay.classList.add('is-active');
+    overlay.removeAttribute('inert');
     overlay.setAttribute('aria-hidden', 'false');
     trigger.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
+    document.body.classList.add('menu-open');
+    const first = overlay.querySelector('.mobile-menu-link');
+    if (first) first.focus();
   }
 
-  function closeMenu() {
+  function closeMenu(returnFocus) {
+    if (!overlay.classList.contains('is-active')) return;
     overlay.classList.remove('is-active');
+    overlay.setAttribute('inert', '');
     overlay.setAttribute('aria-hidden', 'true');
     trigger.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
+    document.body.classList.remove('menu-open');
+    if (returnFocus) trigger.focus();
   }
+  closeMobileMenu = closeMenu;
 
   trigger.addEventListener('click', () => {
-    const isActive = overlay.classList.contains('is-active');
-    if (isActive) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
+    if (overlay.classList.contains('is-active')) closeMenu(true);
+    else openMenu();
   });
 
-  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
-  if (backdrop) backdrop.addEventListener('click', closeMenu);
-
-  links.forEach(link => {
-    link.addEventListener('click', closeMenu);
+  if (closeBtn) closeBtn.addEventListener('click', () => closeMenu(true));
+  if (backdrop) backdrop.addEventListener('click', () => closeMenu(true));
+  overlay.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => closeMenu(false));
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && overlay.classList.contains('is-active')) {
-      closeMenu();
+    if (!overlay.classList.contains('is-active')) return;
+    if (e.key === 'Escape') {
+      closeMenu(true);
+    } else if (e.key === 'Tab') {
+      const items = focusables();
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     }
   });
+
+  // Leaving the mobile breakpoint with the menu open must not leave the page locked
+  mobileQuery.addEventListener('change', (e) => {
+    if (!e.matches) closeMenu(false);
+  });
 }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   8. MOBILE STICKY WHATSAPP — hidden while the hero doors, the resolver
+   send buttons or the footer contact are on screen, so it never covers another CTA
+   ═══════════════════════════════════════════════════════════════ */
+function initStickyWhatsApp() {
+  const sticky = document.getElementById('sticky-wa');
+  const targets = Array.from(document.querySelectorAll('.hero-cta, .resolver-actions, #footer'));
+  if (!sticky || !targets.length || !('IntersectionObserver' in window)) return;
+
+  const onScreen = new Set();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) onScreen.add(entry.target);
+      else onScreen.delete(entry.target);
+    });
+    sticky.classList.toggle('is-hidden', onScreen.size > 0);
+  }, { threshold: 0.1 });
+  targets.forEach(el => observer.observe(el));
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   INIT
+   ═══════════════════════════════════════════════════════════════ */
+initHeader();
+initHeroCtas();
+initProblemResolver();
+initLanguageSystem();
+initScrollReveal();
+initYouTubeBackgrounds();
+initMobileMenu();
+initStickyWhatsApp();
+
+reducedMotionQuery.addEventListener('change', (e) => {
+  if (e.matches) {
+    removeVideoBackgrounds();
+    revealAll();
+  }
+});
+
+/* Restored from the back/forward cache: the page keeps its state, so only
+   undo transient UI (open menu) and make sure nothing is left hidden. */
+window.addEventListener('pageshow', (e) => {
+  if (!e.persisted) return;
+  closeMobileMenu(false);
+  revealAll();
+});
