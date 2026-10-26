@@ -8,7 +8,11 @@
 const WHATSAPP_NUMBER = '351930534440';
 const CONTACT_EMAIL = 'contact@lusonusa.agency';
 
-/* Shared with /articles/ so the language choice follows the visitor */
+/* Guides section: off until the articles are verified. Set to true to insert
+   the #insights section from its <template> and show the "Guides" links. */
+const SHOW_GUIDES = false;
+
+/* Shared with the article pages so the language choice follows the visitor */
 const LANG_STORAGE_KEY = 'lusonusa_lang';
 const SUPPORTED_LANGS = ['en', 'pt', 'id'];
 
@@ -133,17 +137,17 @@ const problemMatrix = {
       },
       bullets: {
         en: [
-          'Practical guidance on the documents usually needed to set up a business in Portugal, with referral to a licensed lawyer for contracts.',
+          'Practical guidance on the documents usually needed to set up a business in Portugal.',
           'Coordination of translations certified before a Portuguese notary (Indonesian ↔ European Portuguese).',
           'Document legalisation & Apostille assistance at the relevant institutions and the Embassy.'
         ],
         pt: [
-          'Orientação prática sobre os documentos habitualmente necessários para criar uma empresa em Portugal, com encaminhamento para advogado habilitado no caso de contratos.',
+          'Orientação prática sobre os documentos habitualmente necessários para criar uma empresa em Portugal.',
           'Coordenação de traduções certificadas perante notário português (Indonésio ↔ Português Europeu).',
           'Assistência na legalização de documentos e Apostila em instituições relevantes e na Embaixada.'
         ],
         id: [
-          'Panduan praktis tentang dokumen yang biasanya diperlukan untuk mendirikan usaha di Portugal, dengan rujukan ke pengacara berlisensi untuk urusan kontrak.',
+          'Panduan praktis tentang dokumen yang biasanya diperlukan untuk mendirikan usaha di Portugal.',
           'Koordinasi terjemahan yang disertifikasi notaris Portugal (Bahasa Indonesia ↔ Portugis Portugal).',
           'Asistensi legalisasi dokumen & Apostille di instansi terkait dan Kedutaan.'
         ]
@@ -266,17 +270,17 @@ const problemMatrix = {
       bullets: {
         en: [
           'Information on how the PT PMA structure for foreign investment works, based on official sources.',
-          'Business guidance on market entry, with referral to licensed tax advisers in Indonesia.',
+          'Business guidance on entering the Indonesian market.',
           'Direct connection with the Indonesia-Portugal Chamber of Commerce.'
         ],
         pt: [
           'Informação sobre o funcionamento da estrutura PT PMA para investimento estrangeiro, com base em fontes oficiais.',
-          'Orientação empresarial para a entrada no mercado, com encaminhamento para consultores fiscais habilitados na Indonésia.',
+          'Orientação empresarial para a entrada no mercado indonésio.',
           'Conexão direta com a Câmara de Comércio e Indústria Indonésia-Portugal.'
         ],
         id: [
           'Informasi cara kerja struktur PT PMA untuk investasi asing, berdasarkan sumber resmi.',
-          'Panduan bisnis untuk masuk pasar, dengan rujukan ke konsultan pajak berlisensi di Indonesia.',
+          'Panduan bisnis untuk masuk ke pasar Indonesia.',
           'Koneksi langsung dengan Kamar Dagang Indonesia-Portugal.'
         ]
       }
@@ -318,17 +322,17 @@ const problemMatrix = {
       bullets: {
         en: [
           'Information on customs rules, import duties, and trade permits (PT ↔ ID), based on official sources.',
-          'Practical guidance on cross-border shipping logistics, with referral to licensed customs brokers.',
+          'Practical guidance on cross-border shipping logistics.',
           'Administrative support for bilateral commercial trade operations.'
         ],
         pt: [
           'Informação sobre regras alfandegárias, direitos de importação e licenças comerciais (PT ↔ ID), com base em fontes oficiais.',
-          'Orientação prática sobre logística de envio transfronteiriço, com encaminhamento para despachantes aduaneiros habilitados.',
+          'Orientação prática sobre logística de envio transfronteiriço.',
           'Apoio administrativo para operações de comércio bilateral.'
         ],
         id: [
           'Informasi aturan bea cukai, bea impor, & izin perdagangan (PT ↔ ID) berdasarkan sumber resmi.',
-          'Panduan praktis logistik pengiriman lintas batas, dengan rujukan ke PPJK (customs broker) berlisensi.',
+          'Panduan praktis logistik pengiriman lintas batas.',
           'Dukungan administratif untuk operasi perdagangan komersial bilateral.'
         ]
       }
@@ -626,8 +630,8 @@ const translations = {
     'resolver.email.btn': 'Prefer email? Send the same details',
     'resolver.preview': 'Your message will read:',
     'resolver.status': 'Showing help for: {s}',
-    'resolver.note.nusa': 'Information and practical guidance based on official public sources, plus in-person accompaniment. Not legal advice; we refer you to licensed professionals when needed.',
-    'resolver.note.luso': 'Business guidance only, not legal, tax, financial or customs-brokerage advice. We refer you to licensed professionals when needed.',
+    'resolver.note.nusa': 'Information and practical guidance based on official public sources, plus in-person accompaniment. Not legal advice. When your situation needs a lawyer or another licensed professional, we\'ll tell you clearly.',
+    'resolver.note.luso': 'Business guidance only, not legal, tax, financial or customs-brokerage advice. When your situation needs a lawyer or another licensed professional, we\'ll tell you clearly.',
 
     // Prefilled messages
     'msg.generic': 'Hello LUSONUSA! I would like to book a free consultation.',
@@ -671,7 +675,7 @@ const translations = {
     'pathway.p2.price': 'Fixed Transparent Fee',
     'pathway.p3.name': '3. In-Person Ground Accompaniment',
     'pathway.p3.desc': 'In-person attendance for AIMA appointments, Bank visits, PT PMA corporate setups, or bilingual local field accompaniment.',
-    'pathway.p3.price': '€15 – €30 / hour or Fixed Package',
+    'pathway.p3.price': 'From €15/hour for accompaniment; fixed quote after a free first conversation',
     'pathways.note.label': 'Purchasing Power Equity:',
     'pathways.note': 'We tailor our fees fairly—offering accessible rates for individual community members while providing dedicated business guidance for companies.',
 
@@ -686,7 +690,7 @@ const translations = {
     'team.c1.bio': '9+ years residing in Portugal with 5 years of service in the Economic Section of the Embassy of the Republic of Indonesia in Lisbon. Specialist in diplomatic protocol, cross-border business setup, and administrative navigation.',
     'team.c1.lang': 'English & Indonesian',
     'team.c2.role': 'Banking & Finance',
-    'team.c2.title': 'Banking & Financial Advisory Specialist',
+    'team.c2.title': 'Banking & Finance Specialist',
     'team.c2.cred1': 'MSc Economics, ISEG Lisbon',
     'team.c2.cred2': 'European banking sector',
     'team.c2.bio': '7+ years residing in Portugal with a Master of Science in Economics from ISEG Lisbon. Currently active in the European banking sector, bringing domain expertise in capital movements, cross-border financial flows, and compliance.',
@@ -698,10 +702,10 @@ const translations = {
     'team.c3.bio': 'M.Sc. in Strategic Marketing currently leading enterprise tech initiatives. Specializes in digital workflow adaptation, modern market expansion, and business AI adoption across cross-border operations.',
     'team.c3.lang': 'English & Indonesian',
     'team.c4.role': 'Translation Specialist',
-    'team.c4.title': 'Legal & Notarized Translation Lead',
+    'team.c4.title': 'Portuguese–Indonesian Translator & Interpreter',
     'team.c4.cred1': 'Native PT-PT & Indonesian',
     'team.c4.cred2': 'Notary-certified translations',
-    'team.c4.bio': 'Native bilingual specialist (European Portuguese / Indonesian) recognized by the Embassy of Indonesia in Lisbon. Prepares translations of civil, corporate and legal documents, certified before a Portuguese notary. Work is scheduled after a short feasibility check.',
+    'team.c4.bio': 'Native speaker of both European Portuguese and Indonesian. Translates and interprets between the two languages; when an official version is needed, translations are certified before a Portuguese notary.',
     'team.c4.lang': 'Portuguese & Indonesian',
 
     // Insights
@@ -730,7 +734,7 @@ const translations = {
     'footer.email': 'Email:',
     'footer.hours': 'Service hours: Mon–Fri, 10:00–16:00 Lisbon time (16:00–22:00 WIB in summer, 17:00–23:00 WIB in winter)',
     'footer.consult': 'Consultations conducted in English & Indonesian.',
-    'footer.legal': 'LUSONUSA is an information and guidance service, not a law firm, and does not give legal advice; we refer you to licensed professionals when needed.',
+    'footer.legal': 'LUSONUSA is an information and guidance service, not a law firm, and does not give legal advice. When your situation needs a lawyer or another licensed professional, we\'ll tell you clearly.',
     'footer.entity': 'LUSONUSA is a network of independent bilingual professionals in Portugal and Indonesia. Services are contracted directly with the professional who delivers them.',
     'footer.privacy': 'Privacy & cookies',
     'footer.terms': 'Terms & disclaimer',
@@ -801,8 +805,8 @@ const translations = {
     'resolver.email.btn': 'Prefere email? Envie os mesmos dados',
     'resolver.preview': 'A sua mensagem:',
     'resolver.status': 'A mostrar ajuda para: {s}',
-    'resolver.note.nusa': 'Informação e orientação prática com base em fontes oficiais públicas, além de acompanhamento presencial. Não é aconselhamento jurídico; quando necessário, encaminhamos para profissionais habilitados.',
-    'resolver.note.luso': 'Apenas orientação empresarial, não aconselhamento jurídico, fiscal, financeiro ou de despacho aduaneiro. Quando necessário, encaminhamos para profissionais habilitados.',
+    'resolver.note.nusa': 'Informação e orientação prática com base em fontes oficiais públicas, além de acompanhamento presencial. Não é aconselhamento jurídico. Quando a sua situação exigir um advogado ou outro profissional habilitado, dizemos-lhe claramente.',
+    'resolver.note.luso': 'Apenas orientação empresarial, não aconselhamento jurídico, fiscal, financeiro ou de despacho aduaneiro. Quando a sua situação exigir um advogado ou outro profissional habilitado, dizemos-lhe claramente.',
 
     'msg.generic': 'Olá LUSONUSA! Gostaria de marcar uma consulta gratuita.',
     'msg.greeting': 'Olá LUSONUSA!',
@@ -843,7 +847,7 @@ const translations = {
     'pathway.p2.price': 'Taxa Fixa Transparente',
     'pathway.p3.name': '3. Acompanhamento Presencial',
     'pathway.p3.desc': 'Presença física na AIMA, visitas a Bancos, abertura de empresas PT PMA ou acompanhamento bilingue no terreno.',
-    'pathway.p3.price': '€15 – €30 / hora ou Pacote Fixo',
+    'pathway.p3.price': 'A partir de €15/hora para acompanhamento; orçamento fixo após uma primeira conversa gratuita',
     'pathways.note.label': 'Equidade de Poder de Compra:',
     'pathways.note': 'Adaptamos os nossos preços com justiça—oferecendo tarifas acessíveis a membros da comunidade e orientação empresarial dedicada a empresas.',
 
@@ -857,7 +861,7 @@ const translations = {
     'team.c1.bio': '9+ anos a residir em Portugal com 5 anos de serviço na Secção Económica da Embaixada da República da Indonésia em Lisboa. Especialista em protocolo diplomático, criação de empresas transfronteiriças e navegação administrativa.',
     'team.c1.lang': 'Inglês & Indonésio',
     'team.c2.role': 'Banca & Finanças',
-    'team.c2.title': 'Especialista em Consultoria Bancária e Financeira',
+    'team.c2.title': 'Especialista em Banca e Finanças',
     'team.c2.cred1': 'Mestrado em Economia, ISEG Lisboa',
     'team.c2.cred2': 'Setor bancário europeu',
     'team.c2.bio': '7+ anos a residir em Portugal, com Mestrado em Economia pelo ISEG Lisboa. Atualmente a trabalhar no setor bancário europeu, com experiência em movimentos de capital, fluxos financeiros transfronteiriços e conformidade.',
@@ -869,10 +873,10 @@ const translations = {
     'team.c3.bio': 'Mestrado (M.Sc.) em Marketing Estratégico, atualmente a liderar iniciativas tecnológicas empresariais. Especialização em adaptação de fluxos de trabalho digitais, expansão de mercado e adoção de IA em operações transfronteiriças.',
     'team.c3.lang': 'Inglês & Indonésio',
     'team.c4.role': 'Especialista em Tradução',
-    'team.c4.title': 'Líder de Tradução Legal e Notariada',
+    'team.c4.title': 'Tradutora e Intérprete Português–Indonésio',
     'team.c4.cred1': 'Língua nativa: PT-PT & indonésio',
     'team.c4.cred2': 'Traduções certificadas por notário',
-    'team.c4.bio': 'Português europeu e indonésio como línguas nativas, com reconhecimento da Embaixada da Indonésia em Lisboa. Prepara traduções de documentos civis, empresariais e jurídicos, certificadas perante notário português. Os trabalhos são agendados após uma breve análise de viabilidade.',
+    'team.c4.bio': 'Falante nativa de português europeu e de indonésio. Traduz e interpreta entre as duas línguas; quando é necessária uma versão oficial, as traduções são certificadas perante notário português.',
     'team.c4.lang': 'Português & Indonésio',
 
     'insights.eyebrow': 'Recursos',
@@ -899,7 +903,7 @@ const translations = {
     'footer.email': 'Email:',
     'footer.hours': 'Horário: seg.–sex., 10:00–16:00 hora de Lisboa (16:00–22:00 WIB no verão, 17:00–23:00 WIB no inverno)',
     'footer.consult': 'Consultas realizadas em Inglês e Indonésio.',
-    'footer.legal': 'A LUSONUSA é um serviço de informação e orientação, não um escritório de advogados, e não presta aconselhamento jurídico; quando necessário, encaminhamos para profissionais habilitados.',
+    'footer.legal': 'A LUSONUSA é um serviço de informação e orientação, não um escritório de advogados, e não presta aconselhamento jurídico. Quando a sua situação exigir um advogado ou outro profissional habilitado, dizemos-lhe claramente.',
     'footer.entity': 'A LUSONUSA é uma rede de profissionais bilingues independentes em Portugal e na Indonésia. Os serviços são contratados diretamente com o profissional que os presta.',
     'footer.privacy': 'Privacidade e cookies',
     'footer.terms': 'Termos e aviso legal',
@@ -970,8 +974,8 @@ const translations = {
     'resolver.email.btn': 'Lebih suka email? Kirim detail yang sama',
     'resolver.preview': 'Pesan Anda:',
     'resolver.status': 'Menampilkan bantuan untuk: {s}',
-    'resolver.note.nusa': 'Informasi dan panduan praktis berdasarkan sumber resmi yang terbuka untuk umum, serta pendampingan langsung. Bukan nasihat hukum; bila diperlukan, kami merujuk Anda ke profesional berlisensi.',
-    'resolver.note.luso': 'Hanya panduan bisnis, bukan nasihat hukum, pajak, keuangan, atau jasa kepabeanan. Bila diperlukan, kami merujuk Anda ke profesional berlisensi.',
+    'resolver.note.nusa': 'Informasi dan panduan praktis berdasarkan sumber resmi yang terbuka untuk umum, serta pendampingan langsung. Bukan nasihat hukum. Jika situasi Anda memerlukan pengacara atau profesional berlisensi lainnya, kami akan menyampaikannya dengan jelas.',
+    'resolver.note.luso': 'Hanya panduan bisnis, bukan nasihat hukum, pajak, keuangan, atau jasa kepabeanan. Jika situasi Anda memerlukan pengacara atau profesional berlisensi lainnya, kami akan menyampaikannya dengan jelas.',
 
     'msg.generic': 'Halo LUSONUSA! Saya ingin menjadwalkan konsultasi gratis.',
     'msg.greeting': 'Halo LUSONUSA!',
@@ -1012,7 +1016,7 @@ const translations = {
     'pathway.p2.price': 'Biaya Paket Transparan',
     'pathway.p3.name': '3. Pendampingan Lapangan',
     'pathway.p3.desc': 'Pendampingan fisik di kantor AIMA, Bank, pendirian PT PMA, atau pendamping lapangan bilingual.',
-    'pathway.p3.price': '€15 – €30 / jam atau Paket Fiks',
+    'pathway.p3.price': 'Mulai €15/jam untuk pendampingan; penawaran harga tetap setelah percakapan awal gratis',
     'pathways.note.label': 'Keadilan Daya Beli:',
     'pathways.note': 'Kami menyesuaikan biaya secara adil—memberikan tarif yang terjangkau bagi perorangan dan layanan profesional bagi bisnis.',
 
@@ -1026,7 +1030,7 @@ const translations = {
     'team.c1.bio': '9+ tahun tinggal di Portugal dengan 5 tahun bertugas di Seksi Ekonomi Kedutaan Besar Republik Indonesia di Lisbon. Spesialis dalam protokol diplomatik, pendirian bisnis lintas batas, dan navigasi administratif.',
     'team.c1.lang': 'Inggris & Indonesia',
     'team.c2.role': 'Perbankan & Keuangan',
-    'team.c2.title': 'Spesialis Konsultasi Perbankan & Keuangan',
+    'team.c2.title': 'Spesialis Perbankan & Keuangan',
     'team.c2.cred1': 'MSc Ekonomi, ISEG Lisbon',
     'team.c2.cred2': 'Sektor perbankan Eropa',
     'team.c2.bio': '7+ tahun tinggal di Portugal dengan gelar Master Ekonomi dari ISEG Lisbon. Saat ini aktif di sektor perbankan Eropa, membawa keahlian dalam pergerakan modal, arus keuangan lintas batas, dan kepatuhan.',
@@ -1038,10 +1042,10 @@ const translations = {
     'team.c3.bio': 'M.Sc. Pemasaran Strategis, saat ini memimpin inisiatif teknologi perusahaan. Spesialisasi dalam adaptasi alur kerja digital, ekspansi pasar modern, dan adopsi AI bisnis lintas operasi.',
     'team.c3.lang': 'Inggris & Indonesia',
     'team.c4.role': 'Spesialis Penerjemahan',
-    'team.c4.title': 'Kepala Penerjemahan Dokumen Legal & Notaris',
+    'team.c4.title': 'Penerjemah & Juru Bahasa Portugis–Indonesia',
     'team.c4.cred1': 'Native PT-PT & Indonesia',
     'team.c4.cred2': 'Terjemahan bersertifikat notaris',
-    'team.c4.bio': 'Spesialis bilingual native (Portugis-Portugal / Indonesia) yang diakui oleh KBRI Lisbon. Menyiapkan terjemahan dokumen sipil, korporat, dan legal yang disertifikasi di hadapan notaris Portugal. Pekerjaan dijadwalkan setelah pengecekan kelayakan singkat.',
+    'team.c4.bio': 'Penutur asli bahasa Portugis (Portugal) dan bahasa Indonesia. Menerjemahkan dan menjadi juru bahasa di antara kedua bahasa; bila diperlukan versi resmi, terjemahan disertifikasi di hadapan notaris Portugal.',
     'team.c4.lang': 'Portugis & Indonesia',
 
     'insights.eyebrow': 'Sumber Pengetahuan',
@@ -1068,7 +1072,7 @@ const translations = {
     'footer.email': 'Email:',
     'footer.hours': 'Jam layanan: Senin–Jumat, 10.00–16.00 waktu Lisbon (16.00–22.00 WIB saat musim panas Eropa, 17.00–23.00 WIB saat musim dingin)',
     'footer.consult': 'Konsultasi dilakukan dalam Bahasa Inggris & Indonesia.',
-    'footer.legal': 'LUSONUSA adalah layanan informasi dan panduan, bukan kantor hukum, dan tidak memberikan nasihat hukum; bila diperlukan, kami merujuk Anda ke profesional berlisensi.',
+    'footer.legal': 'LUSONUSA adalah layanan informasi dan panduan, bukan kantor hukum, dan tidak memberikan nasihat hukum. Jika situasi Anda memerlukan pengacara atau profesional berlisensi lainnya, kami akan menyampaikannya dengan jelas.',
     'footer.entity': 'LUSONUSA adalah jaringan profesional bilingual independen di Portugal dan Indonesia. Layanan dikontrak langsung dengan profesional yang memberikannya.',
     'footer.privacy': 'Privasi & cookie',
     'footer.terms': 'Ketentuan & penafian',
@@ -1122,6 +1126,19 @@ function setLanguage(lang, persist) {
   renderPills(currentAudience);
   renderSolution();
   updateGenericWhatsAppLinks();
+}
+
+
+function initGuides() {
+  if (!SHOW_GUIDES) return;
+  const template = document.getElementById('insights-template');
+  if (!template) return;
+  const section = template.content.cloneNode(true);
+  section.querySelectorAll('a[data-article-path]').forEach(a => {
+    a.href = `/articles/${a.dataset.articlePath}`;
+  });
+  template.replaceWith(section);
+  document.querySelectorAll('[data-guides-link]').forEach(el => { el.hidden = false; });
 }
 
 
@@ -1350,6 +1367,7 @@ function initStickyWhatsApp() {
 initHeader();
 initHeroCtas();
 initProblemResolver();
+initGuides();
 initLanguageSystem();
 initScrollReveal();
 initYouTubeBackgrounds();
