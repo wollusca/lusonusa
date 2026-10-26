@@ -15,7 +15,7 @@
 | Keywords EN | indonesia business visa for portuguese citizens; investor kitas indonesia; indonesia c2 business visa; kitas indonesia requirements 2026; indonesia work permit foreigner |
 | Keywords pt-PT | visto para a indonésia; visto de negócios indonésia; kitas indonésia; visto indonésia portugueses; autorização de residência indonésia |
 | Keywords id | visa bisnis wna ke indonesia; kitas investor e28a; visa c2 indonesia; syarat kitas wna 2026; sponsor visa wna |
-| Cross-sell (§6.4) | 1) PT PMA setup: EN `/services/pt-pma-company-setup-indonesia/` · PT `/pt/servicos/abrir-empresa-indonesia-pt-pma/` · ID `/id/layanan/pendirian-pt-pma/` — 2) Arrival & concierge add-on (section on the students/concierge page, no own URL in Phase 2): EN `/services/students-housing-arrival-portugal/#arrival-concierge` · PT `/pt/servicos/estudantes-alojamento-chegada/#chegada-concierge` · ID `/id/layanan/mahasiswa-akomodasi-kedatangan-portugal/#concierge-kedatangan` (anchor IDs proposed — confirm with the students page file) |
+| Cross-sell (§6.4) | 1) PT PMA setup: EN `/services/pt-pma-company-setup-indonesia/` · PT `/pt/servicos/abrir-empresa-indonesia-pt-pma/` · ID `/id/layanan/pendirian-pt-pma/` — 2) Arrival & concierge add-on (section on the students/concierge page, no own URL in Phase 2): EN `/services/students-housing-arrival-portugal/#arrival-concierge` · PT `/pt/servicos/estudantes-alojamento-chegada/#chegada-concierge` · ID `/id/layanan/mahasiswa-akomodasi-kedatangan-portugal/#kedatangan-concierge` (anchor IDs proposed — confirm with the students page file) |
 | Supporting guides | Indonesia visa guide: EN `/guides/indonesia-visa-guide/` · PT `/pt/guias/vistos-indonesia/` · ID `/id/panduan/jenis-visa-indonesia-untuk-wna/` — PT PMA guide: EN `/guides/pt-pma-indonesia/` · PT `/pt/guias/abrir-empresa-indonesia/` · ID `/id/panduan/syarat-pendirian-pt-pma/` |
 | Packages | Market Entry Assessment (business visit planning) · PT PMA Setup (Investor KITAS follow-on) · free 15-min triage / paid case assessment |
 
@@ -248,7 +248,7 @@ Tidak. Keputusan ada di Direktorat Jenderal Imigrasi. Kami memastikan berkas len
 - **Link:** https://wa.me/351930534440?text=Halo%20LUSONUSA%2C%20saya%20ingin%20tahu%20jenis%20visa%20atau%20KITAS%20yang%20tepat%20untuk%20rekan%20bisnis%20kami%20dari%20Portugal.%20Bisa%20dibantu%20langkah%20dan%20biayanya%3F%20Ref%3A%20LN-VISA-ID-SVC
 - **Email:** contact@lusonusa.agency — subjek: "Pertanyaan visa/KITAS Indonesia (LN-VISA-ID-SVC)"
 - **Jam layanan:** 10:00–16:00 waktu Lisabon (Sen–Jum) · 16:00–22:00 WIB (musim panas) / 17:00–23:00 WIB (musim dingin)
-- **Langkah berikutnya:** Perlu PT PMA sebagai sponsor KITAS investor? Lihat [pendirian PT PMA](/id/layanan/pendirian-pt-pma/). Butuh bantuan saat kedatangan? Lihat [layanan concierge kedatangan](/id/layanan/mahasiswa-akomodasi-kedatangan-portugal/#concierge-kedatangan).
+- **Langkah berikutnya:** Perlu PT PMA sebagai sponsor KITAS investor? Lihat [pendirian PT PMA](/id/layanan/pendirian-pt-pma/). Butuh bantuan saat kedatangan? Lihat [layanan concierge kedatangan](/id/layanan/mahasiswa-akomodasi-kedatangan-portugal/#kedatangan-concierge).
 
 ### Disclaimer
 LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan, dan koordinasi dokumen untuk pengajuan visa. Kami bukan instansi imigrasi dan tidak memberikan jasa hukum atau kuasa hukum. Keputusan sepenuhnya ada di Direktorat Jenderal Imigrasi dan tidak dijamin. Biaya resmi terpisah. Aturan visa sering berubah; informasi terakhir ditinjau Oktober 2026.
@@ -291,7 +291,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 ## Owner to confirm
 - [PARTNER: owner to name] licensed visa sponsor/agent for clients without their own PT PMA.
 - `[PRICE: owner to set]` per applicant; whether family-member applications are priced separately. `[BOOKING_URL: owner to set]`.
-- Whether the "Arrival & concierge" add-on is offered for arrivals in Indonesia (current spec places it on the Portugal students page); if not, change the second cross-sell to an Indonesia-side add-on or drop it. Confirm the anchor IDs `#arrival-concierge` / `#chegada-concierge` / `#concierge-kedatangan` with the students page file.
+- Whether the "Arrival & concierge" add-on is offered for arrivals in Indonesia (current spec places it on the Portugal students page); if not, change the second cross-sell to an Indonesia-side add-on or drop it. Confirm the anchor IDs `#arrival-concierge` / `#chegada-concierge` / `#kedatangan-concierge` with the students page file.
 - [verify] C2 duration/extension (60 days, up to 180); D2 validity; E28A capital threshold after Reg 5/2025; E33G income threshold (~USD 60k); work KITAS code (E23); VoA/e-VoA eligibility and duration for Portugal; typical e-Visa decision times; allindonesia arrival card URL.
 - Family stay permits (ITAS/ITAP) mentioned in current app.js are only covered as "family members of KITAS holders" here; confirm scope.
 - Current app.js copy references "B211A" — must be updated per this file.
