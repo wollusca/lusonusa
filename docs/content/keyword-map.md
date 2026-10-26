@@ -46,7 +46,7 @@ Target URLs refer to `site-architecture.md` §3. "Guide (cal. M#)" means the art
 | **NIF** | cara membuat NIF Portugal · cara bikin NIF Portugal dari Indonesia · NIF Portugal online · apa itu NIF Portugal · NIF Portugal untuk WNI | I→T | S–M | Guide `/id/panduan/cara-mengurus-nif-niss-aima-portugal/` (pillar); service `/id/layanan/pengurusan-nif-niss-portugal/` | P1 |
 | **NISS** | cara daftar NISS Portugal · NISS online · nomor jaminan sosial Portugal · NISS untuk pekerja | I→T | S | Same pillar guide + service | P1 |
 | **AIMA / izin tinggal** | jadwal AIMA · cara booking AIMA · izin tinggal Portugal · perpanjang izin tinggal Portugal · residence permit Portugal WNI · dokumen AIMA | I→T | S–M | Service `/id/layanan/pendampingan-izin-tinggal-aima/`; guide "Checklist dokumen AIMA" (cal. M1) | P1 |
-| **Visa kerja / kerja di Portugal** | kerja di Portugal · visa kerja Portugal · lowongan kerja Portugal untuk WNI · agen kerja Portugal resmi · penipuan kerja Portugal | I | M–L | Guide "Kerja di Portugal: cara aman & ciri agen penipu" (cal. M2). **No service page** (we are not a placement agency) | P2 |
+| **Visa kerja / kerja di Portugal** | kerja di Portugal · visa kerja Portugal · lowongan kerja Portugal untuk WNI · agen kerja Portugal resmi · penipuan kerja Portugal | I | M–L | Guide "Kerja di Portugal: cara aman & ciri agen penipu" (cal. M2). **No service page and no job-related CTA.** LUSONUSA does not recruit or place workers (that requires a licence in Portugal). Don't target "lowongan" (job vacancy) transactional intent | P2 |
 | **Kuliah / pelajar** | kuliah di Portugal · beasiswa Portugal · visa pelajar Portugal · biaya kuliah di Portugal · universitas di Portugal untuk mahasiswa Indonesia | I→C | M | Service `/id/layanan/mahasiswa-akomodasi-kedatangan-portugal/`; guide "Kuliah di Portugal: dari LoA sampai AIMA" (cal. M1) | P1 |
 | **Akomodasi** | cari kos di Lisbon · sewa kamar di Lisbon · penipuan sewa rumah Portugal · kontrak sewa Portugal | I→T | S | Students service + guide (cal. M3) | P2 |
 | **Bank** | buka rekening bank Portugal · bank di Portugal untuk WNI · rekening bank Portugal tanpa izin tinggal · kirim uang ke Portugal | I→T | S | Service `/id/layanan/buka-rekening-bank-portugal/`; guide (cal. M2) | P1 |
@@ -71,7 +71,7 @@ Target URLs refer to `site-architecture.md` §3. "Guide (cal. M#)" means the art
 | Cluster | Keywords | Intent | Vol. est. | Target | Pri |
 |---|---|---|---|---|---|
 | Tradução | tradução indonésio português · tradutor indonésio Lisboa · tradução certificada indonésio · tradução certificada notário | T | XS–S | `/pt/servicos/traducao-certificada-indonesio-portugues/` | P1 |
-| Contratar indonésios | contratar trabalhadores indonésios · trabalhadores indonésios Portugal · NISS para trabalhador estrangeiro | C | XS–S | AIMA + NIF services (B2B angle), guide (cal. M4) | P2 |
+| Novos colaboradores indonésios | NISS para trabalhador estrangeiro · trabalhador estrangeiro AIMA documentos · colaborador indonésio NIF | I | XS–S | Guide #15 (cal. M4) → NIF/AIMA services via **employer referral of already-hired staff**. **Don't target recruitment queries** ("contratar/recrutar trabalhadores indonésios"); we don't recruit | P2 |
 | Estudantes | estudantes indonésios em Portugal · alojamento estudantes internacionais Lisboa | C | XS | Students service | P3 |
 
 ---

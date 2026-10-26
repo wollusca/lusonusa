@@ -13,7 +13,9 @@
 3. **Language follows the audience, but all three exist.** LUSO pages are written PT-first (then EN, then ID for Indonesian partner companies). NUSA pages are written ID-first (then EN, then PT for Portuguese employers/universities). The *x-default* is always the EN URL.
 4. **Slugs are native-language keywords**, lowercase, hyphenated, ASCII only (no accents: `servicos`, not `serviços`), ≤ 5 words. Directory names are localised: `services` / `servicos` / `layanan`, `guides` / `guias` / `panduan`.
 5. **Service pages are the money pages; guides feed them.** Each guide links to exactly one primary service and one secondary service; each service page links back to its 2–4 supporting guides.
-6. **Compliance wording everywhere:** "administrative support, guidance and document coordination". Legal acts are referred to licensed partners. Translations are "certified before a Portuguese notary". Never "sworn translator", "legal advice", "lawyer" as LUSONUSA's own title.
+6. **Compliance wording everywhere:** LUSONUSA is not a law firm and doesn't replace a lawyer. It provides "information and practical guidance based on public official information, plus in-person accompaniment", and refers clients to licensed lawyers, notaries, accountants and customs brokers when needed. LUSO is business guidance, never legal, tax, investment or customs-brokerage advice. Translations are "certified before a Portuguese notary". Never "sworn translator", "legal advice", "lawyer" as LUSONUSA's own title. Every service page carries a "What we don't do / when you need a lawyer" block.
+7. **No digital ID/immigration documents.** No page, form or CTA asks visitors to send passports, permits, visas or civil documents by WhatsApp, email or upload. Forms have no file-upload field. Documents are checked in person.
+8. **No recruitment.** No page offers job placement, recruitment or worker supply. Employer partnerships appear only as "staff referred by their employer for administrative guidance".
 
 ---
 
@@ -203,7 +205,7 @@ Rules:
 
 | Template | Blocks (in order) | Schema |
 |---|---|---|
-| Service | Breadcrumb · H1 + value prop + primary CTA · Who it's for · What's included · Process & timeline · Price "from" + package link · Proof (testimonial/case) · FAQs (accordion, 5+) · Related guides · Final CTA (WhatsApp prefilled with source tag + booking + email) · Disclaimer | `Service` (provider → `ProfessionalService` @id), `FAQPage`, `BreadcrumbList` |
+| Service | Breadcrumb · H1 + value prop + primary CTA · Who it's for · What's included · What we don't do / when you need a lawyer · Process & timeline · Price "from" + package link · Proof (testimonial/case) · FAQs (accordion, 5+) · Related guides · Final CTA (WhatsApp prefilled with source tag + booking + email) · Disclaimer | `Service` (provider → `ProfessionalService` @id), `FAQPage`, `BreadcrumbList` |
 | Hub | H1 · audience promise · 5 service cards · process · pricing teaser · proof · team · guides · FAQ · CTA | `CollectionPage`, `BreadcrumbList`, `FAQPage` |
 | Guide | Breadcrumb · H1 · author + "Last reviewed <date> by <name>" · TL;DR box · TOC · body · "Official sources" list · inline CTA after 1st section · end CTA · related | `Article` (author → `Person` @id), `BreadcrumbList`; `FAQPage` only if real Q&A block |
 | Team member | Photo · name · role · bio · credentials · languages · LinkedIn · guides authored | `Person` (`worksFor`, `knowsLanguage`, `sameAs`) |

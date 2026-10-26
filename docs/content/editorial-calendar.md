@@ -43,7 +43,7 @@
 | # | Aud. | Working title EN | Working title PT | Working title ID | Primary keyword | Langs | Author | Type | Primary service | Official sources |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 5 | NUSA | Opening a bank account in Portugal as an Indonesian: documents, fees, pitfalls | Abrir conta bancária em Portugal sendo indonésio | Cara buka rekening bank di Portugal untuk WNI | buka rekening bank Portugal | ID, EN | JS | E | Bank account & arrival | bportugal.pt (Banco de Portugal, Portal do Cliente Bancário; serviços mínimos bancários *[verify]*), portaldasfinancas.gov.pt (NIF) |
-| 6 | NUSA | Working in Portugal safely: how to spot fake job agents | Trabalhar em Portugal com segurança: como identificar falsos agentes de emprego | Kerja di Portugal: cara aman & ciri-ciri agen penyalur palsu | kerja di Portugal / penipuan kerja Portugal | ID, EN | AP | R | AIMA residence support (no job placement) | Lei 61/2025, vistos.mne.gov.pt, aima.gov.pt, kemlu.go.id (KBRI Lisabon), bp2mi.go.id (Indonesian migrant worker protection agency) *[verify current agency name]* |
+| 6 | NUSA | Working in Portugal safely: how to spot fake job agents (we don't recruit; this is a safety guide) | Trabalhar em Portugal com segurança: como identificar falsos agentes de emprego | Kerja di Portugal: cara aman & ciri-ciri agen penyalur palsu | kerja di Portugal / penipuan kerja Portugal | ID, EN | AP | R | AIMA residence support (no job placement) | Lei 61/2025, vistos.mne.gov.pt, aima.gov.pt, kemlu.go.id (KBRI Lisabon), bp2mi.go.id (Indonesian migrant worker protection agency) *[verify current agency name]* |
 | 7 | LUSO | Indonesia visas for Portuguese citizens (2027): VoA, C2 business visa, KITAS | Vistos para a Indonésia para portugueses (2027): VoA, visto de negócios C2, KITAS | — | visto Indonésia portugueses | PT, EN | AP | R | Indonesia visa & KITAS | imigrasi.go.id, evisa.imigrasi.go.id, Embaixada da Indonésia em Lisboa (kemlu.go.id/lisbon), portaldascomunidades.mne.gov.pt (Portuguese travel advice) |
 | 8 | LUSO | Halal certification for Portuguese food exporters to Indonesia | Certificação halal: o que os exportadores portugueses de alimentos precisam de saber | Sertifikasi halal untuk produk impor dari Portugal | certificação halal exportação Indonésia | PT, EN | AP | R | Export-import advisory | halal.go.id (BPJPH), Law 33/2014 and implementing regulations *[verify current phase]*, bpom.go.id, portugalglobal.pt |
 
@@ -62,7 +62,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 13 | NUSA | Cost of living in Portugal for Indonesian students and workers (2027) | Custo de vida em Portugal para estudantes e trabalhadores indonésios | Biaya hidup di Portugal 2027: kos, makan, transport (versi WNI) | biaya hidup di Portugal | ID, EN | JS | E (update yearly; prices dated) | Students, housing & concierge | ine.pt (Statistics Portugal, rents/CPI), salário mínimo on dre/diariodarepublica.pt, transport operators' tariff pages (Carris/Metro/Navegante) |
 | 14 | NUSA | NISS online for foreigners: step by step | Pedir NISS online sendo estrangeiro: passo a passo | Cara daftar NISS online (langkah demi langkah) | cara daftar NISS Portugal | ID, EN, PT | AP | R | NIF & NISS | seg-social.pt ("Atribuição de NISS" form, practical guide), eportugal.gov.pt |
-| 15 | LUSO | Hiring Indonesian workers in Portugal: what employers must prepare | Contratar trabalhadores indonésios em Portugal: o que o empregador deve preparar | Bekerja untuk perusahaan Portugal: kewajiban pemberi kerja | contratar trabalhadores indonésios | PT, EN | AP | R | NIF & NISS / AIMA (B2B bulk) | Lei 23/2007 as amended, aima.gov.pt, seg-social.pt (employer NISS request), ACT (act.gov.pt) |
+| 15 | LUSO | Your Indonesian new hire's first month: the admin checklist (NIF, NISS, AIMA) for employers | O primeiro mês do seu novo colaborador indonésio: checklist administrativa (NIF, NISS, AIMA) para empregadores | Baru diterima kerja di Portugal? Checklist NIF, NISS & AIMA | NISS trabalhador estrangeiro | PT, EN, ID | AP | R | NIF & NISS / AIMA (employer referral of already-hired staff). **Not a recruitment piece: no job offers, no candidate matching** | Lei 23/2007 as amended, aima.gov.pt, seg-social.pt (employer NISS request), ACT (act.gov.pt) |
 | 16 | LUSO | Getting paid and paying suppliers in Indonesia: FX, letters of credit and fraud red flags | Pagamentos com a Indonésia: câmbio, cartas de crédito e sinais de fraude | Pembayaran internasional Portugal–Indonesia: kurs, L/C, dan modus penipuan | pagamentos fornecedor Indonésia | PT, EN, ID | JS | E | Company verification / Export-import | bi.go.id (Bank Indonesia), bportugal.pt, ICC UCP 600 (general reference) |
 
 ### Month 5: March 2027
@@ -102,7 +102,7 @@ Defaults are listed below. Either column can be reassigned to a new or guest aut
 | 9 | Family reunification (Lei 61/2025) | AP | Partner lawyer (PT) — TBD | AP | 3 months |
 | 12 | PT PMA after BKPM 5/2025 | AP | Partner lawyer (ID) — TBD | AP | 6 months |
 | 14 | NISS online | AP | MG | AP | 6 months |
-| 15 | Hiring Indonesian workers | AP | Partner lawyer (PT) — TBD | AP | 3 months |
+| 15 | New-hire admin checklist for employers | AP | Partner lawyer (PT) — TBD | AP | 3 months |
 | 17 | Apostille + translation | MG | AP | MG | Yearly |
 | 19 | Doing business in Bali | AP | Partner lawyer (ID) — TBD | AP | 6 months |
 | 21 | Renewing residence permit | AP | Partner lawyer (PT) — TBD | AP | 3 months |
@@ -124,7 +124,7 @@ The guide front matter carries `author`, `reviewed_by`, `updated_by`, `last_revi
 | Fact check against **official** sources. Anything unconfirmed gets marked `[verify]` and resolved or cut | AP (+ partner lawyer for R pieces with legal content) | W-1 |
 | Native-language review (PT: MG · ID: AP/JS/NH · EN: anyone) | Reviewer | W-1 |
 | Second language version (adapted, not literal) | Author + reviewer | W-1 |
-| Publish with: "Last reviewed" date, official-sources list, WhatsApp CTA with ref tag `LN-<KEY>-<LANG>-GDE`, UTM'd social links | NH | W0 |
+| Publish with: "Last reviewed" date, official-sources list, a short "When you need a lawyer" box (R pieces), the line "Please don't send us ID or immigration documents digitally" near the CTA, WhatsApp CTA with ref tag `LN-<KEY>-<LANG>-GDE`, UTM'd social links | NH | W0 |
 | Repurpose: Instagram carousel (ID) / LinkedIn post (PT/EN), link to the guide | NH (social), AP (LinkedIn) | W0–W+1 |
 | Add to newsletter | NH | Next newsletter |
 
@@ -155,6 +155,7 @@ Complete this before their first byline goes live:
 - [ ] **Author registry entry:** add them to `articles/authors.js` (being created by Stream 2) in Phase 1, and to `src/content/team/<slug>.json` in Phase 2. Fields: `id` (slug), `name`, `role`, `title` (per language), `bio` (per language), `photo`, `sameAs`, `isGuest`, `knowsLanguage`.
 - [ ] **Author page:** `/about/<slug>/` (team) or `/guides/authors/<slug>/` (guest) *[Phase 2 decision]*, with `Person` schema. Guests have `worksFor` set to their own organisation, not LUSONUSA.
 - [ ] **Disclosure:** for partner professionals, add a line on the article: "{name} is an independent {profession} and a referral partner of LUSONUSA."
+- [ ] **Scope check:** guest authors follow the same rules: information and practical guidance based on official public sources, no legal/tax/investment/customs-brokerage advice from LUSONUSA, no recruitment, no request for readers to send documents digitally.
 - [ ] **Calendar:** replace `New/guest author: TBD` with their id in §1 (monthly tables and the reviewer table).
 
 ## 5. Backlog (not yet scheduled)

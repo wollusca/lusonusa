@@ -16,5 +16,5 @@ Owned by Stream 4 (`claude/p1-content`). Markdown only, no site code. Written fo
 - `[verify]` marks a regulatory or factual claim that could not be confirmed from an official source in Oct 2026. Resolve it before publishing.
 - `[PRICE: owner to set]`, `[BOOKING_URL: owner to set]` and `[PARTNER: owner to name]` are placeholders the owner must fill.
 - Volumes in the keyword map are **estimates** (bands), not tool data.
-- Compliance vocabulary: administrative support, guidance and document coordination. Legal acts go through licensed partners. Translations are certified before a Portuguese notary. Nobody at LUSONUSA is a "sworn translator".
+- Compliance vocabulary: information and practical guidance based on public official information, plus in-person accompaniment. Not a law firm; business guidance only (no legal, tax, investment or customs-brokerage advice). Licensed professionals are referred when needed. No digital receipt of ID/immigration documents. No recruitment or job placement. Translations are certified before a Portuguese notary. Nobody at LUSONUSA is a "sworn translator".
 - Team and contact data follow the shared contract in `docs/audit/workstreams.md`.

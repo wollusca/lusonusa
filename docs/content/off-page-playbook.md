@@ -6,7 +6,7 @@
 - Name: **LUSONUSA** (all caps, one word). Legal entity: **PT Wollusca Sukses Bersama** (Purwokerto, Jawa Tengah, Indonesia)
 - Website: `https://www.lusonusa.agency/` · Email: `contact@lusonusa.agency` · WhatsApp: `+351 930 534 440`
 - Hours: 10:00–16:00 Lisbon time (Mon–Fri) · 16:00–22:00 WIB (summer) / 17:00–23:00 WIB (winter)
-- Short description (EN): "Portugal ↔ Indonesia bilateral advisory: company setup, visas, residence paperwork and certified translations for Portuguese businesses and Indonesians in Portugal." Never use "legal services", "lawyer" or "sworn translator".
+- Short description (EN): "Portugal ↔ Indonesia bilateral guidance: practical, official-source information and in-person accompaniment for company setup, visas, residence paperwork and certified translations. Not a law firm. We refer you to licensed professionals when needed." Never use "legal services", "lawyer" or "sworn translator", and never offer recruitment or job placement.
 
 ---
 
@@ -39,7 +39,7 @@ Google requires a **real location where you serve customers in person, or a real
 | WhatsApp/chat | `+351 930 534 440` |
 | Languages | Attributes: "Languages spoken: English, Portuguese, Indonesian" (if offered) |
 | Photos | Team photos (re-use the optimised versions from Stream 1, `assets/img/**`), Lisbon context shots, logo, cover image. No stock photos of "lawyers" |
-| Q&A | Seed 5 real FAQs from the service pages (e.g. "Do you help with AIMA appointments?", "Are your translations certified?" → "Yes, certified before a Portuguese notary.") |
+| Q&A | Seed 5 real FAQs from the service pages (e.g. "Do you help with AIMA appointments?", "Are your translations certified?" → "Yes, certified before a Portuguese notary.", "Can I send my documents on WhatsApp?" → "Please don't. We check documents with you in person.", "Do you find jobs in Portugal?" → "No, we don't recruit or place workers.") |
 | Posts | Twice a month: new guide (with UTM), regulatory update (e.g. Lei 61/2025, CEPA milestone), event/webinar |
 
 ### 1.3 After verification
@@ -213,7 +213,8 @@ Google requires a **real location where you serve customers in person, or a real
 
 - No claims of government endorsement or "official partner" status without a written agreement.
 - No client names without written consent.
-- Same compliance vocabulary as the site: administrative support and guidance; certified translations; licensed partners for legal acts.
+- Same compliance vocabulary as the site: information and practical guidance, in-person accompaniment, certified translations, licensed partners for legal/tax/customs matters. Business guidance only, never legal, tax, investment or customs-brokerage advice.
+- Never post or invite job offers / candidate requests. Decline recruitment enquiries politely ("we don't recruit or place workers").
 
 ---
 
