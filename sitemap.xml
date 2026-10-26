@@ -7,36 +7,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.lusonusa.agency/articles/</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.lusonusa.agency/articles/indonesia-visa-guide-2026.html</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.lusonusa.agency/articles/pt-pma-indonesia-setup.html</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.lusonusa.agency/articles/nif-niss-aima-portugal-guide.html</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.lusonusa.agency/articles/sworn-translation-notary-guide.html</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.lusonusa.agency/privacy.html</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>yearly</changefreq>
