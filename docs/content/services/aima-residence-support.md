@@ -40,29 +40,35 @@
 AIMA residence permit support — prepared, booked and accompanied
 
 ### Value proposition
-AIMA processes are where most of our Indonesian clients lose time: a missing apostille, an untranslated certificate, a portal that won't load. We build your file with you, check it against AIMA's published requirements, help you secure and prepare for the appointment, and come with you on the day — in Indonesian, English or Portuguese. We set honest expectations: AIMA decides, and delays in 2026 are real.
+AIMA processes are where most of our Indonesian clients lose time: a missing apostille, an untranslated certificate, a portal that won't load. We build your file with you, check it against AIMA's published requirements, help you secure and prepare for the appointment, and come with you on the day — in Indonesian, English or Portuguese. We set honest expectations: AIMA decides, and delays in 2026 are real. LUSONUSA is not a law firm and does not replace a lawyer: we give practical guidance based on AIMA's public official information, accompany you in person, and refer you to a licensed advogado or solicitador when your case needs one.
 
 ### Who it's for
 - Indonesians who entered Portugal with a residence visa (work, study, family, D7/D8-type routes) and must now book the residence permit appointment with AIMA
 - Residence permit holders preparing a renewal
 - Family members joining a resident in Portugal (family reunification)
 - Students moving from a student visa to a residence permit for study
-- Portuguese employers and universities who want a bilingual contact for their Indonesian staff or students
+- Indonesian staff or students referred by their Portuguese employer or university for administrative guidance (employer referral — LUSONUSA does not recruit or place workers)
 
 ### What's included
 - Case review: which permit type and article of the Foreigners' Act applies to your situation, based on AIMA's published information
-- Personalised document checklist and file review (completeness, validity dates, names matching across documents)
+- Personalised document checklist that we send you, and an **in-person** file review (completeness, validity dates, names matching across documents) — you keep your documents; we don't receive copies by WhatsApp, email or upload
 - Coordination of apostilles and certified translations (via our Certified translation service)
-- Help using AIMA's online portal / contact form to request or confirm your appointment
-- Appointment preparation: printed and digital file, copies, photo requirements, what to expect at the counter
+- Step-by-step guidance (in person or on a call) while **you** use AIMA's online portal / contact form yourself to request or confirm your appointment and upload any scans the portal asks for — we never receive the files
+- Appointment preparation: how to organise your printed file and copies, photo requirements, what to expect at the counter
 - In-person accompaniment at the AIMA appointment (Lisbon area; other cities on request) [owner to confirm coverage]
 - Follow-up on status messages and requests for additional documents
 
 **Not included:** legal representation before AIMA, legal opinions, administrative appeals or court action (we refer you to a licensed partner advogado/solicitador — [PARTNER: owner to name]); AIMA fees; any guarantee of approval or of appointment dates.
 
+### What we don't do / when you need a lawyer
+- We don't receive passports, visas, residence permits, birth/marriage certificates or criminal records digitally — documents are checked in person only.
+- We don't submit anything on the AIMA portal in your name; you submit it yourself with our guidance.
+- We don't give legal opinions on which permit you are entitled to — our case review explains AIMA's published requirements; borderline or complex cases go to a licensed **advogado or solicitador** (we can refer you — [PARTNER: owner to name]).
+- You need a lawyer if your application is refused, you receive a notice to leave the country, your visa/permit has expired with no appointment, or you want to file a complaint, appeal or court action.
+
 ### Process & typical timeline
 1. **Free 15-min triage** — same or next working day.
-2. **Paid case assessment & checklist** — 2–3 working days after you send your documents (credited if you proceed).
+2. **Paid case assessment & checklist** — a conversation about your situation, then we send you the checklist within 2–3 working days (credited if you proceed). Documents are reviewed in person, never sent to us digitally.
 3. **Document gathering** — apostilles in Indonesia and certified translations in Portugal: typically 2–6 weeks, longer if documents must first be reissued in Indonesia (**partly authority-dependent**).
 4. **Appointment request** — via AIMA's portal/contact channels; waiting times vary from weeks to months (**authority-dependent**).
 5. **Appointment day** — we accompany you; biometrics and file submission.
@@ -94,6 +100,9 @@ Yes. Law 61/2025 amended the Foreigners' Act (Lei 23/2007) from 23 October 2025,
 **My application was refused. Can you appeal?**
 We don't represent clients legally. We'll organise your documents and introduce you to a licensed partner lawyer or solicitor who can assess an appeal.
 
+**Can I send you my documents on WhatsApp?**
+No — for your security we don't receive ID or immigration documents digitally. We talk your case through, send you a checklist and review your documents in person at a meeting or on the appointment day; you keep them. Where the AIMA portal asks for a scan, you upload it yourself and we guide you step by step.
+
 ### CTA copy
 - **Headline:** Walk into AIMA with a complete file
 - **Buttons:** "Chat on WhatsApp" · "Book a free 15-min call" (`[BOOKING_URL: owner to set]`) · "Email us"
@@ -117,29 +126,35 @@ LUSONUSA provides administrative support, guidance and document coordination. We
 Apoio na autorização de residência AIMA para cidadãos indonésios
 
 ### Proposta de valor
-A maior parte dos atrasos nos processos AIMA deve-se a documentos incompletos: uma apostila em falta, uma certidão sem tradução, dados que não coincidem entre documentos. A LUSONUSA organiza o processo com o requerente, confirma-o face aos requisitos publicados pela AIMA, apoia na marcação e acompanha presencialmente o atendimento. Empregadores e universidades ganham um interlocutor bilingue para os seus colaboradores e estudantes indonésios.
+A maior parte dos atrasos nos processos AIMA deve-se a documentos incompletos: uma apostila em falta, uma certidão sem tradução, dados que não coincidem entre documentos. A LUSONUSA organiza o processo com o requerente, confirma-o face aos requisitos publicados pela AIMA, apoia na marcação e acompanha presencialmente o atendimento. A LUSONUSA não é uma sociedade de advogados nem substitui um advogado: presta orientação prática com base na informação oficial publicada pela AIMA, acompanhamento presencial e encaminhamento para advogado ou solicitador habilitado quando o caso o exige. Empregadores e universidades podem encaminhar-nos colaboradores já contratados e estudantes já admitidos — a LUSONUSA não recruta nem coloca trabalhadores.
 
 ### Para quem
 - Cidadãos indonésios titulares de visto de residência consular que precisam de obter a autorização de residência
 - Titulares de autorização de residência em processo de renovação
 - Familiares em processo de reagrupamento familiar
 - Estudantes do ensino superior que passam do visto de estudo à autorização de residência
-- Empresas e instituições de ensino que acolhem cidadãos indonésios
+- Colaboradores e estudantes indonésios encaminhados pela entidade empregadora ou instituição de ensino (não recrutamos nem colocamos trabalhadores)
 
 ### O que inclui
 - Análise do caso com base na informação publicada pela AIMA (tipo de autorização aplicável)
-- Lista de documentos personalizada e revisão do processo (validade, coerência de nomes e dados)
+- Lista de documentos personalizada, enviada por nós, e revisão **presencial** do processo (validade, coerência de nomes e dados) — os documentos ficam consigo; não recebemos cópias por WhatsApp, e-mail ou carregamento
 - Coordenação de apostilas e traduções certificadas (através do nosso serviço de tradução certificada)
-- Apoio na utilização do portal e canais de contacto da AIMA para pedido ou confirmação de agendamento
-- Preparação para o atendimento (processo em papel e digital, cópias, fotografia, o que esperar)
+- Orientação passo a passo (presencialmente ou por chamada) enquanto o próprio requerente usa o portal e os canais de contacto da AIMA para pedir ou confirmar o agendamento e submeter as digitalizações exigidas — não recebemos os ficheiros
+- Preparação para o atendimento (organização do processo em papel e cópias, fotografia, o que esperar)
 - Acompanhamento presencial no atendimento (Grande Lisboa; outras cidades mediante pedido) [owner to confirm coverage]
 - Seguimento de notificações e pedidos de documentos adicionais
 
 **Não inclui:** representação jurídica perante a AIMA, pareceres jurídicos, reclamações, recursos hierárquicos ou ações judiciais (encaminhamos para advogado ou solicitador parceiro — [PARTNER: owner to name]); taxas da AIMA; qualquer garantia de decisão favorável ou de datas.
 
+### O que não fazemos / quando precisa de um advogado
+- Não recebemos passaportes, vistos, títulos de residência, certidões ou registos criminais em formato digital — a verificação é presencial.
+- Não submetemos pedidos no portal da AIMA em nome do requerente; é o próprio que submete, com a nossa orientação.
+- Não emitimos pareceres sobre o direito a uma autorização de residência — explicamos os requisitos publicados; casos complexos seguem para **advogado ou solicitador** habilitado (encaminhamos — [PARTNER: owner to name]).
+- Precisa de advogado em caso de indeferimento, notificação para abandono voluntário, visto/título caducado sem agendamento, reclamação, recurso ou ação judicial.
+
 ### Processo e prazos habituais
 1. **Triagem gratuita de 15 min** — no próprio dia ou no dia útil seguinte.
-2. **Avaliação de caso e lista de documentos** — 2 a 3 dias úteis (valor descontado se avançar).
+2. **Avaliação de caso e lista de documentos** — conversa sobre o caso e envio da lista em 2 a 3 dias úteis (valor descontado se avançar). Os documentos são revistos presencialmente, nunca enviados em formato digital.
 3. **Reunião documental** — apostilas na Indonésia e traduções certificadas em Portugal: habitualmente 2 a 6 semanas (**depende parcialmente das entidades**).
 4. **Pedido de agendamento** — através dos canais da AIMA; o tempo de espera varia de semanas a meses (**depende da entidade**).
 5. **Atendimento** — acompanhamento presencial, recolha biométrica e entrega do processo.
@@ -169,7 +184,10 @@ Não. A decisão e o calendário dependem exclusivamente da AIMA. O nosso papel 
 A Lei 61/2025 alterou a Lei 23/2007, em vigor desde 23 de outubro de 2025, com regras mais restritivas, por exemplo, para o visto de procura de trabalho e para o reagrupamento familiar (em regra após dois anos de residência legal, com exceções) [verify]. A via da manifestação de interesse terminou em junho de 2024 [verify].
 
 **Sou empregador. Podem apoiar vários colaboradores?**
-Sim. Coordenamos a documentação de equipas indonésias e explicamos o processo aos colaboradores na sua língua. Proposta por volume mediante pedido [owner to confirm].
+Sim, se a empresa nos encaminhar colaboradores já contratados: explicamos-lhes o processo em indonésio, enviamos a lista de documentos e revemos o processo presencialmente com cada um. Condições de encaminhamento pelo empregador mediante pedido [owner to confirm]. A LUSONUSA não recruta, não seleciona nem coloca trabalhadores.
+
+**Posso enviar-vos os meus documentos por WhatsApp?**
+Não — por razões de segurança, não recebemos documentos de identificação ou de imigração em formato digital. Conversamos sobre o caso, enviamos a lista de verificação e revemos os documentos presencialmente; ficam sempre consigo. Quando o portal da AIMA pede uma digitalização, é o próprio requerente que a submete, com a nossa orientação passo a passo.
 
 ### CTA
 - **Título:** Chegue à AIMA com o processo completo
@@ -194,29 +212,35 @@ A LUSONUSA presta apoio administrativo, orientação e coordenação documental.
 Pendampingan izin tinggal AIMA — berkas lengkap, datang dengan tenang
 
 ### Kenapa pakai LUSONUSA
-Banyak WNI kehilangan waktu berbulan-bulan di proses AIMA hanya karena satu hal kecil: akta belum di-apostille, terjemahan belum disertifikasi, atau ejaan nama beda antara paspor dan akta lahir. Kami bantu susun berkas Anda sesuai syarat resmi AIMA, bantu urus jadwal, lalu menemani Anda di hari H — dengan Bahasa Indonesia. Kami juga jujur soal kenyataannya: keputusan ada di AIMA, dan antrean di 2026 memang panjang.
+Banyak WNI kehilangan waktu berbulan-bulan di proses AIMA hanya karena satu hal kecil: akta belum di-apostille, terjemahan belum disertifikasi, atau ejaan nama beda antara paspor dan akta lahir. Kami bantu susun berkas Anda sesuai syarat resmi AIMA, bantu urus jadwal, lalu menemani Anda di hari H — dengan Bahasa Indonesia. Kami juga jujur soal kenyataannya: keputusan ada di AIMA, dan antrean di 2026 memang panjang. Perlu diketahui: LUSONUSA bukan kantor hukum dan tidak menggantikan pengacara. Kami memberi panduan praktis berdasarkan informasi resmi AIMA yang terbuka untuk publik, mendampingi langsung, dan menghubungkan Anda dengan advogado/solicitador berlisensi kalau kasus Anda membutuhkannya.
 
 ### Cocok untuk siapa
 - WNI yang masuk Portugal dengan visa tinggal (visa kerja, studi, keluarga, dan lainnya) dan sekarang harus membuat jadwal izin tinggal (autorização de residência) di AIMA
 - Pemegang kartu izin tinggal yang mau perpanjang
 - Anggota keluarga yang menyusul suami/istri/orang tua (reagrupamento familiar)
 - Mahasiswa yang beralih dari visa studi ke izin tinggal studi
-- Perusahaan dan kampus di Portugal yang punya karyawan/mahasiswa WNI
+- Karyawan/mahasiswa WNI yang dirujuk oleh perusahaan atau kampusnya di Portugal untuk pendampingan administratif (kami tidak merekrut atau menyalurkan tenaga kerja)
 
 ### Yang Anda dapatkan
 - Analisis kasus berdasarkan informasi resmi AIMA: jenis izin tinggal mana yang sesuai
-- Checklist dokumen pribadi dan pengecekan berkas (masa berlaku, kesamaan nama dan data)
+- Checklist dokumen yang kami kirim ke Anda, dan pengecekan berkas **secara langsung** (masa berlaku, kesamaan nama dan data) — dokumen tetap Anda pegang; kami tidak menerima salinan lewat WhatsApp, email, atau unggahan
 - Koordinasi apostille dan terjemahan bersertifikat (lewat layanan Terjemahan & legalisasi kami)
-- Bantuan memakai portal dan kanal kontak AIMA untuk meminta atau mengonfirmasi jadwal
-- Persiapan hari H: berkas cetak dan digital, fotokopi, syarat foto, dan gambaran apa yang akan ditanyakan
+- Panduan langkah demi langkah (langsung atau lewat video call) saat **Anda sendiri** memakai portal dan kanal kontak AIMA untuk meminta/mengonfirmasi jadwal dan mengunggah scan yang diminta portal — kami tidak menerima file-nya
+- Persiapan hari H: cara menyusun berkas cetak dan fotokopi, syarat foto, dan gambaran apa yang akan ditanyakan
 - Pendampingan langsung saat jadwal di AIMA (area Lisbon; kota lain bisa diatur) [owner to confirm coverage]
 - Pemantauan notifikasi dan permintaan dokumen tambahan
 
 **Tidak termasuk:** jasa hukum, pendapat hukum, atau mewakili Anda secara hukum di AIMA maupun pengadilan, termasuk banding (kami hubungkan dengan mitra advogado/solicitador berlisensi — [PARTNER: owner to name]); biaya resmi AIMA; jaminan disetujui atau jaminan tanggal jadwal.
 
+### Yang tidak kami lakukan / kapan Anda perlu pengacara
+- Kami tidak menerima paspor, visa, kartu izin tinggal, akta, atau SKCK secara digital — pengecekan dokumen hanya tatap muka.
+- Kami tidak mengirim permohonan di portal AIMA atas nama Anda; Anda sendiri yang mengirimnya, dengan panduan kami.
+- Kami tidak memberi pendapat hukum soal hak Anda atas izin tinggal — kami menjelaskan syarat resmi yang dipublikasikan; kasus yang rumit kami rujuk ke **advogado/solicitador** berlisensi ([PARTNER: owner to name]).
+- Anda perlu pengacara kalau permohonan ditolak, menerima surat perintah meninggalkan Portugal, visa/izin tinggal sudah habis tanpa jadwal, atau ingin mengajukan keberatan, banding, atau gugatan.
+
 ### Alur & perkiraan waktu
 1. **Konsultasi gratis 15 menit** — hari yang sama atau hari kerja berikutnya.
-2. **Asesmen kasus & checklist** — 2–3 hari kerja setelah dokumen diterima (biayanya dipotongkan kalau lanjut).
+2. **Asesmen kasus & checklist** — kita bahas kondisi Anda, lalu checklist kami kirim dalam 2–3 hari kerja (biayanya dipotongkan kalau lanjut). Dokumen dicek langsung saat bertemu, tidak dikirim ke kami secara digital.
 3. **Melengkapi dokumen** — apostille di Indonesia dan terjemahan bersertifikat di Portugal: biasanya 2–6 minggu; lebih lama kalau dokumen harus diterbitkan ulang di Indonesia (**sebagian tergantung instansi**).
 4. **Minta jadwal** — lewat kanal resmi AIMA; waktu tunggu bisa beberapa minggu sampai beberapa bulan (**tergantung instansi**).
 5. **Hari H** — kami dampingi; pengambilan biometrik dan penyerahan berkas.
@@ -247,6 +271,9 @@ Betul. Lei 61/2025 mengubah UU Orang Asing (Lei 23/2007) mulai 23 Oktober 2025, 
 
 **Permohonan saya ditolak. Bisa dibantu banding?**
 Kami tidak mewakili klien secara hukum. Kami bantu rapikan dokumen Anda dan menghubungkan dengan mitra advogado/solicitador berlisensi yang bisa menilai peluang banding.
+
+**Boleh saya kirim dokumen lewat WhatsApp?**
+Tidak — demi keamanan Anda, kami tidak menerima dokumen identitas atau imigrasi secara digital. Kita bahas kasus Anda, kami kirim checklist, lalu dokumen dicek langsung saat bertemu atau di hari H; dokumen tetap Anda pegang. Kalau portal AIMA meminta scan, Anda sendiri yang mengunggahnya di portal, dan kami pandu langkah demi langkah.
 
 ### Ajakan (CTA)
 - **Judul:** Datang ke AIMA dengan berkas lengkap — tanpa deg-degan
@@ -288,6 +315,7 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
   ]
 }
 ```
+- All three FAQ blocks include the "documents on WhatsApp" FAQ; PT keeps the employer-referral FAQ (no recruitment/placement wording).
 - Never use `LegalService` type for this page. `serviceType` must say "administrative support".
 - Omit `minPrice` until set by owner.
 - Breadcrumbs: EN Home › Moving to Portugal › AIMA residence support · PT Início › Viver em Portugal › Apoio AIMA · ID Beranda › Pindah ke Portugal › Pendampingan AIMA.
@@ -306,7 +334,8 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 - [PARTNER: owner to name] — partner advogado/solicitador for appeals and legal representation
 - Coverage for in-person AIMA accompaniment (which AIMA offices/cities)
 - Whether LUSONUSA staff can be present at the AIMA counter with the applicant (AIMA practice varies by office) [verify]
-- Volume offer for employers/universities (PT section)
+- "Employer referral" terms for already-hired staff / admitted students referred by employers or universities (PT section) — no recruitment/placement offer
+- In-person-only document review confirmed as policy; client submits on the AIMA portal themselves (we guide, never receive files)
 - [verify] Lei 61/2025 details (job-seeker visa 120+60 days only for qualified activity; family reunification after 2 years, exceptions)
 - [verify] end of manifestação de interesse (DL 37-A/2024, June 2024)
 - [verify] current AIMA decision / card delivery times in 2026

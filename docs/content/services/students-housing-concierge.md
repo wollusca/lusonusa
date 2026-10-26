@@ -44,18 +44,18 @@
 Students, housing & arrival in Portugal — a soft landing for Indonesian students
 
 ### Value proposition
-Your acceptance letter is the easy part. Then come the student visa, a room in a city where rents are high and scams are common, and a first week full of paperwork in a new language. We help you find and check safe housing, prepare the documents you'll need, and get you set up after landing — with people who have lived in Portugal for years and speak your language.
+Your acceptance letter is the easy part. Then come the student visa, a room in a city where rents are high and scams are common, and a first week full of paperwork in a new language. We help you find and check safe housing, prepare the documents you'll need, and get you set up after landing — with people who have lived in Portugal for years and speak your language. LUSONUSA is not a law firm, a real-estate agency or a travel agency: we give practical guidance based on public official information, accompany you in person, and refer you to a licensed professional (e.g. a solicitador or advogado for a lease dispute) when you need one.
 
 ### Who it's for
 - Indonesian students admitted (or applying) to a Portuguese university or polytechnic — bachelor's, master's, PhD, exchange
 - Scholarship students (e.g. LPDP or university scholarships) who need to settle in quickly [owner to confirm scholarship references]
 - Parents who want someone reliable on the ground for their son or daughter
-- Portuguese universities and residences welcoming Indonesian students who want a bilingual point of contact
+- Indonesian students referred by their Portuguese university or residence, which wants a bilingual point of contact for them
 - Young professionals and families arriving for the first time (housing + arrival)
 
 ### What's included
 - Pre-departure call: realistic budget (rent, transport, food, tuition for international students), what to bring, documents to prepare
-- Document checklist for the student visa application and the later AIMA residence permit (we prepare, you submit) [verify process]
+- Document checklist that we send you for the student visa application and the later AIMA residence permit — you submit everything yourself to the visa centre / on the official portals, and we talk you through each step on a call or check your documents in person after arrival; we don't receive copies of your passport or visa [verify process]
 - Housing search support: university residences, private student residences and rooms; shortlist based on budget, campus and transport
 - Housing verification: landlord identity, ownership/authority to rent, contract review for red flags (in plain language, not legal advice), registration of the lease with the Tax Authority, rent receipts [verify]
 - Video or in-person viewing on your behalf before you pay anything (Lisbon area; other cities on request) [owner to confirm coverage]
@@ -63,6 +63,12 @@ Your acceptance letter is the easy part. Then come the student visa, a room in a
 - Orientation: campus admin, health care access (SNS user number) [verify], Indonesian community contacts (PPI Portugal, KBRI Lisabon) [owner to confirm]
 
 **Not included:** paying deposits or rent on your behalf; acting as real-estate agent (we don't earn landlord commissions) [owner to confirm]; university applications or admission guarantees; legal advice on contracts (partner solicitador/advogado available — [PARTNER: owner to name]); travel bookings as a travel agency.
+
+### What we don't do / when you need a lawyer
+- We don't receive passports, visas, residence permits or other ID documents by WhatsApp, email or upload, and we don't submit visa or AIMA applications for you.
+- We don't pay deposits or rent for you, act as a real-estate agent, or book travel as a travel agency.
+- Our contract check flags red flags in plain language — it is not a legal review. Before signing an unusual or long lease, ask a licensed **solicitador or advogado** (we can refer you — [PARTNER: owner to name]).
+- You need a lawyer if a landlord keeps your deposit, threatens eviction or refuses to register the contract, or if your student visa or residence permit is refused.
 
 ### Process & typical timeline
 1. **Free 15-min triage** — same or next working day.
@@ -97,6 +103,9 @@ Non-EU students usually pay international-student tuition, often around €3,000
 
 **How do I avoid housing scams in Portugal?**
 Never pay a deposit before the property has been viewed (in person or by video by someone you trust) and the landlord's identity and right to rent have been checked. Ask for a written contract and rent receipts. Be wary of prices far below market and pressure to pay "today".
+
+**Can I send you my documents on WhatsApp?**
+No — for your security we don't receive ID or immigration documents digitally. Before you travel we talk your plan through on a call and send you checklists; after arrival we check your documents in person and you keep them. Where an official portal asks for a scan (visa centre, AIMA), you upload it yourself and we guide you step by step.
 
 **Do I need a NIF before renting?**
 Usually yes — landlords and residences typically ask for a NIF to sign the contract. You can get one before arriving through a representative (see NIF & NISS).
@@ -135,18 +144,18 @@ LUSONUSA provides administrative support, guidance and document coordination. We
 Estudantes, alojamento e chegada a Portugal — apoio a estudantes indonésios
 
 ### Proposta de valor
-A carta de aceitação é apenas o início: seguem-se o visto de estudo, a procura de quarto num mercado de arrendamento exigente e uma primeira semana de formalidades numa língua nova. A LUSONUSA ajuda a encontrar e verificar alojamento seguro, prepara a documentação necessária e organiza a chegada. Para universidades, politécnicos e residências, somos um parceiro bilingue que reduz desistências e pedidos de apoio dos estudantes indonésios recém-chegados.
+A carta de aceitação é apenas o início: seguem-se o visto de estudo, a procura de quarto num mercado de arrendamento exigente e uma primeira semana de formalidades numa língua nova. A LUSONUSA ajuda a encontrar e verificar alojamento seguro, orienta na preparação da documentação e organiza a chegada. Não é sociedade de advogados, mediadora imobiliária nem agência de viagens: presta orientação prática com base em informação oficial pública, acompanhamento presencial e encaminhamento para solicitador ou advogado habilitado quando necessário. Para universidades, politécnicos e residências, somos um parceiro bilingue que reduz desistências e pedidos de apoio dos estudantes indonésios recém-chegados.
 
 ### Para quem
 - Estudantes indonésios admitidos (ou candidatos) em universidades e politécnicos portugueses — licenciatura, mestrado, doutoramento, mobilidade
 - Bolseiros que precisam de se instalar rapidamente [owner to confirm referências a bolsas]
 - Pais que procuram alguém de confiança em Portugal
-- Instituições de ensino superior e residências que acolhem estudantes indonésios
-- Senhorios que preferem arrendar a estudantes com documentação verificada e um interlocutor bilingue
+- Estudantes indonésios encaminhados pelas instituições de ensino superior e residências que os acolhem
+- Senhorios que preferem arrendar a estudantes acompanhados por um interlocutor bilingue
 
 ### O que inclui
 - Sessão pré-partida: orçamento realista (renda, transportes, alimentação, propinas de estudante internacional), o que trazer, documentos a preparar
-- Lista de documentos para o visto de estudo e para a posterior autorização de residência na AIMA [verify]
+- Lista de documentos, enviada por nós, para o visto de estudo e para a posterior autorização de residência na AIMA — é o próprio estudante que submete tudo no centro de vistos / nos portais oficiais, com a nossa orientação por chamada ou verificação presencial após a chegada; não recebemos cópias do passaporte ou do visto [verify]
 - Apoio na procura de alojamento: residências universitárias, residências privadas e quartos; lista curta por orçamento, campus e transportes
 - Verificação do alojamento: identidade do senhorio e legitimidade para arrendar, revisão de sinais de alerta no contrato (em linguagem simples, sem consultoria jurídica), comunicação do contrato à AT e recibos de renda eletrónicos [verify]
 - Visita presencial ou por vídeo em nome do estudante antes de qualquer pagamento (Grande Lisboa; outras cidades mediante pedido) [owner to confirm coverage]
@@ -154,6 +163,12 @@ A carta de aceitação é apenas o início: seguem-se o visto de estudo, a procu
 - Orientação: serviços académicos, acesso ao SNS (número de utente) [verify], contactos da comunidade indonésia (PPI Portugal, Embaixada da Indonésia em Lisboa) [owner to confirm]
 
 **Não inclui:** pagamento de cauções ou rendas em nome do estudante; mediação imobiliária (não recebemos comissões de senhorios) [owner to confirm]; candidaturas ou garantia de admissão; consultoria jurídica sobre contratos (parceiro solicitador/advogado disponível — [PARTNER: owner to name]); reservas de viagens enquanto agência de viagens.
+
+### O que não fazemos / quando precisa de um advogado
+- Não recebemos passaportes, vistos, títulos de residência ou outros documentos de identificação por WhatsApp, e-mail ou carregamento, nem submetemos pedidos de visto ou AIMA em nome do estudante.
+- Não pagamos cauções ou rendas, não fazemos mediação imobiliária e não vendemos viagens.
+- A nossa verificação do contrato assinala sinais de alerta em linguagem simples — não é uma análise jurídica. Antes de assinar um contrato invulgar ou longo, consulte um **solicitador ou advogado** (podemos encaminhar — [PARTNER: owner to name]).
+- Precisa de advogado se o senhorio retiver a caução, ameaçar com despejo ou recusar comunicar o contrato, ou se o visto ou a autorização de residência forem recusados.
 
 ### Processo e prazos habituais
 1. **Triagem gratuita de 15 min** — no próprio dia ou no dia útil seguinte.
@@ -167,7 +182,7 @@ A carta de aceitação é apenas o início: seguem-se o visto de estudo, a procu
 **Desde €[PRICE: owner to set]** — pacote **Student Landing** → ver Preços.
 - **Inclui:** plano pré-partida, listas de documentos, lista curta e verificação de até [owner to set] alojamentos, um dia de orientação presencial.
 - **Não inclui:** rendas, cauções, propinas, taxas de visto e AIMA, traduções e notário, custos de terceiros (transferes, hotéis, aluguer de automóvel), serviço adicional de concierge.
-- **Desconto de 20%** para estudantes e comunidade. Instituições de ensino: protocolos mediante pedido [owner to confirm].
+- **Desconto de 20%** para estudantes e comunidade. Encaminhamento por instituições de ensino: condições mediante pedido [owner to confirm].
 
 <a id="chegada-concierge"></a>
 ### Serviço adicional de chegada e concierge
@@ -189,6 +204,9 @@ Os estudantes de fora da UE pagam, em regra, propinas de estudante internacional
 **Como evitar burlas no arrendamento?**
 Nunca pagar caução antes de o alojamento ser visitado (presencialmente ou por vídeo por alguém de confiança) e de confirmar a identidade e legitimidade do senhorio. Exigir contrato escrito e recibos de renda. Desconfiar de preços muito abaixo do mercado e de pressão para pagar "hoje".
 
+**Posso enviar-vos os meus documentos por WhatsApp?**
+Não — por razões de segurança, não recebemos documentos de identificação ou de imigração em formato digital. Antes da viagem falamos por chamada e enviamos as listas de documentos; após a chegada, verificamos os documentos presencialmente e ficam sempre consigo. Quando um portal oficial pede uma digitalização (centro de vistos, AIMA), é o próprio estudante que a submete, com a nossa orientação passo a passo.
+
 **É preciso NIF para arrendar?**
 Normalmente sim — senhorios e residências pedem NIF para o contrato. Pode ser obtido antes da chegada através de representante (ver NIF e NISS).
 
@@ -196,7 +214,7 @@ Normalmente sim — senhorios e residências pedem NIF para o contrato. Pode ser
 Para cursos superiores, visto de residência para estudo emitido pela Embaixada de Portugal em Jacarta, seguido de autorização de residência na AIMA após a chegada [verify].
 
 **Somos uma universidade. Como podemos colaborar?**
-Podemos apoiar estudantes indonésios desde a aceitação até à primeira semana em Portugal, com materiais em indonésio e um contacto único para os serviços internacionais [owner to confirm termos].
+A instituição pode encaminhar-nos estudantes indonésios já admitidos; apoiamo-los desde a aceitação até à primeira semana em Portugal, com materiais em indonésio e um contacto único para os serviços internacionais [owner to confirm termos].
 
 **Uma empresa portuguesa pode contratar apenas o concierge?**
 Sim. O serviço de chegada e concierge pode ser contratado isoladamente por visitantes de negócios, por exemplo em conjunto com o apoio a vistos e KITAS para a Indonésia.
@@ -226,18 +244,18 @@ A LUSONUSA presta apoio administrativo, orientação e coordenação documental.
 Kuliah di Portugal — cari tempat tinggal aman & siap sejak hari pertama
 
 ### Kenapa pakai LUSONUSA
-Dapat LoA (surat diterima) itu baru awal. Setelah itu ada visa pelajar, cari kamar di kota yang sewanya mahal dan rawan penipuan, plus minggu pertama yang penuh urusan administrasi dalam bahasa yang belum Anda kuasai. Kami bantu Anda cari dan cek tempat tinggal yang aman, siapkan dokumen yang dibutuhkan, dan dampingi saat tiba — bersama tim yang sudah bertahun-tahun tinggal di Portugal dan bicara dalam bahasa yang sama dengan Anda. Orang tua di Indonesia pun bisa lebih tenang.
+Dapat LoA (surat diterima) itu baru awal. Setelah itu ada visa pelajar, cari kamar di kota yang sewanya mahal dan rawan penipuan, plus minggu pertama yang penuh urusan administrasi dalam bahasa yang belum Anda kuasai. Kami bantu Anda cari dan cek tempat tinggal yang aman, siapkan dokumen yang dibutuhkan, dan dampingi saat tiba — bersama tim yang sudah bertahun-tahun tinggal di Portugal dan bicara dalam bahasa yang sama dengan Anda. Orang tua di Indonesia pun bisa lebih tenang. Perlu diketahui: LUSONUSA bukan kantor hukum, agen properti, atau agen perjalanan. Kami memberi panduan praktis berdasarkan informasi resmi yang terbuka untuk publik, mendampingi langsung, dan menghubungkan Anda dengan profesional berlisensi (misalnya solicitador/advogado untuk sengketa sewa) bila diperlukan.
 
 ### Cocok untuk siapa
 - Mahasiswa Indonesia yang sudah diterima (atau sedang mendaftar) di universitas atau politeknik di Portugal — S1, S2, S3, maupun pertukaran pelajar
 - Penerima beasiswa (misalnya LPDP atau beasiswa kampus) yang perlu cepat beradaptasi [owner to confirm referensi beasiswa]
 - Orang tua yang ingin ada pihak tepercaya di Portugal untuk anaknya
-- Kampus dan asrama di Portugal yang menerima mahasiswa WNI
+- Mahasiswa WNI yang dirujuk oleh kampus atau asramanya di Portugal
 - Pekerja muda dan keluarga yang baru pertama kali pindah ke Portugal
 
 ### Yang Anda dapatkan
 - Sesi persiapan sebelum berangkat: hitung-hitungan biaya hidup yang realistis (sewa, transport, makan, uang kuliah mahasiswa internasional), apa yang perlu dibawa, dokumen yang harus disiapkan
-- Checklist dokumen untuk visa pelajar dan untuk izin tinggal AIMA nantinya (kami bantu siapkan, Anda yang mengajukan) [verify]
+- Checklist dokumen yang kami kirim untuk visa pelajar dan izin tinggal AIMA nantinya — Anda sendiri yang mengajukan ke pusat visa / di portal resmi, dengan panduan kami lewat telepon/video call atau pengecekan langsung setelah tiba; kami tidak menerima salinan paspor atau visa Anda [verify]
 - Bantuan cari tempat tinggal: asrama kampus, residence swasta, atau kamar/kos; daftar pilihan sesuai budget, lokasi kampus, dan transportasi
 - Pengecekan tempat tinggal: identitas pemilik dan haknya untuk menyewakan, cek "tanda bahaya" di kontrak (dengan bahasa sederhana, bukan jasa hukum), pendaftaran kontrak sewa ke kantor pajak (AT), dan kuitansi sewa elektronik [verify]
 - Survei langsung atau video call ke lokasi atas nama Anda **sebelum** Anda bayar apa pun (area Lisbon; kota lain bisa diatur) [owner to confirm coverage]
@@ -245,6 +263,12 @@ Dapat LoA (surat diterima) itu baru awal. Setelah itu ada visa pelajar, cari kam
 - Orientasi: urusan administrasi kampus, akses layanan kesehatan (nomor utente SNS) [verify], kontak komunitas WNI (PPI Portugal, KBRI Lisabon) [owner to confirm]
 
 **Tidak termasuk:** membayar deposit atau sewa atas nama Anda; menjadi agen properti (kami tidak menerima komisi dari pemilik) [owner to confirm]; pendaftaran kuliah atau jaminan diterima; jasa hukum terkait kontrak (bisa dirujuk ke mitra solicitador/advogado — [PARTNER: owner to name]); pemesanan perjalanan layaknya agen travel.
+
+### Yang tidak kami lakukan / kapan Anda perlu pengacara
+- Kami tidak menerima paspor, visa, kartu izin tinggal, atau dokumen identitas lain lewat WhatsApp, email, atau unggahan, dan tidak mengajukan visa atau izin AIMA atas nama Anda.
+- Kami tidak membayar deposit/sewa untuk Anda, bukan agen properti, dan bukan agen perjalanan.
+- Pengecekan kontrak kami hanya menandai "tanda bahaya" dengan bahasa sederhana — bukan telaah hukum. Sebelum tanda tangan kontrak yang tidak biasa atau berjangka panjang, tanyakan ke **solicitador/advogado** berlisensi (bisa kami hubungkan — [PARTNER: owner to name]).
+- Anda perlu pengacara kalau pemilik kamar menahan deposit, mengancam mengusir, atau menolak mendaftarkan kontrak, atau kalau visa pelajar/izin tinggal Anda ditolak.
 
 ### Alur & perkiraan waktu
 1. **Konsultasi gratis 15 menit** — hari yang sama atau hari kerja berikutnya.
@@ -279,6 +303,9 @@ Mahasiswa dari luar Uni Eropa umumnya membayar uang kuliah mahasiswa internasion
 
 **Bagaimana supaya tidak tertipu saat sewa kamar?**
 Jangan pernah transfer deposit sebelum kamar dilihat (langsung atau lewat video call oleh orang yang Anda percaya) dan identitas serta hak pemilik untuk menyewakan sudah dicek. Minta kontrak tertulis dan kuitansi sewa. Waspadai harga yang jauh di bawah pasaran dan desakan "harus bayar hari ini".
+
+**Boleh saya kirim dokumen lewat WhatsApp?**
+Tidak — demi keamanan Anda, kami tidak menerima dokumen identitas atau imigrasi secara digital. Sebelum berangkat kita ngobrol lewat telepon/video call dan kami kirimkan checklist; setelah tiba, dokumen dicek langsung dan tetap Anda pegang. Kalau portal resmi meminta scan (pusat visa, AIMA), Anda sendiri yang mengunggahnya, dan kami pandu langkah demi langkah.
 
 **Perlu NIF dulu sebelum sewa?**
 Biasanya ya — pemilik kamar dan asrama minta NIF untuk kontrak. NIF bisa diurus sebelum berangkat lewat perwakilan (lihat layanan NIF & NISS).
@@ -345,6 +372,7 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 }
 ```
 - Do **not** use `TravelAgency` or `RealEstateAgent` types.
+- All three FAQ blocks include the "documents on WhatsApp" FAQ.
 - Concierge add-on is an `Offer` on this Service, not a separate Service URL (Phase 2 rule, §2). If it later gets its own URL, split into its own `Service`.
 - PT/ID offer URLs use `#chegada-concierge` / `#kedatangan-concierge`.
 - Breadcrumbs: EN Home › Moving to Portugal › Students, housing & arrival · PT Início › Viver em Portugal › Estudantes e alojamento · ID Beranda › Pindah ke Portugal › Mahasiswa & akomodasi.
@@ -367,7 +395,8 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 - [verify RNAVT implications] — confirm with a Portuguese lawyer that the concierge (no package travel, client books and pays providers directly) does not require registration as a travel agency (DL 17/2018) and that any commissions from hotels/car hire are not taken (or are disclosed)
 - Confirm LUSONUSA takes no landlord commissions (stated on page) — otherwise real-estate mediation licensing (AMI) issues arise [verify]
 - Mentions of PPI Portugal, LPDP and other scholarships — confirm OK to name; any formal partnership with PPI or universities
-- University partnership terms (PT FAQ)
+- University referral terms (PT FAQ) — referral of admitted students only
+- In-person-only document check confirmed as policy; pre-departure support is by call + checklist (client submits visa/AIMA documents themselves)
 - [verify] international-student tuition range (~€3,000–7,000/yr — estimate)
 - [verify] student visa process via Portuguese embassy / visa centre in Jakarta
 - [verify] lease registration with AT and electronic rent receipts obligations
