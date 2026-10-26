@@ -1,20 +1,8 @@
 /* ═══════════════════════════════════════════════════════════════
    LUSONUSA — Article registry (single source for hub card text)
-   Authors follow the team table in docs/audit/workstreams.md.
+   Authors are referenced by id from authors.js (load it first).
+   Optional per article: dateModified, updatedBy, reviewedBy (author ids).
    ═══════════════════════════════════════════════════════════════ */
-
-window.LUSONUSA_AUTHORS = {
-  aditya: {
-    name: 'Aditya Putra',
-    role: 'Founder · Business & Bilateral Relations Lead',
-    avatar: '/assets/articles/avatar-aditya-96.jpg'
-  },
-  mia: {
-    name: 'Mia Gomes',
-    role: 'Translation Specialist · Legal & Notarized Translation Lead',
-    avatar: '/assets/articles/avatar-mia-96.jpg'
-  }
-};
 
 window.LUSONUSA_ARTICLES = [
   {
@@ -25,8 +13,8 @@ window.LUSONUSA_ARTICLES = [
     langs: ['en', 'pt'],
     readTime: { en: '8 min read', pt: '8 min de leitura', id: '8 menit baca' },
     date: '2026-08-06',
-    reviewed: '2026-10-26',
-    author: 'aditya',
+    dateModified: '2026-10-26',
+    author: 'aditya-putra',
     title: {
       en: 'Indonesian Business Visas & Investor KITAS (2026): C2, D2, E28A and E33G Explained',
       pt: 'Vistos de Negócios e KITAS de Investidor na Indonésia (2026): C2, D2, E28A e E33G',
@@ -48,8 +36,8 @@ window.LUSONUSA_ARTICLES = [
     langs: ['en', 'pt'],
     readTime: { en: '8 min read', pt: '8 min de leitura', id: '8 menit baca' },
     date: '2026-08-04',
-    reviewed: '2026-10-26',
-    author: 'aditya',
+    dateModified: '2026-10-26',
+    author: 'aditya-putra',
     title: {
       en: 'Setting Up a PT PMA in Indonesia (2026): Capital Rules, OSS Licensing and Steps',
       pt: 'Criar uma PT PMA na Indonésia (2026): Capital, Licenciamento OSS e Etapas',
@@ -71,8 +59,8 @@ window.LUSONUSA_ARTICLES = [
     langs: ['en', 'id'],
     readTime: { en: '6 min read', pt: '6 min de leitura', id: '6 menit baca' },
     date: '2026-08-02',
-    reviewed: '2026-10-26',
-    author: 'aditya',
+    dateModified: '2026-10-26',
+    author: 'aditya-putra',
     title: {
       en: 'NIF, NISS & AIMA in Portugal: A Practical Guide for Indonesians',
       pt: 'NIF, NISS e AIMA em Portugal: Guia Prático para Indonésios',
@@ -94,8 +82,8 @@ window.LUSONUSA_ARTICLES = [
     langs: ['en', 'id'],
     readTime: { en: '6 min read', pt: '6 min de leitura', id: '6 menit baca' },
     date: '2026-07-30',
-    reviewed: '2026-10-26',
-    author: 'mia',
+    dateModified: '2026-10-26',
+    author: 'mia-gomes',
     title: {
       en: 'Certified Translation & Apostille: Using Indonesian Documents in Portugal',
       pt: 'Tradução Certificada e Apostila: Usar Documentos Indonésios em Portugal',

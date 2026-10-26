@@ -20,7 +20,19 @@
   function cardHtml(art, lang, headingTag) {
     const t = (field) => esc(art[field][lang] || art[field].en);
     const strings = (window.LUSONUSA_I18N && window.LUSONUSA_I18N.strings[lang]) || {};
-    const author = (window.LUSONUSA_AUTHORS || {})[art.author];
+    const authors = window.LUSONUSA_AUTHORS || {};
+    const author = authors[art.author];
+    const credit = [author ? esc(author.name) : ''];
+    const labels = {
+      updated: { en: 'updated by', pt: 'atualizado por', id: 'diperbarui oleh' },
+      reviewed: { en: 'reviewed by', pt: 'revisto por', id: 'ditinjau oleh' }
+    };
+    if (art.updatedBy && authors[art.updatedBy] && art.updatedBy !== art.author) {
+      credit.push(`${labels.updated[lang]} ${esc(authors[art.updatedBy].name)}`);
+    }
+    if (art.reviewedBy && authors[art.reviewedBy]) {
+      credit.push(`${labels.reviewed[lang]} ${esc(authors[art.reviewedBy].name)}`);
+    }
     return `
       <article class="article-card" data-category="${art.category}" data-langs="${art.langs.join(' ')}">
         <div>
@@ -33,7 +45,7 @@
           <p class="card-desc">${t('desc')}</p>
         </div>
         <div class="card-footer">
-          <span>${author ? esc(author.name) : ''}</span>
+          <span>${credit.filter(Boolean).join(' · ')}</span>
           <span class="card-cta" aria-hidden="true">${esc(strings['hub.read'] || 'Read guide')} <svg class="icon"><use href="${ICONS}#arrow-right"></use></svg></span>
         </div>
       </article>`;
