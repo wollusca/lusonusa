@@ -1,4 +1,4 @@
-# Export-import advisory (PT ↔ ID) — service page content
+# Export-import guidance (PT ↔ ID) — service page content
 
 **Meta**
 
@@ -24,14 +24,14 @@
 ## EN
 
 ### SEO
-- **Title (52):** Export-Import Advisory Portugal–Indonesia | LUSONUSA
+- **Title (52):** Export-Import Guidance Portugal–Indonesia | LUSONUSA
 - **Meta description (152):** Selling to or buying from Indonesia? Guidance on importer of record, BPOM, halal, SNI, EU rules, EUDR, payment terms and the upcoming EU–Indonesia CEPA.
 
 ### H1
-Export-import advisory between Portugal and Indonesia
+Export-import guidance between Portugal and Indonesia
 
 ### Value proposition
-Indonesia is a market of 280 million people [verify] and the EU–Indonesia trade agreement (IEU-CEPA) is on its way. Before you ship, you need the right Indonesian importer, product registrations and paperwork — and on the way back, EU rules such as the Deforestation Regulation. We map the requirements for your product, coordinate documents with your partners, and help you set payment terms that protect you.
+Indonesia is a market of 280 million people [verify] and the EU–Indonesia trade agreement (IEU-CEPA) is on its way. Before you ship, you need the right Indonesian importer, product registrations and paperwork — and on the way back, EU rules such as the Deforestation Regulation. Using public official information, we map the requirements for your product, coordinate commercial documents with your partners and explain common payment terms so you can agree them with your bank. Customs declarations, legal and tax matters stay with licensed professionals — a customs broker, lawyer or tax consultant — and we can refer you.
 
 ### Who it's for
 - Portuguese food, wine, olive oil, cosmetics, construction-materials and machinery exporters looking at Indonesia
@@ -40,7 +40,7 @@ Indonesia is a market of 280 million people [verify] and the EU–Indonesia trad
 - Indonesian distributors who want to import Portuguese products
 
 ### What's included
-- Product and HS-code pre-classification with your freight forwarder/customs broker
+- Help gathering the product information your licensed customs broker needs to classify the HS code (classification and any binding ruling are done by the broker/customs)
 - Indonesia-side requirements map: importer of record, NIB/importer ID, BPOM registration, halal certification, SNI, import licences or quotas
 - EU-side requirements map for imports: TARIC duties, EUDR due-diligence data, labelling and food-safety rules
 - Partner search for an Indonesian importer/distributor, with [company verification](/services/indonesian-company-verification/)
@@ -48,7 +48,14 @@ Indonesia is a market of 280 million people [verify] and the EU–Indonesia trad
 - Payment terms and financial flows explained by Joko Supriyanto: Incoterms vs payment risk, letters of credit, documentary collection, currency (EUR/IDR/USD) considerations
 - IEU-CEPA briefing: what may change for your product, and when [verify]
 
-**Not included:** customs brokerage or freight (done by licensed brokers/forwarders [PARTNER: owner to name]); legal advice or contract drafting; tax advice; acting as importer of record; selling financial products or recommending a specific bank.
+**Not included:** customs brokerage, customs declarations, HS classification rulings or freight (done by licensed brokers/forwarders [PARTNER: owner to name]); legal advice or contract drafting; tax advice; investment advice; acting as importer of record; selling financial products or recommending a specific bank.
+
+### What we don't do / when you need a lawyer
+- We are not a customs broker: we don't file customs declarations, classify goods officially or request binding tariff information — a licensed customs broker (despachante; PPJK in Indonesia) does [PARTNER: owner to name].
+- We don't give tax advice on VAT, excise or duties — ask a contabilista certificado (Portugal) or a licensed Indonesian tax consultant.
+- We don't draft distribution, agency or supply contracts — a lawyer does, and we can refer you.
+- See a lawyer before granting exclusivity to an Indonesian distributor or agent, if goods are seized or a customs dispute arises, for product-liability questions, or to register your trademark in Indonesia.
+- We don't act as importer of record or decide on your investment or market-entry budget.
 
 ### Process & typical timeline
 1. **Triage call** — 15 minutes.
@@ -56,7 +63,7 @@ Indonesia is a market of 280 million people [verify] and the EU–Indonesia trad
 3. **Requirements map and document checklist** — delivered with the assessment.
 4. **Importer/distributor search and verification** — 3–6 weeks (optional).
 5. **Registrations (BPOM, halal, SNI) by the importer or registration holder** — weeks to several months *(authority dependent)* [verify].
-6. **First shipment support** — document review before dispatch; follow-up on clearance questions *(customs dependent)*.
+6. **First shipment support** — commercial document checklist review before dispatch; customs declarations and clearance are handled by your licensed customs broker *(customs dependent)*.
 
 ### Price
 **From €[PRICE: owner to set]** — via the **Market Entry Assessment** package on `/pricing/`; follow-on support quoted per project. Start with a **free 15-minute triage call**; a paid case assessment is credited if you proceed.
@@ -84,6 +91,9 @@ Importers of wood, palm oil, cocoa, coffee, rubber, soy and cattle products must
 **How should I get paid by a new Indonesian buyer?**
 For first orders, prepayment or a confirmed letter of credit reduces risk. Joko explains options in general terms; your bank decides on products and conditions.
 
+**Can I send you my documents on WhatsApp?**
+Business documents — product sheets, invoices, packing lists, certificates of origin — yes, by WhatsApp or email. Personal ID documents no: for security we don't receive passports or ID cards digitally, and we don't need them for trade guidance.
+
 ### CTA copy
 - **Headline:** Map the rules for your product
 - **Buttons:** "Book a free 15-min call" → `[BOOKING_URL: owner to set]` · "WhatsApp us" · "Email us"
@@ -94,7 +104,7 @@ For first orders, prepayment or a confirmed letter of credit reduces risk. Joko 
 - **Next steps:** Buying from Indonesia? See [product sourcing](/services/product-sourcing-indonesia/). Want to import directly? See [PT PMA company setup](/services/pt-pma-company-setup-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance and document coordination for trade operations. We are not a customs broker, freight forwarder, bank or law firm, and we do not provide legal, tax or financial advice or sell financial products. Customs and registration decisions rest with the competent authorities. Trade rules, including IEU-CEPA timing, may change; information last reviewed October 2026.
+LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance and document coordination for trade operations. We are not a customs broker, freight forwarder, bank or law firm, and we do not file customs declarations, provide legal, tax, investment or financial advice, or sell financial products. Customs and registration decisions rest with the competent authorities. Trade rules, including IEU-CEPA timing, may change; information last reviewed October 2026.
 
 ---
 
@@ -108,7 +118,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance 
 Exportar para a Indonésia (e importar de lá) com acompanhamento especializado
 
 ### Proposta de valor
-A Indonésia é um mercado de cerca de 280 milhões de pessoas [verify] e o acordo comercial UE–Indonésia (IEU-CEPA) está a caminho. Antes de enviar mercadoria, precisa do importador certo, dos registos de produto e da documentação adequada — e, no sentido inverso, de cumprir regras europeias como o Regulamento sobre Desflorestação. Mapeamos os requisitos para o seu produto, coordenamos a documentação com os seus parceiros e ajudamo-lo a definir condições de pagamento que o protejam.
+A Indonésia é um mercado de cerca de 280 milhões de pessoas [verify] e o acordo comercial UE–Indonésia (IEU-CEPA) está a caminho. Antes de enviar mercadoria, precisa do importador certo, dos registos de produto e da documentação adequada — e, no sentido inverso, de cumprir regras europeias como o Regulamento sobre Desflorestação. Com base em informação oficial pública, mapeamos os requisitos para o seu produto, coordenamos a documentação comercial com os seus parceiros e explicamos as condições de pagamento habituais, para que as acorde com o seu banco. Declarações aduaneiras e questões jurídicas e fiscais ficam com profissionais licenciados — despachante oficial, advogado ou contabilista certificado — para quem o podemos encaminhar.
 
 ### Para quem é
 - Exportadores portugueses de alimentação, vinho, azeite, cosmética, materiais de construção e máquinas interessados na Indonésia
@@ -117,7 +127,7 @@ A Indonésia é um mercado de cerca de 280 milhões de pessoas [verify] e o acor
 - Distribuidores indonésios que querem importar produtos portugueses
 
 ### O que está incluído
-- Pré-classificação pautal (código SH/HS) do produto, com o seu transitário ou despachante
+- Apoio na recolha da informação do produto de que o seu despachante oficial precisa para a classificação pautal (código SH/HS) — a classificação e eventuais informações pautais vinculativas cabem ao despachante/alfândega
 - Mapa de requisitos do lado indonésio: importador registado (*importer of record*), NIB/identificação de importador, registo BPOM, certificação halal, marca SNI, licenças ou quotas de importação
 - Mapa de requisitos do lado europeu, para importações: direitos TARIC, dados de diligência devida EUDR, rotulagem e segurança alimentar
 - Procura de importador/distribuidor indonésio, com [verificação da empresa](/pt/servicos/verificar-empresa-indonesia/)
@@ -125,7 +135,14 @@ A Indonésia é um mercado de cerca de 280 milhões de pessoas [verify] e o acor
 - Condições de pagamento e fluxos financeiros explicados por Joko Supriyanto: Incoterms e risco de pagamento, crédito documentário, remessa documentária, questões cambiais (EUR/IDR/USD)
 - Sessão sobre o IEU-CEPA: o que pode mudar para o seu produto e quando [verify]
 
-**Não está incluído:** despacho aduaneiro ou transporte (assegurados por despachantes/transitários licenciados [PARTNER: owner to name]); consultoria jurídica ou redação de contratos; consultoria fiscal; atuar como importador registado; venda de produtos financeiros ou recomendação de um banco específico.
+**Não está incluído:** despacho aduaneiro, declarações aduaneiras, classificação pautal vinculativa ou transporte (assegurados por despachantes/transitários licenciados [PARTNER: owner to name]); consultoria jurídica ou redação de contratos; consultoria fiscal; aconselhamento de investimento; atuar como importador registado; venda de produtos financeiros ou recomendação de um banco específico.
+
+### O que não fazemos / quando precisa de um advogado
+- Não somos despachante: não apresentamos declarações aduaneiras, não classificamos oficialmente mercadorias nem pedimos informações pautais vinculativas — isso cabe a um despachante oficial (PPJK na Indonésia) [PARTNER: owner to name].
+- Não prestamos aconselhamento fiscal sobre IVA, impostos especiais ou direitos — fale com um contabilista certificado ou um consultor fiscal indonésio licenciado.
+- Não redigimos contratos de distribuição, agência ou fornecimento — isso cabe a um advogado, para quem o podemos encaminhar.
+- Consulte um advogado antes de dar exclusividade a um distribuidor ou agente indonésio, se a mercadoria for retida ou surgir um litígio aduaneiro, em questões de responsabilidade pelo produto ou para registar a sua marca na Indonésia.
+- Não atuamos como importador registado nem decidimos o seu investimento ou orçamento de entrada no mercado.
 
 ### Processo e prazos habituais
 1. **Chamada de triagem** — 15 minutos.
@@ -133,7 +150,7 @@ A Indonésia é um mercado de cerca de 280 milhões de pessoas [verify] e o acor
 3. **Mapa de requisitos e lista de documentos** — entregues com a análise.
 4. **Procura e verificação de importador/distribuidor** — 3 a 6 semanas (opcional).
 5. **Registos (BPOM, halal, SNI) pelo importador ou titular do registo** — de semanas a vários meses *(depende das autoridades)* [verify].
-6. **Apoio ao primeiro envio** — revisão documental antes da expedição e acompanhamento de questões no desalfandegamento *(depende da alfândega)*.
+6. **Apoio ao primeiro envio** — revisão da lista de documentos comerciais antes da expedição; as declarações e formalidades aduaneiras são tratadas pelo seu despachante oficial *(depende da alfândega)*.
 
 ### Preço
 **Desde €[PRICE: owner to set]** — através do pacote **Market Entry Assessment** em `/pt/precos/`; o acompanhamento posterior é orçamentado por projeto. Comece por uma **chamada de triagem gratuita de 15 minutos**; a análise de caso paga é descontada se avançar.
@@ -161,6 +178,9 @@ Quem importa madeira, óleo de palma, cacau, café, borracha, soja ou produtos b
 **Como garanto o pagamento de um comprador indonésio novo?**
 Nas primeiras encomendas, o pagamento antecipado ou um crédito documentário confirmado reduzem o risco. O Joko explica as opções em termos gerais; os produtos e condições são decididos pelo seu banco.
 
+**Posso enviar-vos os meus documentos por WhatsApp?**
+Documentos comerciais — fichas de produto, faturas, listas de embalagem, certificados de origem — sim, por WhatsApp ou email. Documentos de identificação pessoais não: por segurança, não recebemos passaportes nem cartões de identidade por via digital, e não são necessários para este apoio.
+
 ### CTA
 - **Título:** Saiba que regras se aplicam ao seu produto
 - **Botões:** "Marcar chamada grátis de 15 min" → `[BOOKING_URL: owner to set]` · "Falar por WhatsApp" · "Enviar email"
@@ -171,7 +191,7 @@ Nas primeiras encomendas, o pagamento antecipado ou um crédito documentário co
 - **Próximos passos:** Vai comprar à Indonésia? Veja [fornecedores na Indonésia](/pt/servicos/fornecedores-indonesia/). Quer importar diretamente? Veja [abrir empresa na Indonésia (PT PMA)](/pt/servicos/abrir-empresa-indonesia-pt-pma/).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientação e coordenação documental em operações de comércio internacional. Não somos despachante, transitário, banco nem sociedade de advogados, e não prestamos consultoria jurídica, fiscal ou financeira nem vendemos produtos financeiros. As decisões aduaneiras e de registo cabem às autoridades competentes. As regras comerciais, incluindo o calendário do IEU-CEPA, podem mudar; informação revista em outubro de 2026.
+A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientação e coordenação documental em operações de comércio internacional. Não somos despachante, transitário, banco nem sociedade de advogados; não apresentamos declarações aduaneiras, não prestamos consultoria jurídica, fiscal, de investimento ou financeira, nem vendemos produtos financeiros. As decisões aduaneiras e de registo cabem às autoridades competentes. As regras comerciais, incluindo o calendário do IEU-CEPA, podem mudar; informação revista em outubro de 2026.
 
 ---
 
@@ -185,7 +205,7 @@ A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientaçã
 Pendampingan ekspor-impor antara Indonesia dan Portugal
 
 ### Proposisi nilai
-Perjanjian dagang Indonesia–Uni Eropa (IEU-CEPA) membuka peluang baru bagi eksportir dan importir. Kami membantu perusahaan Indonesia memahami persyaratan untuk produk Anda — dari aturan UE seperti EUDR saat ekspor ke Portugal, sampai BPOM, halal, dan SNI saat mengimpor produk Portugal — lalu mengoordinasikan dokumen dengan mitra Anda dan menjelaskan termin pembayaran yang aman.
+Perjanjian dagang Indonesia–Uni Eropa (IEU-CEPA) membuka peluang baru bagi eksportir dan importir. Kami membantu perusahaan Indonesia memahami persyaratan untuk produk Anda — dari aturan UE seperti EUDR saat ekspor ke Portugal, sampai BPOM, halal, dan SNI saat mengimpor produk Portugal — lalu mengoordinasikan dokumen dagang dengan mitra Anda dan menjelaskan termin pembayaran yang umum agar bisa Anda sepakati dengan bank. Panduan kami berdasarkan informasi resmi publik; urusan kepabeanan, hukum, dan pajak tetap ditangani profesional berizin (PPJK, advokat, konsultan pajak) yang bisa kami rujuk.
 
 ### Untuk siapa
 - Eksportir Indonesia (mebel, kopi, kakao, rempah, karet, tekstil) yang menyasar pembeli Portugal
@@ -194,7 +214,7 @@ Perjanjian dagang Indonesia–Uni Eropa (IEU-CEPA) membuka peluang baru bagi eks
 - Staf di Indonesia dari perusahaan Portugal
 
 ### Yang termasuk
-- Pra-klasifikasi kode HS bersama forwarder/PPJK Anda
+- Bantuan mengumpulkan informasi produk yang diperlukan PPJK Anda untuk menentukan kode HS (penetapan klasifikasi dilakukan PPJK/bea cukai)
 - Peta persyaratan sisi Indonesia: importir, NIB/API, registrasi BPOM, sertifikasi halal, SNI, izin atau kuota impor
 - Peta persyaratan sisi UE untuk ekspor ke Portugal: tarif TARIC, data uji tuntas EUDR, label, dan keamanan pangan
 - Pencarian mitra di Portugal (pembeli/distributor) atau importir di Indonesia, dengan [verifikasi perusahaan](/id/layanan/verifikasi-perusahaan-indonesia/)
@@ -202,7 +222,14 @@ Perjanjian dagang Indonesia–Uni Eropa (IEU-CEPA) membuka peluang baru bagi eks
 - Termin pembayaran dan arus keuangan dijelaskan oleh Joko Supriyanto: Incoterms dan risiko pembayaran, L/C, documentary collection, mata uang (EUR/IDR/USD)
 - Briefing IEU-CEPA: apa yang mungkin berubah untuk produk Anda dan kapan [verify]
 
-**Tidak termasuk:** jasa kepabeanan atau pengiriman (oleh PPJK/forwarder berizin [PARTNER: owner to name]); jasa hukum atau penyusunan kontrak; konsultasi pajak; bertindak sebagai importir; menjual produk keuangan atau merekomendasikan bank tertentu.
+**Tidak termasuk:** jasa kepabeanan, pengajuan PIB/PEB, penetapan klasifikasi barang, atau pengiriman (oleh PPJK/forwarder berizin [PARTNER: owner to name]); jasa hukum atau penyusunan kontrak; konsultasi pajak; nasihat investasi; bertindak sebagai importir; menjual produk keuangan atau merekomendasikan bank tertentu.
+
+### Yang tidak kami lakukan / kapan Anda perlu pengacara
+- Kami bukan PPJK: kami tidak mengajukan PIB/PEB atau dokumen kepabeanan lain dan tidak menetapkan klasifikasi barang — itu tugas PPJK berizin [PARTNER: owner to name].
+- Kami tidak memberi konsultasi pajak (PPN, cukai, bea) — tanyakan ke konsultan pajak berizin.
+- Kami tidak menyusun kontrak distribusi, keagenan, atau pasokan — itu tugas advokat, dan kami bisa merujuk Anda.
+- Temui advokat sebelum memberi hak eksklusif kepada distributor atau agen, bila barang ditahan atau ada sengketa kepabeanan, untuk soal tanggung jawab produk, atau untuk pendaftaran merek.
+- Kami tidak bertindak sebagai importir dan tidak menentukan keputusan investasi atau anggaran ekspansi Anda.
 
 ### Proses & estimasi waktu
 1. **Konsultasi awal** — 15 menit.
@@ -210,7 +237,7 @@ Perjanjian dagang Indonesia–Uni Eropa (IEU-CEPA) membuka peluang baru bagi eks
 3. **Peta persyaratan dan daftar dokumen** — diserahkan bersama hasil review.
 4. **Pencarian dan verifikasi mitra** — 3–6 minggu (opsional).
 5. **Registrasi (BPOM, halal, SNI) oleh importir/pemegang izin** — beberapa minggu hingga beberapa bulan *(tergantung instansi)* [verify].
-6. **Pendampingan pengiriman pertama** — cek dokumen sebelum kirim dan pemantauan saat clearance *(tergantung bea cukai)*.
+6. **Pendampingan pengiriman pertama** — cek daftar dokumen dagang sebelum kirim; pengajuan dokumen kepabeanan ditangani PPJK berizin Anda *(tergantung bea cukai)*.
 
 ### Harga
 **Mulai €[PRICE: owner to set]** — melalui paket **Market Entry Assessment** di `/id/harga/`; pendampingan lanjutan dihitung per proyek. Mulai dengan **konsultasi gratis 15 menit**; biaya analisis kasus berbayar diperhitungkan jika Anda melanjutkan.
@@ -232,6 +259,9 @@ Ya, pangan olahan, obat, kosmetik, dan suplemen umumnya wajib terdaftar di BPOM 
 **Bagaimana pembayaran yang aman dengan pembeli baru di Portugal?**
 Untuk pesanan pertama, uang muka atau L/C yang dikonfirmasi bank mengurangi risiko. Joko menjelaskan opsi secara umum; produk dan syarat ditentukan oleh bank Anda.
 
+**Boleh kirim dokumen lewat WhatsApp?**
+Dokumen bisnis — spesifikasi produk, invoice, packing list, SKA — boleh, lewat WhatsApp atau email. Dokumen identitas pribadi (paspor, KTP) tidak: demi keamanan, kami tidak menerima dokumen identitas secara digital, dan dokumen itu tidak diperlukan untuk layanan ini.
+
 ### CTA
 - **Judul:** Cek aturan untuk produk Anda
 - **Tombol:** "Konsultasi gratis 15 menit" → `[BOOKING_URL: owner to set]` · "Chat WhatsApp" · "Kirim email"
@@ -242,7 +272,7 @@ Untuk pesanan pertama, uang muka atau L/C yang dikonfirmasi bank mengurangi risi
 - **Langkah berikutnya:** Mencari supplier atau pembeli? Lihat [pencarian supplier Indonesia](/id/layanan/pencarian-supplier-indonesia/). Mitra Portugal ingin impor langsung? Lihat [pendirian PT PMA](/id/layanan/pendirian-pt-pma/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan, dan koordinasi dokumen untuk kegiatan perdagangan. Kami bukan PPJK, forwarder, bank, atau kantor hukum, dan tidak memberikan jasa hukum, konsultasi pajak, atau nasihat keuangan, serta tidak menjual produk keuangan. Keputusan kepabeanan dan registrasi ada di instansi berwenang. Aturan perdagangan, termasuk jadwal IEU-CEPA, dapat berubah; informasi terakhir ditinjau Oktober 2026.
+LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan, dan koordinasi dokumen untuk kegiatan perdagangan. Kami bukan PPJK, forwarder, bank, atau kantor hukum; kami tidak mengajukan dokumen kepabeanan, tidak memberikan jasa hukum, konsultasi pajak, nasihat investasi, atau nasihat keuangan, serta tidak menjual produk keuangan. Keputusan kepabeanan dan registrasi ada di instansi berwenang. Aturan perdagangan, termasuk jadwal IEU-CEPA, dapat berubah; informasi terakhir ditinjau Oktober 2026.
 
 ---
 
@@ -253,7 +283,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://www.lusonusa.agency/services/export-import-portugal-indonesia/#service",
-  "name": "Export-import advisory Portugal–Indonesia",
+  "name": "Export-import guidance Portugal–Indonesia",
   "serviceType": "Trade compliance guidance and document coordination",
   "provider": { "@id": "https://www.lusonusa.agency/#org" },
   "areaServed": [{ "@type": "Country", "name": "Indonesia" }, { "@type": "Country", "name": "Portugal" }, { "@type": "Place", "name": "European Union" }],
@@ -269,7 +299,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 ```
 - Localise per language; omit `price` until set.
 - `FAQPage` per language. IEU-CEPA and EUDR answers are time-sensitive: show "Last reviewed" and refresh when the agreement is signed.
-- `BreadcrumbList`: Home › Business in Indonesia › Export-import advisory.
+- `BreadcrumbList`: Home › Business in Indonesia › Export-import guidance.
 - Optional `contributor` → Joko Supriyanto `Person` @id for the payment-terms block.
 
 ## Official sources to cite on the page
@@ -290,3 +320,5 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 - Joko Supriyanto's role: general explanation of payment instruments only — confirm he is comfortable being named and that wording never implies endorsement by his employer bank.
 - Sector focus (wine/olive oil/food vs machinery) — pick 2–3 for proof and case studies.
 - [GUIDE: owner/editorial calendar to assign] IEU-CEPA and food/halal guides.
+- Display name changed from "Export-import advisory" to "Export-import guidance" (owner rule: business guidance only); file key, translationKey and URLs unchanged. Confirm the site-wide nav/label and app.js copy follow suit.
+- HS-code step reworded: we gather product information; classification/binding rulings are the licensed customs broker's job. Confirm partner despachante/PPJK names.

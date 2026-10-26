@@ -15,7 +15,7 @@
 | Keywords EN | verify indonesian company; indonesian supplier verification; check company registration indonesia; indonesia due diligence; avoid supplier scam indonesia |
 | Keywords pt-PT | verificar empresa indonésia; verificação de fornecedores na indonésia; burla fornecedor indonésia; due diligence indonésia; confirmar registo de empresa indonésia |
 | Keywords id | verifikasi perusahaan indonesia; cek legalitas perusahaan; cek AHU dan NIB; verifikasi supplier untuk pembeli eropa; due diligence mitra bisnis |
-| Cross-sell (§6.4) | 1) Product sourcing: EN `/services/product-sourcing-indonesia/` · PT `/pt/servicos/fornecedores-indonesia/` · ID `/id/layanan/pencarian-supplier-indonesia/` — 2) Export-import advisory: EN `/services/export-import-portugal-indonesia/` · PT `/pt/servicos/exportar-para-indonesia/` · ID `/id/layanan/ekspor-impor-portugal-indonesia/` |
+| Cross-sell (§6.4) | 1) Product sourcing: EN `/services/product-sourcing-indonesia/` · PT `/pt/servicos/fornecedores-indonesia/` · ID `/id/layanan/pencarian-supplier-indonesia/` — 2) Export-import guidance: EN `/services/export-import-portugal-indonesia/` · PT `/pt/servicos/exportar-para-indonesia/` · ID `/id/layanan/ekspor-impor-portugal-indonesia/` |
 | Supporting guides | PT PMA guide (secondary service = company verification, §6.3): EN `/guides/pt-pma-indonesia/` · PT `/pt/guias/abrir-empresa-indonesia/` · ID `/id/panduan/syarat-pendirian-pt-pma/` — plus a dedicated "how to check an Indonesian company (AHU, NIB, NPWP)" guide [GUIDE: owner/editorial calendar to assign slug] |
 | Packages | Supplier Verification |
 
@@ -31,7 +31,7 @@
 Indonesian company verification and supplier due diligence
 
 ### Value proposition
-Before you sign a contract or send a deposit, make sure the Indonesian company is who it says it is. We check official registries, licences and the company's digital footprint, speak to them in Bahasa Indonesia, and can visit the site. You receive a clear written report of what we found, so you decide with facts.
+Before you sign a contract or send a deposit, make sure the Indonesian company is who it says it is. We check public official registries, licences and the company's digital footprint, speak to them in Bahasa Indonesia, and can visit the site. You receive a clear written report of what we found — business information, not a legal opinion — so you decide with facts. Where you need a legal opinion or litigation search, we refer you to a licensed Indonesian law firm.
 
 ### Who it's for
 - Portuguese importers and buyers about to place a first order
@@ -47,16 +47,23 @@ Before you sign a contract or send a deposit, make sure the Indonesian company i
 - Sector-specific checks (e.g. OJK for financial firms, BPOM for food/cosmetics)
 - Sanctions and adverse-media screening
 - Digital checks led by Nabela Huwaida: website and domain history, email domain consistency, social media and marketplace presence, document and invoice consistency, bank-account name vs company name
-- Verified video call with the counterpart, with ID and credential check
+- Video call with the counterpart to confirm their role and authority against the registry data (we don't collect copies of their personal ID)
 
 **Extended verification (optional)**
 - Site visit to the factory, warehouse or office, with photos and notes
 - Reference checks with customers or partners
 
-**Not included:** legal opinions, credit ratings or financial audits, litigation searches requiring a licensed lawyer (available via licensed partner [PARTNER: owner to name]), guarantees about future performance.
+**Not included:** legal opinions, credit ratings or financial audits, litigation searches requiring a licensed lawyer (available via licensed partner [PARTNER: owner to name]), investment advice, guarantees about future performance.
+
+### What we don't do / when you need a lawyer
+- We don't issue legal opinions on a company, its contracts or its licences — a licensed Indonesian law firm does, and we can refer you [PARTNER: owner to name].
+- We don't run court or litigation searches that require a lawyer, credit ratings or financial audits (auditor/credit agency).
+- We don't tell you whether to invest or sign; the decision is yours.
+- See a lawyer before you sign a contract, joint venture or exclusivity agreement, and straight away if you suspect fraud or need to recover a payment (also report it to the police and your bank).
+- We don't ask for anyone's personal ID by WhatsApp or email; business documents (offers, invoices, company certificates) are fine.
 
 ### Process & typical timeline
-1. **Brief** — you share the company name, documents and what you plan to do with them (same day).
+1. **Brief** — you share the company name, the business documents you received (offers, invoices, company certificates) and what you plan to do with them (same day). No personal ID documents needed.
 2. **Desk checks** — 3–5 working days *(registry availability dependent)*.
 3. **Video call verification** — scheduled within the same week where the counterpart cooperates.
 4. **Site visit (optional)** — typically 1–2 weeks depending on location in Indonesia.
@@ -85,6 +92,9 @@ Desk checks are discreet. Video calls and site visits are done openly and profes
 **How recent is the information?**
 Registries reflect what has been filed; recent changes may not yet appear. The report shows the date of every check.
 
+**Can I send you my documents on WhatsApp?**
+Business documents — the supplier's offer, invoices, company certificates or registry extracts — yes, by WhatsApp or email. Personal ID documents (passports, ID cards) no: for security we don't receive ID documents digitally, and we don't need them for a company check.
+
 ### CTA copy
 - **Headline:** Check them before you pay
 - **Buttons:** "Request a verification" → `[BOOKING_URL: owner to set]` · "WhatsApp us" · "Email us"
@@ -92,10 +102,10 @@ Registries reflect what has been filed; recent changes may not yet appear. The r
 - **Link:** https://wa.me/351930534440?text=Hello%20LUSONUSA%2C%20I%27d%20like%20to%20verify%20an%20Indonesian%20company%20before%20doing%20business%20with%20them.%20How%20does%20your%20verification%20work%20and%20what%20does%20it%20cost%3F%20Ref%3A%20LN-VERIF-EN-SVC
 - **Email:** contact@lusonusa.agency — subject: "Company verification request (LN-VERIF-EN-SVC)"
 - **Hours:** 10:00–16:00 Lisbon time (Mon–Fri) · 16:00–22:00 WIB (summer) / 17:00–23:00 WIB (winter)
-- **Next steps:** Need a better supplier? See [product sourcing in Indonesia](/services/product-sourcing-indonesia/). Ready to ship? See [export-import advisory](/services/export-import-portugal-indonesia/).
+- **Next steps:** Need a better supplier? See [product sourcing in Indonesia](/services/product-sourcing-indonesia/). Ready to ship? See [export-import guidance](/services/export-import-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, information gathering and document coordination. Our reports state findings from public registries, our own checks and contacts; they are not legal opinions, credit ratings or audits, and do not guarantee a company's future conduct. Final business decisions remain the client's. Partner and registry fees are separate.
+LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, information gathering and document coordination. We are not a law firm. Our reports state findings from public registries, our own checks and contacts; they are not legal opinions, investment advice, credit ratings or audits, and do not guarantee a company's future conduct. Final business decisions remain the client's. Partner and registry fees are separate.
 
 ---
 
@@ -109,7 +119,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, informati
 Verificação de empresas e fornecedores na Indonésia
 
 ### Proposta de valor
-Antes de assinar um contrato ou transferir um sinal, confirme que a empresa indonésia é quem diz ser. Consultamos os registos oficiais, as licenças e a presença digital da empresa, falamos com ela em bahasa indonésio e, se necessário, visitamos as instalações. Recebe um relatório escrito claro, para decidir com base em factos.
+Antes de assinar um contrato ou transferir um sinal, confirme que a empresa indonésia é quem diz ser. Consultamos os registos oficiais públicos, as licenças e a presença digital da empresa, falamos com ela em bahasa indonésio e, se necessário, visitamos as instalações. Recebe um relatório escrito claro — informação de negócio, não um parecer jurídico — para decidir com base em factos. Se precisar de parecer jurídico ou pesquisa de litígios, encaminhamo-lo para uma sociedade de advogados indonésia licenciada.
 
 ### Para quem é
 - Importadores e compradores portugueses prestes a fazer a primeira encomenda
@@ -125,16 +135,23 @@ Antes de assinar um contrato ou transferir um sinal, confirme que a empresa indo
 - Verificações setoriais (por ex. OJK para entidades financeiras, BPOM para alimentar/cosmética)
 - Pesquisa em listas de sanções e notícias negativas
 - Verificações digitais coordenadas por Nabela Huwaida: histórico do site e do domínio, coerência dos emails, redes sociais e marketplaces, coerência de documentos e faturas, titular da conta bancária vs. nome da empresa
-- Videochamada de verificação com o interlocutor, com confirmação de identidade e credenciais
+- Videochamada com o interlocutor para confirmar o seu cargo e poderes face aos dados do registo (não recolhemos cópias de documentos de identificação pessoais)
 
 **Verificação alargada (opcional)**
 - Visita à fábrica, armazém ou escritório, com fotografias e notas
 - Contacto com clientes ou parceiros de referência
 
-**Não está incluído:** pareceres jurídicos, notações de crédito ou auditorias financeiras, pesquisas de litígios que exijam advogado (disponíveis através de parceiro licenciado [PARTNER: owner to name]), garantias sobre o comportamento futuro da empresa.
+**Não está incluído:** pareceres jurídicos, notações de crédito ou auditorias financeiras, pesquisas de litígios que exijam advogado (disponíveis através de parceiro licenciado [PARTNER: owner to name]), aconselhamento de investimento, garantias sobre o comportamento futuro da empresa.
+
+### O que não fazemos / quando precisa de um advogado
+- Não emitimos pareceres jurídicos sobre a empresa, os seus contratos ou licenças — isso cabe a uma sociedade de advogados indonésia licenciada, para quem o podemos encaminhar [PARTNER: owner to name].
+- Não fazemos pesquisas judiciais que exijam advogado, notações de crédito nem auditorias (auditor/agência de rating).
+- Não lhe dizemos se deve investir ou assinar; a decisão é sua.
+- Consulte um advogado antes de assinar um contrato, joint venture ou acordo de exclusividade, e de imediato se suspeitar de burla ou precisar de recuperar um pagamento (comunique também à polícia e ao seu banco).
+- Não pedimos documentos de identificação de ninguém por WhatsApp ou email; documentos comerciais (propostas, faturas, certidões da empresa) podem ser partilhados.
 
 ### Processo e prazos habituais
-1. **Briefing** — envia-nos o nome da empresa, os documentos recebidos e o negócio previsto (no próprio dia).
+1. **Briefing** — partilha connosco o nome da empresa, os documentos comerciais recebidos (propostas, faturas, certidões) e o negócio previsto (no próprio dia). Não são necessários documentos de identificação pessoais.
 2. **Verificação documental** — 3 a 5 dias úteis *(depende da disponibilidade dos registos)*.
 3. **Videochamada de verificação** — na mesma semana, se o interlocutor colaborar.
 4. **Visita (opcional)** — habitualmente 1 a 2 semanas, consoante a localização na Indonésia.
@@ -163,6 +180,9 @@ A verificação documental é discreta. Videochamadas e visitas são feitas de f
 **Até que ponto a informação está atualizada?**
 Os registos refletem o que foi submetido; alterações recentes podem ainda não constar. O relatório indica a data de cada verificação.
 
+**Posso enviar-vos os meus documentos por WhatsApp?**
+Documentos comerciais — a proposta do fornecedor, faturas, certidões ou extratos de registo da empresa — sim, por WhatsApp ou email. Documentos de identificação pessoais (passaportes, cartões de identidade) não: por segurança, não recebemos documentos de identificação por via digital, e não são necessários para verificar uma empresa.
+
 ### CTA
 - **Título:** Verifique antes de pagar
 - **Botões:** "Pedir verificação" → `[BOOKING_URL: owner to set]` · "Falar por WhatsApp" · "Enviar email"
@@ -173,7 +193,7 @@ Os registos refletem o que foi submetido; alterações recentes podem ainda não
 - **Próximos passos:** Precisa de um fornecedor alternativo? Veja [fornecedores na Indonésia](/pt/servicos/fornecedores-indonesia/). Pronto para enviar mercadoria? Veja [exportar para a Indonésia](/pt/servicos/exportar-para-indonesia/).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, recolha de informação e coordenação documental. Os nossos relatórios apresentam dados de registos públicos, das nossas verificações e contactos; não constituem pareceres jurídicos, notações de crédito nem auditorias, e não garantem o comportamento futuro de uma empresa. A decisão de negócio é sempre do cliente. Taxas de registos e honorários de parceiros são pagos à parte.
+A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, recolha de informação e coordenação documental. Não somos uma sociedade de advogados. Os nossos relatórios apresentam dados de registos públicos, das nossas verificações e contactos; não constituem pareceres jurídicos, aconselhamento de investimento, notações de crédito nem auditorias, e não garantem o comportamento futuro de uma empresa. A decisão de negócio é sempre do cliente. Taxas de registos e honorários de parceiros são pagos à parte.
 
 ---
 
@@ -187,7 +207,7 @@ A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, recolha de 
 Verifikasi perusahaan dan supplier Indonesia untuk mitra bisnis Portugal
 
 ### Proposisi nilai
-Pembeli dan investor dari Portugal ingin yakin sebelum tanda tangan kontrak atau transfer uang muka. Kami memeriksa data resmi (AHU, OSS, NPWP), izin usaha, dan jejak digital perusahaan, berkomunikasi langsung dalam bahasa Indonesia, dan bila perlu mengunjungi lokasi. Hasilnya laporan tertulis yang jelas dan bisa dipertanggungjawabkan.
+Pembeli dan investor dari Portugal ingin yakin sebelum tanda tangan kontrak atau transfer uang muka. Kami memeriksa data resmi (AHU, OSS, NPWP), izin usaha, dan jejak digital perusahaan, berkomunikasi langsung dalam bahasa Indonesia, dan bila perlu mengunjungi lokasi. Hasilnya laporan tertulis yang jelas berisi informasi bisnis dari sumber resmi publik — bukan pendapat hukum. Bila Anda memerlukan pendapat hukum atau penelusuran perkara, kami merujuk ke kantor hukum berizin.
 
 ### Untuk siapa
 - Perwakilan atau staf di Indonesia dari perusahaan Portugal yang perlu mengecek calon mitra
@@ -203,16 +223,23 @@ Pembeli dan investor dari Portugal ingin yakin sebelum tanda tangan kontrak atau
 - Cek sektoral (misalnya OJK untuk lembaga keuangan, BPOM untuk pangan/kosmetik)
 - Penyaringan daftar sanksi dan berita negatif
 - Cek digital oleh Nabela Huwaida: riwayat situs dan domain, konsistensi email, media sosial dan marketplace, kesesuaian dokumen dan invoice, nama pemilik rekening vs nama perusahaan
-- Video call verifikasi dengan pihak perusahaan, termasuk cek identitas dan kredensial
+- Video call dengan pihak perusahaan untuk mencocokkan jabatan dan kewenangannya dengan data registri (kami tidak meminta salinan identitas pribadi)
 
 **Verifikasi lanjutan (opsional)**
 - Kunjungan ke pabrik, gudang, atau kantor, dengan foto dan catatan
 - Cek referensi ke pelanggan atau mitra
 
-**Tidak termasuk:** pendapat hukum, pemeringkatan kredit atau audit keuangan, penelusuran perkara yang memerlukan advokat (tersedia lewat mitra berizin [PARTNER: owner to name]), jaminan atas kinerja perusahaan di masa depan.
+**Tidak termasuk:** pendapat hukum, pemeringkatan kredit atau audit keuangan, penelusuran perkara yang memerlukan advokat (tersedia lewat mitra berizin [PARTNER: owner to name]), nasihat investasi, jaminan atas kinerja perusahaan di masa depan.
+
+### Yang tidak kami lakukan / kapan Anda perlu pengacara
+- Kami tidak memberi pendapat hukum tentang perusahaan, kontrak, atau izinnya — itu tugas kantor hukum berizin; kami bisa merujuk Anda [PARTNER: owner to name].
+- Kami tidak melakukan penelusuran perkara yang memerlukan advokat, pemeringkatan kredit, atau audit (auditor/lembaga pemeringkat).
+- Kami tidak menentukan apakah Anda harus berinvestasi atau tanda tangan; keputusan ada di tangan Anda.
+- Temui pengacara sebelum menandatangani kontrak, joint venture, atau perjanjian eksklusif, dan segera bila ada dugaan penipuan atau Anda perlu menagih kembali pembayaran (laporkan juga ke polisi dan bank).
+- Kami tidak meminta identitas pribadi siapa pun lewat WhatsApp atau email; dokumen bisnis (penawaran, invoice, dokumen legalitas perusahaan) boleh dibagikan.
 
 ### Proses & estimasi waktu
-1. **Brief** — Anda kirim nama perusahaan, dokumen yang diterima, dan rencana kerja sama (hari yang sama).
+1. **Brief** — Anda bagikan nama perusahaan, dokumen bisnis yang diterima (penawaran, invoice, dokumen legalitas perusahaan), dan rencana kerja sama (hari yang sama). Tidak perlu dokumen identitas pribadi.
 2. **Cek dokumen** — 3–5 hari kerja *(tergantung ketersediaan data registri)*.
 3. **Video call verifikasi** — di minggu yang sama bila pihak perusahaan kooperatif.
 4. **Kunjungan lokasi (opsional)** — biasanya 1–2 minggu, tergantung lokasi.
@@ -238,6 +265,9 @@ Bukan. Kami melaporkan fakta dari sumber resmi dan hasil pengecekan kami. Untuk 
 **Apakah perusahaan tahu sedang diverifikasi?**
 Cek dokumen dilakukan secara diskret. Video call dan kunjungan dilakukan terbuka dan profesional.
 
+**Boleh kirim dokumen lewat WhatsApp?**
+Dokumen bisnis — penawaran supplier, invoice, akta atau dokumen legalitas perusahaan — boleh, lewat WhatsApp atau email. Dokumen identitas pribadi (paspor, KTP) tidak: demi keamanan, kami tidak menerima dokumen identitas secara digital, dan dokumen itu tidak diperlukan untuk verifikasi perusahaan.
+
 ### CTA
 - **Judul:** Cek dulu sebelum bayar
 - **Tombol:** "Ajukan verifikasi" → `[BOOKING_URL: owner to set]` · "Chat WhatsApp" · "Kirim email"
@@ -248,7 +278,7 @@ Cek dokumen dilakukan secara diskret. Video call dan kunjungan dilakukan terbuka
 - **Langkah berikutnya:** Butuh supplier lain? Lihat [pencarian supplier Indonesia](/id/layanan/pencarian-supplier-indonesia/). Siap kirim barang? Lihat [ekspor-impor Portugal–Indonesia](/id/layanan/ekspor-impor-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pengumpulan informasi, dan koordinasi dokumen. Laporan kami berisi temuan dari registri publik, pengecekan, dan kontak kami; bukan pendapat hukum, pemeringkatan kredit, atau audit, dan tidak menjamin perilaku perusahaan di masa depan. Keputusan bisnis tetap di tangan klien. Biaya registri dan mitra terpisah.
+LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pengumpulan informasi, dan koordinasi dokumen. Kami bukan kantor hukum. Laporan kami berisi temuan dari registri publik, pengecekan, dan kontak kami; bukan pendapat hukum, nasihat investasi, pemeringkatan kredit, atau audit, dan tidak menjamin perilaku perusahaan di masa depan. Keputusan bisnis tetap di tangan klien. Biaya registri dan mitra terpisah.
 
 ---
 
@@ -293,4 +323,5 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pen
 - Whether AHU paid company profile extracts are purchased per case (fee passed on).
 - [verify] SVLK (timber legality) name/status; NPWP online validation availability to third parties.
 - [GUIDE: owner/editorial calendar to assign slug] for a supporting "how to check an Indonesian company" guide; until then only the PT PMA guide links here.
+- Video-call step changed from "ID check" to "role/authority check against registry" (no collection of counterpart ID copies) — confirm this is enough for the owner's KYC needs.
 - Data-protection note: verification involves personal data of directors (Indonesian PDP Law 27/2022 and GDPR) — link `/document-handling/` from this page [verify wording with privacy page owner].

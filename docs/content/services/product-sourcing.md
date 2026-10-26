@@ -15,7 +15,7 @@
 | Keywords EN | product sourcing indonesia; find suppliers in indonesia; indonesian furniture manufacturers; sourcing agent indonesia europe; import from indonesia to portugal |
 | Keywords pt-PT | fornecedores na indonésia; importar da indonésia; mobiliário indonésia fornecedor; agente de compras indonésia; encontrar fabricantes na indonésia |
 | Keywords id | pencarian supplier indonesia; supplier untuk pembeli eropa; ekspor mebel ke portugal; agen sourcing indonesia; buyer portugal |
-| Cross-sell (§6.4) | 1) Company verification: EN `/services/indonesian-company-verification/` · PT `/pt/servicos/verificar-empresa-indonesia/` · ID `/id/layanan/verifikasi-perusahaan-indonesia/` — 2) Export-import advisory: EN `/services/export-import-portugal-indonesia/` · PT `/pt/servicos/exportar-para-indonesia/` · ID `/id/layanan/ekspor-impor-portugal-indonesia/` |
+| Cross-sell (§6.4) | 1) Company verification: EN `/services/indonesian-company-verification/` · PT `/pt/servicos/verificar-empresa-indonesia/` · ID `/id/layanan/verifikasi-perusahaan-indonesia/` — 2) Export-import guidance: EN `/services/export-import-portugal-indonesia/` · PT `/pt/servicos/exportar-para-indonesia/` · ID `/id/layanan/ekspor-impor-portugal-indonesia/` |
 | Supporting guides | No existing guide maps to this service yet — [GUIDE: owner/editorial calendar to assign] e.g. "How to source furniture/handicrafts from Indonesia" and "EUDR for importers of Indonesian coffee, cocoa, rubber and timber" |
 | Packages | Sourcing Retainer (main) · Supplier Verification (per supplier) |
 
@@ -31,7 +31,7 @@
 Product sourcing and supplier management in Indonesia
 
 ### Value proposition
-Indonesia makes excellent furniture, handicrafts, textiles, coffee, spices and other goods, but finding the right factory from Europe is slow and risky. We shortlist suppliers that fit your product, verify them, handle samples and day-to-day communication in Bahasa Indonesia, and keep you informed on Lisbon time, from first enquiry to shipment.
+Indonesia makes excellent furniture, handicrafts, textiles, coffee, spices and other goods, but finding the right factory from Europe is slow and risky. We shortlist suppliers that fit your product, verify them, handle samples and day-to-day communication in Bahasa Indonesia, and keep you informed on Lisbon time, from first enquiry to shipment. This is practical business guidance: contracts, certified inspections and customs formalities stay with your lawyer and licensed partners, and buying decisions stay with you.
 
 ### Who it's for
 - Portuguese importers, retailers and interior/hospitality buyers
@@ -48,7 +48,14 @@ Indonesia makes excellent furniture, handicrafts, textiles, coffee, spices and o
 - Order follow-up: production milestones, photos, pre-shipment checklist
 - **Sourcing Retainer**: ongoing supplier management for repeat orders, monthly reporting
 
-**Not included:** buying or reselling goods on our own account (we do not take title or margin on goods unless agreed in writing [verify commercial model]); contract drafting (done by your lawyer or a licensed partner); third-party lab testing or certified inspection (coordinated with an inspection partner [PARTNER: owner to name], fees separate); freight, insurance and duties.
+**Not included:** buying or reselling goods on our own account (we do not take title or margin on goods unless agreed in writing [verify commercial model]); contract drafting (done by your lawyer or a licensed partner); third-party lab testing or certified inspection (coordinated with an inspection partner [PARTNER: owner to name], fees separate); customs declarations (your licensed customs broker); freight, insurance and duties.
+
+### What we don't do / when you need a lawyer
+- We don't draft or review supply, manufacturing or distribution contracts — your lawyer (or a licensed Indonesian law firm we can refer you to [PARTNER: owner to name]) does.
+- We don't issue certified inspection or lab reports; an accredited inspection partner does.
+- We don't file customs declarations or classify goods for customs — a licensed customs broker (despachante) does.
+- Talk to a lawyer before private-label/OEM production (trademark and design protection in Indonesia and the EU), before signing exclusivity or long-term supply terms, and if a supplier dispute or quality claim arises.
+- For VAT or tax questions on imports, ask a contabilista certificado.
 
 ### Process & typical timeline
 1. **Brief & scoping call** — 1 week.
@@ -74,13 +81,16 @@ It depends on the product. Handicraft workshops can accept small runs; furniture
 Our model is a client-paid fee so our advice stays on your side. [verify commercial model with owner]
 
 **Which products need extra attention in the EU?**
-Wood, palm oil, cocoa, coffee, rubber, soy and cattle products fall under the EU Deforestation Regulation (EUDR) [verify application date], and food and cosmetics need EU compliance. Our [export-import advisory](/services/export-import-portugal-indonesia/) covers this.
+Wood, palm oil, cocoa, coffee, rubber, soy and cattle products fall under the EU Deforestation Regulation (EUDR) [verify application date], and food and cosmetics need EU compliance. Our [export-import guidance](/services/export-import-portugal-indonesia/) covers this.
 
 **Can you inspect goods before shipment?**
 We coordinate pre-shipment checks and photos; certified third-party inspections or lab tests are arranged with an inspection partner at extra cost.
 
 **How do I pay a new supplier safely?**
 Pay only to a company bank account in the supplier's legal name, after verification, and agree staged payments. Joko Supriyanto can explain common payment options (e.g. letters of credit); we don't sell financial products.
+
+**Can I send you my documents on WhatsApp?**
+Business documents — product specifications, drawings, price lists, supplier offers — yes, by WhatsApp or email. Personal ID documents no: for security we don't receive passports or ID cards digitally, and we don't need them for sourcing.
 
 ### CTA copy
 - **Headline:** Tell us what you want to source
@@ -89,10 +99,10 @@ Pay only to a company bank account in the supplier's legal name, after verificat
 - **Link:** https://wa.me/351930534440?text=Hello%20LUSONUSA%2C%20I%27m%20looking%20for%20reliable%20suppliers%20in%20Indonesia.%20Can%20we%20talk%20about%20my%20product%20and%20how%20your%20sourcing%20service%20works%3F%20Ref%3A%20LN-SRC-EN-SVC
 - **Email:** contact@lusonusa.agency — subject: "Sourcing brief (LN-SRC-EN-SVC)"
 - **Hours:** 10:00–16:00 Lisbon time (Mon–Fri) · 16:00–22:00 WIB (summer) / 17:00–23:00 WIB (winter)
-- **Next steps:** Already have a supplier? [Verify the company](/services/indonesian-company-verification/). Planning the shipment? See [export-import advisory](/services/export-import-portugal-indonesia/).
+- **Next steps:** Already have a supplier? [Verify the company](/services/indonesian-company-verification/). Planning the shipment? See [export-import guidance](/services/export-import-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides sourcing support, guidance and document coordination. We do not guarantee product quality, supplier performance or delivery dates, and we do not provide legal advice. Contracts, certified inspections and lab tests are carried out by the client's advisers or licensed partners. Third-party costs are separate.
+LUSONUSA (PT Wollusca Sukses Bersama) provides sourcing support, guidance and document coordination. We are not a law firm, inspection body or customs broker. We do not guarantee product quality, supplier performance or delivery dates, and we do not provide legal, tax or customs advice. Contracts, certified inspections and lab tests are carried out by the client's advisers or licensed partners. Third-party costs are separate.
 
 ---
 
@@ -106,7 +116,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) provides sourcing support, guidance and do
 Procura e gestão de fornecedores na Indonésia
 
 ### Proposta de valor
-A Indonésia produz mobiliário, artesanato, têxteis, café, especiarias e muitos outros produtos de grande qualidade, mas encontrar a fábrica certa a partir da Europa é lento e arriscado. Selecionamos fornecedores adequados ao seu produto, verificamo-los, tratamos das amostras e da comunicação diária em bahasa indonésio, e mantemo-lo informado no horário de Lisboa, do primeiro contacto ao embarque.
+A Indonésia produz mobiliário, artesanato, têxteis, café, especiarias e muitos outros produtos de grande qualidade, mas encontrar a fábrica certa a partir da Europa é lento e arriscado. Selecionamos fornecedores adequados ao seu produto, verificamo-los, tratamos das amostras e da comunicação diária em bahasa indonésio, e mantemo-lo informado no horário de Lisboa, do primeiro contacto ao embarque. É orientação prática de negócio: contratos, inspeções certificadas e formalidades aduaneiras ficam com o seu advogado e parceiros licenciados, e as decisões de compra são sempre suas.
 
 ### Para quem é
 - Importadores, retalhistas e compradores para decoração, hotelaria e restauração
@@ -123,7 +133,14 @@ A Indonésia produz mobiliário, artesanato, têxteis, café, especiarias e muit
 - Acompanhamento da encomenda: etapas de produção, fotografias, lista de verificação antes do embarque
 - **Sourcing Retainer** (avença): gestão contínua de fornecedores para encomendas recorrentes, com relatório mensal
 
-**Não está incluído:** compra ou revenda de mercadoria por conta própria (não ficamos com a propriedade nem com margem sobre os produtos, salvo acordo escrito [verify commercial model]); redação de contratos (pelo seu advogado ou parceiro licenciado); ensaios laboratoriais ou inspeções certificadas (coordenados com parceiro de inspeção [PARTNER: owner to name], com custos à parte); frete, seguro e direitos aduaneiros.
+**Não está incluído:** compra ou revenda de mercadoria por conta própria (não ficamos com a propriedade nem com margem sobre os produtos, salvo acordo escrito [verify commercial model]); redação de contratos (pelo seu advogado ou parceiro licenciado); ensaios laboratoriais ou inspeções certificadas (coordenados com parceiro de inspeção [PARTNER: owner to name], com custos à parte); declarações aduaneiras (pelo seu despachante oficial); frete, seguro e direitos aduaneiros.
+
+### O que não fazemos / quando precisa de um advogado
+- Não redigimos nem revemos contratos de fornecimento, fabrico ou distribuição — isso cabe ao seu advogado (ou a uma sociedade de advogados indonésia licenciada, para quem o podemos encaminhar [PARTNER: owner to name]).
+- Não emitimos relatórios de inspeção certificada nem de ensaios; isso cabe a um parceiro de inspeção acreditado.
+- Não apresentamos declarações aduaneiras nem classificamos mercadorias para efeitos aduaneiros — isso cabe a um despachante oficial licenciado.
+- Consulte um advogado antes de produzir com marca própria/OEM (proteção de marca e design na Indonésia e na UE), antes de assinar exclusividades ou contratos de fornecimento de longo prazo e se surgir um litígio ou reclamação de qualidade.
+- Para questões de IVA ou fiscais na importação, fale com um contabilista certificado.
 
 ### Processo e prazos habituais
 1. **Briefing e chamada de enquadramento** — 1 semana.
@@ -157,6 +174,9 @@ Coordenamos verificações e fotografias antes do embarque; inspeções certific
 **Como pago a um fornecedor novo com segurança?**
 Pague apenas para uma conta bancária em nome da empresa fornecedora, depois da verificação, e acorde pagamentos faseados. Joko Supriyanto pode explicar as modalidades de pagamento habituais (por ex. crédito documentário); não vendemos produtos financeiros.
 
+**Posso enviar-vos os meus documentos por WhatsApp?**
+Documentos comerciais — especificações, desenhos técnicos, tabelas de preços, propostas de fornecedores — sim, por WhatsApp ou email. Documentos de identificação pessoais não: por segurança, não recebemos passaportes nem cartões de identidade por via digital, e não são necessários para a procura de fornecedores.
+
 ### CTA
 - **Título:** Diga-nos o que procura
 - **Botões:** "Marcar chamada grátis de 15 min" → `[BOOKING_URL: owner to set]` · "Falar por WhatsApp" · "Enviar caderno de encargos"
@@ -167,7 +187,7 @@ Pague apenas para uma conta bancária em nome da empresa fornecedora, depois da 
 - **Próximos passos:** Já tem fornecedor? [Verifique a empresa](/pt/servicos/verificar-empresa-indonesia/). A preparar o envio? Veja [exportar para a Indonésia e importar](/pt/servicos/exportar-para-indonesia/).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio na procura de fornecedores, orientação e coordenação documental. Não garantimos a qualidade dos produtos, o desempenho dos fornecedores nem os prazos de entrega, e não prestamos consultoria jurídica. Contratos, inspeções certificadas e ensaios são realizados pelos consultores do cliente ou por parceiros licenciados. Os custos de terceiros são pagos à parte.
+A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio na procura de fornecedores, orientação e coordenação documental. Não somos sociedade de advogados, entidade de inspeção nem despachante. Não garantimos a qualidade dos produtos, o desempenho dos fornecedores nem os prazos de entrega, e não prestamos consultoria jurídica, fiscal nem aduaneira. Contratos, inspeções certificadas e ensaios são realizados pelos consultores do cliente ou por parceiros licenciados. Os custos de terceiros são pagos à parte.
 
 ---
 
@@ -181,7 +201,7 @@ A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio na procura de fornecedores,
 Pencarian dan pengelolaan supplier Indonesia untuk pembeli dari Portugal
 
 ### Proposisi nilai
-Pembeli dari Portugal mencari produsen Indonesia yang bisa diandalkan: mebel, kerajinan, tekstil, kopi, rempah, dan banyak lagi. Kami menyusun daftar supplier yang cocok, memverifikasinya, mengurus sampel, dan menjembatani komunikasi sehari-hari dalam bahasa Indonesia dan Portugis, dari permintaan penawaran sampai pengiriman.
+Pembeli dari Portugal mencari produsen Indonesia yang bisa diandalkan: mebel, kerajinan, tekstil, kopi, rempah, dan banyak lagi. Kami menyusun daftar supplier yang cocok, memverifikasinya, mengurus sampel, dan menjembatani komunikasi sehari-hari dalam bahasa Indonesia dan Portugis, dari permintaan penawaran sampai pengiriman. Ini panduan bisnis praktis: kontrak, inspeksi bersertifikat, dan urusan kepabeanan tetap ditangani pengacara dan mitra berizin, dan keputusan pembelian ada di tangan pembeli.
 
 ### Untuk siapa
 - Perwakilan atau staf di Indonesia dari perusahaan Portugal yang ditugasi mencari supplier
@@ -197,7 +217,14 @@ Pembeli dari Portugal mencari produsen Indonesia yang bisa diandalkan: mebel, ke
 - Pemantauan pesanan: tahap produksi, foto, daftar periksa sebelum pengiriman
 - **Sourcing Retainer**: pengelolaan supplier untuk pesanan berulang, dengan laporan bulanan
 
-**Tidak termasuk:** membeli atau menjual barang atas nama sendiri [verify commercial model]; penyusunan kontrak (oleh penasihat hukum klien atau mitra berizin); uji laboratorium atau inspeksi bersertifikat (lewat mitra inspeksi [PARTNER: owner to name], biaya terpisah); ongkos kirim, asuransi, dan bea masuk.
+**Tidak termasuk:** membeli atau menjual barang atas nama sendiri [verify commercial model]; penyusunan kontrak (oleh penasihat hukum klien atau mitra berizin); uji laboratorium atau inspeksi bersertifikat (lewat mitra inspeksi [PARTNER: owner to name], biaya terpisah); pengurusan dokumen kepabeanan (oleh PPJK berizin); ongkos kirim, asuransi, dan bea masuk.
+
+### Yang tidak kami lakukan / kapan Anda perlu pengacara
+- Kami tidak menyusun atau me-review kontrak pasokan, produksi, atau distribusi — itu tugas pengacara klien atau kantor hukum berizin yang bisa kami rujuk [PARTNER: owner to name].
+- Kami tidak menerbitkan laporan inspeksi bersertifikat atau hasil uji lab; itu tugas mitra inspeksi terakreditasi.
+- Kami tidak mengurus PEB/dokumen kepabeanan atau klasifikasi barang untuk bea cukai — itu tugas PPJK berizin.
+- Temui pengacara sebelum produksi private label/OEM (perlindungan merek dan desain), sebelum menandatangani perjanjian eksklusif atau pasokan jangka panjang, dan bila terjadi sengketa atau klaim kualitas.
+- Untuk pertanyaan pajak ekspor, tanyakan ke konsultan pajak berizin.
 
 ### Proses & estimasi waktu
 1. **Brief & panggilan awal** — 1 minggu.
@@ -228,6 +255,9 @@ Kayu, sawit, kakao, kopi, karet, kedelai, dan produk sapi terkena Regulasi Anti-
 **Bagaimana pembayaran yang aman?**
 Pembayaran hanya ke rekening atas nama perusahaan supplier, setelah verifikasi, dengan termin bertahap. Joko Supriyanto dapat menjelaskan opsi pembayaran umum (misalnya L/C); kami tidak menjual produk keuangan.
 
+**Boleh kirim dokumen lewat WhatsApp?**
+Dokumen bisnis — katalog, spesifikasi produk, daftar harga, dokumen legalitas perusahaan — boleh, lewat WhatsApp atau email. Dokumen identitas pribadi (paspor, KTP) tidak: demi keamanan, kami tidak menerima dokumen identitas secara digital, dan dokumen itu tidak diperlukan untuk sourcing.
+
 ### CTA
 - **Judul:** Ceritakan produk yang Anda cari
 - **Tombol:** "Konsultasi gratis 15 menit" → `[BOOKING_URL: owner to set]` · "Chat WhatsApp" · "Kirim brief via email"
@@ -238,7 +268,7 @@ Pembayaran hanya ke rekening atas nama perusahaan supplier, setelah verifikasi, 
 - **Langkah berikutnya:** Sudah punya calon supplier? [Verifikasi perusahaannya](/id/layanan/verifikasi-perusahaan-indonesia/). Siap mengirim? Lihat [ekspor-impor Portugal–Indonesia](/id/layanan/ekspor-impor-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan sourcing, panduan, dan koordinasi dokumen. Kami tidak menjamin kualitas produk, kinerja supplier, atau tanggal pengiriman, dan tidak memberikan jasa hukum. Kontrak, inspeksi bersertifikat, dan uji lab dilakukan oleh penasihat klien atau mitra berizin. Biaya pihak ketiga terpisah.
+LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan sourcing, panduan, dan koordinasi dokumen. Kami bukan kantor hukum, lembaga inspeksi, atau PPJK. Kami tidak menjamin kualitas produk, kinerja supplier, atau tanggal pengiriman, dan tidak memberikan jasa hukum, konsultasi pajak, atau jasa kepabeanan. Kontrak, inspeksi bersertifikat, dan uji lab dilakukan oleh penasihat klien atau mitra berizin. Biaya pihak ketiga terpisah.
 
 ---
 
@@ -282,3 +312,4 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan sourcing, panduan,
 - ID page targets Indonesian suppliers/partner staff — confirm whether the owner wants a supplier-intake form/flow (the WhatsApp tag stays LN-SRC-ID-SVC).
 - [GUIDE: owner/editorial calendar to assign] supporting guides; none exist yet.
 - Role of Joko Supriyanto limited to explaining payment options in general — confirm wording; never imply a bank endorsement.
+- [PARTNER: owner to name] customs broker (despachante, PT side / PPJK, ID side) referenced in the new "What we don't do" sections.

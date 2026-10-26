@@ -31,31 +31,38 @@
 Indonesia visa and KITAS support for Portuguese business travellers and investors
 
 ### Value proposition
-Indonesia's visa system changed: the old B211A is gone and the new index uses codes such as C2, D2, E28A and E33G. We help you choose the right visa or stay permit for what you will actually do in Indonesia, prepare the documents and coordinate with the sponsor, so your team travels and works there within the rules.
+Indonesia's visa system changed: the old B211A is gone and the new index uses codes such as C2, D2, E28A and E33G. Based on public official information, we explain which visa or stay permit fits what you will actually do in Indonesia, send you a document checklist, guide you step by step while you submit the application yourself on the official e-Visa portal, and coordinate with the sponsor. We are not an immigration agent or a law firm; when your case needs one, we refer you to a licensed professional.
 
 ### Who it's for
 - Portuguese managers attending meetings, trade fairs or negotiations in Indonesia
 - Investors, directors and commissioners of a PT PMA who need an Investor KITAS
-- Companies sending staff to work in Indonesia (work KITAS with an Indonesian sponsor)
+- Companies sending their own staff to work in Indonesia (work KITAS with an Indonesian sponsor)
 - Remote workers employed by a company outside Indonesia
 - Family members of KITAS holders
 
 ### What's included
 - Short review of your travel purpose, duration and company situation
 - Recommendation of the visa or KITAS category that matches the activity (visit vs work vs investment)
-- Personalised document checklist (passport, sponsor letter, bank statements, company documents)
+- Personalised document checklist we send you (passport, sponsor letter, bank statements, company documents); you keep your documents, and if you want them checked we do it in person at an appointment
 - Coordination with the Indonesian sponsor (your PT PMA, partner company or licensed sponsor partner [PARTNER: owner to name])
-- Review of forms before submission on the official e-Visa portal
+- Step-by-step guidance (in person or on a call) while you fill in the form and upload your documents yourself on the official e-Visa portal — we never receive copies of your passport or other ID
 - Reminders for extensions, reporting and expiry dates
 - Optional add-on: arrival and concierge support (airport pickup, SIM card, bilingual local guide for business visits) [verify that the add-on covers arrivals in Indonesia]
 
-**Not included:** legal advice or representation before immigration authorities; guaranteed approval; RPTKA/work permit filings that must be made by the employer or a licensed agent; government visa fees; flights and accommodation (we are not a travel agency).
+**Not included:** legal advice or representation before immigration authorities; submitting applications on your behalf; guaranteed approval; RPTKA/work permit filings that must be made by the employer or a licensed agent; finding, recruiting or placing staff; government visa fees; flights and accommodation (we are not a travel agency).
+
+### What we don't do / when you need a lawyer
+- We are not an immigration agent or sponsor and do not represent you before Indonesian Immigration.
+- We don't submit applications for you or receive scans of your passport; you upload them yourself on the official portal while we guide you.
+- We don't recruit, place or supply workers, and we don't file RPTKA — that is done by the employer or a licensed agent.
+- See a licensed Indonesian lawyer if your visa is refused or cancelled, you have overstayed, you face deportation, a blacklist or an immigration investigation, or there is an employment dispute — we can refer you [PARTNER: owner to name].
+- Long stays can create tax residency questions: ask a licensed tax consultant (Indonesia) or a contabilista certificado (Portugal).
 
 ### Process & typical timeline
 1. **Triage call** — 15 minutes, same week.
 2. **Category choice & checklist** — 1–3 working days.
-3. **Document collection and sponsor letters** — 1–2 weeks (depends on you and the sponsor).
-4. **Online application via evisa.imigrasi.go.id** — submission in 1 day; decision typically several working days *(authority dependent)* [verify].
+3. **Document preparation (by you) and sponsor letters** — 1–2 weeks (depends on you and the sponsor); optional in-person document check at an appointment.
+4. **Online application via evisa.imigrasi.go.id** — you submit it yourself on the official portal, with our step-by-step guidance in person or on a call; submission in 1 day; decision typically several working days *(authority dependent)* [verify].
 5. **For work KITAS:** employer RPTKA approval from the Ministry of Manpower first — typically 1–3 weeks *(authority dependent)* [verify].
 6. **On arrival / after arrival:** arrival card and any in-country biometrics or reporting *(authority dependent)*.
 7. **Ongoing:** extension and renewal reminders.
@@ -84,7 +91,10 @@ No. Working requires a work KITAS, sponsored by an Indonesian employer with an a
 Yes, the E33G remote worker visa (since April 2024) for people employed by a company outside Indonesia, with a minimum income requirement reported around USD 60,000 a year [verify].
 
 **Can you guarantee approval?**
-No. Decisions are made by Indonesian Immigration. We make sure the application is complete and consistent.
+No. Decisions are made by Indonesian Immigration. We help you check that the application is complete and consistent before you submit it.
+
+**Can I send you my documents on WhatsApp?**
+No — for your security we don't receive ID or immigration documents digitally. We send you a checklist, check your documents in person at an appointment if you wish, and you keep them. On the official e-Visa portal you upload your files yourself; we guide you step by step without receiving them.
 
 ### CTA copy
 - **Headline:** Not sure which visa fits your trip?
@@ -96,7 +106,7 @@ No. Decisions are made by Indonesian Immigration. We make sure the application i
 - **Next steps:** Need a company to sponsor your Investor KITAS? See [PT PMA company setup](/services/pt-pma-company-setup-indonesia/). Want help on the ground? See the [arrival & concierge add-on](/services/students-housing-arrival-portugal/#arrival-concierge).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance and document coordination for visa applications. We are not an immigration authority and do not provide legal advice or legal representation. Decisions rest solely with the Directorate General of Immigration of Indonesia and are not guaranteed. Government fees are separate. Visa rules change often; information last reviewed October 2026.
+LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance and document coordination for visa applications. We are not an immigration authority, immigration agent or law firm, and do not provide legal advice or legal representation. We do not receive identity documents digitally and do not recruit or place workers. Decisions rest solely with the Directorate General of Immigration of Indonesia and are not guaranteed. Government fees are separate. Visa rules change often; information last reviewed October 2026.
 
 ---
 
@@ -110,31 +120,38 @@ LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance 
 Vistos e KITAS para a Indonésia: apoio a empresários, investidores e equipas portuguesas
 
 ### Proposta de valor
-O sistema de vistos indonésio mudou: o antigo B211A deixou de existir e a nova tabela usa códigos como C2, D2, E28A e E33G. Ajudamo-lo a escolher o visto ou a autorização de permanência certa para aquilo que vai realmente fazer na Indonésia, a preparar a documentação e a articular com o patrocinador local, para que a sua equipa viaje e trabalhe dentro das regras.
+O sistema de vistos indonésio mudou: o antigo B211A deixou de existir e a nova tabela usa códigos como C2, D2, E28A e E33G. Com base em informação oficial pública, explicamos que visto ou autorização de permanência se aplica àquilo que vai realmente fazer na Indonésia, enviamos-lhe a lista de documentos, acompanhamo-lo passo a passo enquanto submete o pedido no portal oficial de e-Visa e articulamos com o patrocinador local. Não somos agente de imigração nem sociedade de advogados; quando o caso o exige, encaminhamo-lo para um profissional licenciado.
 
 ### Para quem é
 - Gestores portugueses que vão a reuniões, feiras ou negociações na Indonésia
 - Investidores, administradores e comissários de uma PT PMA que precisam do KITAS de investidor
-- Empresas que destacam colaboradores para trabalhar na Indonésia (KITAS de trabalho com patrocinador indonésio)
+- Empresas que destacam os seus próprios colaboradores para trabalhar na Indonésia (KITAS de trabalho com patrocinador indonésio)
 - Trabalhadores remotos contratados por uma empresa fora da Indonésia
 - Familiares de titulares de KITAS
 
 ### O que está incluído
 - Análise rápida do objetivo da viagem, da duração e da situação da empresa
 - Recomendação da categoria de visto ou KITAS adequada à atividade (visita, trabalho ou investimento)
-- Lista de documentos personalizada (passaporte, carta do patrocinador, extratos bancários, documentos da empresa)
+- Lista de documentos personalizada, enviada por nós (passaporte, carta do patrocinador, extratos bancários, documentos da empresa); os documentos ficam sempre consigo e, se quiser, conferimo-los presencialmente numa reunião
 - Articulação com o patrocinador indonésio (a sua PT PMA, a empresa parceira ou um patrocinador parceiro licenciado [PARTNER: owner to name])
-- Revisão dos formulários antes da submissão no portal oficial de e-Visa
+- Acompanhamento passo a passo (presencial ou por chamada) enquanto preenche o formulário e carrega os seus documentos no portal oficial de e-Visa — nunca recebemos cópias do seu passaporte ou de outros documentos de identificação
 - Lembretes de prorrogações, comunicações obrigatórias e datas de validade
 - Serviço opcional: apoio à chegada e concierge (recolha no aeroporto, cartão SIM, guia local bilingue para visitas de negócios) [verify that the add-on covers arrivals in Indonesia]
 
-**Não está incluído:** consultoria jurídica ou representação perante os serviços de imigração; garantia de aprovação; pedidos de RPTKA/autorização de trabalho que tenham de ser apresentados pelo empregador ou por agente licenciado; taxas oficiais de visto; voos e alojamento (não somos agência de viagens).
+**Não está incluído:** consultoria jurídica ou representação perante os serviços de imigração; submissão de pedidos em nome do cliente; garantia de aprovação; pedidos de RPTKA/autorização de trabalho que tenham de ser apresentados pelo empregador ou por agente licenciado; procura, seleção ou cedência de trabalhadores; taxas oficiais de visto; voos e alojamento (não somos agência de viagens).
+
+### O que não fazemos / quando precisa de um advogado
+- Não somos agente de imigração nem patrocinador e não o representamos perante a Imigração indonésia.
+- Não submetemos pedidos por si nem recebemos cópias digitalizadas do passaporte; é o próprio requerente que as carrega no portal oficial, com o nosso acompanhamento.
+- Não selecionamos, contratamos nem cedemos trabalhadores, nem apresentamos pedidos de RPTKA — isso cabe ao empregador ou a um agente licenciado.
+- Recorra a um advogado indonésio licenciado se o visto for recusado ou cancelado, se tiver excedido a permanência, se enfrentar expulsão, interdição de entrada ou um processo da Imigração, ou num litígio laboral — podemos encaminhá-lo [PARTNER: owner to name].
+- Estadias longas podem levantar questões de residência fiscal: fale com um consultor fiscal licenciado (Indonésia) ou um contabilista certificado (Portugal).
 
 ### Processo e prazos habituais
 1. **Chamada de triagem** — 15 minutos, na própria semana.
 2. **Escolha da categoria e lista de documentos** — 1 a 3 dias úteis.
-3. **Recolha de documentos e cartas do patrocinador** — 1 a 2 semanas (depende de si e do patrocinador).
-4. **Pedido online em evisa.imigrasi.go.id** — submissão num dia; decisão habitualmente em alguns dias úteis *(depende das autoridades)* [verify].
+3. **Preparação dos documentos (pelo requerente) e cartas do patrocinador** — 1 a 2 semanas (depende de si e do patrocinador); conferência presencial opcional numa reunião.
+4. **Pedido online em evisa.imigrasi.go.id** — submetido pelo próprio requerente no portal oficial, com o nosso acompanhamento passo a passo (presencial ou por chamada); submissão num dia; decisão habitualmente em alguns dias úteis *(depende das autoridades)* [verify].
 5. **KITAS de trabalho:** aprovação prévia do RPTKA pelo Ministério do Trabalho indonésio — habitualmente 1 a 3 semanas *(depende das autoridades)* [verify].
 6. **À chegada:** cartão de chegada e eventual recolha biométrica ou comunicação local *(depende das autoridades)*.
 7. **Depois:** lembretes de prorrogação e renovação.
@@ -163,7 +180,10 @@ Não. Para trabalhar é necessário um KITAS de trabalho, patrocinado por um emp
 Sim, o visto E33G (desde abril de 2024), para quem trabalha para uma empresa fora da Indonésia, com um rendimento mínimo referido de cerca de 60 000 USD por ano [verify].
 
 **Garantem a aprovação?**
-Não. A decisão é da Imigração indonésia. O nosso papel é garantir que o pedido está completo e coerente.
+Não. A decisão é da Imigração indonésia. Ajudamo-lo a confirmar que o pedido está completo e coerente antes de o submeter.
+
+**Posso enviar-vos os meus documentos por WhatsApp?**
+Não — por segurança, não recebemos documentos de identificação nem de imigração por via digital. Enviamos-lhe uma lista de verificação, conferimos os documentos presencialmente numa reunião, se desejar, e ficam sempre consigo. No portal oficial de e-Visa é o próprio requerente que carrega os ficheiros; acompanhamo-lo passo a passo sem os recebermos.
 
 ### CTA
 - **Título:** Não sabe que visto se aplica à sua viagem?
@@ -175,7 +195,7 @@ Não. A decisão é da Imigração indonésia. O nosso papel é garantir que o p
 - **Próximos passos:** Precisa de uma empresa que patrocine o seu KITAS de investidor? Veja [abrir empresa na Indonésia (PT PMA)](/pt/servicos/abrir-empresa-indonesia-pt-pma/). Quer apoio no terreno? Veja o [serviço de chegada e concierge](/pt/servicos/estudantes-alojamento-chegada/#chegada-concierge).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientação e coordenação documental em pedidos de visto. Não somos uma autoridade de imigração e não prestamos consultoria jurídica nem representação legal. A decisão cabe exclusivamente à Direção-Geral de Imigração da Indonésia e não é garantida. As taxas oficiais são pagas à parte. As regras de vistos mudam com frequência; informação revista em outubro de 2026.
+A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientação e coordenação documental em pedidos de visto. Não somos autoridade de imigração, agente de imigração nem sociedade de advogados, e não prestamos consultoria jurídica nem representação legal. Não recebemos documentos de identificação por via digital nem selecionamos ou cedemos trabalhadores. A decisão cabe exclusivamente à Direção-Geral de Imigração da Indonésia e não é garantida. As taxas oficiais são pagas à parte. As regras de vistos mudam com frequência; informação revista em outubro de 2026.
 
 ---
 
@@ -189,31 +209,38 @@ A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientaçã
 Pendampingan visa dan KITAS Indonesia untuk WNA dari Portugal
 
 ### Proposisi nilai
-Sistem visa Indonesia sudah berubah: B211A tidak dipakai lagi dan indeks baru memakai kode seperti C2, D2, E28A, dan E33G. Kami membantu perusahaan Anda memilih visa atau izin tinggal yang sesuai dengan kegiatan rekan bisnis atau staf dari Portugal, menyiapkan dokumen, dan berkoordinasi dengan sponsor, supaya semuanya sesuai aturan imigrasi.
+Sistem visa Indonesia sudah berubah: B211A tidak dipakai lagi dan indeks baru memakai kode seperti C2, D2, E28A, dan E33G. Berdasarkan informasi resmi publik, kami menjelaskan visa atau izin tinggal yang sesuai dengan kegiatan rekan bisnis atau staf dari Portugal, mengirimkan daftar dokumen, memandu langkah demi langkah saat pemohon mengajukan sendiri di portal resmi e-Visa, dan berkoordinasi dengan sponsor. Kami bukan agen imigrasi atau kantor hukum; bila kasusnya memerlukan, kami merujuk ke profesional berizin.
 
 ### Untuk siapa
 - Perusahaan Indonesia yang mengundang mitra atau tamu bisnis dari Portugal
 - PT PMA yang perlu mengurus KITAS investor untuk direktur atau komisaris asing
-- Perusahaan yang akan mempekerjakan tenaga kerja asing dari Portugal (KITAS kerja)
+- Perusahaan yang sudah mempekerjakan tenaga kerja asing dari Portugal dan perlu panduan KITAS kerja
 - WNA pekerja remote yang digaji perusahaan di luar Indonesia
 - Keluarga pemegang KITAS
 
 ### Yang termasuk
 - Review singkat tujuan kunjungan, durasi, dan status perusahaan sponsor
 - Rekomendasi jenis visa atau KITAS sesuai kegiatan (kunjungan, kerja, atau investasi)
-- Daftar dokumen yang disesuaikan (paspor, surat sponsor, rekening koran, dokumen perusahaan)
+- Daftar dokumen yang disesuaikan dan kami kirimkan (paspor, surat sponsor, rekening koran, dokumen perusahaan); dokumen tetap dipegang pemohon dan, bila perlu, dicek langsung saat bertemu
 - Koordinasi dengan sponsor di Indonesia (PT PMA Anda, perusahaan mitra, atau sponsor mitra berizin [PARTNER: owner to name])
-- Pengecekan formulir sebelum diajukan di portal resmi e-Visa
+- Panduan langkah demi langkah (tatap muka atau lewat panggilan) saat pemohon mengisi formulir dan mengunggah sendiri dokumennya di portal resmi e-Visa — kami tidak pernah menerima salinan paspor atau identitas lain
 - Pengingat perpanjangan, pelaporan, dan masa berlaku
 - Layanan tambahan opsional: penjemputan bandara, kartu SIM, dan pendamping lokal bilingual untuk kunjungan bisnis [verify that the add-on covers arrivals in Indonesia]
 
-**Tidak termasuk:** jasa hukum atau kuasa hukum di hadapan imigrasi; jaminan visa disetujui; pengajuan RPTKA/izin kerja yang wajib dilakukan pemberi kerja atau agen berizin; biaya visa resmi; tiket dan hotel (kami bukan biro perjalanan).
+**Tidak termasuk:** jasa hukum atau kuasa hukum di hadapan imigrasi; mengajukan permohonan atas nama pemohon; jaminan visa disetujui; pengajuan RPTKA/izin kerja yang wajib dilakukan pemberi kerja atau agen berizin; mencarikan atau menyalurkan tenaga kerja; biaya visa resmi; tiket dan hotel (kami bukan biro perjalanan).
+
+### Yang tidak kami lakukan / kapan Anda perlu pengacara
+- Kami bukan agen imigrasi atau sponsor dan tidak mewakili pemohon di hadapan Imigrasi.
+- Kami tidak mengajukan permohonan atas nama pemohon dan tidak menerima salinan paspor; pemohon mengunggahnya sendiri di portal resmi dengan panduan kami.
+- Kami tidak mencarikan, menyalurkan, atau menyediakan tenaga kerja, dan tidak mengurus RPTKA — itu tugas pemberi kerja atau agen berizin.
+- Hubungi advokat berizin bila visa ditolak atau dibatalkan, terjadi overstay, ada ancaman deportasi, penangkalan, atau pemeriksaan imigrasi, atau ada sengketa ketenagakerjaan — kami bisa merujuk [PARTNER: owner to name].
+- Tinggal lama bisa memunculkan pertanyaan status pajak: tanyakan ke konsultan pajak berizin.
 
 ### Proses & estimasi waktu
 1. **Konsultasi awal** — 15 menit, di minggu yang sama.
 2. **Penentuan jenis visa & daftar dokumen** — 1–3 hari kerja.
-3. **Pengumpulan dokumen dan surat sponsor** — 1–2 minggu (tergantung pemohon dan sponsor).
-4. **Pengajuan online di evisa.imigrasi.go.id** — diajukan dalam 1 hari; keputusan biasanya beberapa hari kerja *(tergantung imigrasi)* [verify].
+3. **Persiapan dokumen (oleh pemohon) dan surat sponsor** — 1–2 minggu (tergantung pemohon dan sponsor); pengecekan langsung saat bertemu bila diinginkan.
+4. **Pengajuan online di evisa.imigrasi.go.id** — diajukan sendiri oleh pemohon di portal resmi, dengan panduan langkah demi langkah dari kami (tatap muka atau lewat panggilan); diajukan dalam 1 hari; keputusan biasanya beberapa hari kerja *(tergantung imigrasi)* [verify].
 5. **Untuk KITAS kerja:** pengesahan RPTKA dari Kemnaker lebih dulu — biasanya 1–3 minggu *(tergantung instansi)* [verify].
 6. **Saat tiba:** pengisian arrival card dan biometrik/pelaporan bila diwajibkan *(tergantung imigrasi)*.
 7. **Selanjutnya:** pengingat perpanjangan.
@@ -239,7 +266,10 @@ Izin tinggal terbatas untuk investor asing yang menjadi pemegang saham sekaligus
 Tidak. Bekerja wajib memakai KITAS kerja dengan sponsor pemberi kerja di Indonesia dan RPTKA yang sudah disahkan [verify current code E23].
 
 **Apakah LUSONUSA menjamin visa disetujui?**
-Tidak. Keputusan ada di Direktorat Jenderal Imigrasi. Kami memastikan berkas lengkap dan konsisten.
+Tidak. Keputusan ada di Direktorat Jenderal Imigrasi. Kami membantu mengecek agar berkas lengkap dan konsisten sebelum diajukan.
+
+**Boleh kirim dokumen saya lewat WhatsApp?**
+Tidak — demi keamanan Anda, kami tidak menerima dokumen identitas atau imigrasi secara digital. Kami kirimkan daftar periksa, dokumen dicek langsung saat bertemu bila Anda mau, dan dokumen tetap Anda pegang. Di portal resmi e-Visa, Anda sendiri yang mengunggah file; kami memandu langkah demi langkah tanpa menerima file tersebut.
 
 ### CTA
 - **Judul:** Bingung visa apa yang cocok untuk tamu bisnis Anda?
@@ -251,7 +281,7 @@ Tidak. Keputusan ada di Direktorat Jenderal Imigrasi. Kami memastikan berkas len
 - **Langkah berikutnya:** Perlu PT PMA sebagai sponsor KITAS investor? Lihat [pendirian PT PMA](/id/layanan/pendirian-pt-pma/). Butuh bantuan saat kedatangan? Lihat [layanan concierge kedatangan](/id/layanan/mahasiswa-akomodasi-kedatangan-portugal/#kedatangan-concierge).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan, dan koordinasi dokumen untuk pengajuan visa. Kami bukan instansi imigrasi dan tidak memberikan jasa hukum atau kuasa hukum. Keputusan sepenuhnya ada di Direktorat Jenderal Imigrasi dan tidak dijamin. Biaya resmi terpisah. Aturan visa sering berubah; informasi terakhir ditinjau Oktober 2026.
+LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan, dan koordinasi dokumen untuk pengajuan visa. Kami bukan instansi imigrasi, agen imigrasi, atau kantor hukum, dan tidak memberikan jasa hukum atau kuasa hukum. Kami tidak menerima dokumen identitas secara digital dan tidak menyalurkan tenaga kerja. Keputusan sepenuhnya ada di Direktorat Jenderal Imigrasi dan tidak dijamin. Biaya resmi terpisah. Aturan visa sering berubah; informasi terakhir ditinjau Oktober 2026.
 
 ---
 
@@ -279,6 +309,7 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 - `FAQPage` per language. Visa FAQ answers change often — add a visible "Last reviewed" date and refresh quarterly.
 - `BreadcrumbList`: Home › Business in Indonesia › Indonesia visa & KITAS.
 - Do not use `GovernmentService` or `LegalService`.
+- Do not describe the service as "visa application" or "submission on your behalf" in schema; the client submits on the official portal.
 
 ## Official sources to cite on the page
 - Directorate General of Immigration: https://www.imigrasi.go.id
@@ -295,3 +326,5 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 - [verify] C2 duration/extension (60 days, up to 180); D2 validity; E28A capital threshold after Reg 5/2025; E33G income threshold (~USD 60k); work KITAS code (E23); VoA/e-VoA eligibility and duration for Portugal; typical e-Visa decision times; allindonesia arrival card URL.
 - Family stay permits (ITAS/ITAP) mentioned in current app.js are only covered as "family members of KITAS holders" here; confirm scope.
 - Current app.js copy references "B211A" — must be updated per this file.
+- Confirm the in-person document-check flow for clients in Portugal (Lisbon appointment) and in Indonesia (who meets them, where) — no digital receipt of passports/ID.
+- Confirm the licensed sponsor/agent partner also does not require LUSONUSA to collect or forward passport scans (client or employer sends directly to the sponsor/agent).

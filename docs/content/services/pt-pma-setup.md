@@ -15,7 +15,7 @@
 | Keywords EN | pt pma setup indonesia; open a company in indonesia as a foreigner; pt pma minimum capital 2026; foreign company registration indonesia; oss nib indonesia |
 | Keywords pt-PT | abrir empresa na indonésia; constituir empresa na indonésia; pt pma indonésia; investir na indonésia; capital mínimo pt pma |
 | Keywords id | pendirian pt pma; syarat pendirian pt pma 2026; modal disetor pt pma; jasa pendirian pt pma; pt pma investor portugal |
-| Cross-sell (§6.4) | 1) Indonesia visa & KITAS (Investor KITAS): EN `/services/indonesia-visa-kitas/` · PT `/pt/servicos/visto-indonesia-kitas/` · ID `/id/layanan/visa-kitas-indonesia-wna/` — 2) Export-import advisory: EN `/services/export-import-portugal-indonesia/` · PT `/pt/servicos/exportar-para-indonesia/` · ID `/id/layanan/ekspor-impor-portugal-indonesia/` |
+| Cross-sell (§6.4) | 1) Indonesia visa & KITAS (Investor KITAS): EN `/services/indonesia-visa-kitas/` · PT `/pt/servicos/visto-indonesia-kitas/` · ID `/id/layanan/visa-kitas-indonesia-wna/` — 2) Export-import guidance: EN `/services/export-import-portugal-indonesia/` · PT `/pt/servicos/exportar-para-indonesia/` · ID `/id/layanan/ekspor-impor-portugal-indonesia/` |
 | Supporting guides | PT PMA guide: EN `/guides/pt-pma-indonesia/` · PT `/pt/guias/abrir-empresa-indonesia/` · ID `/id/panduan/syarat-pendirian-pt-pma/` — Indonesia visa guide: EN `/guides/indonesia-visa-guide/` · PT `/pt/guias/vistos-indonesia/` · ID `/id/panduan/jenis-visa-indonesia-untuk-wna/` |
 | Packages | Market Entry Assessment (pre-stage) · PT PMA Setup (main) |
 
@@ -31,30 +31,37 @@
 PT PMA company setup in Indonesia, coordinated from Lisbon
 
 ### Value proposition
-Opening a foreign-owned company (PT PMA) in Indonesia means getting the business codes, capital plan, notary deed and OSS licences right the first time. We coordinate the whole process in Portuguese, English and Bahasa Indonesia, working with a licensed Indonesian notary and partners so you always know what is next, who is responsible and what it costs.
+Opening a foreign-owned company (PT PMA) in Indonesia means getting the business codes, capital plan, notary deed and OSS licences right the first time. We give you practical guidance based on public official information, coordinate the steps in Portuguese, English and Bahasa Indonesia, and refer you to a licensed Indonesian notary, law firm and tax consultant for every legal and tax act — so you always know what is next, who is responsible and what it costs. We are not a law firm and do not replace one.
 
 ### Who it's for
 - Portuguese SMEs and groups opening a subsidiary, sales office or production base in Indonesia
 - Investors and founders who need a PT PMA to hold an Investor KITAS
-- Companies that already have an Indonesian partner and want a clear, verified structure
+- Companies that already have an Indonesian partner and want a clear overview of the setup steps
 - Teams that prefer one bilingual point of contact on Lisbon time
 
 ### What's included
 - Scoping call and written checklist for your case
 - KBLI (5-digit business classification) mapping and foreign-ownership check against the Positive Investment List
-- Capital and investment-plan outline under the 2025 rules (paid-up capital vs total investment)
-- Company name pre-check and document list for shareholders and directors
+- Explanation of the 2025 capital rules (paid-up capital vs total investment plan) from official sources — the investment amounts and decisions are yours
+- Company name pre-check and a checklist of documents for shareholders and directors that we send you (company documents of corporate shareholders can be shared digitally; directors' passports and other personal ID are checked in person or handed directly to the licensed notary — we do not receive them by WhatsApp or email)
 - Coordination of the deed of establishment with our licensed partner Indonesian notary [PARTNER: owner to name]
 - Follow-up of the Ministry of Law approval (AHU), NPWP tax ID and NIB on OSS-RBA
 - Support with risk-based business licences linked to your KBLI
 - Bank account opening and capital deposit coordination
 - Handover pack with all registrations and a compliance calendar (incl. quarterly LKPM reports)
 
-**Not included:** legal advice, drafting or reviewing shareholder agreements, tax planning or tax representation (handled by licensed partners — Indonesian notary/law firm and licensed tax consultant [PARTNER: owner to name]), government and notary fees, office rental, and ongoing bookkeeping (available separately via partner).
+**Not included:** legal advice, investment advice, drafting or reviewing shareholder agreements, tax advice, tax planning or tax representation (handled by licensed partners — Indonesian notary/law firm and licensed tax consultant [PARTNER: owner to name]), government and notary fees, office rental, and ongoing bookkeeping (available separately via partner).
+
+### What we don't do / when you need a lawyer
+- We don't draft deeds, articles of association or shareholder agreements, and we don't give legal opinions — a licensed Indonesian notary or law firm does; we can refer you [PARTNER: owner to name].
+- We don't give tax advice or act as tax representative — go to a licensed Indonesian tax consultant (and a contabilista certificado for the Portuguese parent company).
+- We don't tell you whether or how much to invest; investment decisions are yours.
+- Talk to a lawyer before you sign a joint-venture or shareholder agreement with an Indonesian partner, if someone proposes a "nominee" shareholder arrangement, or if your sector has foreign-ownership caps or special conditions.
+- We don't receive passports or other personal ID digitally; they are checked in person or handed directly to the notary.
 
 ### Process & typical timeline
 1. **Scoping & Market Entry Assessment** — 3–5 working days.
-2. **KBLI, ownership and capital plan** — 1 week (depends on how fast documents arrive).
+2. **KBLI, ownership and capital overview** — 1 week (depends on document readiness).
 3. **Name reservation and notarial deed** — 1–2 weeks *(notary and AHU dependent)*.
 4. **Ministry of Law approval (SK), NPWP, NIB on OSS** — 1–2 weeks *(authority dependent)*.
 5. **Business licences / standard certificates** — from days (low risk) to several months (high risk) *(authority dependent)*.
@@ -89,6 +96,9 @@ Yes, but anyone who will work in Indonesia needs the right stay permit, typicall
 **Do you give legal or tax advice?**
 No. We provide administrative support, guidance and document coordination. Deeds, legal opinions and tax representation are handled by our licensed partners.
 
+**Can I send you my documents on WhatsApp?**
+No — for your security we don't receive passports or other ID documents of shareholders or directors digitally. We send you a checklist, check the documents in person at an appointment, and you keep them; where the notary needs copies, you hand them to the licensed notary directly. Company documents (e.g. a registry extract of a corporate shareholder) can be shared by email.
+
 ### CTA copy
 - **Headline:** Ready to plan your PT PMA?
 - **Buttons:** "Book a free 15-min call" → `[BOOKING_URL: owner to set]` · "Message us on WhatsApp" · "Email us"
@@ -96,10 +106,10 @@ No. We provide administrative support, guidance and document coordination. Deeds
 - **Link:** https://wa.me/351930534440?text=Hello%20LUSONUSA%2C%20I%27m%20interested%20in%20setting%20up%20a%20PT%20PMA%20company%20in%20Indonesia.%20Could%20we%20schedule%20a%20short%20call%20to%20discuss%20the%20steps%20and%20costs%3F%20Ref%3A%20LN-PMA-EN-SVC
 - **Email:** contact@lusonusa.agency — subject: "PT PMA setup enquiry (LN-PMA-EN-SVC)"
 - **Hours:** 10:00–16:00 Lisbon time (Mon–Fri) · 16:00–22:00 WIB (summer) / 17:00–23:00 WIB (winter)
-- **Next steps:** Moving there yourself? See [Indonesia visa & KITAS](/services/indonesia-visa-kitas/). Selling or buying goods? See [export-import advisory](/services/export-import-portugal-indonesia/).
+- **Next steps:** Moving there yourself? See [Indonesia visa & KITAS](/services/indonesia-visa-kitas/). Selling or buying goods? See [export-import guidance](/services/export-import-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance and document coordination. We do not provide legal or tax advice. Notarial deeds, legal opinions and tax representation are carried out by licensed partners. Approvals depend on the competent authorities and are not guaranteed. Government and partner fees are separate. Regulatory information was last reviewed in October 2026 and may change.
+LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, practical guidance based on public official information and document coordination. We are not a law firm and do not provide legal, tax or investment advice. Notarial deeds, legal opinions and tax representation are carried out by licensed partners. Approvals depend on the competent authorities and are not guaranteed. Government and partner fees are separate. Regulatory information was last reviewed in October 2026 and may change.
 
 ---
 
@@ -113,30 +123,37 @@ LUSONUSA (PT Wollusca Sukses Bersama) provides administrative support, guidance 
 Abrir empresa na Indonésia: constituição de PT PMA com acompanhamento em português
 
 ### Proposta de valor
-Constituir uma sociedade de capital estrangeiro (PT PMA) na Indonésia exige acertar logo à primeira nos códigos de atividade, no plano de capital, na escritura e nas licenças OSS. Coordenamos todo o processo em português, com um notário indonésio licenciado e parceiros locais, para que saiba sempre qual é o passo seguinte, quem é responsável e quanto custa.
+Constituir uma sociedade de capital estrangeiro (PT PMA) na Indonésia exige acertar logo à primeira nos códigos de atividade, no plano de capital, na escritura e nas licenças OSS. Damos-lhe orientação prática com base em informação oficial pública, coordenamos os passos em português e encaminhamos todos os atos jurídicos e fiscais para um notário, uma sociedade de advogados e um consultor fiscal indonésios licenciados — para que saiba sempre qual é o passo seguinte, quem é responsável e quanto custa. Não somos uma sociedade de advogados nem substituímos um advogado.
 
 ### Para quem é
 - PME e grupos portugueses que querem abrir uma filial, escritório comercial ou unidade de produção na Indonésia
 - Investidores e fundadores que precisam de uma PT PMA para obter o KITAS de investidor
-- Empresas que já têm um parceiro indonésio e querem uma estrutura clara e verificada
+- Empresas que já têm um parceiro indonésio e querem uma visão clara dos passos de constituição
 - Equipas que preferem um único interlocutor bilingue, no fuso horário de Lisboa
 
 ### O que está incluído
 - Reunião inicial e lista de verificação escrita para o seu caso
 - Enquadramento dos códigos KBLI (classificação de atividade de 5 dígitos) e verificação dos limites ao capital estrangeiro na Lista Positiva de Investimento
-- Esboço do plano de capital à luz das regras de 2025 (capital realizado vs. investimento total)
-- Verificação prévia da denominação e lista de documentos de sócios e administradores
+- Explicação das regras de capital de 2025 (capital realizado vs. plano de investimento total) com base em fontes oficiais — os montantes e a decisão de investir são seus
+- Verificação prévia da denominação e lista de documentos de sócios e administradores, enviada por nós (documentos de sociedades sócias podem ser partilhados por email; passaportes e outros documentos de identificação dos administradores são verificados presencialmente ou entregues diretamente ao notário licenciado — não os recebemos por WhatsApp nem por email)
 - Coordenação da escritura de constituição com o nosso notário indonésio parceiro [PARTNER: owner to name]
 - Acompanhamento da aprovação do Ministério do Direito (AHU), do número fiscal NPWP e do NIB no OSS-RBA
 - Apoio nas licenças de atividade associadas ao seu KBLI, segundo o nível de risco
 - Coordenação da abertura de conta bancária e do depósito do capital
 - Dossiê final com todos os registos e um calendário de obrigações (incluindo os relatórios trimestrais LKPM)
 
-**Não está incluído:** consultoria jurídica, redação ou revisão de acordos parassociais, planeamento ou representação fiscal (assegurados por parceiros licenciados — notário/sociedade de advogados indonésia e consultor fiscal licenciado [PARTNER: owner to name]), taxas oficiais e emolumentos notariais, arrendamento de escritório e contabilidade corrente (disponível à parte, através de parceiro).
+**Não está incluído:** consultoria jurídica, aconselhamento de investimento, redação ou revisão de acordos parassociais, aconselhamento, planeamento ou representação fiscal (assegurados por parceiros licenciados — notário/sociedade de advogados indonésia e consultor fiscal licenciado [PARTNER: owner to name]), taxas oficiais e emolumentos notariais, arrendamento de escritório e contabilidade corrente (disponível à parte, através de parceiro).
+
+### O que não fazemos / quando precisa de um advogado
+- Não redigimos escrituras, estatutos nem acordos parassociais, nem emitimos pareceres jurídicos — isso cabe a um notário ou sociedade de advogados indonésia licenciada, para quem o podemos encaminhar [PARTNER: owner to name].
+- Não prestamos aconselhamento fiscal nem representação fiscal — recorra a um consultor fiscal licenciado na Indonésia (e a um contabilista certificado para a sociedade-mãe em Portugal).
+- Não lhe dizemos se deve investir nem quanto; a decisão de investimento é sua.
+- Consulte um advogado antes de assinar um acordo de joint venture ou parassocial com um parceiro indonésio, se lhe propuserem sócios "testas de ferro" (*nominee*) ou se o seu setor tiver limites ou condições ao capital estrangeiro.
+- Não recebemos passaportes nem outros documentos de identificação por via digital; são verificados presencialmente ou entregues diretamente ao notário.
 
 ### Processo e prazos habituais
 1. **Diagnóstico e Market Entry Assessment** — 3 a 5 dias úteis.
-2. **KBLI, estrutura acionista e plano de capital** — cerca de 1 semana (depende da entrega dos documentos).
+2. **KBLI, estrutura acionista e enquadramento do capital** — cerca de 1 semana (depende da preparação dos documentos).
 3. **Reserva de denominação e escritura notarial** — 1 a 2 semanas *(depende do notário e do AHU)*.
 4. **Aprovação ministerial (SK), NPWP e NIB no OSS** — 1 a 2 semanas *(depende das autoridades)*.
 5. **Licenças de atividade / certificados de normas** — de alguns dias (baixo risco) a vários meses (alto risco) *(depende das autoridades)*.
@@ -171,6 +188,9 @@ Sim. Quem for trabalhar na Indonésia precisa da autorização de permanência a
 **Prestam consultoria jurídica ou fiscal?**
 Não. Prestamos apoio administrativo, orientação e coordenação documental. Escrituras, pareceres jurídicos e representação fiscal ficam a cargo dos nossos parceiros licenciados.
 
+**Posso enviar-vos os meus documentos por WhatsApp?**
+Não — por segurança, não recebemos por via digital passaportes nem outros documentos de identificação de sócios ou administradores. Enviamos-lhe uma lista de verificação, conferimos os documentos presencialmente numa reunião e o cliente fica sempre com eles; se o notário precisar de cópias, são entregues diretamente ao notário licenciado. Documentos da empresa (por ex. uma certidão do registo comercial de uma sociedade sócia) podem ser partilhados por email.
+
 ### CTA
 - **Título:** Vamos planear a sua PT PMA?
 - **Botões:** "Marcar chamada grátis de 15 min" → `[BOOKING_URL: owner to set]` · "Falar por WhatsApp" · "Enviar email"
@@ -181,7 +201,7 @@ Não. Prestamos apoio administrativo, orientação e coordenação documental. E
 - **Próximos passos:** Vai mudar-se para a Indonésia? Veja [vistos e KITAS para a Indonésia](/pt/servicos/visto-indonesia-kitas/). Vai comprar ou vender mercadorias? Veja [apoio à exportação para a Indonésia](/pt/servicos/exportar-para-indonesia/).
 
 ### Aviso
-A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientação e coordenação documental. Não prestamos consultoria jurídica nem fiscal. Escrituras, pareceres jurídicos e representação fiscal são assegurados por parceiros licenciados. As aprovações dependem das autoridades competentes e não são garantidas. Taxas oficiais e honorários de parceiros são pagos à parte. Informação regulamentar revista em outubro de 2026, sujeita a alterações.
+A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientação prática com base em informação oficial pública e coordenação documental. Não somos uma sociedade de advogados e não prestamos consultoria jurídica, fiscal nem de investimento. Escrituras, pareceres jurídicos e representação fiscal são assegurados por parceiros licenciados. As aprovações dependem das autoridades competentes e não são garantidas. Taxas oficiais e honorários de parceiros são pagos à parte. Informação regulamentar revista em outubro de 2026, sujeita a alterações.
 
 ---
 
@@ -195,7 +215,7 @@ A LUSONUSA (PT Wollusca Sukses Bersama) presta apoio administrativo, orientaçã
 Pendirian PT PMA di Indonesia untuk perusahaan dan investor Portugal
 
 ### Proposisi nilai
-Mendirikan PT PMA berarti KBLI, rencana modal, akta notaris, dan izin OSS harus benar sejak awal. Kami mengoordinasikan seluruh prosesnya dalam bahasa Indonesia, Portugis, dan Inggris bersama notaris Indonesia berizin dan mitra lokal, sehingga mitra Portugal Anda dan tim di Indonesia selalu tahu langkah berikutnya, siapa yang bertanggung jawab, dan berapa biayanya.
+Mendirikan PT PMA berarti KBLI, rencana modal, akta notaris, dan izin OSS harus benar sejak awal. Kami memberikan panduan praktis berdasarkan informasi resmi yang tersedia untuk publik, mengoordinasikan langkah-langkahnya dalam bahasa Indonesia, Portugis, dan Inggris, serta merujuk semua tindakan hukum dan perpajakan ke notaris, kantor hukum, dan konsultan pajak berizin — sehingga mitra Portugal Anda dan tim di Indonesia selalu tahu langkah berikutnya, siapa yang bertanggung jawab, dan berapa biayanya. Kami bukan kantor hukum dan tidak menggantikan pengacara.
 
 ### Untuk siapa
 - Perusahaan Indonesia yang akan bermitra atau berpatungan dengan investor Portugal
@@ -206,19 +226,26 @@ Mendirikan PT PMA berarti KBLI, rencana modal, akta notaris, dan izin OSS harus 
 ### Yang termasuk
 - Sesi awal dan daftar periksa tertulis sesuai kasus Anda
 - Pemetaan KBLI 5 digit dan pengecekan batas kepemilikan asing di Daftar Positif Investasi
-- Gambaran rencana modal sesuai aturan 2025 (modal disetor vs total investasi)
-- Pengecekan nama perusahaan dan daftar dokumen pemegang saham serta direksi
+- Penjelasan aturan modal 2025 (modal disetor vs total rencana investasi) berdasarkan sumber resmi — besaran dan keputusan investasi tetap di tangan Anda
+- Pengecekan nama perusahaan dan daftar periksa dokumen pemegang saham serta direksi yang kami kirimkan (dokumen badan usaha pemegang saham boleh dibagikan via email; paspor dan identitas pribadi direksi dicek langsung saat bertemu atau diserahkan langsung ke notaris berizin — kami tidak menerimanya lewat WhatsApp atau email)
 - Koordinasi akta pendirian dengan notaris mitra berizin [PARTNER: owner to name]
 - Pemantauan SK Kementerian Hukum (AHU), NPWP, dan NIB di OSS-RBA
 - Pendampingan izin usaha berbasis risiko sesuai KBLI
 - Koordinasi pembukaan rekening bank dan penyetoran modal
 - Paket serah terima berisi semua dokumen legalitas dan kalender kewajiban (termasuk LKPM per triwulan)
 
-**Tidak termasuk:** jasa hukum, penyusunan atau review perjanjian pemegang saham, perencanaan atau kuasa pajak (ditangani mitra berizin — notaris/kantor hukum dan konsultan pajak berizin [PARTNER: owner to name]), biaya pemerintah dan notaris, sewa kantor, serta pembukuan rutin (tersedia terpisah lewat mitra).
+**Tidak termasuk:** jasa hukum, nasihat investasi, penyusunan atau review perjanjian pemegang saham, konsultasi, perencanaan, atau kuasa pajak (ditangani mitra berizin — notaris/kantor hukum dan konsultan pajak berizin [PARTNER: owner to name]), biaya pemerintah dan notaris, sewa kantor, serta pembukuan rutin (tersedia terpisah lewat mitra).
+
+### Yang tidak kami lakukan / kapan Anda perlu pengacara
+- Kami tidak membuat akta, anggaran dasar, atau perjanjian pemegang saham, dan tidak memberi pendapat hukum — itu tugas notaris atau kantor hukum berizin; kami bisa merujuk Anda [PARTNER: owner to name].
+- Kami tidak memberi konsultasi pajak atau menjadi kuasa pajak — gunakan konsultan pajak berizin.
+- Kami tidak menentukan apakah atau berapa Anda harus berinvestasi; keputusan investasi ada di tangan Anda.
+- Temui pengacara sebelum menandatangani perjanjian joint venture atau pemegang saham dengan mitra Indonesia, bila ada tawaran skema pemegang saham "pinjam nama" (*nominee*), atau bila bidang usaha Anda punya batas atau syarat kepemilikan asing.
+- Kami tidak menerima paspor atau identitas pribadi secara digital; dokumen dicek langsung atau diserahkan langsung ke notaris.
 
 ### Proses & estimasi waktu
 1. **Sesi awal & Market Entry Assessment** — 3–5 hari kerja.
-2. **KBLI, struktur saham, dan rencana modal** — sekitar 1 minggu (tergantung kelengkapan dokumen).
+2. **KBLI, struktur saham, dan gambaran modal** — sekitar 1 minggu (tergantung kesiapan dokumen).
 3. **Pemesanan nama dan akta notaris** — 1–2 minggu *(tergantung notaris dan AHU)*.
 4. **SK Kementerian Hukum, NPWP, NIB di OSS** — 1–2 minggu *(tergantung instansi)*.
 5. **Izin usaha / sertifikat standar** — beberapa hari (risiko rendah) hingga beberapa bulan (risiko tinggi) *(tergantung instansi)*.
@@ -250,6 +277,9 @@ Bisa dipakai untuk aset dan operasional perusahaan, tetapi umumnya tidak boleh d
 **Apakah LUSONUSA memberi jasa hukum atau pajak?**
 Tidak. Kami memberikan pendampingan administratif, panduan, dan koordinasi dokumen. Akta, pendapat hukum, dan kuasa pajak ditangani mitra berizin.
 
+**Boleh kirim dokumen saya lewat WhatsApp?**
+Tidak — demi keamanan Anda, kami tidak menerima paspor atau dokumen identitas pemegang saham dan direksi secara digital. Kami kirimkan daftar periksa, dokumen dicek langsung saat bertemu, dan dokumen tetap Anda pegang; bila notaris memerlukan salinan, serahkan langsung ke notaris berizin. Dokumen perusahaan (misalnya akta atau ekstrak registri badan usaha pemegang saham) boleh dibagikan via email.
+
 ### CTA
 - **Judul:** Siap merencanakan PT PMA?
 - **Tombol:** "Konsultasi gratis 15 menit" → `[BOOKING_URL: owner to set]` · "Chat WhatsApp" · "Kirim email"
@@ -260,7 +290,7 @@ Tidak. Kami memberikan pendampingan administratif, panduan, dan koordinasi dokum
 - **Langkah berikutnya:** Direktur akan tinggal di Indonesia? Lihat [visa & KITAS Indonesia untuk WNA](/id/layanan/visa-kitas-indonesia-wna/). Akan ekspor-impor barang? Lihat [ekspor-impor Portugal–Indonesia](/id/layanan/ekspor-impor-portugal-indonesia/).
 
 ### Disclaimer
-LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan, dan koordinasi dokumen, bukan jasa hukum atau konsultasi pajak. Akta notaris, pendapat hukum, dan kuasa pajak dikerjakan oleh mitra berizin. Persetujuan bergantung pada instansi berwenang dan tidak dijamin. Biaya pemerintah dan mitra terpisah. Informasi regulasi terakhir ditinjau Oktober 2026 dan dapat berubah.
+LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, panduan praktis berdasarkan informasi resmi publik, dan koordinasi dokumen. Kami bukan kantor hukum dan tidak memberikan jasa hukum, konsultasi pajak, atau nasihat investasi. Akta notaris, pendapat hukum, dan kuasa pajak dikerjakan oleh mitra berizin. Persetujuan bergantung pada instansi berwenang dan tidak dijamin. Biaya pemerintah dan mitra terpisah. Informasi regulasi terakhir ditinjau Oktober 2026 dan dapat berubah.
 
 ---
 
@@ -310,3 +340,5 @@ LUSONUSA (PT Wollusca Sukses Bersama) memberikan pendampingan administratif, pan
 - Current app.js copy claims a "direct connection with the Indonesia-Portugal Chamber of Commerce" — not used here; owner to confirm the exact name and nature of that relationship before it is published.
 - Whether registered address/virtual office arrangements are offered via partner [verify which KBLI allow virtual offices].
 - Wording "consulting on legal structure" in current app.js must not be reused (compliance).
+- Personal ID handling: confirm the practical flow for directors abroad (in-person check at a Lisbon appointment vs handing documents/POA directly to the Indonesian notary) and whether registered post to the notary is acceptable [owner to confirm].
+- Confirm the owner is comfortable with the "nominee arrangement → talk to a lawyer" bullet (common risk for PT PMA founders).
