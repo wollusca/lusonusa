@@ -179,3 +179,14 @@ tr:last-child td { border-bottom: 0; }
   .legal-doc h1, .legal-doc h2, .legal-doc h3, .legal-doc strong { color: #000; }
   a { color: #000; }
 }
+
+/* Reveal-on-click button for the operator's NIF */
+.reveal-btn {
+  font: inherit; font-size: .9em; cursor: pointer;
+  padding: .15rem .6rem; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06); color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.reveal-btn:hover { background: rgba(255, 255, 255, 0.12); }
+.reveal-btn:focus-visible { outline: 2px solid var(--accent-luso); outline-offset: 2px; }
+.revealed-value { font-variant-numeric: tabular-nums; letter-spacing: .02em; }
