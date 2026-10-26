@@ -205,25 +205,25 @@ const problemMatrix = {
       id: 'rental-cars-hotels',
       icon: 'car',
       label: {
-        en: 'Rental Cars & Hotel Logistics',
-        pt: 'Carro de Aluguer & Logística de Hotéis',
-        id: 'Sewa Mobil & Logistik Hotel'
+        en: 'Rental Car & Hotel Recommendations',
+        pt: 'Recomendações de Aluguer de Carro & Hotéis',
+        id: 'Rekomendasi Sewa Mobil & Hotel'
       },
       bullets: {
         en: [
-          'Assistance with rental car booking & local transit navigation.',
-          'Hotel, guesthouse, & boutique accommodation booking recommendations.',
-          'Airport transfer coordination & ground transport logistics support.'
+          'Rental car recommendations and booking assistance; bookings and payments are made directly with the provider.',
+          'Hotel, guesthouse and boutique accommodation recommendations and booking assistance.',
+          'Airport transfer and local transport recommendations and booking assistance.'
         ],
         pt: [
-          'Assistência na reserva de veículo de aluguer e navegação de condução local.',
-          'Recomendações de reserva de hotéis, alojamentos e estadias.',
-          'Coordenação de transporte de aeroporto e logística de transporte no terreno.'
+          'Recomendações de aluguer de carro e assistência na reserva; reservas e pagamentos são feitos diretamente com o fornecedor.',
+          'Recomendações de hotéis, alojamentos locais e estadias, com assistência na reserva.',
+          'Recomendações de transfer do aeroporto e transporte local, com assistência na reserva.'
         ],
         id: [
-          'Bantuan pemesanan kendaraan sewa/mobil & navigasi transportasi darat.',
-          'Rekomendasi pemesanan hotel, penginapan, & akomodasi.',
-          'Koordinasi penjemputan bandara & dukungan logistik transportasi darat.'
+          'Rekomendasi sewa mobil & bantuan pemesanan; pemesanan dan pembayaran dilakukan langsung dengan penyedia.',
+          'Rekomendasi hotel, penginapan, & akomodasi, serta bantuan pemesanan.',
+          'Rekomendasi penjemputan bandara & transportasi lokal, serta bantuan pemesanan.'
         ]
       }
     }
@@ -678,7 +678,7 @@ const translations = {
     // Team
     'team.eyebrow': 'Our Team',
     'team.title': 'The Collaborators Behind the Bilateral Bridge',
-    'team.subtitle': 'A multidisciplinary team of bilingual professionals embedded in both nations.',
+    'team.subtitle': 'A network of independent bilingual professionals embedded in both nations.',
     'team.c1.role': 'Founder',
     'team.c1.title': 'Business & Bilateral Relations Lead',
     'team.c1.cred1': 'Ex-Embassy of Indonesia, Lisbon (5 yrs)',
@@ -731,10 +731,10 @@ const translations = {
     'footer.hours': 'Service hours: Mon–Fri, 10:00–16:00 Lisbon time (16:00–22:00 WIB in summer, 17:00–23:00 WIB in winter)',
     'footer.consult': 'Consultations conducted in English & Indonesian.',
     'footer.legal': 'LUSONUSA is an information and guidance service, not a law firm, and does not give legal advice; we refer you to licensed professionals when needed.',
-    'footer.entity': 'Operating as PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia)',
+    'footer.entity': 'LUSONUSA is a network of independent bilingual professionals in Portugal and Indonesia. Services are contracted directly with the professional who delivers them.',
     'footer.privacy': 'Privacy & cookies',
     'footer.terms': 'Terms & disclaimer',
-    'footer.copy': '© 2026 LUSONUSA · PT Wollusca Sukses Bersama. All rights reserved.',
+    'footer.copy': '© 2026 LUSONUSA. All rights reserved.',
 
     'sticky.wa': 'WhatsApp',
     'sticky.wa.aria': 'Chat with us on WhatsApp'
@@ -849,7 +849,7 @@ const translations = {
 
     'team.eyebrow': 'Nossa Equipa',
     'team.title': 'Os Colaboradores por trás da Ponte Bilateral',
-    'team.subtitle': 'Uma equipa multidisciplinar de profissionais bilingues integrados em ambas as nações.',
+    'team.subtitle': 'Uma rede de profissionais bilingues independentes integrados em ambas as nações.',
     'team.c1.role': 'Fundador',
     'team.c1.title': 'Líder de Negócios e Relações Bilaterais',
     'team.c1.cred1': 'Ex-Embaixada da Indonésia, Lisboa (5 anos)',
@@ -900,10 +900,10 @@ const translations = {
     'footer.hours': 'Horário: seg.–sex., 10:00–16:00 hora de Lisboa (16:00–22:00 WIB no verão, 17:00–23:00 WIB no inverno)',
     'footer.consult': 'Consultas realizadas em Inglês e Indonésio.',
     'footer.legal': 'A LUSONUSA é um serviço de informação e orientação, não um escritório de advogados, e não presta aconselhamento jurídico; quando necessário, encaminhamos para profissionais habilitados.',
-    'footer.entity': 'Operado por PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonésia)',
+    'footer.entity': 'A LUSONUSA é uma rede de profissionais bilingues independentes em Portugal e na Indonésia. Os serviços são contratados diretamente com o profissional que os presta.',
     'footer.privacy': 'Privacidade e cookies',
     'footer.terms': 'Termos e aviso legal',
-    'footer.copy': '© 2026 LUSONUSA · PT Wollusca Sukses Bersama. Todos os direitos reservados.',
+    'footer.copy': '© 2026 LUSONUSA. Todos os direitos reservados.',
 
     'sticky.wa': 'WhatsApp',
     'sticky.wa.aria': 'Fale connosco pelo WhatsApp'
@@ -1018,7 +1018,7 @@ const translations = {
 
     'team.eyebrow': 'Tim Kami',
     'team.title': 'Para Kolaborator di Balik Jembatan Bilateral',
-    'team.subtitle': 'Tim multidisiplin profesional bilingual yang berpengalaman di kedua negara.',
+    'team.subtitle': 'Jaringan profesional bilingual independen yang berpengalaman di kedua negara.',
     'team.c1.role': 'Pendiri',
     'team.c1.title': 'Pemimpin Bisnis & Hubungan Bilateral',
     'team.c1.cred1': 'Eks-KBRI Lisbon (5 tahun)',
@@ -1069,10 +1069,10 @@ const translations = {
     'footer.hours': 'Jam layanan: Senin–Jumat, 10.00–16.00 waktu Lisbon (16.00–22.00 WIB saat musim panas Eropa, 17.00–23.00 WIB saat musim dingin)',
     'footer.consult': 'Konsultasi dilakukan dalam Bahasa Inggris & Indonesia.',
     'footer.legal': 'LUSONUSA adalah layanan informasi dan panduan, bukan kantor hukum, dan tidak memberikan nasihat hukum; bila diperlukan, kami merujuk Anda ke profesional berlisensi.',
-    'footer.entity': 'Dioperasikan oleh PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia)',
+    'footer.entity': 'LUSONUSA adalah jaringan profesional bilingual independen di Portugal dan Indonesia. Layanan dikontrak langsung dengan profesional yang memberikannya.',
     'footer.privacy': 'Privasi & cookie',
     'footer.terms': 'Ketentuan & penafian',
-    'footer.copy': '© 2026 LUSONUSA · PT Wollusca Sukses Bersama. Hak cipta dilindungi.',
+    'footer.copy': '© 2026 LUSONUSA. Hak cipta dilindungi.',
 
     'sticky.wa': 'WhatsApp',
     'sticky.wa.aria': 'Chat dengan kami via WhatsApp'
