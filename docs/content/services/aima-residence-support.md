@@ -80,6 +80,7 @@ AIMA processes are where most of our Indonesian clients lose time: a missing apo
 - **Not included:** AIMA fees, apostille and notary fees, certified translations (quoted separately or bundled), partner advogado fees, travel outside the Lisbon area.
 - Bundled as the **AIMA Ready** package → see Pricing.
 - **20% community/student discount** on NUSA personal services. Free 15-min triage; paid case assessment credited in full if you proceed.
+- Your quote names the professional who will deliver the service and who invoices you directly.
 
 ### FAQs
 **What is AIMA?**
@@ -112,7 +113,7 @@ No — for your security we don't receive ID or immigration documents digitally.
 - **Hours line:** 10:00–16:00 Lisbon time (Mon–Fri) · 16:00–22:00 WIB (summer) / 17:00–23:00 WIB (winter).
 
 ### Disclaimer
-LUSONUSA provides administrative support, guidance and document coordination. We are not a law firm, do not provide legal advice and do not represent clients before AIMA or the courts; where legal representation is needed we refer you to a licensed partner. AIMA alone decides on residence permits and sets appointment dates; we cannot guarantee outcomes or timelines. AIMA, notary and apostille fees are paid by the client. Operated by PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia).
+LUSONUSA is a collaborative network of independent professionals; each service is quoted and invoiced by the professional who delivers it, who is named in your quote. We provide administrative support, guidance and document coordination. We are not a law firm, do not provide legal advice and do not represent clients before AIMA or the courts; where legal representation is needed we refer you to a licensed partner. AIMA alone decides on residence permits and sets appointment dates; we cannot guarantee outcomes or timelines. AIMA, notary and apostille fees are paid by the client.
 
 ---
 
@@ -166,6 +167,7 @@ A maior parte dos atrasos nos processos AIMA deve-se a documentos incompletos: u
 - **Não inclui:** taxas da AIMA, emolumentos de apostila e notário, traduções certificadas (orçamentadas à parte ou em pacote), honorários de advogado parceiro, deslocações fora da Grande Lisboa.
 - Disponível como pacote **AIMA Ready** → ver Preços.
 - **Desconto de 20%** para estudantes e comunidade. Triagem gratuita de 15 min; avaliação de caso descontada na totalidade se avançar.
+- O seu orçamento identifica o profissional que presta o serviço e que lhe fatura diretamente.
 
 ### Perguntas frequentes
 **O que é a AIMA?**
@@ -198,7 +200,7 @@ Não — por razões de segurança, não recebemos documentos de identificação
 - **Horário:** 10:00–16:00, hora de Lisboa (segunda a sexta) · 16:00–22:00 WIB (verão) / 17:00–23:00 WIB (inverno).
 
 ### Aviso
-A LUSONUSA presta apoio administrativo, orientação e coordenação documental. Não é uma sociedade de advogados, não presta consultoria jurídica e não representa clientes perante a AIMA ou os tribunais; quando é necessária representação, encaminhamos para um parceiro habilitado. A decisão e o agendamento dependem exclusivamente da AIMA; não garantimos resultados nem prazos. Taxas da AIMA, emolumentos notariais e de apostila são suportados pelo cliente. Serviço prestado por PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonésia).
+A LUSONUSA é uma rede colaborativa de profissionais independentes; cada serviço é orçamentado e faturado pelo profissional que o presta, identificado no seu orçamento. A LUSONUSA presta apoio administrativo, orientação e coordenação documental. Não é uma sociedade de advogados, não presta consultoria jurídica e não representa clientes perante a AIMA ou os tribunais; quando é necessária representação, encaminhamos para um parceiro habilitado. A decisão e o agendamento dependem exclusivamente da AIMA; não garantimos resultados nem prazos. Taxas da AIMA, emolumentos notariais e de apostila são suportados pelo cliente.
 
 ---
 
@@ -252,6 +254,7 @@ Banyak WNI kehilangan waktu berbulan-bulan di proses AIMA hanya karena satu hal 
 - **Belum termasuk:** biaya resmi AIMA, biaya apostille dan notaris, terjemahan bersertifikat (ditawarkan terpisah atau dalam paket), honor mitra advogado, transport ke luar area Lisbon.
 - Tersedia sebagai paket **AIMA Ready** → lihat halaman Harga.
 - **Diskon 20% untuk mahasiswa dan komunitas WNI.** Konsultasi awal gratis 15 menit; biaya asesmen kasus dipotongkan penuh kalau Anda lanjut.
+- Penawaran harga Anda mencantumkan nama profesional yang akan menangani layanan ini dan yang langsung menagih Anda.
 
 ### Tanya jawab
 **AIMA itu apa?**
@@ -284,7 +287,7 @@ Tidak — demi keamanan Anda, kami tidak menerima dokumen identitas atau imigras
 - **Jam layanan:** 10:00–16:00 waktu Lisbon (Senin–Jumat) · 16:00–22:00 WIB (musim panas) / 17:00–23:00 WIB (musim dingin).
 
 ### Disclaimer
-LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen. Kami bukan kantor hukum, tidak memberikan jasa hukum, dan tidak mewakili klien di AIMA maupun pengadilan; bila perlu pendampingan hukum, kami merujuk ke mitra berlisensi. Keputusan dan jadwal sepenuhnya wewenang AIMA; kami tidak menjamin hasil maupun waktu. Biaya AIMA, notaris, dan apostille ditanggung klien. Dioperasikan oleh PT Wollusca Sukses Bersama (Purwokerto, Jawa Tengah, Indonesia).
+LUSONUSA adalah jaringan kolaboratif profesional independen; setiap layanan ditawarkan dan ditagihkan oleh profesional yang menanganinya, yang namanya tercantum dalam penawaran harga Anda. Kami memberikan pendampingan administratif, panduan, dan koordinasi dokumen. Kami bukan kantor hukum, tidak memberikan jasa hukum, dan tidak mewakili klien di AIMA maupun pengadilan; bila perlu pendampingan hukum, kami merujuk ke mitra berlisensi. Keputusan dan jadwal sepenuhnya wewenang AIMA; kami tidak menjamin hasil maupun waktu. Biaya AIMA, notaris, dan apostille ditanggung klien.
 
 ---
 
@@ -299,7 +302,12 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
       "@id": "https://www.lusonusa.agency/services/aima-residence-permit-support/#service",
       "name": "AIMA residence permit support",
       "serviceType": "Administrative support and document coordination for Portuguese residence permits (AIMA)",
-      "provider": { "@id": "https://www.lusonusa.agency/#org" },
+      "provider": {
+        "@type": "Person",
+        "name": "Aditya Putra",
+        "url": "https://www.lusonusa.agency/about/aditya-putra/",
+        "memberOf": { "@id": "https://www.lusonusa.agency/#org" }
+      },
       "areaServed": { "@type": "Country", "name": "Portugal" },
       "audience": { "@type": "Audience", "audienceType": "Indonesian citizens living in Portugal" },
       "availableLanguage": ["en", "pt-PT", "id"],
@@ -316,6 +324,7 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 }
 ```
 - All three FAQ blocks include the "documents on WhatsApp" FAQ; PT keeps the employer-referral FAQ (no recruitment/placement wording).
+- `provider` is the service lead as a `Person` with `memberOf` → the LUSONUSA Organization (`https://www.lusonusa.agency/#org`); LUSONUSA is a collaborative network of independent professionals and does not employ the provider. Do not set the Organization itself as `provider`.
 - Never use `LegalService` type for this page. `serviceType` must say "administrative support".
 - Omit `minPrice` until set by owner.
 - Breadcrumbs: EN Home › Moving to Portugal › AIMA residence support · PT Início › Viver em Portugal › Apoio AIMA · ID Beranda › Pindah ke Portugal › Pendampingan AIMA.
@@ -331,9 +340,10 @@ LUSONUSA memberikan pendampingan administratif, panduan, dan koordinasi dokumen.
 ## Owner to confirm
 - [PRICE: owner to set]; AIMA Ready package contents (per applicant vs. per family; renewal price) and anchor
 - [BOOKING_URL: owner to set]
+- Who invoices this service: the named professional (Portugal side: self-employed via recibos verdes) or PT Wollusca Sukses Bersama for Indonesia-side consulting [owner to confirm]
 - [PARTNER: owner to name] — partner advogado/solicitador for appeals and legal representation
 - Coverage for in-person AIMA accompaniment (which AIMA offices/cities)
-- Whether LUSONUSA staff can be present at the AIMA counter with the applicant (AIMA practice varies by office) [verify]
+- Whether the LUSONUSA professional handling the case can be present at the AIMA counter with the applicant (AIMA practice varies by office) [verify]
 - "Employer referral" terms for already-hired staff / admitted students referred by employers or universities (PT section) — no recruitment/placement offer
 - In-person-only document review confirmed as policy; client submits on the AIMA portal themselves (we guide, never receive files)
 - [verify] Lei 61/2025 details (job-seeker visa 120+60 days only for qualified activity; family reunification after 2 years, exceptions)
