@@ -643,7 +643,7 @@ const translations = {
     'dir.id.tags': 'NIF & NISS · AIMA · Banking · Certified translation · Business setup',
 
     'finder.eyebrow': 'Find your path',
-    'finder.title': 'Tell us where you’re headed. We’ll point the way.',
+    'finder.title': 'Tell us where you’re headed. | We’ll point the way.',
     'finder.intro': 'Three quick taps turn your situation — say, checking a supplier in Jepara or getting your NIF in Lisbon — into a clear message for our team. No forms, no account.',
     'promise.1.t': 'A real person replies',
     'promise.1.d': 'Within 1–2 working days, in English or Indonesian.',
@@ -671,7 +671,7 @@ const translations = {
     'msg.timing': 'Timing: {s}',
 
     'process.eyebrow': 'How we work',
-    'process.title': 'Honest first answers. Deeper help when you need it.',
+    'process.title': 'Honest first answers. | Deeper help when you need it.',
     'step.1.badge': 'Free',
     'step.1.title': 'Tell us your situation',
     'step.1.text': 'A short WhatsApp message or email is enough. No fees, no obligation.',
@@ -687,7 +687,7 @@ const translations = {
     'process.note': 'Accompaniment from €15/hour. Anything beyond the free first orientation is quoted before we start.',
 
     'team.eyebrow': 'Our network',
-    'team.title': 'Bilingual professionals, at home in both countries.',
+    'team.title': 'The people | behind the bridge.',
     'team.bio.btn': 'Bio',
     'team.c1.tag1': 'Double Master’s · UGM × ISCTE',
     'team.c1.tag2': '9+ yrs in Portugal',
@@ -788,7 +788,7 @@ const translations = {
     'dir.id.tags': 'NIF & NISS · AIMA · Banco · Tradução certificada · Criação de empresa',
 
     'finder.eyebrow': 'Encontre o seu caminho',
-    'finder.title': 'Diga-nos para onde vai. Nós indicamos o caminho.',
+    'finder.title': 'Diga-nos para onde vai. | Nós indicamos o caminho.',
     'finder.intro': 'Três toques transformam a sua situação — por exemplo, verificar um fornecedor em Jepara ou importar mobiliário de Java — numa mensagem clara para a nossa equipa. Sem formulários, sem conta.',
     'promise.1.t': 'Responde-lhe uma pessoa',
     'promise.1.d': 'Em 1–2 dias úteis, em inglês ou indonésio.',
@@ -816,7 +816,7 @@ const translations = {
     'msg.timing': 'Prazo: {s}',
 
     'process.eyebrow': 'Como trabalhamos',
-    'process.title': 'Primeiro, respostas honestas. Depois, ajuda mais profunda quando precisar.',
+    'process.title': 'Primeiro, respostas honestas. | Ajuda mais profunda quando precisar.',
     'step.1.badge': 'Grátis',
     'step.1.title': 'Conte-nos a sua situação',
     'step.1.text': 'Basta uma mensagem curta por WhatsApp ou email. Sem custos nem compromisso.',
@@ -832,7 +832,7 @@ const translations = {
     'process.note': 'Acompanhamento a partir de €15/hora. Tudo o que vá além da primeira orientação gratuita é orçamentado antes de começarmos.',
 
     'team.eyebrow': 'A nossa rede',
-    'team.title': 'Profissionais bilingues, em casa nos dois países.',
+    'team.title': 'As pessoas | por trás da ponte.',
     'team.bio.btn': 'Bio',
     'team.c1.tag1': 'Duplo Mestrado · UGM × ISCTE',
     'team.c1.tag2': '9+ anos em Portugal',
@@ -933,7 +933,7 @@ const translations = {
     'dir.id.tags': 'NIF & NISS · AIMA · Rekening bank · Terjemahan bersertifikat · Pendirian usaha',
 
     'finder.eyebrow': 'Temukan jalan Anda',
-    'finder.title': 'Ceritakan tujuan Anda. Kami tunjukkan jalannya.',
+    'finder.title': 'Ceritakan tujuan Anda. | Kami tunjukkan jalannya.',
     'finder.intro': 'Tiga ketukan mengubah situasi Anda — misalnya mengurus NIF atau membuka usaha kuliner di Portugal — menjadi pesan yang jelas untuk tim kami. Tanpa formulir, tanpa akun.',
     'promise.1.t': 'Dibalas langsung oleh orang, bukan bot',
     'promise.1.d': 'Dalam 1–2 hari kerja, dalam bahasa Inggris atau Indonesia.',
@@ -961,7 +961,7 @@ const translations = {
     'msg.timing': 'Waktu: {s}',
 
     'process.eyebrow': 'Cara kami bekerja',
-    'process.title': 'Jawaban jujur lebih dulu. Bantuan lebih dalam saat Anda butuh.',
+    'process.title': 'Jawaban jujur lebih dulu. | Bantuan lebih dalam saat Anda butuh.',
     'step.1.badge': 'Gratis',
     'step.1.title': 'Ceritakan situasi Anda',
     'step.1.text': 'Cukup pesan singkat lewat WhatsApp atau email. Tanpa biaya, tanpa kewajiban.',
@@ -977,7 +977,7 @@ const translations = {
     'process.note': 'Pendampingan mulai €15/jam. Apa pun di luar orientasi awal gratis akan diberi penawaran harga sebelum dimulai.',
 
     'team.eyebrow': 'Jaringan kami',
-    'team.title': 'Profesional bilingual yang akrab dengan kedua negara.',
+    'team.title': 'Orang-orang | di balik jembatan ini.',
     'team.bio.btn': 'Profil',
     'team.c1.tag1': 'Double Master · UGM × ISCTE',
     'team.c1.tag2': '9+ tahun di Portugal',
@@ -1000,6 +1000,19 @@ function initLanguageSystem() {
   setLanguage(SUPPORTED_LANGS.includes(stored) ? stored : 'en', false);
 }
 
+/* Two-part titles are stored as "first part | second part"; each part becomes
+   a .t-line span so the break always falls between them, in every language */
+function renderLines(el, value) {
+  el.textContent = '';
+  value.split('|').map(part => part.trim()).forEach((part, i) => {
+    if (i > 0) el.appendChild(document.createTextNode(' '));
+    const line = document.createElement('span');
+    line.className = 't-line';
+    line.textContent = part;
+    el.appendChild(line);
+  });
+}
+
 function setLanguage(lang, persist) {
   const dict = translations[lang];
   if (!dict) return;
@@ -1008,7 +1021,9 @@ function setLanguage(lang, persist) {
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const value = dict[el.getAttribute('data-i18n')];
-    if (value !== undefined) el.textContent = value;
+    if (value === undefined) return;
+    if (el.hasAttribute('data-i18n-lines')) renderLines(el, value);
+    else el.textContent = value;
   });
 
   document.querySelectorAll('[data-i18n-aria]').forEach(el => {

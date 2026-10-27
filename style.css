@@ -484,13 +484,19 @@ section[id], footer[id] { scroll-margin-top: var(--header-h); }
    ═══════════════════════════════════════════════════════════════ */
 .block { padding: var(--s-8) 0; }
 .block-tint { background: linear-gradient(180deg, var(--bg), var(--surface) 30%, var(--bg)); }
-.block-head { max-width: 46rem; }
+.block-head { max-width: 64rem; }
 .block-head h2 {
   margin-top: var(--s-3);
   font: 500 var(--t-h2)/1.05 var(--f-display);
   letter-spacing: -0.01em;
   text-wrap: balance;
 }
+/* Two-part titles: one line per part from 640px up; free (balanced) wrap below */
+.t-line { display: inline; }
+@media (min-width: 640px) {
+  .t-line { display: block; }
+}
+.finder .block-head h2 { font-size: clamp(2.25rem, 1.6rem + 1.6vw, 3.25rem); }
 .block-head p:not(.eyebrow) {
   max-width: 34em;
   margin-top: var(--s-3);
@@ -680,7 +686,8 @@ section[id], footer[id] { scroll-margin-top: var(--header-h); }
 
 
 /* ═══════════════════════════════════════════════════════════════
-   TEAM — tall B&W portraits; bios on hover, focus or tap
+   TEAM — B&W portraits; the info panel overlaps only the bottom edge
+   of the photo so faces stay clear. Bios on hover, focus or tap.
    ═══════════════════════════════════════════════════════════════ */
 .team {
   display: grid;
@@ -690,38 +697,44 @@ section[id], footer[id] { scroll-margin-top: var(--header-h); }
 }
 .person {
   position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  aspect-ratio: 4 / 5.6;
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
 }
-.person-photo,
-.person-photo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+.person-photo {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
 }
 .person-photo img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center var(--face-y, 30%);
   filter: grayscale(1) contrast(1.05);
   transition: transform 0.8s var(--ease);
 }
-.person::after {
+/* Fade from photo into the panel: only the bottom ~18% of the photo darkens */
+.person-photo::after {
   content: '';
   position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 34%, rgba(11, 13, 18, 0.62) 56%, rgba(11, 13, 18, 0.97) 82%);
+  inset: auto 0 0;
+  height: 30%;
+  background: linear-gradient(180deg, transparent, rgba(18, 21, 28, 0.85) 60%, var(--surface));
   pointer-events: none;
 }
 .person-info {
-  position: absolute;
-  inset: auto 0 0;
+  position: relative;
   z-index: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 1.25rem;
+  margin-top: -2.75rem;
+  padding: 0 1.25rem 1.25rem;
   transition: opacity 0.35s;
 }
 .person-role {
@@ -976,7 +989,6 @@ section[id], footer[id] { scroll-margin-top: var(--header-h); }
 @media (max-width: 560px) {
   .steps { grid-template-columns: 1fr; }
   .team { grid-template-columns: 1fr; }
-  .person { aspect-ratio: 4 / 5; }
   .dir-arrow { display: none; }
   .dir { grid-template-columns: 1fr; }
   .chat-body, .chat-head { padding-left: 1rem; padding-right: 1rem; }
