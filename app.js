@@ -327,18 +327,18 @@ const FINDER = {
           bullets: {
             en: [
               'A bilingual local guide for business or leisure days in Portugal',
-              'Itinerary, hotel and rental car recommendations, with booking assistance',
-              'Bookings and payments are made directly with the provider'
+              'Guide support for visiting delegations',
+              'Itinerary, hotel and rental car recommendations with booking assistance; you book and pay the provider directly'
             ],
             pt: [
               'Guia local bilingue para dias de negócios ou de lazer em Portugal',
-              'Recomendações de itinerário, hotéis e aluguer de carro, com assistência na reserva',
-              'Reservas e pagamentos são feitos diretamente com o fornecedor'
+              'Apoio de guia para delegações em visita',
+              'Recomendações de itinerário, hotéis e aluguer de carro, com assistência na reserva; reserva e paga diretamente ao fornecedor'
             ],
             id: [
               'Pemandu lokal bilingual untuk urusan bisnis atau wisata di Portugal',
-              'Rekomendasi itinerari, hotel, dan sewa mobil, serta bantuan pemesanan',
-              'Pemesanan dan pembayaran dilakukan langsung dengan penyedia'
+              'Pendampingan pemandu untuk delegasi yang berkunjung',
+              'Rekomendasi itinerari, hotel, dan sewa mobil, serta bantuan pemesanan; pemesanan dan pembayaran langsung ke penyedia'
             ]
           }
         }
@@ -575,7 +575,7 @@ const translations = {
     'footer.wa.btn': 'Direct WhatsApp Consultation',
     'footer.email': 'Email:',
     'footer.hours': 'Service hours: Mon–Fri, 10:00–16:00 Lisbon time (16:00–22:00 WIB in summer, 17:00–23:00 WIB in winter)',
-    'footer.consult': 'Consultations in English, Portuguese or Indonesian.',
+    'footer.consult': 'Consultations in English & Indonesian.',
     'footer.legal': 'LUSONUSA is an information and guidance service, not a law firm, and does not give legal advice. When your situation needs a lawyer or another licensed professional, we\'ll tell you clearly.',
     'footer.entity': 'LUSONUSA is a network of independent bilingual professionals in Portugal and Indonesia. Services are contracted directly with the professional who delivers them.',
     'footer.privacy': 'Privacy & cookies',
@@ -593,7 +593,7 @@ const translations = {
     'team.c2.bio': '7+ years residing in Portugal with a Master of Science in Economics from ISEG Lisbon. Currently active in the European banking sector, bringing domain expertise in capital movements, cross-border financial flows, and compliance.',
     'team.c2.lang': 'English & Indonesian',
     'team.c3.role': 'Technology & AI',
-    'team.c3.title': 'Digital Transformation & Innovation Specialist',
+    'team.c3.title': 'Digital Transformation & Innovation',
     'team.c3.bio': 'M.Sc. in Strategic Marketing currently leading enterprise tech initiatives. Specializes in digital workflow adaptation, modern market expansion, and business AI adoption across cross-border operations.',
     'team.c3.lang': 'English & Indonesian',
     'team.c4.role': 'Translation Specialist',
@@ -646,7 +646,7 @@ const translations = {
     'finder.title': 'Tell us where you’re headed. We’ll point the way.',
     'finder.intro': 'Three quick taps turn your situation — say, checking a supplier in Jepara or getting your NIF in Lisbon — into a clear message for our team. No forms, no account.',
     'promise.1.t': 'A real person replies',
-    'promise.1.d': 'Within 1–2 working days, in English, Portuguese or Indonesian.',
+    'promise.1.d': 'Within 1–2 working days, in English or Indonesian.',
     'promise.2.t': 'Your first orientation is free',
     'promise.2.d': 'An honest overview based on public official information.',
     'promise.3.t': 'Deeper work is quoted first',
@@ -720,7 +720,7 @@ const translations = {
     'footer.wa.btn': 'Consulta Direta via WhatsApp',
     'footer.email': 'Email:',
     'footer.hours': 'Horário: seg.–sex., 10:00–16:00 hora de Lisboa (16:00–22:00 WIB no verão, 17:00–23:00 WIB no inverno)',
-    'footer.consult': 'Consultas em português, inglês ou indonésio.',
+    'footer.consult': 'Consultas em inglês e indonésio.',
     'footer.legal': 'A LUSONUSA é um serviço de informação e orientação, não um escritório de advogados, e não presta aconselhamento jurídico. Quando a sua situação exigir um advogado ou outro profissional habilitado, dizemos-lhe claramente.',
     'footer.entity': 'A LUSONUSA é uma rede de profissionais bilingues independentes em Portugal e na Indonésia. Os serviços são contratados diretamente com o profissional que os presta.',
     'footer.privacy': 'Privacidade e cookies',
@@ -738,7 +738,7 @@ const translations = {
     'team.c2.bio': '7+ anos a residir em Portugal, com Mestrado em Economia pelo ISEG Lisboa. Atualmente a trabalhar no setor bancário europeu, com experiência em movimentos de capital, fluxos financeiros transfronteiriços e conformidade.',
     'team.c2.lang': 'Inglês & Indonésio',
     'team.c3.role': 'Tecnologia & IA',
-    'team.c3.title': 'Especialista em Transformação Digital e Inovação',
+    'team.c3.title': 'Transformação Digital e Inovação',
     'team.c3.bio': 'Mestrado (M.Sc.) em Marketing Estratégico, atualmente a liderar iniciativas tecnológicas empresariais. Especialização em adaptação de fluxos de trabalho digitais, expansão de mercado e adoção de IA em operações transfronteiriças.',
     'team.c3.lang': 'Inglês & Indonésio',
     'team.c4.role': 'Especialista em Tradução',
@@ -791,7 +791,7 @@ const translations = {
     'finder.title': 'Diga-nos para onde vai. Nós indicamos o caminho.',
     'finder.intro': 'Três toques transformam a sua situação — por exemplo, verificar um fornecedor em Jepara ou importar mobiliário de Java — numa mensagem clara para a nossa equipa. Sem formulários, sem conta.',
     'promise.1.t': 'Responde-lhe uma pessoa',
-    'promise.1.d': 'Em 1–2 dias úteis, em português, inglês ou indonésio.',
+    'promise.1.d': 'Em 1–2 dias úteis, em inglês ou indonésio.',
     'promise.2.t': 'A primeira orientação é gratuita',
     'promise.2.d': 'Uma visão honesta, com base em informação oficial pública.',
     'promise.3.t': 'Trabalho aprofundado com orçamento prévio',
@@ -865,7 +865,7 @@ const translations = {
     'footer.wa.btn': 'Konsultasi Langsung via WhatsApp',
     'footer.email': 'Email:',
     'footer.hours': 'Jam layanan: Senin–Jumat, 10.00–16.00 waktu Lisbon (16.00–22.00 WIB saat musim panas Eropa, 17.00–23.00 WIB saat musim dingin)',
-    'footer.consult': 'Konsultasi dalam bahasa Indonesia, Inggris, atau Portugis.',
+    'footer.consult': 'Konsultasi dalam bahasa Inggris & Indonesia.',
     'footer.legal': 'LUSONUSA adalah layanan informasi dan panduan, bukan kantor hukum, dan tidak memberikan nasihat hukum. Jika situasi Anda memerlukan pengacara atau profesional berlisensi lainnya, kami akan menyampaikannya dengan jelas.',
     'footer.entity': 'LUSONUSA adalah jaringan profesional bilingual independen di Portugal dan Indonesia. Layanan dikontrak langsung dengan profesional yang memberikannya.',
     'footer.privacy': 'Privasi & cookie',
@@ -883,7 +883,7 @@ const translations = {
     'team.c2.bio': '7+ tahun tinggal di Portugal dengan gelar Master Ekonomi dari ISEG Lisbon. Saat ini aktif di sektor perbankan Eropa, membawa keahlian dalam pergerakan modal, arus keuangan lintas batas, dan kepatuhan.',
     'team.c2.lang': 'Inggris & Indonesia',
     'team.c3.role': 'Teknologi & AI',
-    'team.c3.title': 'Spesialis Transformasi Digital & Inovasi',
+    'team.c3.title': 'Transformasi Digital & Inovasi',
     'team.c3.bio': 'M.Sc. Pemasaran Strategis, saat ini memimpin inisiatif teknologi perusahaan. Spesialisasi dalam adaptasi alur kerja digital, ekspansi pasar modern, dan adopsi AI bisnis lintas operasi.',
     'team.c3.lang': 'Inggris & Indonesia',
     'team.c4.role': 'Spesialis Penerjemahan',
@@ -936,7 +936,7 @@ const translations = {
     'finder.title': 'Ceritakan tujuan Anda. Kami tunjukkan jalannya.',
     'finder.intro': 'Tiga ketukan mengubah situasi Anda — misalnya mengurus NIF atau membuka usaha kuliner di Portugal — menjadi pesan yang jelas untuk tim kami. Tanpa formulir, tanpa akun.',
     'promise.1.t': 'Dibalas langsung oleh orang, bukan bot',
-    'promise.1.d': 'Dalam 1–2 hari kerja, dalam bahasa Indonesia, Inggris, atau Portugis.',
+    'promise.1.d': 'Dalam 1–2 hari kerja, dalam bahasa Inggris atau Indonesia.',
     'promise.2.t': 'Orientasi pertama gratis',
     'promise.2.d': 'Gambaran jujur berdasarkan informasi resmi yang terbuka untuk umum.',
     'promise.3.t': 'Pekerjaan lanjutan dengan penawaran di awal',

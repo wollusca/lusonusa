@@ -361,7 +361,7 @@ section[id], footer[id] { scroll-margin-top: var(--header-h); }
 
 @keyframes heroZoom {
   from { transform: scale(1); }
-  to   { transform: scale(1.07); }
+  to   { transform: scale(1.04); } /* capped: the 1024px sources go soft if enlarged further */
 }
 
 .hero-inner {
