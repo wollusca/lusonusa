@@ -1,6 +1,6 @@
 # Homepage copy — proofreading sheet
 
-Generated from `app.js` on branch `claude/redesign-homepage` (commit bc549f6). Every text a visitor can see, side by side.
+Generated from `app.js` on branch `claude/redesign-homepage` (commit 3cee9be). Every text a visitor can see, side by side.
 
 **How to use:** a native Portuguese speaker checks the **PT** column, a native Indonesian speaker checks the **ID** column. Mark problems in the "Notes" column (or just reply with the row number and the better wording). Don't worry about the EN column unless something reads oddly.
 
@@ -91,7 +91,7 @@ Generated from `app.js` on branch `claude/redesign-homepage` (commit bc549f6). E
 | 81 | `dir.id.text` | For Indonesians living, studying or working in Portugal — and Indonesian businesses expanding into Portugal and Europe. | Para indonésios que vivem, estudam ou trabalham em Portugal — e para empresas indonésias que se expandem para Portugal e para a Europa. | Untuk WNI yang tinggal, kuliah, atau bekerja di Portugal — serta bisnis Indonesia yang berekspansi ke Portugal dan Eropa. | |
 | 82 | `dir.id.tags` | NIF & NISS · AIMA · Banking · Certified translation · Business setup | NIF & NISS · AIMA · Banco · Tradução certificada · Criação de empresa | NIF & NISS · AIMA · Rekening bank · Terjemahan bersertifikat · Pendirian usaha | |
 | 83 | `finder.eyebrow` | Find your path | Encontre o seu caminho | Temukan jalan Anda | |
-| 84 | `finder.title` | Tell us where you’re headed. We’ll point the way. | Diga-nos para onde vai. Nós indicamos o caminho. | Ceritakan tujuan Anda. Kami tunjukkan jalannya. | |
+| 84 | `finder.title` | Tell us where you’re headed. \| We’ll point the way. | Diga-nos para onde vai. \| Nós indicamos o caminho. | Ceritakan tujuan Anda. \| Kami tunjukkan jalannya. | |
 | 85 | `finder.intro` | Three quick taps turn your situation — say, checking a supplier in Jepara or getting your NIF in Lisbon — into a clear message for our team. No forms, no account. | Três toques transformam a sua situação — por exemplo, verificar um fornecedor em Jepara ou importar mobiliário de Java — numa mensagem clara para a nossa equipa. Sem formulários, sem conta. | Tiga ketukan mengubah situasi Anda — misalnya mengurus NIF atau membuka usaha kuliner di Portugal — menjadi pesan yang jelas untuk tim kami. Tanpa formulir, tanpa akun. | |
 | 86 | `promise.1.t` | A real person replies | Responde-lhe uma pessoa | Dibalas langsung oleh orang, bukan bot | |
 | 87 | `promise.1.d` | Within 1–2 working days, in English or Indonesian. | Em 1–2 dias úteis, em inglês ou indonésio. | Dalam 1–2 hari kerja, dalam bahasa Inggris atau Indonesia. | |
@@ -118,7 +118,7 @@ Generated from `app.js` on branch `claude/redesign-homepage` (commit bc549f6). E
 | 108 | `msg.topic` | Topic: {s} | Assunto: {s} | Topik: {s} | |
 | 109 | `msg.timing` | Timing: {s} | Prazo: {s} | Waktu: {s} | |
 | 110 | `process.eyebrow` | How we work | Como trabalhamos | Cara kami bekerja | |
-| 111 | `process.title` | Honest first answers. Deeper help when you need it. | Primeiro, respostas honestas. Depois, ajuda mais profunda quando precisar. | Jawaban jujur lebih dulu. Bantuan lebih dalam saat Anda butuh. | |
+| 111 | `process.title` | Honest first answers. \| Deeper help when you need it. | Primeiro, respostas honestas. \| Ajuda mais profunda quando precisar. | Jawaban jujur lebih dulu. \| Bantuan lebih dalam saat Anda butuh. | |
 | 112 | `step.1.badge` | Free | Grátis | Gratis | |
 | 113 | `step.1.title` | Tell us your situation | Conte-nos a sua situação | Ceritakan situasi Anda | |
 | 114 | `step.1.text` | A short WhatsApp message or email is enough. No fees, no obligation. | Basta uma mensagem curta por WhatsApp ou email. Sem custos nem compromisso. | Cukup pesan singkat lewat WhatsApp atau email. Tanpa biaya, tanpa kewajiban. | |
@@ -133,7 +133,7 @@ Generated from `app.js` on branch `claude/redesign-homepage` (commit bc549f6). E
 | 123 | `step.4.text` | Hands-on help, such as going with you to an AIMA appointment or a supplier visit in Java. Extra time is only billed after we ask you. | Apoio no terreno, como acompanhar uma visita a fornecedores em Java ou uma reunião com um parceiro local. O tempo adicional só é faturado depois de lhe perguntarmos. | Pendampingan langsung, seperti menemani ke jadwal AIMA, Finanças, atau pembukaan rekening bank. Waktu tambahan hanya ditagih setelah kami menanyakannya kepada Anda. | |
 | 124 | `process.note` | Accompaniment from €15/hour. Anything beyond the free first orientation is quoted before we start. | Acompanhamento a partir de €15/hora. Tudo o que vá além da primeira orientação gratuita é orçamentado antes de começarmos. | Pendampingan mulai €15/jam. Apa pun di luar orientasi awal gratis akan diberi penawaran harga sebelum dimulai. | |
 | 125 | `team.eyebrow` | Our network | A nossa rede | Jaringan kami | |
-| 126 | `team.title` | Bilingual professionals, at home in both countries. | Profissionais bilingues, em casa nos dois países. | Profesional bilingual yang akrab dengan kedua negara. | |
+| 126 | `team.title` | The people \| behind the bridge. | As pessoas \| por trás da ponte. | Orang-orang \| di balik jembatan ini. | |
 | 127 | `team.bio.btn` | Bio | Bio | Profil | |
 | 128 | `team.c1.tag1` | Double Master’s · UGM × ISCTE | Duplo Mestrado · UGM × ISCTE | Double Master · UGM × ISCTE | |
 | 129 | `team.c1.tag2` | 9+ yrs in Portugal | 9+ anos em Portugal | 9+ tahun di Portugal | |
