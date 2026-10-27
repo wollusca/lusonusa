@@ -1,0 +1,204 @@
+# Homepage copy — proofreading sheet
+
+Generated from `app.js` on branch `claude/redesign-homepage` (commit 3cee9be). Every text a visitor can see, side by side.
+
+**How to use:** a native Portuguese speaker checks the **PT** column, a native Indonesian speaker checks the **ID** column. Mark problems in the "Notes" column (or just reply with the row number and the better wording). Don't worry about the EN column unless something reads oddly.
+
+## 1. Page text
+
+| # | Where (key) | EN | PT | ID | Notes |
+|---|---|---|---|---|---|
+| 1 | `meta.title` | LUSONUSA \| Portugal ↔ Indonesia business setup, visas & relocation support | LUSONUSA \| Portugal ↔ Indonésia: criação de empresas, vistos e apoio à mudança | LUSONUSA \| Portugal ↔ Indonesia: pendirian usaha, visa & pendampingan pindah | |
+| 2 | `meta.description` | LUSONUSA gives practical guidance and in-person accompaniment to Portuguese businesses entering Indonesia and Indonesians settling in Portugal: PT PMA setup, visas and KITAS, NIF/NISS/AIMA paperwork and notary-certified translations. | A LUSONUSA dá orientação prática e acompanhamento presencial a empresas portuguesas que entram na Indonésia e a indonésios que se instalam em Portugal: PT PMA, vistos e KITAS, NIF/NISS/AIMA e traduções certificadas por notário. | LUSONUSA memberikan panduan praktis dan pendampingan langsung bagi bisnis Portugal yang masuk ke Indonesia dan WNI yang menetap di Portugal: PT PMA, visa & KITAS, NIF/NISS/AIMA, dan terjemahan bersertifikat notaris. | |
+| 3 | `skip` | Skip to content | Saltar para o conteúdo | Langsung ke konten | |
+| 4 | `aria.nav` | Main navigation | Navegação principal | Navigasi utama | |
+| 5 | `aria.footer` | Footer | Rodapé | Footer | |
+| 6 | `aria.menu.close` | Close menu | Fechar menu | Tutup menu | |
+| 7 | `nav.menu` | Menu | Menu | Menu | |
+| 8 | `nav.insights` | Guides | Guias | Panduan | |
+| 9 | `nav.contact` | Contact | Contacto | Kontak | |
+| 10 | `nav.team` | Team | Equipa | Tim | |
+| 11 | `msg.generic` | Hello LUSONUSA! I would like to book a free consultation. | Olá LUSONUSA! Gostaria de marcar uma consulta gratuita. | Halo LUSONUSA! Saya ingin menjadwalkan konsultasi gratis. | |
+| 12 | `msg.greeting` | Hello LUSONUSA! | Olá LUSONUSA! | Halo LUSONUSA! | |
+| 13 | `msg.close` | Could you tell me the next steps? | Podem indicar-me os próximos passos? | Boleh saya tahu langkah selanjutnya? | |
+| 14 | `msg.subject` | Enquiry: {s} | Pedido de informação: {s} | Pertanyaan: {s} | |
+| 15 | `footer.tagline` | Bilateral Information, Guidance & Accompaniment | Informação, Orientação e Acompanhamento Bilateral | Informasi, Panduan & Pendampingan Bilateral | |
+| 16 | `footer.contact.title` | Get in Touch | Entre em Contacto | Hubungi Kami | |
+| 17 | `footer.wa.btn` | Direct WhatsApp Consultation | Consulta Direta via WhatsApp | Konsultasi Langsung via WhatsApp | |
+| 18 | `footer.email` | Email: | Email: | Email: | |
+| 19 | `footer.hours` | Service hours: Mon–Fri, 10:00–16:00 Lisbon time (16:00–22:00 WIB in summer, 17:00–23:00 WIB in winter) | Horário: seg.–sex., 10:00–16:00 hora de Lisboa (16:00–22:00 WIB no verão, 17:00–23:00 WIB no inverno) | Jam layanan: Senin–Jumat, 10.00–16.00 waktu Lisbon (16.00–22.00 WIB saat musim panas Eropa, 17.00–23.00 WIB saat musim dingin) | |
+| 20 | `footer.consult` | Consultations in English & Indonesian. | Consultas em inglês e indonésio. | Konsultasi dalam bahasa Inggris & Indonesia. | |
+| 21 | `footer.legal` | LUSONUSA is an information and guidance service, not a law firm, and does not give legal advice. When your situation needs a lawyer or another licensed professional, we'll tell you clearly. | A LUSONUSA é um serviço de informação e orientação, não um escritório de advogados, e não presta aconselhamento jurídico. Quando a sua situação exigir um advogado ou outro profissional habilitado, dizemos-lhe claramente. | LUSONUSA adalah layanan informasi dan panduan, bukan kantor hukum, dan tidak memberikan nasihat hukum. Jika situasi Anda memerlukan pengacara atau profesional berlisensi lainnya, kami akan menyampaikannya dengan jelas. | |
+| 22 | `footer.entity` | LUSONUSA is a network of independent bilingual professionals in Portugal and Indonesia. Services are contracted directly with the professional who delivers them. | A LUSONUSA é uma rede de profissionais bilingues independentes em Portugal e na Indonésia. Os serviços são contratados diretamente com o profissional que os presta. | LUSONUSA adalah jaringan profesional bilingual independen di Portugal dan Indonesia. Layanan dikontrak langsung dengan profesional yang memberikannya. | |
+| 23 | `footer.privacy` | Privacy & cookies | Privacidade e cookies | Privasi & cookie | |
+| 24 | `footer.terms` | Terms & disclaimer | Termos e aviso legal | Ketentuan & penafian | |
+| 25 | `footer.copy` | © 2026 LUSONUSA. All rights reserved. | © 2026 LUSONUSA. Todos os direitos reservados. | © 2026 LUSONUSA. Hak cipta dilindungi. | |
+| 26 | `link.terms` | /terms.html | /termos.html | /terms.html | |
+| 27 | `link.privacy` | /privacy.html | /privacidade.html | /privacy.html | |
+| 28 | `sticky.wa` | WhatsApp | WhatsApp | WhatsApp | |
+| 29 | `sticky.wa.aria` | Chat with us on WhatsApp | Fale connosco pelo WhatsApp | Chat dengan kami via WhatsApp | |
+| 30 | `team.c1.role` | Founder | Fundador | Pendiri | |
+| 31 | `team.c1.title` | Business & Bilateral Relations Lead | Líder de Negócios e Relações Bilaterais | Pemimpin Bisnis & Hubungan Bilateral | |
+| 32 | `team.c1.lang` | English & Indonesian | Inglês & Indonésio | Inggris & Indonesia | |
+| 33 | `team.c2.role` | Banking & Finance | Banca & Finanças | Perbankan & Keuangan | |
+| 34 | `team.c2.title` | Banking & Finance Specialist | Especialista em Banca e Finanças | Spesialis Perbankan & Keuangan | |
+| 35 | `team.c2.bio` | 7+ years residing in Portugal with a Master of Science in Economics from ISEG Lisbon. Currently active in the European banking sector, bringing domain expertise in capital movements, cross-border financial flows, and compliance. | 7+ anos a residir em Portugal, com Mestrado em Economia pelo ISEG Lisboa. Atualmente a trabalhar no setor bancário europeu, com experiência em movimentos de capital, fluxos financeiros transfronteiriços e conformidade. | 7+ tahun tinggal di Portugal dengan gelar Master Ekonomi dari ISEG Lisbon. Saat ini aktif di sektor perbankan Eropa, membawa keahlian dalam pergerakan modal, arus keuangan lintas batas, dan kepatuhan. | |
+| 36 | `team.c2.lang` | English & Indonesian | Inglês & Indonésio | Inggris & Indonesia | |
+| 37 | `team.c3.role` | Technology & AI | Tecnologia & IA | Teknologi & AI | |
+| 38 | `team.c3.title` | Digital Transformation & Innovation | Transformação Digital e Inovação | Transformasi Digital & Inovasi | |
+| 39 | `team.c3.bio` | M.Sc. in Strategic Marketing currently leading enterprise tech initiatives. Specializes in digital workflow adaptation, modern market expansion, and business AI adoption across cross-border operations. | Mestrado (M.Sc.) em Marketing Estratégico, atualmente a liderar iniciativas tecnológicas empresariais. Especialização em adaptação de fluxos de trabalho digitais, expansão de mercado e adoção de IA em operações transfronteiriças. | M.Sc. Pemasaran Strategis, saat ini memimpin inisiatif teknologi perusahaan. Spesialisasi dalam adaptasi alur kerja digital, ekspansi pasar modern, dan adopsi AI bisnis lintas operasi. | |
+| 40 | `team.c3.lang` | English & Indonesian | Inglês & Indonésio | Inggris & Indonesia | |
+| 41 | `team.c4.role` | Translation Specialist | Especialista em Tradução | Spesialis Penerjemahan | |
+| 42 | `team.c4.title` | Portuguese–Indonesian Translator & Interpreter | Tradutora e Intérprete Português–Indonésio | Penerjemah & Juru Bahasa Portugis–Indonesia | |
+| 43 | `team.c4.bio` | Native speaker of both European Portuguese and Indonesian. Translates and interprets between the two languages; when an official version is needed, translations are certified before a Portuguese notary. | Falante nativa de português europeu e de indonésio. Traduz e interpreta entre as duas línguas; quando é necessária uma versão oficial, as traduções são certificadas perante notário português. | Penutur asli bahasa Portugis (Portugal) dan bahasa Indonesia. Menerjemahkan dan menjadi juru bahasa di antara kedua bahasa; bila diperlukan versi resmi, terjemahan disertifikasi di hadapan notaris Portugal. | |
+| 44 | `team.c4.lang` | Portuguese & Indonesian | Português & Indonésio | Portugis & Indonesia | |
+| 45 | `team.subtitle` | A network of independent bilingual professionals embedded in both nations. | Uma rede de profissionais bilingues independentes integrados em ambas as nações. | Jaringan profesional bilingual independen yang berpengalaman di kedua negara. | |
+| 46 | `insights.eyebrow` | Knowledge Resource | Recursos | Sumber Pengetahuan | |
+| 47 | `insights.title` | Guides & Bilateral Insights | Guias e Análises Bilaterais | Panduan & Wawasan Bilateral | |
+| 48 | `insights.subtitle` | Practical guides on visas, company setup, residency paperwork and translations between Portugal and Indonesia. | Guias práticos sobre vistos, criação de empresas, documentação de residência e traduções entre Portugal e a Indonésia. | Panduan praktis tentang visa, pendirian usaha, dokumen izin tinggal, dan terjemahan antara Portugal dan Indonesia. | |
+| 49 | `insights.all` | All guides | Todos os guias | Semua panduan | |
+| 50 | `insights.a1.tag` | Indonesia Visas | Vistos Indonésia | Visa Indonesia | |
+| 51 | `insights.a1.title` | Indonesian visas and KITAS for Portuguese entrepreneurs and investors (2026) | Vistos e KITAS na Indonésia para empresários e investidores portugueses (2026) | Visa dan KITAS Indonesia untuk pengusaha dan investor Portugal (2026) | |
+| 52 | `insights.a1.desc` | Business visits, investor stay permits and residence options for Portuguese company owners and directors. | Viagens de negócios, autorizações de estadia para investidores e opções de residência para empresários e administradores portugueses. | Kunjungan bisnis, izin tinggal investor, dan opsi tinggal bagi pemilik dan direktur perusahaan Portugal. | |
+| 53 | `insights.a2.tag` | PT PMA Setup | Criação de PT PMA | Pendirian PT PMA | |
+| 54 | `insights.a2.title` | Setting up a PT PMA in Indonesia: foreign direct investment step by step | Criar uma PT PMA na Indonésia: investimento direto estrangeiro passo a passo | Mendirikan PT PMA di Indonesia: penanaman modal asing langkah demi langkah | |
+| 55 | `insights.a2.desc` | Company structure, capital requirements and OSS licensing for European companies entering Indonesia. | Estrutura da empresa, requisitos de capital e licenciamento OSS para empresas europeias que entram na Indonésia. | Struktur perusahaan, ketentuan modal, dan perizinan OSS bagi perusahaan Eropa yang masuk ke Indonesia. | |
+| 56 | `insights.a3.tag` | Portugal Paperwork | Burocracia em Portugal | Administrasi Portugal | |
+| 57 | `insights.a3.title` | NIF, NISS and AIMA residence registration in Portugal: a guide for Indonesians | NIF, NISS e registo de residência na AIMA: guia para indonésios | NIF, NISS, dan pendaftaran izin tinggal AIMA di Portugal: panduan untuk WNI | |
+| 58 | `insights.a3.desc` | Tax number, social security and residence appointments for Indonesians moving to Portugal. | Número fiscal, segurança social e agendamentos de residência para indonésios que se mudam para Portugal. | Nomor pajak, jaminan sosial, dan jadwal izin tinggal bagi WNI yang pindah ke Portugal. | |
+| 59 | `insights.a4.tag` | Translation & Notary | Tradução & Notário | Terjemahan & Notaris | |
+| 60 | `insights.a4.title` | Certified translation and notary legalisation of Indonesian and Portuguese documents | Tradução certificada e legalização notarial de documentos indonésios e portugueses | Terjemahan bersertifikat dan legalisasi notaris untuk dokumen Indonesia dan Portugal | |
+| 61 | `insights.a4.desc` | How translations are certified before a Portuguese notary, plus legalisation and apostille basics. | Como as traduções são certificadas perante notário português, com noções de legalização e apostila. | Cara terjemahan disertifikasi di hadapan notaris Portugal, serta dasar legalisasi dan apostille. | |
+| 62 | `nav.services` | Services | Serviços | Layanan | |
+| 63 | `nav.process` | How we work | Como trabalhamos | Cara kerja | |
+| 64 | `header.cta` | Free first consultation | Primeira consulta gratuita | Konsultasi awal gratis | |
+| 65 | `hero.eyebrow` | Portugal · Indonesia | Portugal · Indonésia | Portugal · Indonesia | |
+| 66 | `hero.title.a` | Your trusted bridge between | A sua ponte de confiança entre | Jembatan terpercaya Anda antara | |
+| 67 | `hero.title.pt` | Portugal | Portugal | Portugal | |
+| 68 | `hero.title.and` | and | e a | dan | |
+| 69 | `hero.title.id` | Indonesia | Indonésia | Indonesia | |
+| 70 | `hero.lede` | Practical guidance and in-person accompaniment for company setup, visas, residency paperwork and certified translations — from a bilingual team at home in both countries. | Orientação prática e acompanhamento presencial na criação de empresas, vistos, documentação de residência e traduções certificadas — por uma equipa bilingue que conhece bem os dois países. | Panduan praktis dan pendampingan langsung untuk pendirian usaha, visa, dokumen izin tinggal, dan terjemahan bersertifikat — dari tim bilingual yang akrab dengan kedua negara. | |
+| 71 | `hero.cta1` | Start a free conversation | Iniciar uma conversa gratuita | Mulai percakapan gratis | |
+| 72 | `hero.cta2` | How we work | Como trabalhamos | Cara kami bekerja | |
+| 73 | `dir.pt.from` | Portugal | Portugal | Portugal | |
+| 74 | `dir.pt.to` | Indonesia | Indonésia | Indonesia | |
+| 75 | `dir.pt.title` | Grow into Indonesia | Crescer na Indonésia | Berkembang ke Indonesia | |
+| 76 | `dir.pt.text` | For Portuguese companies and professionals exploring, sourcing from or expanding into the Indonesian market. | Para empresas e profissionais portugueses que querem explorar o mercado indonésio, comprar lá ou expandir-se para lá. | Untuk perusahaan dan profesional Portugal yang menjajaki, membeli dari, atau berekspansi ke pasar Indonesia. | |
+| 77 | `dir.pt.tags` | Market entry · PT PMA · Supplier checks · Visas & KITAS | Entrada no mercado · PT PMA · Verificação de fornecedores · Vistos & KITAS | Masuk pasar · PT PMA · Cek supplier · Visa & KITAS | |
+| 78 | `dir.id.from` | Indonesia | Indonésia | Indonesia | |
+| 79 | `dir.id.to` | Portugal | Portugal | Portugal | |
+| 80 | `dir.id.title` | Settle & build in Portugal | Viver e crescer em Portugal | Menetap & berkarya di Portugal | |
+| 81 | `dir.id.text` | For Indonesians living, studying or working in Portugal — and Indonesian businesses expanding into Portugal and Europe. | Para indonésios que vivem, estudam ou trabalham em Portugal — e para empresas indonésias que se expandem para Portugal e para a Europa. | Untuk WNI yang tinggal, kuliah, atau bekerja di Portugal — serta bisnis Indonesia yang berekspansi ke Portugal dan Eropa. | |
+| 82 | `dir.id.tags` | NIF & NISS · AIMA · Banking · Certified translation · Business setup | NIF & NISS · AIMA · Banco · Tradução certificada · Criação de empresa | NIF & NISS · AIMA · Rekening bank · Terjemahan bersertifikat · Pendirian usaha | |
+| 83 | `finder.eyebrow` | Find your path | Encontre o seu caminho | Temukan jalan Anda | |
+| 84 | `finder.title` | Tell us where you’re headed. \| We’ll point the way. | Diga-nos para onde vai. \| Nós indicamos o caminho. | Ceritakan tujuan Anda. \| Kami tunjukkan jalannya. | |
+| 85 | `finder.intro` | Three quick taps turn your situation — say, checking a supplier in Jepara or getting your NIF in Lisbon — into a clear message for our team. No forms, no account. | Três toques transformam a sua situação — por exemplo, verificar um fornecedor em Jepara ou importar mobiliário de Java — numa mensagem clara para a nossa equipa. Sem formulários, sem conta. | Tiga ketukan mengubah situasi Anda — misalnya mengurus NIF atau membuka usaha kuliner di Portugal — menjadi pesan yang jelas untuk tim kami. Tanpa formulir, tanpa akun. | |
+| 86 | `promise.1.t` | A real person replies | Responde-lhe uma pessoa | Dibalas langsung oleh orang, bukan bot | |
+| 87 | `promise.1.d` | Within 1–2 working days, in English or Indonesian. | Em 1–2 dias úteis, em inglês ou indonésio. | Dalam 1–2 hari kerja, dalam bahasa Inggris atau Indonesia. | |
+| 88 | `promise.2.t` | Your first orientation is free | A primeira orientação é gratuita | Orientasi pertama gratis | |
+| 89 | `promise.2.d` | An honest overview based on public official information. | Uma visão honesta, com base em informação oficial pública. | Gambaran jujur berdasarkan informasi resmi yang terbuka untuk umum. | |
+| 90 | `promise.3.t` | Deeper work is quoted first | Trabalho aprofundado com orçamento prévio | Pekerjaan lanjutan dengan penawaran di awal | |
+| 91 | `promise.3.d` | Scope, time and price in writing before anything starts. | Âmbito, prazo e preço por escrito antes de começarmos. | Cakupan, waktu, dan biaya tertulis sebelum pekerjaan dimulai. | |
+| 92 | `finder.head.sub` | Usually replies within 1–2 working days | Responde normalmente em 1–2 dias úteis | Biasanya membalas dalam 1–2 hari kerja | |
+| 93 | `finder.restart` | Start over | Recomeçar | Mulai lagi | |
+| 94 | `finder.q.dir` | Olá! Which way are you heading? | Olá! Para onde quer ir? | Halo! Ke arah mana tujuan Anda? | |
+| 95 | `finder.q.topic` | What do you need help with? | Em que precisa de ajuda? | Apa yang perlu kami bantu? | |
+| 96 | `finder.q.time` | When do you need it? | Para quando precisa? | Kapan Anda membutuhkannya? | |
+| 97 | `finder.result.title` | {s} — how we can help | {s} — como podemos ajudar | {s} — bagaimana kami bisa membantu | |
+| 98 | `finder.meta.first` | First orientation: | Primeira orientação: | Orientasi pertama: | |
+| 99 | `finder.meta.free` | free | gratuita | gratis | |
+| 100 | `finder.meta.accomp` | Accompaniment: | Acompanhamento: | Pendampingan: | |
+| 101 | `finder.meta.from` | from €15/h | a partir de €15/h | mulai €15/jam | |
+| 102 | `finder.meta.deeper` | Deeper work: | Trabalho aprofundado: | Pekerjaan lanjutan: | |
+| 103 | `finder.meta.quoted` | quoted upfront | com orçamento prévio | penawaran di awal | |
+| 104 | `finder.wa` | Send to us on WhatsApp | Enviar por WhatsApp | Kirim lewat WhatsApp | |
+| 105 | `finder.email` | Email instead | Prefiro email | Kirim lewat email | |
+| 106 | `finder.fine` | Information and guidance, not legal advice. Please don’t send ID documents in this first message. | Informação e orientação, não aconselhamento jurídico. Por favor, não envie documentos de identificação nesta primeira mensagem. | Informasi dan panduan, bukan nasihat hukum. Mohon jangan mengirim dokumen identitas di pesan pertama ini. | |
+| 107 | `msg.direction` | Direction: {s} | Direção: {s} | Arah: {s} | |
+| 108 | `msg.topic` | Topic: {s} | Assunto: {s} | Topik: {s} | |
+| 109 | `msg.timing` | Timing: {s} | Prazo: {s} | Waktu: {s} | |
+| 110 | `process.eyebrow` | How we work | Como trabalhamos | Cara kami bekerja | |
+| 111 | `process.title` | Honest first answers. \| Deeper help when you need it. | Primeiro, respostas honestas. \| Ajuda mais profunda quando precisar. | Jawaban jujur lebih dulu. \| Bantuan lebih dalam saat Anda butuh. | |
+| 112 | `step.1.badge` | Free | Grátis | Gratis | |
+| 113 | `step.1.title` | Tell us your situation | Conte-nos a sua situação | Ceritakan situasi Anda | |
+| 114 | `step.1.text` | A short WhatsApp message or email is enough. No fees, no obligation. | Basta uma mensagem curta por WhatsApp ou email. Sem custos nem compromisso. | Cukup pesan singkat lewat WhatsApp atau email. Tanpa biaya, tanpa kewajiban. | |
+| 115 | `step.2.badge` | Reply in 1–2 working days | Resposta em 1–2 dias úteis | Balasan dalam 1–2 hari kerja | |
+| 116 | `step.2.title` | Your free first orientation | A sua primeira orientação gratuita | Orientasi awal gratis | |
+| 117 | `step.2.text` | We look at your case and reply with what applies, the main requirements and where to find the official information — or a short call if that’s easier. | Analisamos o seu caso e respondemos com o que se aplica, os principais requisitos e onde encontrar a informação oficial — ou uma chamada curta, se for mais fácil. | Kami pelajari kasus Anda lalu membalas dengan hal yang berlaku, persyaratan utama, dan sumber informasi resminya — atau telepon singkat jika lebih mudah. | |
+| 118 | `step.3.badge` | Quoted upfront | Orçamento prévio | Biaya disepakati di awal | |
+| 119 | `step.3.title` | Go deeper, if you want | Aprofundar, se quiser | Mendalami lebih jauh, jika Anda mau | |
+| 120 | `step.3.text` | Need detailed research — for example, the import rules for teak furniture from Indonesia, or what you need to open a restaurant in Lisbon? We send scope, time and price first. | Precisa de uma análise detalhada — por exemplo, as regras para importar mobiliário em teca da Indonésia, ou como verificar um fornecedor em Jepara antes de pagar? Enviamos primeiro o âmbito, o prazo e o preço. | Butuh riset yang lebih rinci — misalnya syarat membuka usaha kuliner Indonesia di Portugal, atau prosedur membawa keluarga lewat reagrupamento familiar? Kami kirimkan cakupan, waktu, dan biayanya lebih dulu. | |
+| 121 | `step.4.badge` | Agreed in writing | Acordado por escrito | Disepakati tertulis | |
+| 122 | `step.4.title` | We walk it with you | Acompanhamos o processo consigo | Kami dampingi prosesnya | |
+| 123 | `step.4.text` | Hands-on help, such as going with you to an AIMA appointment or a supplier visit in Java. Extra time is only billed after we ask you. | Apoio no terreno, como acompanhar uma visita a fornecedores em Java ou uma reunião com um parceiro local. O tempo adicional só é faturado depois de lhe perguntarmos. | Pendampingan langsung, seperti menemani ke jadwal AIMA, Finanças, atau pembukaan rekening bank. Waktu tambahan hanya ditagih setelah kami menanyakannya kepada Anda. | |
+| 124 | `process.note` | Accompaniment from €15/hour. Anything beyond the free first orientation is quoted before we start. | Acompanhamento a partir de €15/hora. Tudo o que vá além da primeira orientação gratuita é orçamentado antes de começarmos. | Pendampingan mulai €15/jam. Apa pun di luar orientasi awal gratis akan diberi penawaran harga sebelum dimulai. | |
+| 125 | `team.eyebrow` | Our network | A nossa rede | Jaringan kami | |
+| 126 | `team.title` | The people \| behind the bridge. | As pessoas \| por trás da ponte. | Orang-orang \| di balik jembatan ini. | |
+| 127 | `team.bio.btn` | Bio | Bio | Profil | |
+| 128 | `team.c1.tag1` | Double Master’s · UGM × ISCTE | Duplo Mestrado · UGM × ISCTE | Double Master · UGM × ISCTE | |
+| 129 | `team.c1.tag2` | 9+ yrs in Portugal | 9+ anos em Portugal | 9+ tahun di Portugal | |
+| 130 | `team.c1.bio` | Double master’s degree: MBA (FEB UGM) and M.Sc. in International Management (ISCTE-IUL). Nine years in Portugal, including five in the Economic Section of the Embassy of the Republic of Indonesia in Lisbon. | Duplo mestrado: MBA (FEB UGM) e M.Sc. em Gestão Internacional (ISCTE-IUL). Nove anos em Portugal, incluindo cinco na Secção Económica da Embaixada da República da Indonésia em Lisboa. | Gelar double master: MBA (FEB UGM) dan M.Sc. International Management (ISCTE-IUL). Sembilan tahun di Portugal, termasuk lima tahun di Seksi Ekonomi Kedutaan Besar Republik Indonesia di Lisbon. | |
+| 131 | `team.c2.tag1` | M.Sc. Economics · ISEG | M.Sc. Economia · ISEG | M.Sc. Ekonomi · ISEG | |
+| 132 | `team.c2.tag2` | 7+ yrs in Portugal | 7+ anos em Portugal | 7+ tahun di Portugal | |
+| 133 | `team.c3.tag1` | M.Sc. Strategic Marketing | M.Sc. Marketing Estratégico | M.Sc. Pemasaran Strategis | |
+| 134 | `team.c3.tag2` | 6+ yrs in Portugal | 6+ anos em Portugal | 6+ tahun di Portugal | |
+| 135 | `team.c4.tag1` | Native PT & ID | Nativa PT & ID | Native PT & ID | |
+| 136 | `team.c4.tag2` | 20+ yrs in Portugal | 20+ anos em Portugal | 20+ tahun di Portugal | |
+
+## 2. "Find your path" topics and result bullets
+
+| # | Direction / topic | EN | PT | ID | Notes |
+|---|---|---|---|---|---|
+| 137 | **Portugal → Indonesia** (direction) | Portugal → Indonesia | Portugal → Indonésia | Portugal → Indonesia | |
+| 138 | pt-id / market-entry (label) | Market entry & PT PMA | Entrada no mercado & PT PMA | Masuk pasar & PT PMA | |
+| 139 | pt-id / market-entry • 1 | Explain how a PT PMA works and which questions to settle first, based on official sources | Explicar como funciona uma PT PMA e que questões decidir primeiro, com base em fontes oficiais | Menjelaskan cara kerja PT PMA dan hal yang perlu diputuskan lebih dulu, berdasarkan sumber resmi | |
+| 140 | pt-id / market-entry • 2 | Outline the main steps, typical timelines and the documents usually requested | Resumir os passos principais, os prazos habituais e os documentos normalmente pedidos | Merangkum langkah utama, perkiraan waktu, dan dokumen yang biasanya diminta | |
+| 141 | pt-id / market-entry • 3 | Help you prepare for meetings with Indonesian partners and authorities | Ajudar a preparar reuniões com parceiros e entidades indonésias | Membantu persiapan pertemuan dengan mitra dan instansi di Indonesia | |
+| 142 | pt-id / supplier-checks (label) | Supplier & partner checks | Verificar fornecedores e parceiros | Cek supplier & mitra | |
+| 143 | pt-id / supplier-checks • 1 | Check a company’s public registration details in Indonesia | Verificar os dados de registo públicos de uma empresa na Indonésia | Mengecek data registrasi publik perusahaan di Indonesia | |
+| 144 | pt-id / supplier-checks • 2 | Set up video calls or factory visits to meet the people behind it | Organizar videochamadas ou visitas à fábrica para conhecer quem está por trás | Mengatur video call atau kunjungan pabrik untuk bertemu langsung pihaknya | |
+| 145 | pt-id / supplier-checks • 3 | Point out common warning signs before you pay a deposit | Apontar sinais de alerta comuns antes de pagar um sinal | Menunjukkan tanda bahaya yang umum sebelum Anda membayar uang muka | |
+| 146 | pt-id / sourcing (label) | Product sourcing | Procura de produtos | Pencarian produk | |
+| 147 | pt-id / sourcing • 1 | Find and shortlist Indonesian manufacturers for your product | Encontrar e selecionar fabricantes indonésios para o seu produto | Mencari dan menyaring produsen Indonesia untuk produk Anda | |
+| 148 | pt-id / sourcing • 2 | Request samples and coordinate quality checks on the ground | Pedir amostras e coordenar verificações de qualidade no local | Meminta sampel dan mengoordinasikan pengecekan kualitas di lapangan | |
+| 149 | pt-id / sourcing • 3 | Keep communication with the factory clear, in both languages | Manter a comunicação com a fábrica clara, nas duas línguas | Menjaga komunikasi dengan pabrik tetap jelas, dalam dua bahasa | |
+| 150 | pt-id / export-import (label) | Export & import | Exportação & importação | Ekspor & impor | |
+| 151 | pt-id / export-import • 1 | Summarise the customs rules, duties and permits that usually apply, from official sources | Resumir as regras alfandegárias, direitos e licenças que normalmente se aplicam, a partir de fontes oficiais | Merangkum aturan bea cukai, bea masuk, dan izin yang biasanya berlaku, dari sumber resmi | |
+| 152 | pt-id / export-import • 2 | Explain the documents a shipment between Portugal and Indonesia typically needs | Explicar os documentos que um envio entre Portugal e a Indonésia costuma exigir | Menjelaskan dokumen yang biasanya dibutuhkan untuk pengiriman antara Portugal dan Indonesia | |
+| 153 | pt-id / export-import • 3 | Help you coordinate with your freight forwarder and supplier | Ajudar a coordenar com o transitário e o fornecedor | Membantu koordinasi dengan forwarder dan supplier Anda | |
+| 154 | pt-id / visas-kitas (label) | Visas & KITAS | Vistos & KITAS | Visa & KITAS | |
+| 155 | pt-id / visas-kitas • 1 | Explain which visa or stay permit generally fits your plans | Explicar que visto ou autorização de estadia se adequa, em geral, aos seus planos | Menjelaskan visa atau izin tinggal yang umumnya sesuai dengan rencana Anda | |
+| 156 | pt-id / visas-kitas • 2 | List the documents and sponsor requirements usually involved | Listar os documentos e os requisitos de patrocinador normalmente envolvidos | Mendaftar dokumen dan persyaratan penjamin yang biasanya diperlukan | |
+| 157 | pt-id / visas-kitas • 3 | Walk you through the official application and extension steps | Acompanhar os passos oficiais do pedido e da prorrogação | Memandu langkah resmi pengajuan dan perpanjangan | |
+| 158 | **Indonesia → Portugal** (direction) | Indonesia → Portugal | Indonésia → Portugal | Indonesia → Portugal | |
+| 159 | id-pt / nif-niss (label) | NIF & NISS | NIF & NISS | NIF & NISS | |
+| 160 | id-pt / nif-niss • 1 | Explain which route fits your situation and what to prepare | Explicar qual o caminho adequado à sua situação e o que preparar | Menjelaskan jalur yang sesuai dengan situasi Anda dan apa yang perlu disiapkan | |
+| 161 | id-pt / nif-niss • 2 | Book and accompany you to Finanças and Segurança Social | Marcar e acompanhar a ida às Finanças e à Segurança Social | Membuat janji dan menemani Anda ke Finanças dan Segurança Social | |
+| 162 | id-pt / nif-niss • 3 | Coordinate certified translations if an office asks for them | Coordenar traduções certificadas, se algum serviço as pedir | Mengoordinasikan terjemahan bersertifikat jika diminta oleh kantor terkait | |
+| 163 | id-pt / aima (label) | AIMA residence | Residência (AIMA) | Izin tinggal AIMA | |
+| 164 | id-pt / aima • 1 | Explain the residence route that generally applies and the usual documents | Explicar a via de residência que normalmente se aplica e os documentos habituais | Menjelaskan jalur izin tinggal yang umumnya berlaku dan dokumen yang biasa diminta | |
+| 165 | id-pt / aima • 2 | Help you prepare your file before the AIMA appointment | Ajudar a preparar o processo antes do atendimento na AIMA | Membantu menyiapkan berkas sebelum jadwal di AIMA | |
+| 166 | id-pt / aima • 3 | Go with you to the appointment if you’d like support | Acompanhar o atendimento, se quiser apoio | Menemani Anda ke jadwal AIMA jika Anda ingin didampingi | |
+| 167 | id-pt / bank (label) | Bank account | Conta bancária | Rekening bank | |
+| 168 | id-pt / bank • 1 | Explain what Portuguese banks usually ask for | Explicar o que os bancos portugueses costumam pedir | Menjelaskan apa yang biasanya diminta bank di Portugal | |
+| 169 | id-pt / bank • 2 | Help you compare options and prepare the paperwork | Ajudar a comparar opções e a preparar a documentação | Membantu membandingkan pilihan dan menyiapkan dokumen | |
+| 170 | id-pt / bank • 3 | Accompany you to the branch appointment | Acompanhar a ida ao balcão | Menemani Anda ke kantor cabang bank | |
+| 171 | id-pt / translation (label) | Certified translation | Tradução certificada | Terjemahan bersertifikat | |
+| 172 | id-pt / translation • 1 | Translate documents between Indonesian and European Portuguese | Traduzir documentos entre indonésio e português europeu | Menerjemahkan dokumen antara bahasa Indonesia dan bahasa Portugis (Portugal) | |
+| 173 | id-pt / translation • 2 | Have translations certified before a Portuguese notary when an official version is needed | Certificar as traduções perante notário português quando é necessária uma versão oficial | Mensertifikasi terjemahan di hadapan notaris Portugal bila diperlukan versi resmi | |
+| 174 | id-pt / translation • 3 | Tell you upfront which documents an office usually expects | Indicar à partida que documentos um serviço costuma pedir | Memberi tahu sejak awal dokumen apa yang biasanya diminta suatu kantor | |
+| 175 | id-pt / housing-arrival (label) | Housing & arrival | Alojamento & chegada | Tempat tinggal & kedatangan | |
+| 176 | id-pt / housing-arrival • 1 | Help you check listings and rental contracts before you commit | Ajudar a verificar anúncios e contratos de arrendamento antes de se comprometer | Membantu mengecek iklan dan kontrak sewa sebelum Anda setuju | |
+| 177 | id-pt / housing-arrival • 2 | Arrival orientation: SIM card, transport and first errands | Orientação à chegada: cartão SIM, transportes e primeiras tarefas | Orientasi kedatangan: kartu SIM, transportasi, dan urusan pertama | |
+| 178 | id-pt / housing-arrival • 3 | Practical tips for students starting university life | Dicas práticas para estudantes que começam a vida universitária | Tips praktis bagi mahasiswa yang baru memulai kuliah | |
+| 179 | id-pt / business-portugal (label) | Business in Portugal | Negócio em Portugal | Usaha di Portugal | |
+| 180 | id-pt / business-portugal • 1 | Explain the usual ways to set up and register a business in Portugal, from official sources | Explicar as formas habituais de criar e registar uma empresa em Portugal, a partir de fontes oficiais | Menjelaskan cara umum mendirikan dan mendaftarkan usaha di Portugal, dari sumber resmi | |
+| 181 | id-pt / business-portugal • 2 | Outline the licences and steps for sectors such as food and retail | Resumir as licenças e os passos em setores como a restauração e o comércio | Merangkum izin dan langkah untuk sektor seperti kuliner dan ritel | |
+| 182 | id-pt / business-portugal • 3 | Help Indonesian companies plan their first steps into Portugal and the EU | Ajudar empresas indonésias a planear os primeiros passos em Portugal e na UE | Membantu perusahaan Indonesia merencanakan langkah awal ke Portugal dan Uni Eropa | |
+| 183 | id-pt / travel-guide (label) | Travel & local guide | Viagem & guia local | Wisata & pemandu lokal | |
+| 184 | id-pt / travel-guide • 1 | A bilingual local guide for business or leisure days in Portugal | Guia local bilingue para dias de negócios ou de lazer em Portugal | Pemandu lokal bilingual untuk urusan bisnis atau wisata di Portugal | |
+| 185 | id-pt / travel-guide • 2 | Guide support for visiting delegations | Apoio de guia para delegações em visita | Pendampingan pemandu untuk delegasi yang berkunjung | |
+| 186 | id-pt / travel-guide • 3 | Itinerary, hotel and rental car recommendations with booking assistance; you book and pay the provider directly | Recomendações de itinerário, hotéis e aluguer de carro, com assistência na reserva; reserva e paga diretamente ao fornecedor | Rekomendasi itinerari, hotel, dan sewa mobil, serta bantuan pemesanan; pemesanan dan pembayaran langsung ke penyedia | |
+| 187 | timings.0.label | This month | Este mês | Bulan ini | |
+| 188 | timings.1.label | 1–3 months | 1–3 meses | 1–3 bulan | |
+| 189 | timings.2.label | Just exploring | Só a explorar | Baru cari info | |
