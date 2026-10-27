@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Auto-refresh cache-busting tags when CSS/JS is committed.
+# Enable once per clone: git config core.hooksPath .githooks
+if git diff --cached --name-only | grep -qE '^(style\.css|app\.js|legal\.css|legal\.js)$'; then
+  ./tools/bump-asset-versions.sh >/dev/null
+  git add index.html privacy.html terms.html privacidade.html termos.html 404.html
+fi
