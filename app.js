@@ -530,22 +530,38 @@ function initHeroVideo() {
    4. TEAM — bios open on hover/focus (CSS) and on tap (button)
    ═══════════════════════════════════════════════════════════════ */
 function initTeam() {
-  document.querySelectorAll('.person').forEach(person => {
+  const people = Array.from(document.querySelectorAll('.person'));
+
+  function setOpen(person, open) {
+    person.classList.toggle('is-open', open);
+    const button = person.querySelector('.bio-toggle');
+    if (button) button.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  function toggle(person) {
+    const open = !person.classList.contains('is-open');
+    people.forEach(other => { if (other !== person) setOpen(other, false); });
+    setOpen(person, open);
+  }
+
+  people.forEach(person => {
     const button = person.querySelector('.bio-toggle');
     if (!button) return;
-    button.addEventListener('click', () => {
-      const open = !person.classList.contains('is-open');
-      person.classList.toggle('is-open', open);
-      button.setAttribute('aria-expanded', open ? 'true' : 'false');
+    button.addEventListener('click', () => toggle(person));
+    // Mouse/touch convenience: the photo (or the open bio) toggles too.
+    // Keyboard users have the button (Enter/Space).
+    person.querySelectorAll('.person-photo, .person-bio').forEach(area => {
+      area.addEventListener('click', () => toggle(person));
     });
   });
 
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
-    const open = document.activeElement && document.activeElement.closest('.person.is-open');
-    if (!open) return;
-    open.classList.remove('is-open');
-    open.querySelector('.bio-toggle').setAttribute('aria-expanded', 'false');
+    people.filter(p => p.classList.contains('is-open')).forEach(person => {
+      const hadFocus = person.contains(document.activeElement);
+      setOpen(person, false);
+      if (hadFocus) person.querySelector('.bio-toggle').focus();
+    });
   });
 }
 
@@ -689,6 +705,7 @@ const translations = {
     'team.eyebrow': 'Our network',
     'team.title': 'The people | behind the bridge.',
     'team.bio.btn': 'Bio',
+    'team.bio.close': 'Close',
     'team.c1.tag1': 'Double Master’s · UGM × ISCTE',
     'team.c1.tag2': '9+ yrs in Portugal',
     'team.c1.bio': 'Double master’s degree: MBA (FEB UGM) and M.Sc. in International Management (ISCTE-IUL). Nine years in Portugal, including five in the Economic Section of the Embassy of the Republic of Indonesia in Lisbon.',
@@ -834,6 +851,7 @@ const translations = {
     'team.eyebrow': 'A nossa rede',
     'team.title': 'As pessoas | por trás da ponte.',
     'team.bio.btn': 'Bio',
+    'team.bio.close': 'Fechar',
     'team.c1.tag1': 'Duplo Mestrado · UGM × ISCTE',
     'team.c1.tag2': '9+ anos em Portugal',
     'team.c1.bio': 'Duplo mestrado: MBA (FEB UGM) e M.Sc. em Gestão Internacional (ISCTE-IUL). Nove anos em Portugal, incluindo cinco na Secção Económica da Embaixada da República da Indonésia em Lisboa.',
@@ -979,6 +997,7 @@ const translations = {
     'team.eyebrow': 'Jaringan kami',
     'team.title': 'Orang-orang | di balik jembatan ini.',
     'team.bio.btn': 'Profil',
+    'team.bio.close': 'Tutup',
     'team.c1.tag1': 'Double Master · UGM × ISCTE',
     'team.c1.tag2': '9+ tahun di Portugal',
     'team.c1.bio': 'Gelar double master: MBA (FEB UGM) dan M.Sc. International Management (ISCTE-IUL). Sembilan tahun di Portugal, termasuk lima tahun di Seksi Ekonomi Kedutaan Besar Republik Indonesia di Lisbon.',

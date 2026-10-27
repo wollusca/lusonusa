@@ -27,6 +27,9 @@
   --wa: #15803D;         /* white text 5:1 */
   --wa-hover: #166534;
   --focus: #93C5FD;
+  /* Team portraits: one switch for the photo look.
+     Full colour: none · softened colour: saturate(.55) contrast(1.03) · B&W: grayscale(1) contrast(1.05) */
+  --portrait-filter: saturate(0.55) contrast(1.03);
 
   --f-brand: 'Cinzel', serif;
   --f-display: 'Cormorant Garamond', 'Times New Roman', serif;
@@ -187,16 +190,31 @@ section[id], footer[id] { scroll-margin-top: var(--header-h); }
   height: var(--header-h);
   display: flex;
   align-items: center;
+  background: transparent;
+  isolation: isolate;
+}
+/* Two stacked layers that only cross-fade their opacity, so scrolling can
+   never flash: ::before is the top gradient over the hero, ::after the
+   solid bar. No backdrop-filter (it switched on instantly and smeared the photo). */
+.header::before,
+.header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.header::before {
   background: linear-gradient(180deg, rgba(11, 13, 18, 0.85), rgba(11, 13, 18, 0));
-  border-bottom: 1px solid transparent;
-  transition: background 0.35s, border-color 0.35s;
 }
-.header.is-scrolled {
+.header::after {
   background: rgba(11, 13, 18, 0.94);
-  border-bottom-color: var(--line);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  opacity: 0;
 }
+.header.is-scrolled::before { opacity: 0; }
+.header.is-scrolled::after { opacity: 1; }
 .header-inner {
   display: flex;
   align-items: center;
@@ -715,7 +733,7 @@ section[id], footer[id] { scroll-margin-top: var(--header-h); }
   height: 100%;
   object-fit: cover;
   object-position: center var(--face-y, 30%);
-  filter: grayscale(1) contrast(1.05);
+  filter: var(--portrait-filter);
   transition: transform 0.8s var(--ease);
 }
 /* Fade from photo into the panel: only the bottom ~18% of the photo darkens */
@@ -810,20 +828,23 @@ section[id], footer[id] { scroll-margin-top: var(--header-h); }
 }
 .bio-toggle .icon { width: 14px; height: 14px; transition: transform 0.3s; }
 
-.person.is-open .person-bio,
-.person:focus-within .person-bio {
+/* Bios open only by click/tap (button, photo or the open bio itself) */
+.person.is-open .person-bio {
   opacity: 1;
   transform: none;
   pointer-events: auto;
 }
-.person.is-open .person-info,
-.person:focus-within .person-info { opacity: 0; }
+.person.is-open .person-info { opacity: 0; }
 .person.is-open .bio-toggle .icon { transform: rotate(45deg); }
+.person-photo, .person-bio { cursor: pointer; }
+.bio-label-close,
+.person.is-open .bio-label-open { display: none; }
+.person.is-open .bio-label-close { display: inline; }
 
+/* Hover is only a subtle lift; it never changes the content */
+.person { transition: transform 0.35s var(--ease), border-color 0.35s; }
 @media (hover: hover) and (pointer: fine) {
-  .person:hover .person-bio { opacity: 1; transform: none; pointer-events: auto; }
-  .person:hover .person-info { opacity: 0; }
-  .person:hover .person-photo img { transform: scale(1.03); }
+  .person:hover { transform: translateY(-3px); border-color: var(--line-strong); }
 }
 
 
@@ -1005,7 +1026,7 @@ section[id], footer[id] { scroll-margin-top: var(--header-h); }
   }
   .hero-bg { animation: none; transform: none; }
   .dir:hover, .dir:focus-visible { transform: none; }
-  .person:hover .person-photo img { transform: none; }
+  .person:hover { transform: none; }
   .hero-video { display: none; }
 }
 
